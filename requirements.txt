@@ -1,0 +1,4 @@
+lxml==4.3.0
+selenium==3.141.0
+requests==2.21.0
+wget==3.2
