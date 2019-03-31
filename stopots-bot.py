@@ -58,45 +58,61 @@ def find_letter():
   try:
     letter = driver.find_element_by_xpath('//*[@id="letter"]/span').text
     print("Now Letter is:", letter)
-    #return letter
   except: pass
 
 def auto_complete(letter):
-  #with open('./dicionario/'+letter) as current_letter:
-  #  data = json.load(current_letter)
-
-  #elements = driver.find_elements_by_class_name('ct answers')
+  with open('./dicionario/'+letter.lower()+'.json') as current_letter:
+    data = json.load(current_letter)
   try:
-    #items = driver.find_elements_by_xpath('//*[@class="ct answers"]//label')
     for x in range(1, 13):
-      #item = driver.find_elements_by_xpath('//*[@class="ct answers"]//label['+str(x)+']')
-      #item = driver.find_elements_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']')
-      #item = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']')
-      item = driver.find_element(By.XPATH('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/..'))
-      itemName = item.find_element(By.XPATH('./span/')).text
+      itemType = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/span').text
+      for item in data:
+        if item['category'].lower() == itemType.lower():
+          campo = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').get_attribute('value')
+          if campo == '':
+            resposta = str(item['answer'])
+            driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').send_keys(resposta)
+          else: pass
+          break
+        else: pass
+  #except Exception as e: print(e)
+  except: pass
+  current_letter.close()
 
-      print(itemName)
-
-    #nomes = items.find_element_by_xpath('./span/').text
-    #inputs = items.find_element_by_xpath('./input')
-  except Exception as e: print(e)
-
-
-  #'//*[@class="ct answers"]/div[2]/div[2]/div/div[1]/label[2]/span'
-
-  #current_letter.close()
+def matchInfo():
+  try:
+    rounds = driver.find_element_by_xpath('//*[@class="rounds"]/span').text
+    total = driver.find_element_by_xpath('//*[@class="rounds"]/p[2]').text
+    print("Rodadas:",rounds+total)
+  except: pass
+  for x in range(1, 14):
+    try:
+      nick = driver.find_element_by_xpath('//*[@id="users"]/li['+str(x)+']//*[@class="infos"]/*[@class="nick"]').text
+      pts = driver.find_element_by_xpath('//*[@id="users"]/li['+str(x)+']//*[@class="infos"]/span').text
+      if nick: print(nick,"-",pts)
+    except:pass
 
 def playTheGame():
   while True:
-    #cls()
-    find_letter()
+    cls()
+    try:
+      button = driver.find_element_by_xpath('//*[@class= "bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake" or @class="bt-yellow icon-exclamation disable"]/strong').text
+      if button == 'STOP!':
+        find_letter()
+        time.sleep(1)
+        auto_complete(letter)
+      else: pass
+    except: pass
+    #except Exception as e: print(e)
+    matchInfo()
     time.sleep(5)
-    auto_complete(letter)
+
+    '''
     try:
       end = driver.find_element_by_class_name('ct end')
       if end: break
     except: pass
-
+    '''
 
 if __name__ == "__main__":
   print("Options:",
@@ -111,7 +127,7 @@ if __name__ == "__main__":
     username = input("Digite nome:")
     driver.get("https://stopots.com.br/")
     joinGame(username)
-    time.sleep(10)
+    time.sleep(7)
     playTheGame()
 
   if option == '2':
@@ -122,3 +138,6 @@ if __name__ == "__main__":
 
   if option == '3':
     update_dict()
+
+  if option == '4':
+    exit()
