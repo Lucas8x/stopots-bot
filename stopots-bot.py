@@ -41,15 +41,16 @@ def update_dict():
 
 def joinGame(username):
   print("Joining...")
-  wait = WebDriverWait(driver, 5)
+  wait = WebDriverWait(driver, 6)
   # entrar button
   wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@class="login"]/form/button')))
   driver.find_element_by_xpath('//*[@class="login"]/form/button').click()
   # username field
-  wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@class="perfil"]//input')))
-  driver.find_element_by_xpath('//*[@class="perfil"]//input').clear()
-  driver.find_element_by_xpath('//*[@class="perfil"]//input').send_keys(username)
-  time.sleep(3)
+  if username != ' ':
+    wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@class="perfil"]//input')))
+    driver.find_element_by_xpath('//*[@class="perfil"]//input').clear()
+    driver.find_element_by_xpath('//*[@class="perfil"]//input').send_keys(username)
+  wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]')))
   driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]').click() # jogar button
   print("Joined as", username)
 
@@ -75,7 +76,6 @@ def auto_complete(letter):
           else: pass
           break
         else: pass
-  #except Exception as e: print(e)
   except: pass
   current_letter.close()
 
@@ -83,14 +83,26 @@ def matchInfo():
   try:
     rounds = driver.find_element_by_xpath('//*[@class="rounds"]/span').text
     total = driver.find_element_by_xpath('//*[@class="rounds"]/p[2]').text
-    print("Rodadas:",rounds+total)
+    print("Rodadas:", rounds + total)
   except: pass
-  for x in range(1, 14):
+  print("- Current Players -")
+  for x in range(1, 15):
     try:
       nick = driver.find_element_by_xpath('//*[@id="users"]/li['+str(x)+']//*[@class="infos"]/*[@class="nick"]').text
       pts = driver.find_element_by_xpath('//*[@id="users"]/li['+str(x)+']//*[@class="infos"]/span').text
       if nick: print(nick,"-",pts)
     except:pass
+
+def roundEndRank():
+  print("- Rank End Round -")
+  for x in range(1, 15):
+    try:
+      position = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li['+str(x)+']//*[@class="position"]/span').text
+      nick = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li['+str(x)+']//*[@class="nick"]').text
+      pts = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li['+str(x)+']//*[@class="points"]').text
+      if nick: print(position,"-",nick,"-",pts)
+    except: pass
+  print("\n")
 
 def playTheGame():
   while True:
@@ -101,9 +113,16 @@ def playTheGame():
         find_letter()
         time.sleep(1)
         auto_complete(letter)
-      else: pass
+      # Rank fim de Round
+      if driver.find_element_by_xpath('//*[@class="active"]//*[@class="trophy"]'):
+        roundEndRank()
+      # Estou pronto:
+      if driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]'):
+        driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
+      # AFK Detector:
+      if driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button'):
+        driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button').click()
     except: pass
-    #except Exception as e: print(e)
     matchInfo()
     time.sleep(5)
 
@@ -121,13 +140,11 @@ if __name__ == "__main__":
         "\n3 - Atualizar Dicionario"
         "\n4 - Sair")
   option = str(input("> "))
-  #cls()
 
   if option == '1':
     username = input("Digite nome:")
     driver.get("https://stopots.com.br/")
     joinGame(username)
-    time.sleep(7)
     playTheGame()
 
   if option == '2':
