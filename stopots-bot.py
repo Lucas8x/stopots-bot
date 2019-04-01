@@ -31,7 +31,8 @@ categorias = ["Adjetivo","Animal","App ou site","Ator","Banda","Cantor","Carro",
               "Comida","Cor","Desenho animado","Eletro Eletrônico","Esporte","Esportista","Filme","Flor","FLV","Fruta",
               "Game","Gentílico","Inseto","Instrumento Musical","JLR","Líquido","Marca","Música","MSÉ","Nome Feminino",
               "Nome Masculino","Objeto","País","Palavra em inglês","PCH","PDA","Personagem Fictício","Profissão",
-              "Programa de TV","Série","Sobremesa","Sobrenome","Time esportivo","Verbo","Vestuário"]
+              "Programa de TV","Série","Sobremesa","Sobrenome","Time Esportivo","Verbo","Vestuário",
+              "Nome","Gentílico","Super-Herói","Meio de Transporte","Idioma","Doce"]
 
 def update_dict():
   for letra in letras:
@@ -41,7 +42,7 @@ def update_dict():
 
 def joinGame(username):
   print("Joining...")
-  wait = WebDriverWait(driver, 6)
+  wait = WebDriverWait(driver, 5)
   # entrar button
   wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@class="login"]/form/button')))
   driver.find_element_by_xpath('//*[@class="login"]/form/button').click()
@@ -50,8 +51,10 @@ def joinGame(username):
     wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@class="perfil"]//input')))
     driver.find_element_by_xpath('//*[@class="perfil"]//input').clear()
     driver.find_element_by_xpath('//*[@class="perfil"]//input').send_keys(username)
+  # jogar button
   wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]')))
-  driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]').click() # jogar button
+  time.sleep(1)
+  driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]/strong').click()
   print("Joined as", username)
 
 def find_letter():
@@ -104,6 +107,18 @@ def roundEndRank():
     except: pass
   print("\n")
 
+def validate(type):
+  if type == 'quick':
+    time.sleep(2)
+    driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
+  elif type == 'deny':
+    for x in range(1, 15):
+      if driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/span').text == 'VALIDADO!':
+        driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
+    driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
+  elif type == 'check':
+    pass
+
 def playTheGame():
   while True:
     cls()
@@ -113,6 +128,9 @@ def playTheGame():
         find_letter()
         time.sleep(1)
         auto_complete(letter)
+      # Avaliador
+      if button == 'AVALIAR':
+        validate('quick')
       # Rank fim de Round
       if driver.find_element_by_xpath('//*[@class="active"]//*[@class="trophy"]'):
         roundEndRank()
@@ -121,7 +139,8 @@ def playTheGame():
         driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
       # AFK Detector:
       if driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button'):
-        driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button').click()
+        time.sleep(2)
+        driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button/strong').click()
     except: pass
     matchInfo()
     time.sleep(5)
