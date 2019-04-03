@@ -1,1 +1,292 @@
-[{"answer":"Neto Baiano","category":"Esportista","letter":"n"},{"answer":"Nutricionista","category":"Profissão","letter":"n"},{"letter":"n","answer":"No Limite","category":"Programa de TV"},{"letter":"n","answer":"New Spirit","category":"Marca"},{"letter":"n","answer":"Nicaraguense","category":"Gentílico"},{"letter":"n","answer":"Nha Benta","category":"Sobremesa"},{"letter":"n","answer":"NieR Automata","category":"Game"},{"letter":"n","answer":"No Mundo da Bola","category":"Programa de TV"},{"letter":"n","answer":"No Good","category":"Música"},{"letter":"n","answer":"Napolitano","category":"Vestuário"},{"letter":"n","answer":"Nervoso","category":"Adjetivo"},{"answer":"Notonectidae","category":"Inseto","letter":"n"},{"letter":"n","answer":"Nadegas","category":"PCH"},{"letter":"n","answer":"Noite","category":"JLR"},{"letter":"n","answer":"Neve","category":"Cor"},{"letter":"n","answer":"Naja","category":"Animal"},{"letter":"n","answer":"Nottingham Lace","category":"Música"},{"letter":"n","answer":"Nuca","category":"PCH"},{"answer":"Natalie Portman","category":"Ator","letter":"n"},{"answer":"Natacao","category":"Esporte","letter":"n"},{"letter":"n","answer":"Nigeria","category":"CEP"},{"answer":"Nike Run Club","category":"App ou site","letter":"n"},{"letter":"n","answer":"Nanny McPhee","category":"Filme"},{"letter":"n","answer":"Nova Orleans","category":"Cidade"},{"letter":"n","answer":"Nana","category":"Cantor"},{"letter":"n","answer":"Nintendo","category":"Eletro Eletrônico"},{"letter":"n","answer":"Nega maluca","category":"Sobremesa"},{"letter":"n","answer":"Nagara","category":"Instrumento Musical"},{"answer":"Novelista","category":"Profissão","letter":"n"},{"letter":"n","answer":"Ned Flanders","category":"PDA"},{"letter":"n","answer":"Nariz","category":"PCH"},{"letter":"n","answer":"Natura","category":"Marca"},{"letter":"n","answer":"Nelson Muntz","category":"PDA"},{"letter":"n","answer":"Nairobi","category":"Capital"},{"letter":"n","answer":"Nick e Neck","category":"Desenho animado"},{"answer":"Nightstalker","category":"Banda","letter":"n"},{"letter":"n","answer":"Noni","category":"FLV"},{"letter":"n","answer":"Nutshell","category":"Música"},{"letter":"n","answer":"Nicolas Cage","category":"Ator"},{"letter":"n","answer":"Nike","category":"Marca"},{"letter":"n","answer":"New York","category":"Música"},{"letter":"n","answer":"Nine Inch Nails","category":"Banda"},{"letter":"n","answer":"Nectar","category":"Líquido"},{"letter":"n","answer":"Nervos","category":"PCH"},{"letter":"n","answer":"Nissan","category":"Carro"},{"letter":"n","answer":"Nicole Kidman","category":"Ator"},{"letter":"n","answer":"No Limit","category":"Música"},{"letter":"n","answer":"Nicolas Cage","category":"Celebridade"},{"letter":"n","answer":"Nepal","category":"CEP"},{"answer":"Nenufar","category":"Flor","letter":"n"},{"letter":"n","answer":"Nova Iorque","category":"Cidade"},{"letter":"n","answer":"Nibbler","category":"PDA"},{"answer":"No One","category":"Música","letter":"n"},{"letter":"n","answer":"Neoflam","category":"Marca"},{"letter":"n","answer":"Nachos","category":"Comida"},{"answer":"Nespera","category":"Fruta","letter":"n"},{"letter":"n","answer":"Nike","category":"App ou site"},{"letter":"n","answer":"Nearly Lost You","category":"Música"}]
+[
+  {
+    "answer":"Neto Baiano",
+    "category":"Esportista",
+    "letter":"n"
+  },
+  {
+    "answer":"Nutricionista",
+    "category":"Profissão",
+    "letter":"n"
+  },
+  {
+    "letter":"n",
+    "answer":"No Limite",
+    "category":"Programa de TV"
+  },
+  {
+    "letter":"n",
+    "answer":"New Spirit",
+    "category":"Marca"
+  },
+  {
+    "letter":"n",
+    "answer":"Nicaraguense",
+    "category":"Gentílico"
+  },
+  {
+    "letter":"n",
+    "answer":"Nha Benta",
+    "category":"Sobremesa"
+  },
+  {
+    "letter":"n",
+    "answer":"NieR Automata",
+    "category":"Game"
+  },
+  {
+    "letter":"n",
+    "answer":"No Mundo da Bola",
+    "category":"Programa de TV"
+  },
+  {
+    "letter":"n",
+    "answer":"No Good",
+    "category":"Música"
+  },
+  {
+    "letter":"n",
+    "answer":"Napolitano",
+    "category":"Vestuário"
+  },
+  {
+    "letter":"n",
+    "answer":"Nervoso",
+    "category":"Adjetivo"
+  },
+  {
+    "answer":"Notonectidae",
+    "category":"Inseto",
+    "letter":"n"
+  },
+  {
+    "letter":"n",
+    "answer":"Nadegas",
+    "category":"PCH"
+  },
+  {
+    "letter":"n",
+    "answer":"Noite",
+    "category":"JLR"
+  },
+  {
+    "letter":"n",
+    "answer":"Neve",
+    "category":"Cor"
+  },
+  {
+    "letter":"n",
+    "answer":"Naja",
+    "category":"Animal"
+  },
+  {
+    "letter":"n",
+    "answer":"Nottingham Lace",
+    "category":"Música"
+  },
+  {
+    "letter":"n",
+    "answer":"Nuca",
+    "category":"PCH"
+  },
+  {
+    "answer":"Natalie Portman",
+    "category":"Ator",
+    "letter":"n"
+  },
+  {
+    "answer":"Natacao",
+    "category":"Esporte",
+    "letter":"n"
+  },
+  {
+    "letter":"n",
+    "answer":"Nigeria",
+    "category":"CEP"
+  },
+  {
+    "answer":"Nike Run Club",
+    "category":"App ou site",
+    "letter":"n"
+  },
+  {
+    "letter":"n",
+    "answer":"Nanny McPhee",
+    "category":"Filme"
+  },
+  {
+    "letter":"n",
+    "answer":"Nova Orleans",
+    "category":"Cidade"
+  },
+  {
+    "letter":"n",
+    "answer":"Nana",
+    "category":"Cantor"
+  },
+  {
+    "letter":"n",
+    "answer":"Nintendo",
+    "category":"Eletro Eletrônico"
+  },
+  {
+    "letter":"n",
+    "answer":"Nega maluca",
+    "category":"Sobremesa"
+  },
+  {
+    "letter":"n",
+    "answer":"Nagara",
+    "category":"Instrumento Musical"
+  },
+  {
+    "answer":"Novelista",
+    "category":"Profissão",
+    "letter":"n"
+  },
+  {
+    "letter":"n",
+    "answer":"Ned Flanders",
+    "category":"PDA"
+  },
+  {
+    "letter":"n",
+    "answer":"Nariz",
+    "category":"PCH"
+  },
+  {
+    "letter":"n",
+    "answer":"Natura",
+    "category":"Marca"
+  },
+  {
+    "letter":"n",
+    "answer":"Nelson Muntz",
+    "category":"PDA"
+  },
+  {
+    "letter":"n",
+    "answer":"Nairobi",
+    "category":"Capital"
+  },
+  {
+    "letter":"n",
+    "answer":"Nick e Neck",
+    "category":"Desenho animado"
+  },
+  {
+    "answer":"Nightstalker",
+    "category":"Banda",
+    "letter":"n"
+  },
+  {
+    "letter":"n",
+    "answer":"Noni",
+    "category":"FLV"
+  },
+  {
+    "letter":"n",
+    "answer":"Nutshell",
+    "category":"Música"
+  },
+  {
+    "letter":"n",
+    "answer":"Nicolas Cage",
+    "category":"Ator"
+  },
+  {
+    "letter":"n",
+    "answer":"Nike",
+    "category":"Marca"
+  },
+  {
+    "letter":"n",
+    "answer":"New York",
+    "category":"Música"
+  },
+  {
+    "letter":"n",
+    "answer":"Nine Inch Nails",
+    "category":"Banda"
+  },
+  {
+    "letter":"n",
+    "answer":"Nectar",
+    "category":"Líquido"
+  },
+  {
+    "letter":"n",
+    "answer":"Nervos",
+    "category":"PCH"
+  },
+  {
+    "letter":"n",
+    "answer":"Nissan",
+    "category":"Carro"
+  },
+  {
+    "letter":"n",
+    "answer":"Nicole Kidman",
+    "category":"Ator"
+  },
+  {
+    "letter":"n",
+    "answer":"No Limit",
+    "category":"Música"
+  },
+  {
+    "letter":"n",
+    "answer":"Nicolas Cage",
+    "category":"Celebridade"
+  },
+  {
+    "letter":"n",
+    "answer":"Nepal",
+    "category":"CEP"
+  },
+  {
+    "answer":"Nenufar",
+    "category":"Flor",
+    "letter":"n"
+  },
+  {
+    "letter":"n",
+    "answer":"Nova Iorque",
+    "category":"Cidade"
+  },
+  {
+    "letter":"n",
+    "answer":"Nibbler",
+    "category":"PDA"
+  },
+  {
+    "answer":"No One",
+    "category":"Música",
+    "letter":"n"
+  },
+  {
+    "letter":"n",
+    "answer":"Neoflam",
+    "category":"Marca"
+  },
+  {
+    "letter":"n",
+    "answer":"Nachos",
+    "category":"Comida"
+  },
+  {
+    "answer":"Nespera",
+    "category":"Fruta",
+    "letter":"n"
+  },
+  {
+    "letter":"n",
+    "answer":"Nike",
+    "category":"App ou site"
+  },
+  {
+    "letter":"n",
+    "answer":"Nearly Lost You",
+    "category":"Música"
+  }
+]

@@ -1,1 +1,297 @@
-[{"letter":"j","answer":"Jennifer Lopez","category":"Celebridade"},{"letter":"j","answer":"Jornal Hoje","category":"JLR"},{"letter":"j","answer":"Jessie","category":"Cantor"},{"letter":"j","answer":"Journey","category":"Carro"},{"letter":"j","answer":"Jacarta","category":"Cidade"},{"letter":"j","answer":"Juanito Jones","category":"Desenho animado"},{"letter":"j","answer":"Jamaica","category":"CEP"},{"letter":"j","answer":"Jaguar","category":"Animal"},{"answer":"Just","category":"Música","letter":"j"},{"letter":"j","answer":"Je Veux","category":"Música"},{"letter":"j","answer":"Jeans","category":"Vestuário"},{"letter":"j","answer":"Jugular","category":"PCH"},{"letter":"j","answer":"Jacarta","category":"CEP"},{"letter":"j","answer":"Jerome Boateng","category":"Esportista"},{"letter":"j","answer":"Jabuticaba","category":"Comida"},{"letter":"j","answer":"Jet","category":"Banda"},{"answer":"Jasmin","category":"Flor","letter":"j"},{"letter":"j","answer":"Julius","category":"Marca"},{"letter":"j","answer":"J-Touch","category":"App ou site"},{"answer":"Jaleco","category":"Vestuário","letter":"j"},{"letter":"j","answer":"Jornaleiro","category":"Profissão"},{"letter":"j","answer":"Jordano","category":"Gentílico"},{"letter":"j","answer":"Jardineiro","category":"Profissão"},{"letter":"j","answer":"Jessica Alba","category":"Ator"},{"letter":"j","answer":"Jumanji","category":"Filme"},{"answer":"Jetpack Joyride","category":"App ou site","letter":"j"},{"letter":"j","answer":"Jornal da Globo","category":"Programa de TV"},{"answer":"Jaqueta","category":"Vestuário","letter":"j"},{"letter":"j","answer":"Jade","category":"Cor"},{"letter":"j","answer":"Joy Division","category":"Banda"},{"letter":"j","answer":"Joelho","category":"PCH"},{"letter":"j","answer":"Jandaia","category":"Marca"},{"letter":"j","answer":"Jeremy","category":"Música"},{"letter":"j","answer":"JBL Pulse","category":"Eletro Eletrônico"},{"letter":"j","answer":"Jogo Duro","category":"Programa de TV"},{"letter":"j","answer":"Jingle Stick","category":"Instrumento Musical"},{"answer":"Jane","category":"Música","letter":"j"},{"letter":"j","answer":"Jornalista","category":"Profissão"},{"answer":"Jiboia","category":"Animal","letter":"j"},{"answer":"Jockey","category":"Profissão","letter":"j"},{"letter":"j","answer":"Jornal Hoje","category":"Programa de TV"},{"letter":"j","answer":"Joma","category":"Marca"},{"letter":"j","answer":"Jarma","category":"Líquido"},{"letter":"j","answer":"Jambo","category":"Sobremesa"},{"answer":"Jovial","category":"Adjetivo","letter":"j"},{"letter":"j","answer":"Jabuticaba","category":"Sobremesa"},{"letter":"j","answer":"Jiu Jitsu","category":"Esporte"},{"letter":"j","answer":"Jacquemus","category":"Marca"},{"letter":"j","answer":"Jane Jetson","category":"PDA"},{"letter":"j","answer":"Jerk It Out","category":"Música"},{"letter":"j","answer":"Jurassic World","category":"Game"},{"letter":"j","answer":"Jacarta","category":"Capital"},{"letter":"j","answer":"Jeep Renegade","category":"Carro"},{"letter":"j","answer":"Jitiranaboia","category":"Inseto"},{"answer":"Jansport","category":"Marca","letter":"j"},{"letter":"j","answer":"Jararaca","category":"Animal"},{"letter":"j","answer":"Jatoba","category":"FLV"},{"letter":"j","answer":"Jambo","category":"Cor"},{"answer":"Jatoba","category":"Fruta","letter":"j"}]
+[
+  {
+    "letter":"j",
+    "answer":"Jennifer Lopez",
+    "category":"Celebridade"
+  },
+  {
+    "letter":"j",
+    "answer":"Jornal Hoje",
+    "category":"JLR"
+  },
+  {
+    "letter":"j",
+    "answer":"Jessie",
+    "category":"Cantor"
+  },
+  {
+    "letter":"j",
+    "answer":"Journey",
+    "category":"Carro"
+  },
+  {
+    "letter":"j",
+    "answer":"Jacarta",
+    "category":"Cidade"
+  },
+  {
+    "letter":"j",
+    "answer":"Juanito Jones",
+    "category":"Desenho animado"
+  },
+  {
+    "letter":"j",
+    "answer":"Jamaica",
+    "category":"CEP"
+  },
+  {
+    "letter":"j",
+    "answer":"Jaguar",
+    "category":"Animal"
+  },
+  {
+    "answer":"Just",
+    "category":"Música",
+    "letter":"j"
+  },
+  {
+    "letter":"j",
+    "answer":"Je Veux",
+    "category":"Música"
+  },
+  {
+    "letter":"j",
+    "answer":"Jeans",
+    "category":"Vestuário"
+  },
+  {
+    "letter":"j",
+    "answer":"Jugular",
+    "category":"PCH"
+  },
+  {
+    "letter":"j",
+    "answer":"Jacarta",
+    "category":"CEP"
+  },
+  {
+    "letter":"j",
+    "answer":"Jerome Boateng",
+    "category":"Esportista"
+  },
+  {
+    "letter":"j",
+    "answer":"Jabuticaba",
+    "category":"Comida"
+  },
+  {
+    "letter":"j",
+    "answer":"Jet",
+    "category":"Banda"
+  },
+  {
+    "answer":"Jasmin",
+    "category":"Flor",
+    "letter":"j"
+  },
+  {
+    "letter":"j",
+    "answer":"Julius",
+    "category":"Marca"
+  },
+  {
+    "letter":"j",
+    "answer":"J-Touch",
+    "category":"App ou site"
+  },
+  {
+    "answer":"Jaleco",
+    "category":"Vestuário",
+    "letter":"j"
+  },
+  {
+    "letter":"j",
+    "answer":"Jornaleiro",
+    "category":"Profissão"
+  },
+  {
+    "letter":"j",
+    "answer":"Jordano",
+    "category":"Gentílico"
+  },
+  {
+    "letter":"j",
+    "answer":"Jardineiro",
+    "category":"Profissão"
+  },
+  {
+    "letter":"j",
+    "answer":"Jessica Alba",
+    "category":"Ator"
+  },
+  {
+    "letter":"j",
+    "answer":"Jumanji",
+    "category":"Filme"
+  },
+  {
+    "answer":"Jetpack Joyride",
+    "category":"App ou site",
+    "letter":"j"
+  },
+  {
+    "letter":"j",
+    "answer":"Jornal da Globo",
+    "category":"Programa de TV"
+  },
+  {
+    "answer":"Jaqueta",
+    "category":"Vestuário",
+    "letter":"j"
+  },
+  {
+    "letter":"j",
+    "answer":"Jade",
+    "category":"Cor"
+  },
+  {
+    "letter":"j",
+    "answer":"Joy Division",
+    "category":"Banda"
+  },
+  {
+    "letter":"j",
+    "answer":"Joelho",
+    "category":"PCH"
+  },
+  {
+    "letter":"j",
+    "answer":"Jandaia",
+    "category":"Marca"
+  },
+  {
+    "letter":"j",
+    "answer":"Jeremy",
+    "category":"Música"
+  },
+  {
+    "letter":"j",
+    "answer":"JBL Pulse",
+    "category":"Eletro Eletrônico"
+  },
+  {
+    "letter":"j",
+    "answer":"Jogo Duro",
+    "category":"Programa de TV"
+  },
+  {
+    "letter":"j",
+    "answer":"Jingle Stick",
+    "category":"Instrumento Musical"
+  },
+  {
+    "answer":"Jane",
+    "category":"Música",
+    "letter":"j"
+  },
+  {
+    "letter":"j",
+    "answer":"Jornalista",
+    "category":"Profissão"
+  },
+  {
+    "answer":"Jiboia",
+    "category":"Animal",
+    "letter":"j"
+  },
+  {
+    "answer":"Jockey",
+    "category":"Profissão",
+    "letter":"j"
+  },
+  {
+    "letter":"j",
+    "answer":"Jornal Hoje",
+    "category":"Programa de TV"
+  },
+  {
+    "letter":"j",
+    "answer":"Joma",
+    "category":"Marca"
+  },
+  {
+    "letter":"j",
+    "answer":"Jarma",
+    "category":"Líquido"
+  },
+  {
+    "letter":"j",
+    "answer":"Jambo",
+    "category":"Sobremesa"
+  },
+  {
+    "answer":"Jovial",
+    "category":"Adjetivo",
+    "letter":"j"
+  },
+  {
+    "letter":"j",
+    "answer":"Jabuticaba",
+    "category":"Sobremesa"
+  },
+  {
+    "letter":"j",
+    "answer":"Jiu Jitsu",
+    "category":"Esporte"
+  },
+  {
+    "letter":"j",
+    "answer":"Jacquemus",
+    "category":"Marca"
+  },
+  {
+    "letter":"j",
+    "answer":"Jane Jetson",
+    "category":"PDA"
+  },
+  {
+    "letter":"j",
+    "answer":"Jerk It Out",
+    "category":"Música"
+  },
+  {
+    "letter":"j",
+    "answer":"Jurassic World",
+    "category":"Game"
+  },
+  {
+    "letter":"j",
+    "answer":"Jacarta",
+    "category":"Capital"
+  },
+  {
+    "letter":"j",
+    "answer":"Jeep Renegade",
+    "category":"Carro"
+  },
+  {
+    "letter":"j",
+    "answer":"Jitiranaboia",
+    "category":"Inseto"
+  },
+  {
+    "answer":"Jansport",
+    "category":"Marca",
+    "letter":"j"
+  },
+  {
+    "letter":"j",
+    "answer":"Jararaca",
+    "category":"Animal"
+  },
+  {
+    "letter":"j",
+    "answer":"Jatoba",
+    "category":"FLV"
+  },
+  {
+    "letter":"j",
+    "answer":"Jambo",
+    "category":"Cor"
+  },
+  {
+    "answer":"Jatoba",
+    "category":"Fruta",
+    "letter":"j"
+  }
+]

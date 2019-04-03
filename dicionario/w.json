@@ -1,1 +1,22 @@
-[{"answer":"Woody Allen","category":"Ator","letter":"w"},{"category":"Adjetivo","letter":"w","answer":"Wattimetrico"},{"letter":"w","answer":"Waylon Smithers","category":"PDA"},{"letter":"w","answer":"Winona Ryder","category":"Ator"}]
+[
+  {
+    "answer":"Woody Allen",
+    "category":"Ator",
+    "letter":"w"
+  },
+  {
+    "category":"Adjetivo",
+    "letter":"w",
+    "answer":"Wattimetrico"
+  },
+  {
+    "letter":"w",
+    "answer":"Waylon Smithers",
+    "category":"PDA"
+  },
+  {
+    "letter":"w",
+    "answer":"Winona Ryder",
+    "category":"Ator"
+  }
+]

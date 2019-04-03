@@ -1,1 +1,262 @@
-[{"letter":"z","answer":"Zombie","category":"Música"},{"letter":"z","answer":"Zabaglione","category":"Sobremesa"},{"answer":"Zapalla","category":"Marca","letter":"z"},{"letter":"z","answer":"Zimbabuano","category":"Gentílico"},{"letter":"z","answer":"Ze Colmeia","category":"Desenho animado"},{"letter":"z","answer":"Zeppola","category":"Sobremesa"},{"letter":"z","answer":"Zero Hora","category":"JLR"},{"letter":"z","answer":"Zinedine Zidane","category":"Esportista"},{"letter":"z","answer":"Zelador","category":"Profissão"},{"letter":"z","answer":"Zoe Saldana","category":"Ator"},{"letter":"z","answer":"Zaz","category":"Banda"},{"letter":"z","answer":"Zinia","category":"Flor"},{"letter":"z","answer":"Zaffre","category":"Cor"},{"letter":"z","answer":"Zeloso","category":"Adjetivo"},{"letter":"z","answer":"Zucca","category":"Marca"},{"letter":"z","answer":"Zimbabwe","category":"CEP"},{"letter":"z","answer":"Ziggy Stardust","category":"Música"},{"letter":"z","answer":"Zohan","category":"Filme"},{"answer":"Zuccotto","category":"Sobremesa","letter":"z"},{"letter":"z","answer":"Zimmermann","category":"Marca"},{"letter":"z","answer":"Zebu","category":"Animal"},{"answer":"Zelador Willie","category":"PDA","letter":"z"},{"answer":"Zeitgeist","category":"Música","letter":"z"},{"letter":"z","answer":"Zero Clash","category":"Game"},{"answer":"Zapp Banningan","category":"PDA","letter":"z"},{"letter":"z","answer":"Zorra Total","category":"Programa de TV"},{"letter":"z","answer":"Zagreb","category":"Cidade"},{"letter":"z","answer":"Zuppa inglese","category":"Sobremesa"},{"letter":"z","answer":"Zachary Levi","category":"Ator"},{"letter":"z","answer":"Zabumba","category":"Instrumento Musical"},{"answer":"Zoologista","category":"Profissão","letter":"z"},{"answer":"Zero The Hero","category":"Música","letter":"z"},{"letter":"z","answer":"Zero Chance","category":"Música"},{"letter":"z","answer":"Zangao","category":"Inseto"},{"letter":"z","answer":"Zebra","category":"Marca"},{"letter":"z","answer":"Zafira","category":"Carro"},{"letter":"z","answer":"Zurique","category":"Cidade"},{"letter":"z","answer":"Zuavo","category":"Vestuário"},{"letter":"z","answer":"Zachary Levi","category":"Celebridade"},{"letter":"z","answer":"Zangao","category":"Animal"},{"letter":"z","answer":"Zebra","category":"Animal"},{"letter":"z","answer":"Zap","category":"App ou site"},{"letter":"z","answer":"Zigomatico","category":"PCH"},{"letter":"z","answer":"Ziggy Chen","category":"Marca"},{"letter":"z","answer":"Zica e os Camaleoes","category":"Programa de TV"},{"letter":"z","answer":"Zaz","category":"Cantor"},{"letter":"z","answer":"Zitrone","category":"Fruta"},{"letter":"z","answer":"Zorba","category":"Marca"},{"answer":"Zombie Hyperdrive","category":"Banda","letter":"z"},{"letter":"z","answer":"Zac Brown Band","category":"Banda"},{"letter":"z","answer":"Zitrone","category":"FLV"},{"letter":"z","answer":"Zitrone","category":"Comida"}]
+[
+  {
+    "letter":"z",
+    "answer":"Zombie",
+    "category":"Música"
+  },
+  {
+    "letter":"z",
+    "answer":"Zabaglione",
+    "category":"Sobremesa"
+  },
+  {
+    "answer":"Zapalla",
+    "category":"Marca",
+    "letter":"z"
+  },
+  {
+    "letter":"z",
+    "answer":"Zimbabuano",
+    "category":"Gentílico"
+  },
+  {
+    "letter":"z",
+    "answer":"Ze Colmeia",
+    "category":"Desenho animado"
+  },
+  {
+    "letter":"z",
+    "answer":"Zeppola",
+    "category":"Sobremesa"
+  },
+  {
+    "letter":"z",
+    "answer":"Zero Hora",
+    "category":"JLR"
+  },
+  {
+    "letter":"z",
+    "answer":"Zinedine Zidane",
+    "category":"Esportista"
+  },
+  {
+    "letter":"z",
+    "answer":"Zelador",
+    "category":"Profissão"
+  },
+  {
+    "letter":"z",
+    "answer":"Zoe Saldana",
+    "category":"Ator"
+  },
+  {
+    "letter":"z",
+    "answer":"Zaz",
+    "category":"Banda"
+  },
+  {
+    "letter":"z",
+    "answer":"Zinia",
+    "category":"Flor"
+  },
+  {
+    "letter":"z",
+    "answer":"Zaffre",
+    "category":"Cor"
+  },
+  {
+    "letter":"z",
+    "answer":"Zeloso",
+    "category":"Adjetivo"
+  },
+  {
+    "letter":"z",
+    "answer":"Zucca",
+    "category":"Marca"
+  },
+  {
+    "letter":"z",
+    "answer":"Zimbabwe",
+    "category":"CEP"
+  },
+  {
+    "letter":"z",
+    "answer":"Ziggy Stardust",
+    "category":"Música"
+  },
+  {
+    "letter":"z",
+    "answer":"Zohan",
+    "category":"Filme"
+  },
+  {
+    "answer":"Zuccotto",
+    "category":"Sobremesa",
+    "letter":"z"
+  },
+  {
+    "letter":"z",
+    "answer":"Zimmermann",
+    "category":"Marca"
+  },
+  {
+    "letter":"z",
+    "answer":"Zebu",
+    "category":"Animal"
+  },
+  {
+    "answer":"Zelador Willie",
+    "category":"PDA",
+    "letter":"z"
+  },
+  {
+    "answer":"Zeitgeist",
+    "category":"Música",
+    "letter":"z"
+  },
+  {
+    "letter":"z",
+    "answer":"Zero Clash",
+    "category":"Game"
+  },
+  {
+    "answer":"Zapp Banningan",
+    "category":"PDA",
+    "letter":"z"
+  },
+  {
+    "letter":"z",
+    "answer":"Zorra Total",
+    "category":"Programa de TV"
+  },
+  {
+    "letter":"z",
+    "answer":"Zagreb",
+    "category":"Cidade"
+  },
+  {
+    "letter":"z",
+    "answer":"Zuppa inglese",
+    "category":"Sobremesa"
+  },
+  {
+    "letter":"z",
+    "answer":"Zachary Levi",
+    "category":"Ator"
+  },
+  {
+    "letter":"z",
+    "answer":"Zabumba",
+    "category":"Instrumento Musical"
+  },
+  {
+    "answer":"Zoologista",
+    "category":"Profissão",
+    "letter":"z"
+  },
+  {
+    "answer":"Zero The Hero",
+    "category":"Música",
+    "letter":"z"
+  },
+  {
+    "letter":"z",
+    "answer":"Zero Chance",
+    "category":"Música"
+  },
+  {
+    "letter":"z",
+    "answer":"Zangao",
+    "category":"Inseto"
+  },
+  {
+    "letter":"z",
+    "answer":"Zebra",
+    "category":"Marca"
+  },
+  {
+    "letter":"z",
+    "answer":"Zafira",
+    "category":"Carro"
+  },
+  {
+    "letter":"z",
+    "answer":"Zurique",
+    "category":"Cidade"
+  },
+  {
+    "letter":"z",
+    "answer":"Zuavo",
+    "category":"Vestuário"
+  },
+  {
+    "letter":"z",
+    "answer":"Zachary Levi",
+    "category":"Celebridade"
+  },
+  {
+    "letter":"z",
+    "answer":"Zangao",
+    "category":"Animal"
+  },
+  {
+    "letter":"z",
+    "answer":"Zebra",
+    "category":"Animal"
+  },
+  {
+    "letter":"z",
+    "answer":"Zap",
+    "category":"App ou site"
+  },
+  {
+    "letter":"z",
+    "answer":"Zigomatico",
+    "category":"PCH"
+  },
+  {
+    "letter":"z",
+    "answer":"Ziggy Chen",
+    "category":"Marca"
+  },
+  {
+    "letter":"z",
+    "answer":"Zica e os Camaleoes",
+    "category":"Programa de TV"
+  },
+  {
+    "letter":"z",
+    "answer":"Zaz",
+    "category":"Cantor"
+  },
+  {
+    "letter":"z",
+    "answer":"Zitrone",
+    "category":"Fruta"
+  },
+  {
+    "letter":"z",
+    "answer":"Zorba",
+    "category":"Marca"
+  },
+  {
+    "answer":"Zombie Hyperdrive",
+    "category":"Banda",
+    "letter":"z"
+  },
+  {
+    "letter":"z",
+    "answer":"Zac Brown Band",
+    "category":"Banda"
+  },
+  {
+    "letter":"z",
+    "answer":"Zitrone",
+    "category":"FLV"
+  },
+  {
+    "letter":"z",
+    "answer":"Zitrone",
+    "category":"Comida"
+  }
+]

@@ -1,1 +1,397 @@
-[{"letter":"a","answer":"Acido","category":"Líquido"},{"letter":"a","answer":"Anne Hathaway","category":"Ator"},{"answer":"Anabel","category":"Desenho animado","letter":"a"},{"letter":"a","answer":"Acordeao","category":"Instrumento Musical"},{"letter":"a","answer":"Ainda Gosto Dela","category":"Música"},{"letter":"a","answer":"Angelina Jolie","category":"Ator"},{"letter":"a","answer":"Ata","category":"FLV"},{"letter":"a","answer":"Almere","category":"Cidade"},{"letter":"a","answer":"Anel","category":"Vestuário"},{"answer":"Atenas","category":"Capital","letter":"a"},{"answer":"Angel of Mercy","category":"Música","letter":"a"},{"answer":"All My Love","category":"Música","letter":"a"},{"answer":"Alyne","category":"Marca","letter":"a"},{"answer":"Arteria","category":"PCH","letter":"a"},{"answer":"Asics","category":"Marca","letter":"a"},{"letter":"a","answer":"AutoEsporte","category":"Programa de TV"},{"answer":"Arapua","category":"Inseto","letter":"a"},{"letter":"a","answer":"Adocante","category":"Líquido"},{"answer":"Americana","category":"CEP","letter":"a"},{"letter":"a","answer":"Asphalt","category":"Game"},{"letter":"a","answer":"Automobilismo","category":"Esporte"},{"letter":"a","answer":"Aorta","category":"PCH"},{"letter":"a","answer":"Agronomo","category":"Eletro Eletrônico"},{"answer":"Alibaba","category":"App ou site","letter":"a"},{"answer":"Animania","category":"Programa de TV","letter":"a"},{"answer":"Atrasado","category":"Adjetivo","letter":"a"},{"letter":"a","answer":"Angelica","category":"Nome"},{"letter":"a","answer":"Actyon Sports","category":"Carro"},{"answer":"ABZ do Ziraldo","category":"Programa de TV","letter":"a"},{"letter":"a","answer":"Andorinha","category":"Animal"},{"letter":"a","answer":"Ametista","category":"Cor"},{"answer":"Amazonas","category":"CEP","letter":"a"},{"letter":"a","answer":"Almanaque Brasil","category":"Programa de TV"},{"letter":"a","answer":"Arduino Colaborativo","category":"JLR"},{"letter":"a","answer":"American Idol","category":"Programa de TV"},{"letter":"a","answer":"Acetona","category":"Líquido"},{"letter":"a","answer":"Alinne Moraes","category":"Celebridade"},{"letter":"a","answer":"Alcool","category":"Líquido"},{"answer":"Alface","category":"FLV","letter":"a"},{"answer":"Andrea Pirlo","category":"Esportista","letter":"a"},{"letter":"a","answer":"Anil","category":"Cor"},{"letter":"a","answer":"Akon","category":"Cantor"},{"answer":"Amy Wong","category":"PDA","letter":"a"},{"letter":"a","answer":"Ana Rosa","category":"Ator"},{"letter":"a","answer":"Assistente social","category":"Profissão"},{"answer":"Arnold","category":"PDA","letter":"a"},{"letter":"a","answer":"Azeite","category":"Líquido"},{"letter":"a","answer":"Adios","category":"Música"},{"letter":"a","answer":"Apendice","category":"PCH"},{"letter":"a","answer":"Antutu","category":"App ou site"},{"letter":"a","answer":"American Airlines","category":"App ou site"},{"letter":"a","answer":"Asus","category":"Marca"},{"letter":"a","answer":"Alface","category":"FLV"},{"answer":"Azaleia","category":"Marca","letter":"a"},{"letter":"a","answer":"ACDC","category":"Banda"},{"answer":"Argo","category":"Carro","letter":"a"},{"answer":"Avon","category":"Marca","letter":"a"},{"letter":"a","answer":"Avental","category":"Vestuário"},{"answer":"Angolano","category":"Gentílico","letter":"a"},{"letter":"a","answer":"Altas Horas","category":"Programa de TV"},{"letter":"a","answer":"Alpinista","category":"Profissão"},{"letter":"a","answer":"Aint it Fun","category":"Música"},{"letter":"a","answer":"Assolan","category":"Marca"},{"letter":"a","answer":"AirPods","category":"Eletro Eletrônico"},{"letter":"a","answer":"A Rede Social","category":"Filme"},{"letter":"a","answer":"All The Stars","category":"Música"},{"letter":"a","answer":"Anta","category":"Animal"},{"letter":"a","answer":"Amendoim praline","category":"Sobremesa"},{"answer":"Arroz doce","category":"Sobremesa","letter":"a"},{"answer":"Alice in Chains","category":"Banda","letter":"a"},{"letter":"a","answer":"Alice Cooper","category":"Banda"},{"letter":"a","answer":"Aborrecentes","category":"Programa de TV"},{"letter":"a","answer":"Axila","category":"PCH"},{"letter":"a","answer":"Anemona","category":"Flor"},{"letter":"a","answer":"Atleta","category":"Profissão"},{"letter":"a","answer":"Ameixa","category":"Fruta"},{"letter":"a","answer":"Answer To Yourself","category":"Música"},{"answer":"Arroz","category":"Comida","letter":"a"},{"letter":"a","answer":"Adele","category":"Cantor"}]
+[
+  {
+    "letter":"a",
+    "answer":"Acido",
+    "category":"Líquido"
+  },
+  {
+    "letter":"a",
+    "answer":"Anne Hathaway",
+    "category":"Ator"
+  },
+  {
+    "answer":"Anabel",
+    "category":"Desenho animado",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Acordeao",
+    "category":"Instrumento Musical"
+  },
+  {
+    "letter":"a",
+    "answer":"Ainda Gosto Dela",
+    "category":"Música"
+  },
+  {
+    "letter":"a",
+    "answer":"Angelina Jolie",
+    "category":"Ator"
+  },
+  {
+    "letter":"a",
+    "answer":"Ata",
+    "category":"FLV"
+  },
+  {
+    "letter":"a",
+    "answer":"Almere",
+    "category":"Cidade"
+  },
+  {
+    "letter":"a",
+    "answer":"Anel",
+    "category":"Vestuário"
+  },
+  {
+    "answer":"Atenas",
+    "category":"Capital",
+    "letter":"a"
+  },
+  {
+    "answer":"Angel of Mercy",
+    "category":"Música",
+    "letter":"a"
+  },
+  {
+    "answer":"All My Love",
+    "category":"Música",
+    "letter":"a"
+  },
+  {
+    "answer":"Alyne",
+    "category":"Marca",
+    "letter":"a"
+  },
+  {
+    "answer":"Arteria",
+    "category":"PCH",
+    "letter":"a"
+  },
+  {
+    "answer":"Asics",
+    "category":"Marca",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"AutoEsporte",
+    "category":"Programa de TV"
+  },
+  {
+    "answer":"Arapua",
+    "category":"Inseto",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Adocante",
+    "category":"Líquido"
+  },
+  {
+    "answer":"Americana",
+    "category":"CEP",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Asphalt",
+    "category":"Game"
+  },
+  {
+    "letter":"a",
+    "answer":"Automobilismo",
+    "category":"Esporte"
+  },
+  {
+    "letter":"a",
+    "answer":"Aorta",
+    "category":"PCH"
+  },
+  {
+    "letter":"a",
+    "answer":"Agronomo",
+    "category":"Eletro Eletrônico"
+  },
+  {
+    "answer":"Alibaba",
+    "category":"App ou site",
+    "letter":"a"
+  },
+  {
+    "answer":"Animania",
+    "category":"Programa de TV",
+    "letter":"a"
+  },
+  {
+    "answer":"Atrasado",
+    "category":"Adjetivo",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Angelica",
+    "category":"Nome"
+  },
+  {
+    "letter":"a",
+    "answer":"Actyon Sports",
+    "category":"Carro"
+  },
+  {
+    "answer":"ABZ do Ziraldo",
+    "category":"Programa de TV",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Andorinha",
+    "category":"Animal"
+  },
+  {
+    "letter":"a",
+    "answer":"Ametista",
+    "category":"Cor"
+  },
+  {
+    "answer":"Amazonas",
+    "category":"CEP",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Almanaque Brasil",
+    "category":"Programa de TV"
+  },
+  {
+    "letter":"a",
+    "answer":"Arduino Colaborativo",
+    "category":"JLR"
+  },
+  {
+    "letter":"a",
+    "answer":"American Idol",
+    "category":"Programa de TV"
+  },
+  {
+    "letter":"a",
+    "answer":"Acetona",
+    "category":"Líquido"
+  },
+  {
+    "letter":"a",
+    "answer":"Alinne Moraes",
+    "category":"Celebridade"
+  },
+  {
+    "letter":"a",
+    "answer":"Alcool",
+    "category":"Líquido"
+  },
+  {
+    "answer":"Alface",
+    "category":"FLV",
+    "letter":"a"
+  },
+  {
+    "answer":"Andrea Pirlo",
+    "category":"Esportista",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Anil",
+    "category":"Cor"
+  },
+  {
+    "letter":"a",
+    "answer":"Akon",
+    "category":"Cantor"
+  },
+  {
+    "answer":"Amy Wong",
+    "category":"PDA",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Ana Rosa",
+    "category":"Ator"
+  },
+  {
+    "letter":"a",
+    "answer":"Assistente social",
+    "category":"Profissão"
+  },
+  {
+    "answer":"Arnold",
+    "category":"PDA",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Azeite",
+    "category":"Líquido"
+  },
+  {
+    "letter":"a",
+    "answer":"Adios",
+    "category":"Música"
+  },
+  {
+    "letter":"a",
+    "answer":"Apendice",
+    "category":"PCH"
+  },
+  {
+    "letter":"a",
+    "answer":"Antutu",
+    "category":"App ou site"
+  },
+  {
+    "letter":"a",
+    "answer":"American Airlines",
+    "category":"App ou site"
+  },
+  {
+    "letter":"a",
+    "answer":"Asus",
+    "category":"Marca"
+  },
+  {
+    "letter":"a",
+    "answer":"Alface",
+    "category":"FLV"
+  },
+  {
+    "answer":"Azaleia",
+    "category":"Marca",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"ACDC",
+    "category":"Banda"
+  },
+  {
+    "answer":"Argo",
+    "category":"Carro",
+    "letter":"a"
+  },
+  {
+    "answer":"Avon",
+    "category":"Marca",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Avental",
+    "category":"Vestuário"
+  },
+  {
+    "answer":"Angolano",
+    "category":"Gentílico",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Altas Horas",
+    "category":"Programa de TV"
+  },
+  {
+    "letter":"a",
+    "answer":"Alpinista",
+    "category":"Profissão"
+  },
+  {
+    "letter":"a",
+    "answer":"Aint it Fun",
+    "category":"Música"
+  },
+  {
+    "letter":"a",
+    "answer":"Assolan",
+    "category":"Marca"
+  },
+  {
+    "letter":"a",
+    "answer":"AirPods",
+    "category":"Eletro Eletrônico"
+  },
+  {
+    "letter":"a",
+    "answer":"A Rede Social",
+    "category":"Filme"
+  },
+  {
+    "letter":"a",
+    "answer":"All The Stars",
+    "category":"Música"
+  },
+  {
+    "letter":"a",
+    "answer":"Anta",
+    "category":"Animal"
+  },
+  {
+    "letter":"a",
+    "answer":"Amendoim praline",
+    "category":"Sobremesa"
+  },
+  {
+    "answer":"Arroz doce",
+    "category":"Sobremesa",
+    "letter":"a"
+  },
+  {
+    "answer":"Alice in Chains",
+    "category":"Banda",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Alice Cooper",
+    "category":"Banda"
+  },
+  {
+    "letter":"a",
+    "answer":"Aborrecentes",
+    "category":"Programa de TV"
+  },
+  {
+    "letter":"a",
+    "answer":"Axila",
+    "category":"PCH"
+  },
+  {
+    "letter":"a",
+    "answer":"Anemona",
+    "category":"Flor"
+  },
+  {
+    "letter":"a",
+    "answer":"Atleta",
+    "category":"Profissão"
+  },
+  {
+    "letter":"a",
+    "answer":"Ameixa",
+    "category":"Fruta"
+  },
+  {
+    "letter":"a",
+    "answer":"Answer To Yourself",
+    "category":"Música"
+  },
+  {
+    "answer":"Arroz",
+    "category":"Comida",
+    "letter":"a"
+  },
+  {
+    "letter":"a",
+    "answer":"Adele",
+    "category":"Cantor"
+  }
+]
