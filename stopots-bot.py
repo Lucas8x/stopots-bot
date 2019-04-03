@@ -42,17 +42,19 @@ def update_dict():
 
 def joinGame(username):
   print("Joining...")
-  wait = WebDriverWait(driver, 5)
+  wait = WebDriverWait(driver, 10)
   # entrar button
-  wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@class="login"]/form/button')))
+  wait.until(EC.presence_of_element_located((By.XPATH, '//*[@class="login"]/form/button')))
   driver.find_element_by_xpath('//*[@class="login"]/form/button').click()
+
+  wait.until(EC.invisibility_of_element_located((By.XPATH, '//*[@class="load"]')))
   # username field
   if username != ' ':
-    wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@class="perfil"]//input')))
+    wait.until(EC.presence_of_element_located((By.XPATH, '//*[@class="perfil"]//input')))
     driver.find_element_by_xpath('//*[@class="perfil"]//input').clear()
     driver.find_element_by_xpath('//*[@class="perfil"]//input').send_keys(username)
   # jogar button
-  wait.until(EC.visibility_of_element_located((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]')))
+  wait.until(EC.presence_of_element_located((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]')))
   time.sleep(1)
   driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]/strong').click()
   print("Joined as", username)
@@ -65,6 +67,7 @@ def find_letter():
   except: pass
 
 def auto_complete(letter):
+  print("Auto Completing...")
   with open('./dicionario/'+letter.lower()+'.json') as current_letter:
     data = json.load(current_letter)
   try:
@@ -93,7 +96,9 @@ def matchInfo():
     try:
       nick = driver.find_element_by_xpath('//*[@id="users"]/li['+str(x)+']//*[@class="infos"]/*[@class="nick"]').text
       pts = driver.find_element_by_xpath('//*[@id="users"]/li['+str(x)+']//*[@class="infos"]/span').text
-      if nick: print(nick,"-",pts)
+      if nick:
+        if nick == username: print(">",nick,"-",pts)
+        else: print(nick,"-",pts)
     except:pass
 
 def roundEndRank():
@@ -109,7 +114,7 @@ def roundEndRank():
 
 def validate(type):
   if type == 'quick':
-    time.sleep(2)
+    time.sleep(3)
     driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
   elif type == 'deny':
     for x in range(1, 15):
@@ -117,7 +122,19 @@ def validate(type):
         driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
     driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
   elif type == 'check':
-    pass
+    with open('./dicionario/' + letter.lower() + '.json') as current_letter:
+      data = json.load(current_letter)
+    try:
+      for x in range(1, 15):
+        if driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/span').text == 'VALIDADO!':
+          categoryAnswer = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').text
+          for item in data:
+            if not item['answer'].lower() == categoryAnswer.lower():
+              driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
+      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
+    except: pass
+    current_letter.close()
+  else: pass
 
 def playTheGame():
   while True:
@@ -141,6 +158,8 @@ def playTheGame():
       if driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button'):
         time.sleep(2)
         driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button/strong').click()
+      elif driver.find_elements_by_xpath('//*[@class="popup-enter-done"]'):
+        pass
     except: pass
     matchInfo()
     time.sleep(5)
@@ -157,7 +176,8 @@ if __name__ == "__main__":
         "\n1 - Entrar no Jogo"
         "\n2 - Entrar com ID "
         "\n3 - Atualizar Dicionario"
-        "\n4 - Sair")
+        "\n4 - Config"
+        "\n5 - Sair")
   option = str(input("> "))
 
   if option == '1':
@@ -176,4 +196,7 @@ if __name__ == "__main__":
     update_dict()
 
   if option == '4':
+    pass
+
+  if option == '5':
     exit()
