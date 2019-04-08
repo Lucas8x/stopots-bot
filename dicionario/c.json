@@ -1,592 +1,610 @@
 [
   {
-    "letter":"c",
     "answer":"Capataz",
     "category":"Profissão"
   },
   {
     "answer":"Calca",
-    "category":"Vestuário",
-    "letter":"c"
+    "category":"Vestuário"
   },
   {
-    "letter":"c",
     "answer":"Ciano",
     "category":"Cor"
   },
   {
-    "letter":"c",
     "answer":"Call of Duty",
     "category":"Game"
   },
   {
-    "letter":"c",
     "answer":"CNT News",
     "category":"JLR"
   },
   {
-    "letter":"c",
     "answer":"Curitiba",
     "category":"Cidade"
   },
   {
     "answer":"Converse",
-    "category":"Marca",
-    "letter":"c"
+    "category":"Marca"
   },
   {
-    "letter":"c",
     "answer":"Ciambella",
     "category":"Sobremesa"
   },
   {
-    "letter":"c",
     "answer":"Candle Box",
     "category":"Banda"
   },
   {
-    "letter":"c",
     "answer":"Champanhe",
     "category":"Líquido"
   },
   {
-    "letter":"c",
     "answer":"Come a Little Closer",
     "category":"Música"
   },
   {
-    "letter":"c",
     "answer":"Cerveja",
     "category":"Líquido"
   },
   {
-    "letter":"c",
     "answer":"Calcanhar",
     "category":"PCH"
   },
   {
-    "letter":"c",
     "answer":"Coveiro",
     "category":"Profissão"
   },
   {
-    "letter":"c",
     "answer":"Chinelo",
     "category":"Vestuário"
   },
   {
-    "letter":"c",
     "answer":"Caseiro",
     "category":"Profissão"
   },
   {
     "answer":"Coroa Imperial",
-    "category":"Flor",
-    "letter":"c"
+    "category":"Flor"
   },
   {
-    "letter":"c",
     "answer":"Colcci",
     "category":"Marca"
   },
   {
-    "letter":"c",
     "answer":"Chorume",
     "category":"Líquido"
   },
   {
     "answer":"Castanho",
-    "category":"Cor",
-    "letter":"c"
+    "category":"Cor"
   },
   {
-    "letter":"c",
     "answer":"Cha",
     "category":"Líquido"
   },
   {
-    "letter":"c",
     "answer":"Cage The Elephant",
     "category":"Banda"
   },
   {
-    "letter":"c",
     "answer":"Carteiro",
     "category":"Profissão"
   },
   {
-    "letter":"c",
     "answer":"Careless",
     "category":"Música"
   },
   {
     "answer":"Carpinteiro",
-    "category":"Profissão",
-    "letter":"c"
+    "category":"Profissão"
   },
   {
-    "letter":"c",
     "answer":"Cachaca",
     "category":"Líquido"
   },
   {
-    "letter":"c",
     "answer":"Careless Whisper",
     "category":"Música"
   },
   {
-    "letter":"c",
     "answer":"Camaro",
     "category":"Carro"
   },
   {
-    "letter":"c",
     "answer":"Chuteira",
     "category":"Vestuário"
   },
   {
-    "letter":"c",
     "answer":"Cacador",
     "category":"Profissão"
   },
   {
-    "letter":"c",
     "answer":"Corolla",
     "category":"Carro"
   },
   {
-    "letter":"c",
     "answer":"Cueca",
     "category":"Vestuário"
   },
   {
-    "letter":"c",
     "answer":"Camisa",
     "category":"Vestuário"
   },
   {
-    "letter":"c",
     "answer":"Conde",
     "category":"Fruta"
   },
   {
-    "letter":"c",
     "answer":"Cientista",
     "category":"Profissão"
   },
   {
-    "letter":"c",
     "answer":"Comandante",
     "category":"Profissão"
   },
   {
-    "letter":"c",
     "answer":"Cravo",
     "category":"Flor"
   },
   {
-    "letter":"c",
     "answer":"Carneiro",
     "category":"Animal"
   },
   {
-    "letter":"c",
     "answer":"Champagne Supernova",
     "category":"Música"
   },
   {
-    "letter":"c",
     "answer":"Carambola",
     "category":"FLV"
   },
   {
-    "letter":"c",
     "answer":"Catch Yer Own Train",
     "category":"Música"
   },
   {
-    "letter":"c",
     "answer":"Camila Cabello",
     "category":"Cantor"
   },
   {
-    "letter":"c",
     "answer":"Cama de Gato",
     "category":"Programa de TV"
   },
   {
-    "letter":"c",
     "answer":"Caldo de cana",
     "category":"Líquido"
   },
   {
-    "letter":"c",
     "answer":"Coracao",
     "category":"PCH"
   },
   {
-    "letter":"c",
     "answer":"Cerebro",
     "category":"PCH"
   },
   {
-    "letter":"c",
     "answer":"Caesars",
     "category":"Banda"
   },
   {
-    "letter":"c",
     "answer":"Cartola",
     "category":"Vestuário"
   },
   {
-    "letter":"c",
     "answer":"Coxa",
     "category":"PCH"
   },
   {
-    "letter":"c",
     "answer":"Canjica",
     "category":"Sobremesa"
   },
   {
     "answer":"Cirurgiao",
-    "category":"Profissão",
-    "letter":"c"
+    "category":"Profissão"
   },
   {
     "answer":"Cairo",
-    "category":"Capital",
-    "letter":"c"
+    "category":"Capital"
   },
   {
-    "letter":"c",
     "answer":"Crimeia",
     "category":"CEP"
   },
   {
-    "letter":"c",
     "answer":"Calvin Klein",
     "category":"Marca"
   },
   {
-    "letter":"c",
     "answer":"Canoagem",
     "category":"Esporte"
   },
   {
-    "letter":"c",
     "answer":"Cerebelo",
     "category":"PCH"
   },
   {
-    "letter":"c",
     "answer":"Clitoris",
     "category":"PCH"
   },
   {
-    "letter":"c",
     "answer":"Carmim",
     "category":"Marca"
   },
   {
-    "letter":"c",
     "answer":"Chromecast",
     "category":"Eletro Eletrônico"
   },
   {
     "answer":"Corujao",
-    "category":"Programa de TV",
-    "letter":"c"
+    "category":"Programa de TV"
   },
   {
-    "letter":"c",
     "answer":"Claudia Raia",
     "category":"Ator"
   },
   {
-    "letter":"c",
     "answer":"Costela",
     "category":"PCH"
   },
   {
     "answer":"Champs Elysees",
-    "category":"Música",
-    "letter":"c"
+    "category":"Música"
   },
   {
     "answer":"Clean Master",
-    "category":"App ou site",
-    "letter":"c"
+    "category":"App ou site"
   },
   {
-    "letter":"c",
     "answer":"Charlie Brown",
     "category":"PDA"
   },
   {
     "answer":"Calcinha",
-    "category":"Vestuário",
-    "letter":"c"
+    "category":"Vestuário"
   },
   {
-    "letter":"c",
     "answer":"Crocodilo",
     "category":"Animal"
   },
   {
     "answer":"Chefe Wiggum",
-    "category":"PDA",
-    "letter":"c"
+    "category":"PDA"
   },
   {
-    "letter":"c",
     "answer":"Copeiro",
     "category":"Profissão"
   },
   {
-    "letter":"c",
     "answer":"Camiseta",
     "category":"Vestuário"
   },
   {
-    "letter":"c",
     "answer":"Charlote",
     "category":"Sobremesa"
   },
   {
     "answer":"Chope",
-    "category":"Líquido",
-    "letter":"c"
+    "category":"Líquido"
   },
   {
-    "letter":"c",
     "answer":"Cheesecake",
     "category":"Sobremesa"
   },
   {
     "answer":"Carcereiro",
-    "category":"Profissão",
-    "letter":"c"
+    "category":"Profissão"
   },
   {
-    "letter":"c",
     "answer":"Crostata",
     "category":"Sobremesa"
   },
   {
-    "letter":"c",
     "answer":"Caipirinha",
     "category":"Líquido"
   },
   {
-    "letter":"c",
     "answer":"Capitao Caverna",
     "category":"PDA"
   },
   {
-    "letter":"c",
     "answer":"Cozinheiro",
     "category":"Profissão"
   },
   {
-    "letter":"c",
     "answer":"Carl Carlson",
     "category":"PDA"
   },
   {
-    "letter":"c",
     "answer":"Comediante",
     "category":"Profissão"
   },
   {
     "answer":"Cambojano",
-    "category":"Gentílico",
-    "letter":"c"
+    "category":"Gentílico"
   },
   {
     "answer":"Churro",
-    "category":"Sobremesa",
-    "letter":"c"
+    "category":"Sobremesa"
   },
   {
-    "letter":"c",
     "answer":"Cordas vocais",
     "category":"PCH"
   },
   {
-    "letter":"c",
     "answer":"Corrida maluca",
     "category":"Desenho animado"
   },
   {
-    "letter":"c",
     "answer":"Costas",
     "category":"PCH"
   },
   {
     "answer":"Carrie",
-    "category":"Música",
-    "letter":"c"
+    "category":"Música"
   },
   {
     "answer":"Cuiaba",
-    "category":"Cidade",
-    "letter":"c"
+    "category":"Cidade"
   },
   {
-    "letter":"c",
     "answer":"Cotovelo",
     "category":"PCH"
   },
   {
-    "letter":"c",
     "answer":"Cheap Thrills",
     "category":"Música"
   },
   {
-    "letter":"c",
     "answer":"Codinome Cassius",
     "category":"Filme"
   },
   {
-    "letter":"c",
     "answer":"Conhaque",
     "category":"Líquido"
   },
   {
-    "letter":"c",
     "answer":"Caldo",
     "category":"Líquido"
   },
   {
-    "letter":"c",
     "answer":"Chimarrao",
     "category":"Líquido"
   },
   {
-    "letter":"c",
     "answer":"Cant Have",
     "category":"Música"
   },
   {
-    "letter":"c",
     "answer":"Cavalera",
     "category":"Marca"
   },
   {
-    "letter":"c",
     "answer":"Chris Paul",
     "category":"Esportista"
   },
   {
-    "letter":"c",
     "answer":"Clarinete",
     "category":"Instrumento Musical"
   },
   {
     "answer":"Canjica",
-    "category":"Comida",
-    "letter":"c"
+    "category":"Comida"
   },
   {
-    "letter":"c",
     "answer":"Cocada",
     "category":"Sobremesa"
   },
   {
-    "letter":"c",
     "answer":"Camareira",
     "category":"Profissão"
   },
   {
-    "letter":"c",
     "answer":"Colete",
     "category":"Vestuário"
   },
   {
     "answer":"Cake",
-    "category":"Banda",
-    "letter":"c"
+    "category":"Banda"
   },
   {
-    "letter":"c",
     "answer":"Cassata siciliana",
     "category":"Sobremesa"
   },
   {
-    "letter":"c",
     "answer":"Carente",
     "category":"Adjetivo"
   },
   {
     "answer":"Camberra",
-    "category":"Cidade",
-    "letter":"c"
+    "category":"Cidade"
   },
   {
     "answer":"Carolina recheada",
-    "category":"Sobremesa",
-    "letter":"c"
+    "category":"Sobremesa"
   },
   {
-    "letter":"c",
     "answer":"Cafe",
     "category":"Líquido"
   },
   {
-    "letter":"c",
     "answer":"Cardiologista",
     "category":"Profissão"
   },
   {
-    "letter":"c",
     "answer":"Cabelo",
     "category":"PCH"
   },
   {
     "answer":"Cinquentinha",
-    "category":"Programa de TV",
-    "letter":"c"
+    "category":"Programa de TV"
   },
   {
-    "letter":"c",
     "answer":"Chacal",
     "category":"Animal"
   },
   {
     "answer":"Casaco",
-    "category":"Vestuário",
-    "letter":"c"
+    "category":"Vestuário"
   },
   {
-    "letter":"c",
     "answer":"Children Of The Sun",
     "category":"Música"
   },
   {
-    "letter":"c",
     "answer":"Cannoli",
     "category":"Sobremesa"
   },
   {
-    "letter":"c",
     "answer":"Caio Blat",
     "category":"Celebridade"
   },
   {
     "answer":"Cigarra",
-    "category":"Inseto",
-    "letter":"c"
+    "category":"Inseto"
   },
   {
-    "letter":"c",
     "answer":"Camisola",
     "category":"Vestuário"
   },
   {
-    "letter":"c",
     "answer":"Casaquistanes",
     "category":"Gentílico"
+  },
+  {
+    "answer":"Carla",
+    "category":"Nome Feminino"
+  },
+  {
+    "answer":"care",
+    "category":"Palavra em inglês"
+  },
+  {
+    "answer":"calabresa",
+    "category":"sabor de pizza"
+  },
+  {
+    "answer":"conjuntivite",
+    "category":"doença"
+  },
+  {
+    "answer":"csa",
+    "category":"time esportivo"
+  },
+  {
+    "answer":"coruripe",
+    "category":"time esportivo"
+  },
+  {
+    "answer":"caramelo",
+    "category":"doce"
+  },
+  {
+    "answer":"chocolate",
+    "category":"doce"
+  },
+  {
+    "answer":"chocolate",
+    "category":"sabor de sorvete"
+  },
+  {
+    "answer":"caramelo",
+    "category":"sabor de sorvete"
+  },
+  {
+    "answer":"carrinho",
+    "category":"brinquedo"
+  },
+  {
+    "answer":"coelho",
+    "category":"fantasia"
+  },
+  {
+    "answer":"comer",
+    "category":"verbo"
+  },
+  {
+    "answer":"correr",
+    "category":"verbo"
+  },
+  {
+    "answer":"chamar",
+    "category":"verbo"
+  },
+  {
+    "answer":"capitao america",
+    "category":"personagem fictício"
+  },
+  {
+    "answer":"canada",
+    "category":"país"
+  },
+  {
+    "answer":"chile",
+    "category":"país"
+  },
+  {
+    "answer":"china",
+    "category":"país"
+  },
+  {
+    "answer":"coreia",
+    "category":"país"
+  },
+  {
+    "answer":"cuba",
+    "category":"país"
+  },
+  {
+    "answer":"canario",
+    "category":"ave"
+  },
+  {
+    "answer":"cataflam",
+    "category":"remédio"
+  },
+  {
+    "answer":"calcio",
+    "category":"remédio"
+  },
+  {
+    "answer":"capivara",
+    "category":"mamífero"
+  },
+  {
+    "answer":"chocolate",
+    "category":"presente"
+  },
+  {
+    "answer":"chines",
+    "category":"idioma"
+  },
+  {
+    "answer":"carvalho",
+    "category":"sobrenome"
+  },
+  {
+    "answer":"costa",
+    "category":"sobrenome"
+  },
+  {
+    "answer":"cebola",
+    "category":"ingrediente"
+  },
+  {
+    "answer":"coracion",
+    "category":"palavra em espanhol"
+  },
+  {
+    "answer":"capitao america",
+    "category":"super-herói"
+  },
+  {
+    "answer":"castlevania",
+    "category":"série"
+  },
+  {
+    "answer":"chihuahua",
+    "category":"raça de cachorro"
   }
 ]

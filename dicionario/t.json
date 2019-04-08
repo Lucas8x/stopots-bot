@@ -1,372 +1,414 @@
 [
   {
-    "letter":"t",
     "answer":"Tireoide",
     "category":"PCH"
   },
   {
-    "letter":"t",
     "answer":"TV Globinho",
     "category":"Programa de TV"
   },
   {
-    "letter":"t",
     "answer":"Triatlo",
     "category":"Esporte"
   },
   {
-    "letter":"t",
     "answer":"Traqueia",
     "category":"PCH"
   },
   {
-    "letter":"t",
     "answer":"Toranja",
     "category":"FLV"
   },
   {
-    "letter":"t",
     "answer":"Tagarela",
     "category":"Adjetivo"
   },
   {
     "answer":"Thank You",
-    "category":"Música",
-    "letter":"t"
+    "category":"Música"
   },
   {
-    "letter":"t",
     "answer":"Terno",
     "category":"Vestuário"
   },
   {
     "answer":"Trufa",
-    "category":"Sobremesa",
-    "letter":"t"
+    "category":"Sobremesa"
   },
   {
     "answer":"Tears Of The Dragon",
-    "category":"Música",
-    "letter":"t"
+    "category":"Música"
   },
   {
     "answer":"Tim Burton",
-    "category":"Ator",
-    "letter":"t"
+    "category":"Ator"
   },
   {
-    "letter":"t",
     "answer":"Technos",
     "category":"Marca"
   },
   {
-    "letter":"t",
     "answer":"Tarte Tatin",
     "category":"Sobremesa"
   },
   {
     "answer":"Tiida Sedan",
-    "category":"Carro",
-    "letter":"t"
+    "category":"Carro"
   },
   {
-    "letter":"t",
     "answer":"Trailblazer",
     "category":"Carro"
   },
   {
-    "letter":"t",
     "answer":"Turquesa",
     "category":"Cor"
   },
   {
-    "letter":"t",
     "answer":"Topper",
     "category":"Marca"
   },
   {
-    "letter":"t",
     "answer":"Tapeceiro",
     "category":"Profissão"
   },
   {
-    "letter":"t",
     "answer":"Tramontina",
     "category":"Marca"
   },
   {
-    "letter":"t",
     "answer":"The Final Countdown",
     "category":"Música"
   },
   {
     "answer":"Todd Chavez",
-    "category":"PDA",
-    "letter":"t"
+    "category":"PDA"
   },
   {
     "answer":"Toranja",
-    "category":"Fruta",
-    "letter":"t"
+    "category":"Fruta"
   },
   {
     "answer":"Trompete",
-    "category":"Instrumento Musical",
-    "letter":"t"
+    "category":"Instrumento Musical"
   },
   {
-    "letter":"t",
     "answer":"Tom Cruise",
     "category":"Ator"
   },
   {
-    "letter":"t",
     "answer":"Tibial",
     "category":"PCH"
   },
   {
     "answer":"Tururu",
-    "category":"CEP",
-    "letter":"t"
+    "category":"CEP"
   },
   {
-    "letter":"t",
     "answer":"Toca Viola",
     "category":"Programa de TV"
   },
   {
-    "letter":"t",
     "answer":"Toureiro",
     "category":"Profissão"
   },
   {
-    "letter":"t",
     "answer":"Tais Araujo",
     "category":"Celebridade"
   },
   {
-    "letter":"t",
     "answer":"Tenacious D",
     "category":"Banda"
   },
   {
-    "letter":"t",
     "answer":"Toquelauano",
     "category":"Gentílico"
   },
   {
-    "letter":"t",
     "answer":"Tartufo",
     "category":"Sobremesa"
   },
   {
-    "letter":"t",
     "answer":"Taturana",
     "category":"Inseto"
   },
   {
-    "letter":"t",
     "answer":"Trapezio",
     "category":"PCH"
   },
   {
-    "letter":"t",
     "answer":"Texugo",
     "category":"Animal"
   },
   {
-    "letter":"t",
     "answer":"Tenis",
     "category":"Vestuário"
   },
   {
-    "letter":"t",
     "answer":"Tunis",
     "category":"Capital"
   },
   {
-    "letter":"t",
     "answer":"Tommy Hilfiger",
     "category":"Marca"
   },
   {
-    "letter":"t",
     "answer":"Thalia",
     "category":"Cantor"
   },
   {
-    "letter":"t",
     "answer":"Terra Sul",
     "category":"Programa de TV"
   },
   {
-    "letter":"t",
     "answer":"Tesoureiro",
     "category":"Profissão"
   },
   {
     "answer":"Touch Too Much",
-    "category":"Música",
-    "letter":"t"
+    "category":"Música"
   },
   {
     "answer":"Thiaguinho",
-    "category":"Cantor",
-    "letter":"t"
+    "category":"Cantor"
   },
   {
-    "letter":"t",
     "answer":"Torresmo",
     "category":"Comida"
   },
   {
     "answer":"Topografo",
-    "category":"Profissão",
-    "letter":"t"
+    "category":"Profissão"
   },
   {
     "answer":"Tanga",
-    "category":"Vestuário",
-    "letter":"t"
+    "category":"Vestuário"
   },
   {
-    "letter":"t",
     "answer":"Time",
     "category":"Música"
   },
   {
-    "letter":"t",
     "answer":"Tom Brady",
     "category":"Esportista"
   },
   {
-    "letter":"t",
     "answer":"Tunisia",
     "category":"CEP"
   },
   {
-    "letter":"t",
     "answer":"Tech Noir",
     "category":"Música"
   },
   {
     "answer":"The Guardian",
-    "category":"JLR",
-    "letter":"t"
+    "category":"JLR"
   },
   {
-    "letter":"t",
     "answer":"Tulipa",
     "category":"Flor"
   },
   {
     "answer":"Tatuador",
-    "category":"Profissão",
-    "letter":"t"
+    "category":"Profissão"
   },
   {
     "answer":"Tinder",
-    "category":"App ou site",
-    "letter":"t"
+    "category":"App ou site"
   },
   {
     "answer":"Tunis",
-    "category":"Cidade",
-    "letter":"t"
+    "category":"Cidade"
   },
   {
-    "letter":"t",
     "answer":"Toupeira",
     "category":"Animal"
   },
   {
     "answer":"Torta",
-    "category":"Sobremesa",
-    "letter":"t"
+    "category":"Sobremesa"
   },
   {
-    "letter":"t",
     "answer":"Timao e Pumba",
     "category":"Desenho animado"
   },
   {
     "answer":"Telefonista",
-    "category":"Profissão",
-    "letter":"t"
+    "category":"Profissão"
   },
   {
-    "letter":"t",
     "answer":"Thelure",
     "category":"Marca"
   },
   {
-    "letter":"t",
     "answer":"Tequila",
     "category":"Líquido"
   },
   {
-    "letter":"t",
     "answer":"Time Has Come",
     "category":"Música"
   },
   {
-    "letter":"t",
     "answer":"The Doors",
     "category":"Banda"
   },
   {
     "answer":"Todo Poderoso",
-    "category":"Filme",
-    "letter":"t"
+    "category":"Filme"
   },
   {
-    "letter":"t",
     "answer":"Tekpix",
     "category":"Eletro Eletrônico"
   },
   {
-    "letter":"t",
     "answer":"Team Fortress",
     "category":"Game"
   },
   {
-    "letter":"t",
     "answer":"Tom Ford",
     "category":"Marca"
   },
   {
-    "letter":"t",
     "answer":"Troublemaker",
     "category":"Música"
   },
   {
-    "letter":"t",
     "answer":"Timberland",
     "category":"Marca"
   },
   {
-    "letter":"t",
     "answer":"Tompoes",
     "category":"Sobremesa"
   },
   {
-    "letter":"t",
     "answer":"Tela Rural",
     "category":"Programa de TV"
   },
   {
-    "letter":"t",
     "answer":"Tamanco",
     "category":"Vestuário"
   },
   {
-    "letter":"t",
     "answer":"Tiramisu",
     "category":"Sobremesa"
   },
   {
     "answer":"Tintureiro",
-    "category":"Profissão",
-    "letter":"t"
+    "category":"Profissão"
+  },
+  {
+    "answer":"tuberculose",
+    "category":"doença"
+  },
+  {
+    "answer":"thanos",
+    "category":"vilão"
+  },
+  {
+    "answer":"tesoura",
+    "category":"objeto"
+  },
+  {
+    "answer":"talher",
+    "category":"objeto"
+  },
+  {
+    "answer":"the walking dead",
+    "category":"série"
+  },
+  {
+    "answer":"the 100",
+    "category":"série"
+  },
+  {
+    "answer":"tiene",
+    "category":"palavra em espanhol"
+  },
+  {
+    "answer":"tablet",
+    "category":"presente"
+  },
+  {
+    "answer":"turco",
+    "category":"idioma"
+  },
+  {
+    "answer":"tailandes",
+    "category":"idioma"
+  },
+  {
+    "answer":"tylenol",
+    "category":"remédio"
+  },
+  {
+    "answer":"tiago",
+    "category":"nome"
+  },
+  {
+    "answer":"tulio",
+    "category":"nome"
+  },
+  {
+    "answer":"tais",
+    "category":"nome feminino"
+  },
+  {
+    "answer":"tavares",
+    "category":"sobrenome"
+  },
+  {
+    "answer":"tomas",
+    "category":"sobrenome"
+  },
+  {
+    "answer":"toscana",
+    "category":"sabor de pizza"
+  },
+  {
+    "answer":"thor",
+    "category":"super-herói"
+  },
+  {
+    "answer":"thor",
+    "category":"personagem fictício"
+  },
+  {
+    "answer":"tirana",
+    "category":"msé"
+  },
+  {
+    "answer":"trem",
+    "category":"meio de transporte"
+  },
+  {
+    "answer":"tocantions",
+    "category":"time esportivo"
+  },
+  {
+    "answer":"tomate",
+    "category":"comida saudável"
+  },
+  {
+    "answer":"trigo",
+    "category":"comida saudável"
+  },
+  {
+    "answer":"tremzinho",
+    "category":"brinquedo"
+  },
+  {
+    "answer":"tatu",
+    "category":"fantasia"
+  },
+  {
+    "answer":"texugo",
+    "category":"fantasia"
+  },
+  {
+    "answer":"thanks",
+    "category":"palavra em inglês"
+  },
+  {
+    "answer":"trade",
+    "category":"palavra em inglês"
   }
 ]

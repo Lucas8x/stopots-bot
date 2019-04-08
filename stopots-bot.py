@@ -68,7 +68,7 @@ def find_letter():
 
 def auto_complete(letter):
   print("Auto Completing...")
-  with open('./dicionario/'+letter.lower()+'.json') as current_letter:
+  with open('./dicionario/'+letter.lower()+'.json', 'r', encoding='utf-8') as current_letter:
     data = json.load(current_letter)
   try:
     for x in range(1, 13):
@@ -122,7 +122,9 @@ def validate(type):
         driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
     driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
   elif type == 'check':
-    with open('./dicionario/' + letter.lower() + '.json') as current_letter:
+    pass
+    '''
+    with open('./dicionario/'+letter.lower()+'.json', 'r', encoding='utf-8') as current_letter:
       data = json.load(current_letter)
     try:
       for x in range(1, 15):
@@ -132,8 +134,10 @@ def validate(type):
             if not item['answer'].lower() == categoryAnswer.lower():
               driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
       driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
-    except: pass
+    except Exception as e: print(e)
+    #except pass
     current_letter.close()
+    '''
   else: pass
 
 def playTheGame():

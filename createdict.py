@@ -16,7 +16,6 @@ categorias = ["Adjetivo","Animal","App ou site","Ator","Banda","Cantor","Carro",
 def addtojson(answer,categoria):
   letter = answer[0]
   x = {
-    "letter":letter.lower(),
     "answer":answer.lower(),
     "category":categoria.lower()
   }
@@ -27,7 +26,7 @@ def addtojson(answer,categoria):
     j.seek(0)
     json.dump(data, j, indent=2, separators=(',', ':'), ensure_ascii=False)
     j.truncate()
-  print("Adiciona a letra:", letter)
+  print("Adicionado a letra:", letter)
 
 if __name__ == "__main__":
   option = str(input("> "))

@@ -1,292 +1,366 @@
 [
   {
     "answer":"Neto Baiano",
-    "category":"Esportista",
-    "letter":"n"
+    "category":"Esportista"
   },
   {
     "answer":"Nutricionista",
-    "category":"Profissão",
-    "letter":"n"
+    "category":"Profissão"
   },
   {
-    "letter":"n",
     "answer":"No Limite",
     "category":"Programa de TV"
   },
   {
-    "letter":"n",
     "answer":"New Spirit",
     "category":"Marca"
   },
   {
-    "letter":"n",
     "answer":"Nicaraguense",
     "category":"Gentílico"
   },
   {
-    "letter":"n",
     "answer":"Nha Benta",
     "category":"Sobremesa"
   },
   {
-    "letter":"n",
     "answer":"NieR Automata",
     "category":"Game"
   },
   {
-    "letter":"n",
     "answer":"No Mundo da Bola",
     "category":"Programa de TV"
   },
   {
-    "letter":"n",
     "answer":"No Good",
     "category":"Música"
   },
   {
-    "letter":"n",
     "answer":"Napolitano",
     "category":"Vestuário"
   },
   {
-    "letter":"n",
     "answer":"Nervoso",
     "category":"Adjetivo"
   },
   {
     "answer":"Notonectidae",
-    "category":"Inseto",
-    "letter":"n"
+    "category":"Inseto"
   },
   {
-    "letter":"n",
     "answer":"Nadegas",
     "category":"PCH"
   },
   {
-    "letter":"n",
     "answer":"Noite",
     "category":"JLR"
   },
   {
-    "letter":"n",
     "answer":"Neve",
     "category":"Cor"
   },
   {
-    "letter":"n",
     "answer":"Naja",
     "category":"Animal"
   },
   {
-    "letter":"n",
     "answer":"Nottingham Lace",
     "category":"Música"
   },
   {
-    "letter":"n",
     "answer":"Nuca",
     "category":"PCH"
   },
   {
     "answer":"Natalie Portman",
-    "category":"Ator",
-    "letter":"n"
+    "category":"Ator"
   },
   {
     "answer":"Natacao",
-    "category":"Esporte",
-    "letter":"n"
+    "category":"Esporte"
   },
   {
-    "letter":"n",
     "answer":"Nigeria",
     "category":"CEP"
   },
   {
     "answer":"Nike Run Club",
-    "category":"App ou site",
-    "letter":"n"
+    "category":"App ou site"
   },
   {
-    "letter":"n",
     "answer":"Nanny McPhee",
     "category":"Filme"
   },
   {
-    "letter":"n",
     "answer":"Nova Orleans",
     "category":"Cidade"
   },
   {
-    "letter":"n",
     "answer":"Nana",
     "category":"Cantor"
   },
   {
-    "letter":"n",
     "answer":"Nintendo",
     "category":"Eletro Eletrônico"
   },
   {
-    "letter":"n",
     "answer":"Nega maluca",
     "category":"Sobremesa"
   },
   {
-    "letter":"n",
     "answer":"Nagara",
     "category":"Instrumento Musical"
   },
   {
     "answer":"Novelista",
-    "category":"Profissão",
-    "letter":"n"
+    "category":"Profissão"
   },
   {
-    "letter":"n",
     "answer":"Ned Flanders",
     "category":"PDA"
   },
   {
-    "letter":"n",
     "answer":"Nariz",
     "category":"PCH"
   },
   {
-    "letter":"n",
     "answer":"Natura",
     "category":"Marca"
   },
   {
-    "letter":"n",
     "answer":"Nelson Muntz",
     "category":"PDA"
   },
   {
-    "letter":"n",
     "answer":"Nairobi",
     "category":"Capital"
   },
   {
-    "letter":"n",
     "answer":"Nick e Neck",
     "category":"Desenho animado"
   },
   {
     "answer":"Nightstalker",
-    "category":"Banda",
-    "letter":"n"
+    "category":"Banda"
   },
   {
-    "letter":"n",
     "answer":"Noni",
     "category":"FLV"
   },
   {
-    "letter":"n",
     "answer":"Nutshell",
     "category":"Música"
   },
   {
-    "letter":"n",
     "answer":"Nicolas Cage",
     "category":"Ator"
   },
   {
-    "letter":"n",
     "answer":"Nike",
     "category":"Marca"
   },
   {
-    "letter":"n",
     "answer":"New York",
     "category":"Música"
   },
   {
-    "letter":"n",
     "answer":"Nine Inch Nails",
     "category":"Banda"
   },
   {
-    "letter":"n",
     "answer":"Nectar",
     "category":"Líquido"
   },
   {
-    "letter":"n",
     "answer":"Nervos",
     "category":"PCH"
   },
   {
-    "letter":"n",
     "answer":"Nissan",
     "category":"Carro"
   },
   {
-    "letter":"n",
     "answer":"Nicole Kidman",
     "category":"Ator"
   },
   {
-    "letter":"n",
     "answer":"No Limit",
     "category":"Música"
   },
   {
-    "letter":"n",
     "answer":"Nicolas Cage",
     "category":"Celebridade"
   },
   {
-    "letter":"n",
     "answer":"Nepal",
     "category":"CEP"
   },
   {
     "answer":"Nenufar",
-    "category":"Flor",
-    "letter":"n"
+    "category":"Flor"
   },
   {
-    "letter":"n",
     "answer":"Nova Iorque",
     "category":"Cidade"
   },
   {
-    "letter":"n",
     "answer":"Nibbler",
     "category":"PDA"
   },
   {
     "answer":"No One",
-    "category":"Música",
-    "letter":"n"
+    "category":"Música"
   },
   {
-    "letter":"n",
     "answer":"Neoflam",
     "category":"Marca"
   },
   {
-    "letter":"n",
     "answer":"Nachos",
     "category":"Comida"
   },
   {
     "answer":"Nespera",
-    "category":"Fruta",
-    "letter":"n"
+    "category":"Fruta"
   },
   {
-    "letter":"n",
     "answer":"Nike",
     "category":"App ou site"
   },
   {
-    "letter":"n",
     "answer":"Nearly Lost You",
     "category":"Música"
+  },
+  {
+    "answer":"naruto",
+    "category":"personagem fictício"
+  },
+  {
+    "answer":"napolitano",
+    "category":"sabor de sorvete"
+  },
+  {
+    "answer":"navio",
+    "category":"meio de transporte"
+  },
+  {
+    "answer":"navio",
+    "category":"brinquedo"
+  },
+  {
+    "answer":"nave",
+    "category":"brinquedo"
+  },
+  {
+    "answer":"nathalia",
+    "category":"nome feminino"
+  },
+  {
+    "answer":"nepal",
+    "category":"país"
+  },
+  {
+    "answer":"nigeria",
+    "category":"país"
+  },
+  {
+    "answer":"novalgina",
+    "category":"remédio"
+  },
+  {
+    "answer":"navalha",
+    "category":"objeto"
+  },
+  {
+    "answer":"navio plastico",
+    "category":"brinquedo"
+  },
+  {
+    "answer":"nothing",
+    "category":"palavra em inglês"
+  },
+  {
+    "answer":"new",
+    "category":"palavra em inglês"
+  },
+  {
+    "answer":"need",
+    "category":"palavra em inglês"
+  },
+  {
+    "answer":"null",
+    "category":"palavra em inglês"
+  },
+  {
+    "answer":"nabo",
+    "category":"ingrediente"
+  },
+  {
+    "answer":"noz moscada",
+    "category":"ingrediente"
+  },
+  {
+    "answer":"naruto",
+    "category":"fantasia"
+  },
+  {
+    "answer":"noiva",
+    "category":"fantasia"
+  },
+  {
+    "answer":"nadar",
+    "category":"verbo"
+  },
+  {
+    "answer":"nathalia",
+    "category":"nome"
+  },
+  {
+    "answer":"nicole",
+    "category":"nome"
+  },
+  {
+    "answer":"nuevo",
+    "category":"palavra em espanhol"
+  },
+  {
+    "answer":"nova",
+    "category":"msé"
+  },
+  {
+    "answer":"noruegues",
+    "category":"idioma"
+  },
+  {
+    "answer":"nogueira",
+    "category":"sobrenome"
+  },
+  {
+    "answer":"neto",
+    "category":"sobrenome"
+  },
+  {
+    "answer":"nautico",
+    "category":"time esportivo"
+  },
+  {
+    "answer":"navalha",
+    "category":"presente"
+  },
+  {
+    "answer":"nanismo",
+    "category":"doença"
+  },
+  {
+    "answer":"norfolk terrier",
+    "category":"raça de cachorro"
+  },
+  {
+    "answer":"noturno xmen",
+    "category":"super-herói"
+  },
+  {
+    "answer":"nivaldo",
+    "category":"nome masculino"
   }
 ]

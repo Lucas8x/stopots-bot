@@ -1,232 +1,206 @@
 [
   {
-    "letter":"u",
     "answer":"Ud",
     "category":"Instrumento Musical"
   },
   {
-    "letter":"u",
     "answer":"Uberaba",
     "category":"CEP"
   },
   {
-    "letter":"u",
     "answer":"Ugni",
     "category":"Comida"
   },
   {
-    "letter":"u",
     "answer":"Undercover",
     "category":"Marca"
   },
   {
-    "letter":"u",
     "answer":"Usher",
     "category":"Cantor"
   },
   {
-    "letter":"u",
     "answer":"Uisque",
     "category":"Líquido"
   },
   {
-    "letter":"u",
     "answer":"Utero",
     "category":"PCH"
   },
   {
-    "letter":"u",
     "answer":"Unha postica",
     "category":"Vestuário"
   },
   {
-    "letter":"u",
     "answer":"Umtiti",
     "category":"Esportista"
   },
   {
-    "letter":"u",
     "answer":"Uncomfortably Numb",
     "category":"Música"
   },
   {
     "answer":"Urso",
-    "category":"Animal",
-    "letter":"u"
+    "category":"Animal"
   },
   {
-    "letter":"u",
     "answer":"Universe",
     "category":"Música"
   },
   {
-    "letter":"u",
     "answer":"Umari",
     "category":"FLV"
   },
   {
-    "letter":"u",
     "answer":"Universo Blaster",
     "category":"Desenho animado"
   },
   {
-    "letter":"u",
     "answer":"Unkle",
     "category":"Banda"
   },
   {
     "answer":"Ufologo",
-    "category":"Profissão",
-    "letter":"u"
+    "category":"Profissão"
   },
   {
-    "letter":"u",
     "answer":"Urban",
     "category":"Marca"
   },
   {
-    "letter":"u",
     "answer":"Umbrella",
     "category":"Música"
   },
   {
-    "letter":"u",
     "answer":"Umido",
     "category":"Adjetivo"
   },
   {
-    "letter":"u",
     "answer":"Ultrabook",
     "category":"Eletro Eletrônico"
   },
   {
-    "letter":"u",
     "answer":"Unravel",
     "category":"Marca"
   },
   {
-    "letter":"u",
     "answer":"Urze",
     "category":"Flor"
   },
   {
-    "letter":"u",
     "answer":"Universo Z",
     "category":"Programa de TV"
   },
   {
     "answer":"Under The Same Sun",
-    "category":"Música",
-    "letter":"u"
+    "category":"Música"
   },
   {
     "answer":"Uapiti",
-    "category":"Animal",
-    "letter":"u"
+    "category":"Animal"
   },
   {
-    "letter":"u",
     "answer":"Underwear",
     "category":"Vestuário"
   },
   {
-    "letter":"u",
     "answer":"Uberaba",
     "category":"Cidade"
   },
   {
-    "letter":"u",
     "answer":"Uretra",
     "category":"PCH"
   },
   {
-    "letter":"u",
     "answer":"Up Altas Aventuras",
     "category":"Filme"
   },
   {
-    "letter":"u",
     "answer":"Unturned",
     "category":"Game"
   },
   {
-    "letter":"u",
     "answer":"Umbro",
     "category":"Marca"
   },
   {
     "answer":"Uma Thurman",
-    "category":"Ator",
-    "letter":"u"
+    "category":"Ator"
   },
   {
-    "letter":"u",
     "answer":"Uva",
     "category":"Sobremesa"
   },
   {
-    "letter":"u",
     "answer":"Uzbequistanes",
     "category":"Gentílico"
   },
   {
-    "letter":"u",
     "answer":"Umberto Magnani",
     "category":"Ator"
   },
   {
-    "letter":"u",
     "answer":"Uva",
     "category":"Fruta"
   },
   {
-    "letter":"u",
     "answer":"Urologista",
     "category":"Profissão"
   },
   {
-    "letter":"u",
     "answer":"Ulan Bator",
     "category":"Capital"
   },
   {
-    "letter":"u",
     "answer":"Uber",
     "category":"App ou site"
   },
   {
-    "letter":"u",
     "answer":"Ultima Hora",
     "category":"JLR"
   },
   {
-    "letter":"u",
     "answer":"Under Armour",
     "category":"Marca"
   },
   {
-    "letter":"u",
     "answer":"Uaua",
     "category":"Inseto"
   },
   {
-    "letter":"u",
     "answer":"Umberto Magnani",
     "category":"Celebridade"
   },
   {
     "answer":"Uno",
-    "category":"Carro",
-    "letter":"u"
+    "category":"Carro"
   },
   {
-    "letter":"u",
     "answer":"Urina",
     "category":"Líquido"
   },
   {
-    "letter":"u",
     "answer":"Urucum",
     "category":"Cor"
+  },
+  {
+    "answer":"uber",
+    "category":"meio de transporte"
+  },
+  {
+    "answer":"ulcera",
+    "category":"doença"
+  },
+  {
+    "answer":"uriel",
+    "category":"nome masculino"
+  },
+  {
+    "answer":"urubu",
+    "category":"ave"
+  },
+  {
+    "answer":"usted",
+    "category":"palavra em espanhol"
   }
 ]
