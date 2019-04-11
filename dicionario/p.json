@@ -481,11 +481,11 @@
   },
   {
     "answer":"poison ivy",
-    "category":"super herói"
+    "category":"super-herói"
   },
   {
     "answer":"punisher",
-    "category":"super herói"
+    "category":"super-herói"
   },
   {
     "answer":"panda",
@@ -498,5 +498,13 @@
   {
     "answer":"pirulito",
     "category":"doce"
+  },
+  {
+    "answer":"pelicano",
+    "category":"ave"
+  },
+  {
+    "answer":"pinguim batman",
+    "category":"vilão"
   }
 ]

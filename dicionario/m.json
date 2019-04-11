@@ -489,10 +489,18 @@
   },
   {
     "answer":"mulher maravilha",
-    "category":"super herói"
+    "category":"super-herói"
   },
   {
     "answer":"macaco",
     "category":"mamífero"
+  },
+  {
+    "answer":"madagascar",
+    "category":"país"
+  },
+  {
+    "answer":"malasia",
+    "category":"país"
   }
 ]

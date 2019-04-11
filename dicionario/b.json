@@ -506,5 +506,21 @@
   {
     "answer":"beagle",
     "category":"raça de cachorro"
+  },
+  {
+    "answer":"batman",
+    "category":"super-herói"
+  },
+  {
+    "answer":"bombom",
+    "category":"doce"
+  },
+  {
+    "answer":"barbosa",
+    "category":"sobrenome"
+  },
+  {
+    "answer":"barros",
+    "category":"sobrenome"
   }
 ]

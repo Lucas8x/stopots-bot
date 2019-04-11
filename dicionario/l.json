@@ -313,7 +313,7 @@
   },
   {
     "answer":"lanterna verde",
-    "category":"super herói"
+    "category":"super-herói"
   },
   {
     "answer":"lapis de cor",
@@ -374,5 +374,53 @@
   {
     "answer":"loki",
     "category":"vilão"
+  },
+  {
+    "answer":"lima",
+    "category":"sobrenome"
+  },
+  {
+    "answer":"lupa",
+    "category":"objeto"
+  },
+  {
+    "answer":"leite",
+    "category":"ingrediente"
+  },
+  {
+    "answer":"laranja",
+    "category":"ingrediente"
+  },
+  {
+    "answer":"livro",
+    "category":"presente"
+  },
+  {
+    "answer":"luva",
+    "category":"presente"
+  },
+  {
+    "answer":"lupa",
+    "category":"presente"
+  },
+  {
+    "answer":"loira",
+    "category":"msé"
+  },
+  {
+    "answer":"louca",
+    "category":"msé"
+  },
+  {
+    "answer":"love",
+    "category":"palavra em inglês"
+  },
+  {
+    "answer":"look",
+    "category":"palavra em inglês"
+  },
+  {
+    "answer":"level",
+    "category":"palavra em inglês"
   }
 ]

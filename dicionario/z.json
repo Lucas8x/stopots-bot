@@ -221,7 +221,7 @@
   },
   {
     "answer":"zorro",
-    "category":"super herói"
+    "category":"super-herói"
   },
   {
     "answer":"zarabatana",
@@ -270,5 +270,9 @@
   {
     "answer":"zabaione",
     "category":"sabor de sorvete"
+  },
+  {
+    "answer":"zafiro",
+    "category":"palavra em espanhol"
   }
 ]

@@ -429,11 +429,11 @@
   },
   {
     "answer":"green lantern",
-    "category":"super herói"
+    "category":"super-herói"
   },
   {
     "answer":"guardioes da galaxia",
-    "category":"super herói"
+    "category":"super-herói"
   },
   {
     "answer":"greys anatomy",
@@ -446,5 +446,17 @@
   {
     "answer":"gasoline",
     "category":"palavra em inglês"
+  },
+  {
+    "answer":"gremio",
+    "category":"time esportivo"
+  },
+  {
+    "answer":"goias",
+    "category":"time esportivo"
+  },
+  {
+    "answer":"guarani",
+    "category":"time esportivo"
   }
 ]

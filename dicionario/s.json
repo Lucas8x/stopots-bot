@@ -397,7 +397,7 @@
   },
   {
     "answer":"superman",
-    "category":"super herói"
+    "category":"super-herói"
   },
   {
     "answer":"salada",
@@ -406,5 +406,13 @@
   {
     "answer":"sal",
     "category":"ingrediente"
+  },
+  {
+    "answer":"samuel",
+    "category":"nome masculino"
+  },
+  {
+    "answer":"sergio",
+    "category":"nome masculino"
   }
 ]
