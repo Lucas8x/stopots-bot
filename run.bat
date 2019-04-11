@@ -1,4 +1,3 @@
-mode con:cols=50 lines=20
 @echo off
 setlocal enabledelayedexpansion
 
@@ -7,6 +6,7 @@ if not exist python\python.exe (
 	PowerShell -ExecutionPolicy Unrestricted -File "downloadpython.ps1"
 )
 
+mode con:cols=50 lines=30
 python\python.exe stopots-bot.py
 
 pause
