@@ -280,7 +280,7 @@
     "category":"Banda"
   },
   {
-    "answer":"Ray-Ban",
+    "answer":"Ray Ban",
     "category":"Marca"
   },
   {
@@ -301,11 +301,11 @@
   },
   {
     "answer":"robin",
-    "category":"super-herói"
+    "category":"super herói"
   },
   {
     "answer":"rorschach",
-    "category":"super-herói"
+    "category":"super herói"
   },
   {
     "answer":"relogio",
@@ -362,5 +362,9 @@
   {
     "answer":"roqueira",
     "category":"msé"
+  },
+  {
+    "answer":"racion",
+    "category":"palavra em espanhol"
   }
 ]

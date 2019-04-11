@@ -152,7 +152,7 @@
     "category":"PCH"
   },
   {
-    "answer":"Do-Re-Mi Fabrica",
+    "answer":"Do Re Mi Fabrica",
     "category":"Programa de TV"
   },
   {
@@ -358,5 +358,13 @@
   {
     "answer":"doce",
     "category":"sabor de pizza"
+  },
+  {
+    "answer":"david",
+    "category":"nome"
+  },
+  {
+    "answer":"dado",
+    "category":"brinquedo"
   }
 ]

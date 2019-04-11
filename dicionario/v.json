@@ -289,7 +289,7 @@
   },
   {
     "answer":"venom",
-    "category":"super-herói"
+    "category":"super herói"
   },
   {
     "answer":"vite vite",
@@ -322,5 +322,21 @@
   {
     "answer":"vitor",
     "category":"nome masculino"
+  },
+  {
+    "answer":"value",
+    "category":"palavra em inglês"
+  },
+  {
+    "answer":"vitor",
+    "category":"nome"
+  },
+  {
+    "answer":"vitoria",
+    "category":"nome"
+  },
+  {
+    "answer":"vacacion",
+    "category":"palavra em espanhol"
   }
 ]

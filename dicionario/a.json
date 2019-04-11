@@ -349,7 +349,7 @@
   },
   {
     "answer":"aquaman",
-    "category":"super-herói"
+    "category":"super herói"
   },
   {
     "answer":"amarrar",
@@ -414,5 +414,9 @@
   {
     "answer":"aviao plastico",
     "category":"brinquedo"
+  },
+  {
+    "answer":"atletico",
+    "category":"time esportivo"
   }
 ]

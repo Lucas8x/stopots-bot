@@ -400,7 +400,7 @@
     "category":"objeto"
   },
   {
-    "answer":"gonoreia",
+    "answer":"gonorreia",
     "category":"doença"
   },
   {
@@ -429,10 +429,22 @@
   },
   {
     "answer":"green lantern",
-    "category":"super-herói"
+    "category":"super herói"
   },
   {
     "answer":"guardioes da galaxia",
-    "category":"super-herói"
+    "category":"super herói"
+  },
+  {
+    "answer":"greys anatomy",
+    "category":"série"
+  },
+  {
+    "answer":"garbage",
+    "category":"palavra em inglês"
+  },
+  {
+    "answer":"gasoline",
+    "category":"palavra em inglês"
   }
 ]

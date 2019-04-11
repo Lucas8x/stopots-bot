@@ -597,7 +597,7 @@
   },
   {
     "answer":"capitao america",
-    "category":"super-herói"
+    "category":"super herói"
   },
   {
     "answer":"castlevania",
@@ -610,5 +610,9 @@
   {
     "answer":"copo",
     "category":"objeto"
+  },
+  {
+    "answer":"cearense",
+    "category":"msé"
   }
 ]

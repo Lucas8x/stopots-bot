@@ -285,7 +285,7 @@
   },
   {
     "answer":"ironman",
-    "category":"super-herói"
+    "category":"super herói"
   },
   {
     "answer":"indio",
@@ -318,5 +318,9 @@
   {
     "answer":"ioio",
     "category":"brinquedo"
+  },
+  {
+    "answer":"irlanda",
+    "category":"time esportivo"
   }
 ]

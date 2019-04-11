@@ -481,11 +481,11 @@
   },
   {
     "answer":"poison ivy",
-    "category":"super-herói"
+    "category":"super herói"
   },
   {
     "answer":"punisher",
-    "category":"super-herói"
+    "category":"super herói"
   },
   {
     "answer":"panda",
@@ -494,5 +494,9 @@
   {
     "answer":"porco",
     "category":"mamífero"
+  },
+  {
+    "answer":"pirulito",
+    "category":"doce"
   }
 ]
