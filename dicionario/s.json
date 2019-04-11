@@ -402,5 +402,9 @@
   {
     "answer":"salada",
     "category":"comida saudável"
+  },
+  {
+    "answer":"sal",
+    "category":"ingrediente"
   }
 ]

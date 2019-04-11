@@ -606,5 +606,9 @@
   {
     "answer":"chihuahua",
     "category":"raça de cachorro"
+  },
+  {
+    "answer":"copo",
+    "category":"objeto"
   }
 ]
