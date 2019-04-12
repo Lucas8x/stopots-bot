@@ -22,7 +22,6 @@ firefox_capabilities = DesiredCapabilities.FIREFOX
 firefox_capabilities['marionette'] = True
 driver = webdriver.Firefox(options=options, executable_path='./geckodriver.exe', capabilities=firefox_capabilities)
 
-letras = list(string.ascii_lowercase)
 categorias = ["ADJETIVO","ANIMAL","APP OU SITE","ATOR","AVE","BANDA","BRINQUEDO",
               "CANTOR","CAPITAL","CARROCELEBRIDADE","CEP","CIDADE","COMIDA SAUDÁVEL",
               "COR","DESENHO ANIMADO","DOCE","DOENÇA","ELETRO ELETRÔNICO","ESPORTE",
@@ -41,7 +40,6 @@ def joinGame(username):
   # entrar button
   wait.until(EC.presence_of_element_located((By.XPATH, '//*[@class="login"]/form/button')))
   driver.find_element_by_xpath('//*[@class="login"]/form/button').click()
-
   wait.until(EC.invisibility_of_element_located((By.XPATH, '//*[@class="load"]')))
   # username field
   if username != ' ':
@@ -90,19 +88,28 @@ def matchInfo():
       nick = driver.find_element_by_xpath('//*[@id="users"]/li['+str(x)+']//*[@class="infos"]/*[@class="nick"]').text
       pts = driver.find_element_by_xpath('//*[@id="users"]/li['+str(x)+']//*[@class="infos"]/span').text
       if nick:
-        if nick == username: print(">",nick,"-",pts)
-        else: print(nick,"-",pts)
-    except: pass
+        if not nick == username: print(nick,"-", pts)
+        else: print(">",nick,"-",pts)
+    except: break
 
 def roundEndRank():
-  print("- Rank End Round -")
-  for x in range(1, 15):
-    try:
-      position = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li['+str(x)+']//*[@class="position"]/span').text
-      nick = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li['+str(x)+']//*[@class="nick"]').text
-      pts = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li['+str(x)+']//*[@class="points"]').text
-      if nick: print(position,"-",nick,"-",pts)
-    except: pass
+  if driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//h3').text == 'RANKING DA RODADA':
+    print("- Ranking da Rodada -")
+    for x in range(1, 15):
+      try:
+        position = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li['+str(x)+']//*[@class="position"]/span').text
+        nick = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li['+str(x)+']//*[@class="nick"]').text
+        pts = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li['+str(x)+']//*[@class="points"]').text
+        if nick: print(position+"º -",nick,"-",pts)
+      except: break
+  elif driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//h3').text == 'FIM DE JOGO!' or driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//h4').text == 'RANKING FINAL':
+    print("- Fim de Jogo -")
+    for x in range(1,3):
+      try:
+        nick = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//*[@class="positions"]/div['+str(x)+']/*[@class="nick"]').text
+        pts = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//*[@class="positions"]/div['+str(x)+']/*[@class="points"]').text
+        print(str(x)+"º -", nick,"-",pts)
+      except: break
   print("\n")
 
 def validate(type):
