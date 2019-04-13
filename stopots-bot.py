@@ -110,7 +110,7 @@ def roundEndRank():
         pts = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//*[@class="positions"]/div['+str(x)+']/*[@class="points"]').text
         print(str(x)+"º -", nick,"-",pts)
       except: break
-  print("\n")
+  print("")
 
 def validate(type):
   if driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]'):
@@ -126,10 +126,10 @@ def validate(type):
       print("Verificando Respostas...")
       with open('./dicionario/'+letter.lower()+'.json', 'r', encoding='utf-8') as current_letter:
         data = json.load(current_letter)
-      try:
-        categoria = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]/div/h3').text
-        strCategoria = re.sub('TEMA: ', '', categoria)
-        for x in range(1, 15):
+      categoria = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]/div/h3').text
+      strCategoria = re.sub('TEMA: ', '', categoria)
+      for x in range(1, 15):
+        try:
           if driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/span').text == 'VALIDADO!':
             categoryAnswer = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').text
             if any(item['category'].lower() == strCategoria.lower() and item['answer'].lower() == categoryAnswer.lower() for item in data):
@@ -137,7 +137,7 @@ def validate(type):
             else:
               driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
               continue
-      except: pass
+        except: continue
       driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
       current_letter.close()
 
@@ -161,7 +161,7 @@ def playTheGame():
       # AFK Detector:
       if driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button'):
         time.sleep(2)
-        driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button/strong').click()
+        driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button').click()
       elif driver.find_elements_by_xpath('//*[@class="popup-enter-done"]'):
         pass
     except: pass
