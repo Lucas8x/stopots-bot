@@ -414,5 +414,17 @@
   {
     "answer":"sergio",
     "category":"nome masculino"
+  },
+  {
+    "answer":"souza",
+    "category":"sobrenome"
+  },
+  {
+    "answer":"santos",
+    "category":"sobrenome"
+  },
+  {
+    "answer":"sorvete",
+    "category":"doce"
   }
 ]

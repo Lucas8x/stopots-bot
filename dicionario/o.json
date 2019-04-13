@@ -366,5 +366,13 @@
   {
     "answer":"omeprazol",
     "category":"remédio"
+  },
+  {
+    "answer":"ovo",
+    "category":"ingrediente"
+  },
+  {
+    "answer":"oregano",
+    "category":"ingrediente"
   }
 ]

@@ -614,5 +614,21 @@
   {
     "answer":"cearense",
     "category":"msé"
+  },
+  {
+    "answer":"carro",
+    "category":"meio de transporte"
+  },
+  {
+    "answer":"charrete",
+    "category":"meio de transporte"
+  },
+  {
+    "answer":"cenoura",
+    "category":"comida saudável"
+  },
+  {
+    "answer":"carlos",
+    "category":"nome masculino"
   }
 ]

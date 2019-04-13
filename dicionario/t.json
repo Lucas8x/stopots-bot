@@ -380,7 +380,7 @@
     "category":"meio de transporte"
   },
   {
-    "answer":"tocantions",
+    "answer":"tocantins",
     "category":"time esportivo"
   },
   {
@@ -414,5 +414,13 @@
   {
     "answer":"tucano",
     "category":"ave"
+  },
+  {
+    "answer":"terrier",
+    "category":"raça de cachorro"
+  },
+  {
+    "answer":"tirar",
+    "category":"verbo"
   }
 ]
