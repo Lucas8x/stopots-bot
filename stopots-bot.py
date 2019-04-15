@@ -4,6 +4,7 @@
 import os
 import time
 import string
+import random
 import re
 import json
 from selenium import webdriver
@@ -46,6 +47,7 @@ def joinGame(username):
     wait.until(EC.presence_of_element_located((By.XPATH, '//*[@class="perfil"]//input')))
     driver.find_element_by_xpath('//*[@class="perfil"]//input').clear()
     driver.find_element_by_xpath('//*[@class="perfil"]//input').send_keys(username)
+  else: username = driver.find_element_by_xpath('//*[@class="perfil"]//input').get_attribute('value')
   # jogar button
   wait.until(EC.presence_of_element_located((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]')))
   time.sleep(1)
@@ -70,8 +72,9 @@ def auto_complete(letter):
         if item['category'].lower() == itemType.lower():
           campo = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').get_attribute('value')
           if campo == '':
-            resposta = str(item['answer'])
-            driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').send_keys(resposta)
+            if len(item['answer']) > 0:
+              resposta = random.choice(item['answer'])
+              driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').send_keys(resposta)
           break
   except: pass
   current_letter.close()
@@ -132,11 +135,8 @@ def validate(type):
         try:
           if driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/span').text == 'VALIDADO!':
             categoryAnswer = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').text
-            if any(item['category'].lower() == strCategoria.lower() and item['answer'].lower() == categoryAnswer.lower() for item in data):
-              continue
-            else:
+            if not any(item['category'].lower() == strCategoria.lower() and categoryAnswer.lower() in item['answer'] for item in data):
               driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
-              continue
         except: continue
       driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
       current_letter.close()
@@ -177,26 +177,34 @@ def playTheGame():
 
 if __name__ == "__main__":
   print("Options:",
-        "\n1 - Entrar no Jogo"
-        "\n2 - Entrar com ID "
-        "\n3 - Configs"
-        "\n4 - Sair")
+        "\n1 - Entrada Rápida"
+        "\n2 - Entrar no Jogo"
+        "\n3 - Entrar com ID da Sala "
+        "\n4 - Configs"
+        "\n5 - Sair")
   option = str(input("> "))
 
   if option == '1':
+    driver.get("https://stopots.com.br/")
+    joinGame(username=' ')
+    playTheGame()
+
+  elif option == '2':
     username = input("Digite nome: ")
     driver.get("https://stopots.com.br/")
     joinGame(username)
     playTheGame()
 
-  if option == '2':
+  elif option == '3':
     id = str(input("ID:"))
     driver.get("https://stopots.com.br/"+id)
     time.sleep(5)
     playTheGame()
 
-  if option == '3':
+  elif option == '4':
     pass
 
-  if option == '4':
+  elif option == '5':
     exit()
+
+  else: print("Opção invalida")
