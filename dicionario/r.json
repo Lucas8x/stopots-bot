@@ -1,374 +1,254 @@
 [
   {
-    "answer":"Rouxinol",
-    "category":"Animal"
+    "category":"adjetivo",
+    "answer":["rebelde"]
   },
   {
-    "answer":"Radialista",
-    "category":"Profissão"
+    "category":"animal",
+    "answer":["rouxinol", "rinoceronte", "ratazana"]
   },
   {
-    "answer":"Romenia",
-    "category":"CEP"
+    "category":"app ou site",
+    "answer":["runtastic", "reddit"]
   },
   {
-    "answer":"Rainha",
-    "category":"Marca"
+    "category":"ator",
+    "answer":["robert de niro", "robert downey jr", "rachel mcadams"]
   },
   {
-    "answer":"Ronda Rousey",
-    "category":"Esportista"
+    "category":"ave",
+    "answer":[]
   },
   {
-    "answer":"Red Dead Redemption",
-    "category":"Game"
+    "category":"banda",
+    "answer":["rammstein", "radiohead"]
   },
   {
-    "answer":"Reporter",
-    "category":"Profissão"
+    "category":"brinquedo",
+    "answer":["robo"]
   },
   {
-    "answer":"Roraima",
-    "category":"CEP"
+    "category":"cantor",
+    "answer":["rihanna"]
   },
   {
-    "answer":"Rum",
-    "category":"Líquido"
+    "category":"capital",
+    "answer":["rabat"]
   },
   {
-    "answer":"Roma",
-    "category":"Fruta"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Runtastic",
-    "category":"App ou site"
+    "category":"cep",
+    "answer":["romenia", "roraima"]
   },
   {
-    "answer":"Rabat",
-    "category":"Capital"
+    "category":"cidade",
+    "answer":["recife"]
   },
   {
-    "answer":"Robert De Niro",
-    "category":"Ator"
+    "category":"comida saudável",
+    "answer":[]
   },
   {
-    "answer":"Rain",
-    "category":"Música"
+    "category":"cor",
+    "answer":["roxo", "roxo"]
   },
   {
-    "answer":"Rinoceronte",
-    "category":"Animal"
+    "category":"desenho animado",
+    "answer":["riquinho"]
   },
   {
-    "answer":"Rabanada",
-    "category":"Sobremesa"
+    "category":"doce",
+    "answer":["rabanada"]
   },
   {
-    "answer":"Riquinho",
-    "category":"Desenho animado"
+    "category":"doença",
+    "answer":["raquitismo", "rubeola"]
   },
   {
-    "answer":"Ranunculo",
-    "category":"Flor"
+    "category":"eletro eletrônico",
+    "answer":["retroprojetor"]
   },
   {
-    "answer":"Reebok",
-    "category":"Marca"
+    "category":"esporte",
+    "answer":["rugbi"]
   },
   {
-    "answer":"Ratazana",
-    "category":"Animal"
+    "category":"esportista",
+    "answer":["ronda rousey"]
   },
   {
-    "answer":"Rabanada",
-    "category":"Comida"
+    "category":"fantasia",
+    "answer":["robin"]
   },
   {
-    "answer":"Rooster",
-    "category":"Música"
+    "category":"filme",
+    "answer":["robin hood"]
   },
   {
-    "answer":"Rihanna",
-    "category":"Cantor"
+    "category":"flor",
+    "answer":["ranunculo"]
   },
   {
-    "answer":"Ruvolo",
-    "category":"Marca"
+    "category":"flv",
+    "answer":["rabanete"]
   },
   {
-    "answer":"Roadhouse Blues",
-    "category":"Música"
+    "category":"fruta",
+    "answer":["roma"]
   },
   {
-    "answer":"Rape Me",
-    "category":"Música"
+    "category":"game",
+    "answer":["red dead redemption"]
   },
   {
-    "answer":"Ranger",
-    "category":"Carro"
+    "category":"gentílico",
+    "answer":["ruandes"]
   },
   {
-    "answer":"Ruandes",
-    "category":"Gentílico"
+    "category":"idioma",
+    "answer":["russo"]
   },
   {
-    "answer":"Rugbi",
-    "category":"Esporte"
+    "category":"ingrediente",
+    "answer":[]
   },
   {
-    "answer":"Recepcionista",
-    "category":"Profissão"
+    "category":"inseto",
+    "answer":["ralo"]
   },
   {
-    "answer":"Reticulo",
-    "category":"PCH"
+    "category":"instrumento musical",
+    "answer":["reco reco"]
   },
   {
-    "answer":"Roupa de mergulho",
-    "category":"Vestuário"
+    "category":"jlr",
+    "answer":["reuters"]
   },
   {
-    "answer":"Refrao de Bolero",
-    "category":"Música"
+    "category":"líquido",
+    "answer":["rum"]
   },
   {
-    "answer":"Ready Or Not",
-    "category":"Música"
+    "category":"mamífero",
+    "answer":[]
   },
   {
-    "answer":"Raspadinha",
-    "category":"Sobremesa"
+    "category":"marca",
+    "answer":["rainha", "reebok", "ruvolo", "royalz", "reef", "rafarillo", "rusty", "ray ban"]
   },
   {
-    "answer":"Rammstein",
-    "category":"Banda"
+    "category":"meio de transporte",
+    "answer":["rolima", "rodoviario"]
   },
   {
-    "answer":"Reco reco",
-    "category":"Instrumento Musical"
+    "category":"msé",
+    "answer":["roqueira"]
   },
   {
-    "answer":"Roxo",
-    "category":"Cor"
+    "category":"música",
+    "answer":["rain", "rooster", "roadhouse blues", "rape me", "refrao de bolero", "ready or not", "rosanna", "ride"]
   },
   {
-    "answer":"Reuters",
-    "category":"JLR"
+    "category":"nome feminino",
+    "answer":["rafaela", "rafael"]
   },
   {
-    "answer":"Reporter Brasil",
-    "category":"Programa de TV"
+    "category":"nome masculino",
+    "answer":[]
   },
   {
-    "answer":"Rebelde",
-    "category":"Adjetivo"
+    "category":"objeto",
+    "answer":["ralador"]
   },
   {
-    "answer":"Rins",
-    "category":"PCH"
+    "category":"palavra em espanhol",
+    "answer":["racion"]
   },
   {
-    "answer":"Robin Hood",
-    "category":"Filme"
+    "category":"palavra em inglês",
+    "answer":["rich"]
   },
   {
-    "answer":"Reverendo Lovejoy",
-    "category":"PDA"
+    "category":"país",
+    "answer":[]
   },
   {
-    "answer":"Robert Downey Jr",
-    "category":"Ator"
+    "category":"pch",
+    "answer":["reticulo", "rins", "reto"]
   },
   {
-    "answer":"Ralo",
-    "category":"Inseto"
+    "category":"pda",
+    "answer":["reverendo lovejoy"]
   },
   {
-    "answer":"Resgate Animal",
-    "category":"Programa de TV"
+    "category":"personagem fictício",
+    "answer":["robin"]
   },
   {
-    "answer":"Rico Mansur",
-    "category":"Celebridade"
+    "category":"presente",
+    "answer":["relogio"]
   },
   {
-    "answer":"Rosanna",
-    "category":"Música"
+    "category":"profissão",
+    "answer":["radialista", "reporter", "recepcionista", "relojoeiro"]
   },
   {
-    "answer":"R8 GT",
-    "category":"Carro"
+    "category":"programa de tv",
+    "answer":["reporter brasil", "resgate animal", "reporter visual"]
   },
   {
-    "answer":"Ride",
-    "category":"Música"
+    "category":"raça de cachorro",
+    "answer":["rottweiler"]
   },
   {
-    "answer":"Retroprojetor",
-    "category":"Eletro Eletrônico"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"Royalz",
-    "category":"Marca"
+    "category":"sabor de pizza",
+    "answer":[]
   },
   {
-    "answer":"Reddit",
-    "category":"App ou site"
+    "category":"sabor de sorvete",
+    "answer":[]
   },
   {
-    "answer":"Rabanete",
-    "category":"FLV"
+    "category":"sobremesa",
+    "answer":["rabanada", "raspadinha", "rocambole", "rapadura", "rabanada"]
   },
   {
-    "answer":"Rocambole",
-    "category":"Sobremesa"
+    "category":"sobrenome",
+    "answer":["ribeiro"]
   },
   {
-    "answer":"Reporter Visual",
-    "category":"Programa de TV"
+    "category":"super-herói",
+    "answer":["robin", "rorschach"]
   },
   {
-    "answer":"Rachel McAdams",
-    "category":"Ator"
+    "category":"série",
+    "answer":["regular show"]
   },
   {
-    "answer":"Rapadura",
-    "category":"Sobremesa"
+    "category":"time esportivo",
+    "answer":["real madrid"]
   },
   {
-    "answer":"Relojoeiro",
-    "category":"Profissão"
+    "category":"verbo",
+    "answer":["raspar"]
   },
   {
-    "answer":"Roxo",
-    "category":"Cor"
+    "category":"vestuário",
+    "answer":["roupa de mergulho", "relogio", "regata"]
   },
   {
-    "answer":"Reef",
-    "category":"Marca"
+    "category":"vilão",
+    "answer":[]
   },
   {
-    "answer":"Reto",
-    "category":"PCH"
-  },
-  {
-    "answer":"Relogio",
-    "category":"Vestuário"
-  },
-  {
-    "answer":"Rafarillo",
-    "category":"Marca"
-  },
-  {
-    "answer":"Rusty",
-    "category":"Marca"
-  },
-  {
-    "answer":"Rabanada",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Regata",
-    "category":"Vestuário"
-  },
-  {
-    "answer":"Recife",
-    "category":"Cidade"
-  },
-  {
-    "answer":"Radiohead",
-    "category":"Banda"
-  },
-  {
-    "answer":"Ray Ban",
-    "category":"Marca"
-  },
-  {
-    "answer":"ralador",
-    "category":"objeto"
-  },
-  {
-    "answer":"raspar",
-    "category":"verbo"
-  },
-  {
-    "answer":"real madrid",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"regular show",
-    "category":"série"
-  },
-  {
-    "answer":"robin",
-    "category":"super-herói"
-  },
-  {
-    "answer":"rorschach",
-    "category":"super-herói"
-  },
-  {
-    "answer":"relogio",
-    "category":"presente"
-  },
-  {
-    "answer":"robin",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"rafaela",
-    "category":"nome"
-  },
-  {
-    "answer":"rafaela",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"rafael",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"robin",
-    "category":"fantasia"
-  },
-  {
-    "answer":"rich",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"rabanada",
-    "category":"doce"
-  },
-  {
-    "answer":"ribeiro",
-    "category":"sobrenome"
-  },
-  {
-    "answer":"rottweiler",
-    "category":"raça de cachorro"
-  },
-  {
-    "answer":"russo",
-    "category":"idioma"
-  },
-  {
-    "answer":"rolima",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"rodoviario",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"roqueira",
-    "category":"msé"
-  },
-  {
-    "answer":"racion",
-    "category":"palavra em espanhol"
-  },
-  {
-    "answer":"robo",
-    "category":"brinquedo"
+    "category":"flv",
+    "answer":["rabanete"]
   }
 ]

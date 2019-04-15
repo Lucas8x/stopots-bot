@@ -1,186 +1,254 @@
 [
   {
-    "answer":"Home Theater",
-    "category":"Eletro Eletrônico"
+    "category":"adjetivo",
+    "answer":["hostil"]
   },
   {
-    "answer":"Havana",
-    "category":"Capital"
+    "category":"animal",
+    "answer":["hiena", "hamster", "hipopotamo"]
   },
   {
-    "answer":"Halsey",
-    "category":"Cantor"
+    "category":"app ou site",
+    "answer":["headspace"]
   },
   {
-    "answer":"Hannah Montana",
-    "category":"Programa de TV"
+    "category":"ator",
+    "answer":["helena ranaldi"]
   },
   {
-    "answer":"Headspace",
-    "category":"App ou site"
+    "category":"ave",
+    "answer":[]
   },
   {
-    "answer":"Hondurenho",
-    "category":"Gentílico"
+    "category":"banda",
+    "answer":["hooverphonic", "hole"]
   },
   {
-    "answer":"Harmony",
-    "category":"Música"
+    "category":"brinquedo",
+    "answer":[]
   },
   {
-    "answer":"Harvest Moon",
-    "category":"Game"
+    "category":"cantor",
+    "answer":["halsey"]
   },
   {
-    "answer":"Horizonte",
-    "category":"Cidade"
+    "category":"capital",
+    "answer":["havana"]
   },
   {
-    "answer":"Hugo Boss",
-    "category":"Marca"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Havaianas",
-    "category":"Marca"
+    "category":"cep",
+    "answer":["holanda", "havai"]
   },
   {
-    "answer":"Home Theater",
-    "category":"Eletro Eletrônico"
+    "category":"cidade",
+    "answer":["horizonte"]
   },
   {
-    "answer":"Hayabusa",
-    "category":"Marca"
+    "category":"comida saudável",
+    "answer":[]
   },
   {
-    "answer":"Hotel Transilvania",
-    "category":"Filme"
+    "category":"cor",
+    "answer":["herbal"]
   },
   {
-    "answer":"Hilux",
-    "category":"Carro"
+    "category":"desenho animado",
+    "answer":["hamtaro"]
   },
   {
-    "answer":"Hooverphonic",
-    "category":"Banda"
+    "category":"doce",
+    "answer":[]
   },
   {
-    "answer":"Humiria",
-    "category":"FLV"
+    "category":"doença",
+    "answer":[]
   },
   {
-    "answer":"Hang Loose",
-    "category":"Marca"
+    "category":"eletro eletrônico",
+    "answer":["home theater", "home theater"]
   },
   {
-    "answer":"HB20",
-    "category":"Carro"
+    "category":"esporte",
+    "answer":["hipismo"]
   },
   {
-    "answer":"Hipismo",
-    "category":"Esporte"
+    "category":"esportista",
+    "answer":["harry kane"]
   },
   {
-    "answer":"Hipofise",
-    "category":"PCH"
+    "category":"fantasia",
+    "answer":[]
   },
   {
-    "answer":"Homewear",
-    "category":"Vestuário"
+    "category":"filme",
+    "answer":["hotel transilvania"]
   },
   {
-    "answer":"Helena Ranaldi",
-    "category":"Ator"
+    "category":"flor",
+    "answer":["hortencia"]
   },
   {
-    "answer":"Hamtaro",
-    "category":"Desenho animado"
+    "category":"flv",
+    "answer":["humiria"]
   },
   {
-    "answer":"Herbal",
-    "category":"Cor"
+    "category":"fruta",
+    "answer":["humiria"]
   },
   {
-    "answer":"Hiena",
-    "category":"Animal"
+    "category":"game",
+    "answer":["harvest moon"]
   },
   {
-    "answer":"Hortencia",
-    "category":"Flor"
+    "category":"gentílico",
+    "answer":["hondurenho"]
   },
   {
-    "answer":"Halfway to Heaven",
-    "category":"Música"
+    "category":"idioma",
+    "answer":[]
   },
   {
-    "answer":"Hipista",
-    "category":"Profissão"
+    "category":"ingrediente",
+    "answer":[]
   },
   {
-    "answer":"Hernia",
-    "category":"PCH"
+    "category":"inseto",
+    "answer":[]
   },
   {
-    "answer":"Hamster",
-    "category":"Animal"
+    "category":"instrumento musical",
+    "answer":[]
   },
   {
-    "answer":"Homer Simpson",
-    "category":"PDA"
+    "category":"jlr",
+    "answer":["hora um da noticia"]
   },
   {
-    "answer":"Hole",
-    "category":"Banda"
+    "category":"líquido",
+    "answer":[]
   },
   {
-    "answer":"Humanoid",
-    "category":"Marca"
+    "category":"mamífero",
+    "answer":[]
   },
   {
-    "answer":"Holanda",
-    "category":"CEP"
+    "category":"marca",
+    "answer":["hugo boss", "havaianas", "hayabusa", "hang loose", "humanoid", "hang loose", "homecore"]
   },
   {
-    "answer":"Hair Stylist",
-    "category":"Profissão"
+    "category":"meio de transporte",
+    "answer":[]
   },
   {
-    "answer":"Havai",
-    "category":"CEP"
+    "category":"msé",
+    "answer":[]
   },
   {
-    "answer":"Hostil",
-    "category":"Adjetivo"
+    "category":"música",
+    "answer":["harmony", "halfway to heaven", "harvest"]
   },
   {
-    "answer":"Harvest",
-    "category":"Música"
+    "category":"nome feminino",
+    "answer":[]
   },
   {
-    "answer":"Hang Loose",
-    "category":"Marca"
+    "category":"nome masculino",
+    "answer":[]
   },
   {
-    "answer":"Hipopotamo",
-    "category":"Animal"
+    "category":"objeto",
+    "answer":[]
   },
   {
-    "answer":"Homecore",
-    "category":"Marca"
+    "category":"palavra em espanhol",
+    "answer":[]
   },
   {
-    "answer":"Humiria",
-    "category":"Fruta"
+    "category":"palavra em inglês",
+    "answer":[]
   },
   {
-    "answer":"Harry Kane",
-    "category":"Esportista"
+    "category":"país",
+    "answer":[]
   },
   {
-    "answer":"Henri Castelli",
-    "category":"Celebridade"
+    "category":"pch",
+    "answer":["hipofise", "hernia"]
   },
   {
-    "answer":"Hora Um da Noticia",
-    "category":"JLR"
+    "category":"pda",
+    "answer":["homer simpson"]
+  },
+  {
+    "category":"personagem fictício",
+    "answer":[]
+  },
+  {
+    "category":"presente",
+    "answer":[]
+  },
+  {
+    "category":"profissão",
+    "answer":["hipista", "hair stylist"]
+  },
+  {
+    "category":"programa de tv",
+    "answer":["hannah montana"]
+  },
+  {
+    "category":"raça de cachorro",
+    "answer":[]
+  },
+  {
+    "category":"remédio",
+    "answer":[]
+  },
+  {
+    "category":"sabor de pizza",
+    "answer":[]
+  },
+  {
+    "category":"sabor de sorvete",
+    "answer":[]
+  },
+  {
+    "category":"sobremesa",
+    "answer":[]
+  },
+  {
+    "category":"sobrenome",
+    "answer":[]
+  },
+  {
+    "category":"super-herói",
+    "answer":[]
+  },
+  {
+    "category":"série",
+    "answer":[]
+  },
+  {
+    "category":"time esportivo",
+    "answer":[]
+  },
+  {
+    "category":"verbo",
+    "answer":[]
+  },
+  {
+    "category":"vestuário",
+    "answer":["homewear"]
+  },
+  {
+    "category":"vilão",
+    "answer":[]
+  },
+  {
+    "category":"flv",
+    "answer":["humiria"]
   }
 ]

@@ -1,330 +1,254 @@
 [
   {
-    "answer":"Indigo",
-    "category":"Cor"
+    "category":"adjetivo",
+    "answer":["inutil"]
   },
   {
-    "answer":"Iogurte",
-    "category":"Comida"
+    "category":"animal",
+    "answer":["iguana", "iaque"]
   },
   {
-    "answer":"Istoe",
-    "category":"JLR"
+    "category":"app ou site",
+    "answer":["ingresse", "itranslate"]
   },
   {
-    "answer":"Inutil",
-    "category":"Adjetivo"
+    "category":"ator",
+    "answer":["ingrid guimaraes"]
   },
   {
-    "answer":"Irn Bru",
-    "category":"Líquido"
+    "category":"ave",
+    "answer":["inhapim"]
   },
   {
-    "answer":"I Mother Earth",
-    "category":"Banda"
+    "category":"banda",
+    "answer":["i mother earth", "iron maiden"]
   },
   {
-    "answer":"Intestino grosso",
-    "category":"PCH"
+    "category":"brinquedo",
+    "answer":["ioio"]
   },
   {
-    "answer":"Iron Maiden",
-    "category":"Banda"
+    "category":"cantor",
+    "answer":["indila"]
   },
   {
-    "answer":"Ivete Sangalo",
-    "category":"Celebridade"
+    "category":"capital",
+    "answer":["islamabad"]
   },
   {
-    "answer":"Impractical Jokers",
-    "category":"Programa de TV"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Ingrid Guimaraes",
-    "category":"Ator"
+    "category":"cep",
+    "answer":["irlanda"]
   },
   {
-    "answer":"Inspetor",
-    "category":"Profissão"
+    "category":"cidade",
+    "answer":["itapecerica da serra", "indianapolis"]
   },
   {
-    "answer":"iPod",
-    "category":"Eletro Eletrônico"
+    "category":"comida saudável",
+    "answer":[]
   },
   {
-    "answer":"Islands of Nyne",
-    "category":"Game"
+    "category":"cor",
+    "answer":["indigo"]
   },
   {
-    "answer":"Ilustrador",
-    "category":"Profissão"
+    "category":"desenho animado",
+    "answer":["invasor zim"]
   },
   {
-    "answer":"Indonesio",
-    "category":"Gentílico"
+    "category":"doce",
+    "answer":[]
   },
   {
-    "answer":"If I Could Fly",
-    "category":"Música"
+    "category":"doença",
+    "answer":["insonia", "infertilidade"]
   },
   {
-    "answer":"Itapecerica da Serra",
-    "category":"Cidade"
+    "category":"eletro eletrônico",
+    "answer":["ipod"]
   },
   {
-    "answer":"Instrutor",
-    "category":"Profissão"
+    "category":"esporte",
+    "answer":["iatismo"]
   },
   {
-    "answer":"Independent",
-    "category":"Marca"
+    "category":"esportista",
+    "answer":["ivan rakitic"]
   },
   {
-    "answer":"Iguana",
-    "category":"Animal"
+    "category":"fantasia",
+    "answer":["indio"]
   },
   {
-    "answer":"Ipanema",
-    "category":"Marca"
+    "category":"filme",
+    "answer":["inspetor bugiganga"]
   },
   {
-    "answer":"Iaque",
-    "category":"Animal"
+    "category":"flor",
+    "answer":["iris"]
   },
   {
-    "answer":"Ingresse",
-    "category":"App ou site"
+    "category":"flv",
+    "answer":["ibapo"]
   },
   {
-    "answer":"Idiofone",
-    "category":"Instrumento Musical"
+    "category":"fruta",
+    "answer":["inga"]
   },
   {
-    "answer":"Inspetor Bugiganga",
-    "category":"Filme"
+    "category":"game",
+    "answer":["islands of nyne"]
   },
   {
-    "answer":"Intestino delgado",
-    "category":"PCH"
+    "category":"gentílico",
+    "answer":["indonesio"]
   },
   {
-    "answer":"Irlanda",
-    "category":"CEP"
+    "category":"idioma",
+    "answer":["ingles"]
   },
   {
-    "answer":"Invasor Zim",
-    "category":"Desenho animado"
+    "category":"ingrediente",
+    "answer":["inhame"]
   },
   {
-    "answer":"Impressoes do Brasil",
-    "category":"Programa de TV"
+    "category":"inseto",
+    "answer":["ica"]
   },
   {
-    "answer":"Invicta",
-    "category":"Marca"
+    "category":"instrumento musical",
+    "answer":["idiofone"]
   },
   {
-    "answer":"Iris",
-    "category":"PCH"
+    "category":"jlr",
+    "answer":["istoe"]
   },
   {
-    "answer":"iTranslate",
-    "category":"App ou site"
+    "category":"líquido",
+    "answer":["irn bru", "infusao"]
   },
   {
-    "answer":"Iris",
-    "category":"Flor"
+    "category":"mamífero",
+    "answer":["indri indri"]
   },
   {
-    "answer":"Ibapo",
-    "category":"FLV"
+    "category":"marca",
+    "answer":["independent", "ipanema", "invicta", "itatiaia", "irresistor", "illesteva"]
   },
   {
-    "answer":"Islamabad",
-    "category":"Capital"
+    "category":"meio de transporte",
+    "answer":[]
   },
   {
-    "answer":"Itatiaia",
-    "category":"Marca"
+    "category":"msé",
+    "answer":["irritante"]
   },
   {
-    "answer":"Iatismo",
-    "category":"Esporte"
+    "category":"música",
+    "answer":["if i could fly", "i want you back", "if you have ghosts", "i wanna be adored", "i got the blues", "i kissed a girl", "i miss you", "i wanna love you"]
   },
   {
-    "answer":"Ivan Rakitic",
-    "category":"Esportista"
+    "category":"nome feminino",
+    "answer":["ingrid", "isadora", "iris"]
   },
   {
-    "answer":"I Want You Back",
-    "category":"Música"
+    "category":"nome masculino",
+    "answer":[]
   },
   {
-    "answer":"If You Have Ghosts",
-    "category":"Música"
+    "category":"objeto",
+    "answer":["isqueiro", "inalador", "ima"]
   },
   {
-    "answer":"I Wanna Be Adored",
-    "category":"Música"
+    "category":"palavra em espanhol",
+    "answer":[]
   },
   {
-    "answer":"Instrumentista",
-    "category":"Profissão"
+    "category":"palavra em inglês",
+    "answer":["improve", "investigation"]
   },
   {
-    "answer":"Iogurte",
-    "category":"Sobremesa"
+    "category":"país",
+    "answer":["italia", "irlanda"]
   },
   {
-    "answer":"Intercine",
-    "category":"Programa de TV"
+    "category":"pch",
+    "answer":["intestino grosso", "intestino delgado", "iris", "intestino"]
   },
   {
-    "answer":"Infusao",
-    "category":"Líquido"
+    "category":"pda",
+    "answer":["iris allen"]
   },
   {
-    "answer":"Indila",
-    "category":"Cantor"
+    "category":"personagem fictício",
+    "answer":["iron man"]
   },
   {
-    "answer":"Iris Allen",
-    "category":"PDA"
+    "category":"presente",
+    "answer":[]
   },
   {
-    "answer":"I Got The Blues",
-    "category":"Música"
+    "category":"profissão",
+    "answer":["inspetor", "ilustrador", "instrutor", "instrumentista"]
   },
   {
-    "answer":"ica",
-    "category":"Inseto"
+    "category":"programa de tv",
+    "answer":["impractical jokers", "impressoes do brasil", "intercine"]
   },
   {
-    "answer":"I Kissed A Girl",
-    "category":"Música"
+    "category":"raça de cachorro",
+    "answer":[]
   },
   {
-    "answer":"Irresistor",
-    "category":"Marca"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"Illesteva",
-    "category":"Marca"
+    "category":"sabor de pizza",
+    "answer":[]
   },
   {
-    "answer":"I Miss You",
-    "category":"Música"
+    "category":"sabor de sorvete",
+    "answer":[]
   },
   {
-    "answer":"Idea",
-    "category":"Carro"
+    "category":"sobremesa",
+    "answer":["iogurte"]
   },
   {
-    "answer":"Inga",
-    "category":"Fruta"
+    "category":"sobrenome",
+    "answer":[]
   },
   {
-    "answer":"I Wanna Love You",
-    "category":"Música"
+    "category":"super-herói",
+    "answer":["ironman"]
   },
   {
-    "answer":"Intestino",
-    "category":"PCH"
+    "category":"série",
+    "answer":[]
   },
   {
-    "answer":"Indianapolis",
-    "category":"Cidade"
+    "category":"time esportivo",
+    "answer":["irlanda"]
   },
   {
-    "answer":"italia",
-    "category":"país"
+    "category":"verbo",
+    "answer":["ingerir", "imitar"]
   },
   {
-    "answer":"irlanda",
-    "category":"país"
+    "category":"vestuário",
+    "answer":[]
   },
   {
-    "answer":"igor",
-    "category":"nome"
+    "category":"vilão",
+    "answer":[]
   },
   {
-    "answer":"irineu",
-    "category":"nome"
-  },
-  {
-    "answer":"irritante",
-    "category":"msé"
-  },
-  {
-    "answer":"inhapim",
-    "category":"ave"
-  },
-  {
-    "answer":"ingles",
-    "category":"idioma"
-  },
-  {
-    "answer":"ingerir",
-    "category":"verbo"
-  },
-  {
-    "answer":"imitar",
-    "category":"verbo"
-  },
-  {
-    "answer":"isqueiro",
-    "category":"objeto"
-  },
-  {
-    "answer":"inalador",
-    "category":"objeto"
-  },
-  {
-    "answer":"ima",
-    "category":"objeto"
-  },
-  {
-    "answer":"ironman",
-    "category":"super-herói"
-  },
-  {
-    "answer":"indio",
-    "category":"fantasia"
-  },
-  {
-    "answer":"improve",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"investigation",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"insonia",
-    "category":"doença"
-  },
-  {
-    "answer":"infertilidade",
-    "category":"doença"
-  },
-  {
-    "answer":"iron man",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"indri indri",
-    "category":"mamífero"
-  },
-  {
-    "answer":"ioio",
-    "category":"brinquedo"
-  },
-  {
-    "answer":"irlanda",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"inhame",
-    "category":"ingrediente"
+    "category":"flv",
+    "answer":["ibapo"]
   }
 ]

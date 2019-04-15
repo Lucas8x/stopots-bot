@@ -1,354 +1,254 @@
 [
   {
-    "answer":"Jennifer Lopez",
-    "category":"Celebridade"
+    "category":"adjetivo",
+    "answer":["jovial"]
   },
   {
-    "answer":"Jornal Hoje",
-    "category":"JLR"
+    "category":"animal",
+    "answer":["jaguar", "jiboia", "jararaca"]
   },
   {
-    "answer":"Jessie",
-    "category":"Cantor"
+    "category":"app ou site",
+    "answer":["j touch", "jetpack joyride"]
   },
   {
-    "answer":"Journey",
-    "category":"Carro"
+    "category":"ator",
+    "answer":["jessica alba"]
   },
   {
-    "answer":"Jacarta",
-    "category":"Cidade"
+    "category":"ave",
+    "answer":[]
   },
   {
-    "answer":"Juanito Jones",
-    "category":"Desenho animado"
+    "category":"banda",
+    "answer":["jet", "joy division"]
   },
   {
-    "answer":"Jamaica",
-    "category":"CEP"
+    "category":"brinquedo",
+    "answer":["jogo da vida"]
   },
   {
-    "answer":"Jaguar",
-    "category":"Animal"
+    "category":"cantor",
+    "answer":["jessie"]
   },
   {
-    "answer":"Just",
-    "category":"Música"
+    "category":"capital",
+    "answer":["jacarta"]
   },
   {
-    "answer":"Je Veux",
-    "category":"Música"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Jeans",
-    "category":"Vestuário"
+    "category":"cep",
+    "answer":["jamaica", "jacarta"]
   },
   {
-    "answer":"Jugular",
-    "category":"PCH"
+    "category":"cidade",
+    "answer":["jacarta"]
   },
   {
-    "answer":"Jacarta",
-    "category":"CEP"
+    "category":"comida saudável",
+    "answer":[]
   },
   {
-    "answer":"Jerome Boateng",
-    "category":"Esportista"
+    "category":"cor",
+    "answer":["jade", "jambo"]
   },
   {
-    "answer":"Jabuticaba",
-    "category":"Comida"
+    "category":"desenho animado",
+    "answer":["juanito jones"]
   },
   {
-    "answer":"Jet",
-    "category":"Banda"
+    "category":"doce",
+    "answer":["jujuba"]
   },
   {
-    "answer":"Jasmin",
-    "category":"Flor"
+    "category":"doença",
+    "answer":["joanete"]
   },
   {
-    "answer":"Julius",
-    "category":"Marca"
+    "category":"eletro eletrônico",
+    "answer":["jbl pulse"]
   },
   {
-    "answer":"J Touch",
-    "category":"App ou site"
+    "category":"esporte",
+    "answer":["jiu jitsu"]
   },
   {
-    "answer":"Jaleco",
-    "category":"Vestuário"
+    "category":"esportista",
+    "answer":["jerome boateng"]
   },
   {
-    "answer":"Jornaleiro",
-    "category":"Profissão"
+    "category":"fantasia",
+    "answer":["jaspion"]
   },
   {
-    "answer":"Jordano",
-    "category":"Gentílico"
+    "category":"filme",
+    "answer":["jumanji"]
   },
   {
-    "answer":"Jardineiro",
-    "category":"Profissão"
+    "category":"flor",
+    "answer":["jasmin"]
   },
   {
-    "answer":"Jessica Alba",
-    "category":"Ator"
+    "category":"flv",
+    "answer":["jatoba"]
   },
   {
-    "answer":"Jumanji",
-    "category":"Filme"
+    "category":"fruta",
+    "answer":["jatoba"]
   },
   {
-    "answer":"Jetpack Joyride",
-    "category":"App ou site"
+    "category":"game",
+    "answer":["jurassic world"]
   },
   {
-    "answer":"Jornal da Globo",
-    "category":"Programa de TV"
+    "category":"gentílico",
+    "answer":["jordano"]
   },
   {
-    "answer":"Jaqueta",
-    "category":"Vestuário"
+    "category":"idioma",
+    "answer":["japones"]
   },
   {
-    "answer":"Jade",
-    "category":"Cor"
+    "category":"ingrediente",
+    "answer":["jilo"]
   },
   {
-    "answer":"Joy Division",
-    "category":"Banda"
+    "category":"inseto",
+    "answer":["jitiranaboia"]
   },
   {
-    "answer":"Joelho",
-    "category":"PCH"
+    "category":"instrumento musical",
+    "answer":["jingle stick"]
   },
   {
-    "answer":"Jandaia",
-    "category":"Marca"
+    "category":"jlr",
+    "answer":["jornal hoje"]
   },
   {
-    "answer":"Jeremy",
-    "category":"Música"
+    "category":"líquido",
+    "answer":["jarma"]
   },
   {
-    "answer":"JBL Pulse",
-    "category":"Eletro Eletrônico"
+    "category":"mamífero",
+    "answer":[]
   },
   {
-    "answer":"Jogo Duro",
-    "category":"Programa de TV"
+    "category":"marca",
+    "answer":["julius", "jandaia", "joma", "jacquemus", "jansport"]
   },
   {
-    "answer":"Jingle Stick",
-    "category":"Instrumento Musical"
+    "category":"meio de transporte",
+    "answer":["jato", "juangada"]
   },
   {
-    "answer":"Jane",
-    "category":"Música"
+    "category":"msé",
+    "answer":["joia"]
   },
   {
-    "answer":"Jornalista",
-    "category":"Profissão"
+    "category":"música",
+    "answer":["just", "je veux", "jeremy", "jane", "jerk it out"]
   },
   {
-    "answer":"Jiboia",
-    "category":"Animal"
+    "category":"nome feminino",
+    "answer":["jaqueline", "janaina", "joana"]
   },
   {
-    "answer":"Jockey",
-    "category":"Profissão"
+    "category":"nome masculino",
+    "answer":["joao"]
   },
   {
-    "answer":"Jornal Hoje",
-    "category":"Programa de TV"
+    "category":"objeto",
+    "answer":["jarra", "joias", "jaqueta"]
   },
   {
-    "answer":"Joma",
-    "category":"Marca"
+    "category":"palavra em espanhol",
+    "answer":[]
   },
   {
-    "answer":"Jarma",
-    "category":"Líquido"
+    "category":"palavra em inglês",
+    "answer":["jump"]
   },
   {
-    "answer":"Jambo",
-    "category":"Sobremesa"
+    "category":"país",
+    "answer":["japao"]
   },
   {
-    "answer":"Jovial",
-    "category":"Adjetivo"
+    "category":"pch",
+    "answer":["jugular", "joelho"]
   },
   {
-    "answer":"Jabuticaba",
-    "category":"Sobremesa"
+    "category":"pda",
+    "answer":["jane jetson"]
   },
   {
-    "answer":"Jiu Jitsu",
-    "category":"Esporte"
+    "category":"personagem fictício",
+    "answer":[]
   },
   {
-    "answer":"Jacquemus",
-    "category":"Marca"
+    "category":"presente",
+    "answer":["joias"]
   },
   {
-    "answer":"Jane Jetson",
-    "category":"PDA"
+    "category":"profissão",
+    "answer":["jornaleiro", "jardineiro", "jornalista", "jockey"]
   },
   {
-    "answer":"Jerk It Out",
-    "category":"Música"
+    "category":"programa de tv",
+    "answer":["jornal da globo", "jogo duro", "jornal hoje"]
   },
   {
-    "answer":"Jurassic World",
-    "category":"Game"
+    "category":"raça de cachorro",
+    "answer":["jack russel terrier"]
   },
   {
-    "answer":"Jacarta",
-    "category":"Capital"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"Jeep Renegade",
-    "category":"Carro"
+    "category":"sabor de pizza",
+    "answer":[]
   },
   {
-    "answer":"Jitiranaboia",
-    "category":"Inseto"
+    "category":"sabor de sorvete",
+    "answer":["jaca", "jabuticaba"]
   },
   {
-    "answer":"Jansport",
-    "category":"Marca"
+    "category":"sobremesa",
+    "answer":["jambo", "jabuticaba"]
   },
   {
-    "answer":"Jararaca",
-    "category":"Animal"
+    "category":"sobrenome",
+    "answer":[]
   },
   {
-    "answer":"Jatoba",
-    "category":"FLV"
+    "category":"super-herói",
+    "answer":["jaspion"]
   },
   {
-    "answer":"Jambo",
-    "category":"Cor"
+    "category":"série",
+    "answer":["jessica jones"]
   },
   {
-    "answer":"Jatoba",
-    "category":"Fruta"
+    "category":"time esportivo",
+    "answer":["juventus"]
   },
   {
-    "answer":"jogar",
-    "category":"verbo"
+    "category":"verbo",
+    "answer":["jogar"]
   },
   {
-    "answer":"jump",
-    "category":"palavra em inglês"
+    "category":"vestuário",
+    "answer":["jeans", "jaleco", "jaqueta"]
   },
   {
-    "answer":"jarra",
-    "category":"objeto"
+    "category":"vilão",
+    "answer":["joker"]
   },
   {
-    "answer":"joias",
-    "category":"objeto"
-  },
-  {
-    "answer":"jaqueta",
-    "category":"objeto"
-  },
-  {
-    "answer":"joao",
-    "category":"nome"
-  },
-  {
-    "answer":"jaqueline",
-    "category":"nome"
-  },
-  {
-    "answer":"joker",
-    "category":"vilão"
-  },
-  {
-    "answer":"jack russel terrier",
-    "category":"raça de cachorro"
-  },
-  {
-    "answer":"juventus",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"japones",
-    "category":"idioma"
-  },
-  {
-    "answer":"jaspion",
-    "category":"fantasia"
-  },
-  {
-    "answer":"jaspion",
-    "category":"super-herói"
-  },
-  {
-    "answer":"jilo",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"jaqueline",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"janaina",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"joana",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"joia",
-    "category":"msé"
-  },
-  {
-    "answer":"joao",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"jato",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"juangada",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"jujuba",
-    "category":"doce"
-  },
-  {
-    "answer":"japao",
-    "category":"país"
-  },
-  {
-    "answer":"joias",
-    "category":"presente"
-  },
-  {
-    "answer":"jogo da vida",
-    "category":"brinquedo"
-  },
-  {
-    "answer":"joanete",
-    "category":"doença"
-  },
-  {
-    "answer":"jessica jones",
-    "category":"série"
-  },
-  {
-    "answer":"jaca",
-    "category":"sabor de sorvete"
-  },
-  {
-    "answer":"jabuticaba",
-    "category":"sabor de sorvete"
+    "category":"flv",
+    "answer":["jatoba"]
   }
 ]

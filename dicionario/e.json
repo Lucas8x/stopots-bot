@@ -1,374 +1,254 @@
 [
   {
-    "answer":"Estrelas",
-    "category":"Programa de TV"
+    "category":"adjetivo",
+    "answer":["esbelto"]
   },
   {
-    "answer":"Esmeralda",
-    "category":"Cor"
+    "category":"animal",
+    "answer":["enguia", "estrela do mar"]
   },
   {
-    "answer":"ES File Explorer",
-    "category":"App ou site"
+    "category":"app ou site",
+    "answer":["es file explorer", "ebay"]
   },
   {
-    "answer":"Even Flow",
-    "category":"Música"
+    "category":"ator",
+    "answer":["edson celulari"]
   },
   {
-    "answer":"Embauba",
-    "category":"Fruta"
+    "category":"ave",
+    "answer":[]
   },
   {
-    "answer":"Eminem",
-    "category":"Cantor"
+    "category":"banda",
+    "answer":["europe"]
   },
   {
-    "answer":"Escrivao",
-    "category":"Profissão"
+    "category":"brinquedo",
+    "answer":["espada plastico"]
   },
   {
-    "answer":"Economista",
-    "category":"Profissão"
+    "category":"cantor",
+    "answer":["eminem"]
   },
   {
-    "answer":"Elantra",
-    "category":"Carro"
+    "category":"capital",
+    "answer":["estocolmo"]
   },
   {
-    "answer":"Entrevistador",
-    "category":"Profissão"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Epiphanie",
-    "category":"Marca"
+    "category":"cep",
+    "answer":["espirito santo"]
   },
   {
-    "answer":"Espineta",
-    "category":"Instrumento Musical"
+    "category":"cidade",
+    "answer":["estocolmo"]
   },
   {
-    "answer":"Espirito Santo",
-    "category":"CEP"
+    "category":"comida saudável",
+    "answer":["espinafre"]
   },
   {
-    "answer":"Esgrima",
-    "category":"Esporte"
+    "category":"cor",
+    "answer":["esmeralda"]
   },
   {
-    "answer":"Elected",
-    "category":"Música"
+    "category":"desenho animado",
+    "answer":["evangelion"]
   },
   {
-    "answer":"Eleventy",
-    "category":"Marca"
+    "category":"doce",
+    "answer":[]
   },
   {
-    "answer":"Edna Krabappel",
-    "category":"PDA"
+    "category":"doença",
+    "answer":["ebola"]
   },
   {
-    "answer":"ELO",
-    "category":"Marca"
+    "category":"eletro eletrônico",
+    "answer":["earbuds"]
   },
   {
-    "answer":"Ellus",
-    "category":"Marca"
+    "category":"esporte",
+    "answer":["esgrima"]
   },
   {
-    "answer":"Etanol",
-    "category":"Líquido"
+    "category":"esportista",
+    "answer":["eli manning"]
   },
   {
-    "answer":"Estocolmo",
-    "category":"Capital"
+    "category":"fantasia",
+    "answer":["elefante"]
   },
   {
-    "answer":"Element",
-    "category":"Marca"
+    "category":"filme",
+    "answer":["encontro explosivo"]
   },
   {
-    "answer":"E O Vento Levou",
-    "category":"Música"
+    "category":"flor",
+    "answer":["erva doce"]
   },
   {
-    "answer":"Empada",
-    "category":"Sobremesa"
+    "category":"flv",
+    "answer":["espinafre"]
   },
   {
-    "answer":"Europe",
-    "category":"Banda"
+    "category":"fruta",
+    "answer":["embauba"]
   },
   {
-    "answer":"Encontro Explosivo",
-    "category":"Filme"
+    "category":"game",
+    "answer":["earthfall"]
   },
   {
-    "answer":"Escultor",
-    "category":"Profissão"
+    "category":"gentílico",
+    "answer":["estoniano"]
   },
   {
-    "answer":"Elmo",
-    "category":"Vestuário"
+    "category":"idioma",
+    "answer":[]
   },
   {
-    "answer":"El Dorado",
-    "category":"Música"
+    "category":"ingrediente",
+    "answer":["espinafre", "ervilha"]
   },
   {
-    "answer":"Epoca",
-    "category":"JLR"
+    "category":"inseto",
+    "answer":["escaravelho"]
   },
   {
-    "answer":"Eufonio",
-    "category":"Instrumento Musical"
+    "category":"instrumento musical",
+    "answer":["espineta", "eufonio"]
   },
   {
-    "answer":"Estoniano",
-    "category":"Gentílico"
+    "category":"jlr",
+    "answer":["epoca", "esporte espetacular"]
   },
   {
-    "answer":"Ecko",
-    "category":"Marca"
+    "category":"líquido",
+    "answer":["etanol", "espumante"]
   },
   {
-    "answer":"Esofago",
-    "category":"PCH"
+    "category":"mamífero",
+    "answer":["elefante"]
   },
   {
-    "answer":"Espartilho",
-    "category":"Vestuário"
+    "category":"marca",
+    "answer":["epiphanie", "eleventy", "elo", "ellus", "element", "ecko", "enfim"]
   },
   {
-    "answer":"Estomago",
-    "category":"PCH"
+    "category":"meio de transporte",
+    "answer":[]
   },
   {
-    "answer":"Empire State Of Mind",
-    "category":"Música"
+    "category":"msé",
+    "answer":["eletrica"]
   },
   {
-    "answer":"Earthfall",
-    "category":"Game"
+    "category":"música",
+    "answer":["even flow", "elected", "e o vento levou", "el dorado", "empire state of mind", "equalize", "escape", "eblouie par la nuit"]
   },
   {
-    "answer":"Espinafre",
-    "category":"FLV"
+    "category":"nome feminino",
+    "answer":["eliza", "emanuele"]
   },
   {
-    "answer":"Equalize",
-    "category":"Música"
+    "category":"nome masculino",
+    "answer":["eduardo", "emanuel", "elimar"]
   },
   {
-    "answer":"Evangelion",
-    "category":"Desenho animado"
+    "category":"objeto",
+    "answer":["elastico"]
   },
   {
-    "answer":"Espinha dorsal",
-    "category":"PCH"
+    "category":"palavra em espanhol",
+    "answer":["estoy"]
   },
   {
-    "answer":"Erva doce",
-    "category":"Flor"
+    "category":"palavra em inglês",
+    "answer":["energy"]
   },
   {
-    "answer":"Empada",
-    "category":"Comida"
+    "category":"país",
+    "answer":["estados unidos", "equador", "espanha"]
   },
   {
-    "answer":"Edson Celulari",
-    "category":"Ator"
+    "category":"pch",
+    "answer":["esofago", "estomago", "espinha dorsal", "esqueleto"]
   },
   {
-    "answer":"Esqueleto",
-    "category":"PCH"
+    "category":"pda",
+    "answer":["edna krabappel"]
   },
   {
-    "answer":"Echarpe",
-    "category":"Vestuário"
+    "category":"personagem fictício",
+    "answer":["electra"]
   },
   {
-    "answer":"Enguia",
-    "category":"Animal"
+    "category":"presente",
+    "answer":[]
   },
   {
-    "answer":"Esbelto",
-    "category":"Adjetivo"
+    "category":"profissão",
+    "answer":["escrivao", "economista", "entrevistador", "escultor", "endocrinologista", "enfermeira", "eletricista", "estilista"]
   },
   {
-    "answer":"Enfim",
-    "category":"Marca"
+    "category":"programa de tv",
+    "answer":["estrelas", "esporte espetacular", "efeito carbonaro"]
   },
   {
-    "answer":"Esporte Espetacular",
-    "category":"Programa de TV"
+    "category":"raça de cachorro",
+    "answer":[]
   },
   {
-    "answer":"Efeito Carbonaro",
-    "category":"Programa de TV"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"Endocrinologista",
-    "category":"Profissão"
+    "category":"sabor de pizza",
+    "answer":[]
   },
   {
-    "answer":"Earbuds",
-    "category":"Eletro Eletrônico"
+    "category":"sabor de sorvete",
+    "answer":[]
   },
   {
-    "answer":"Enfermeira",
-    "category":"Profissão"
+    "category":"sobremesa",
+    "answer":["empada"]
   },
   {
-    "answer":"Estocolmo",
-    "category":"Cidade"
+    "category":"sobrenome",
+    "answer":[]
   },
   {
-    "answer":"Escape",
-    "category":"Música"
+    "category":"super-herói",
+    "answer":["elektra"]
   },
   {
-    "answer":"Eletricista",
-    "category":"Profissão"
+    "category":"série",
+    "answer":[]
   },
   {
-    "answer":"Ebay",
-    "category":"App ou site"
+    "category":"time esportivo",
+    "answer":["espanha"]
   },
   {
-    "answer":"EcoSport",
-    "category":"Carro"
+    "category":"verbo",
+    "answer":["escalar", "escavar", "esticar"]
   },
   {
-    "answer":"Eblouie par la nuit",
-    "category":"Música"
+    "category":"vestuário",
+    "answer":["elmo", "espartilho", "echarpe"]
   },
   {
-    "answer":"Escaravelho",
-    "category":"Inseto"
+    "category":"vilão",
+    "answer":[]
   },
   {
-    "answer":"Eli Manning",
-    "category":"Esportista"
-  },
-  {
-    "answer":"Eduardo Moscovis",
-    "category":"Celebridade"
-  },
-  {
-    "answer":"Estilista",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Estrela do mar",
-    "category":"Animal"
-  },
-  {
-    "answer":"Esporte Espetacular",
-    "category":"JLR"
-  },
-  {
-    "answer":"Espumante",
-    "category":"Líquido"
-  },
-  {
-    "answer":"elefante",
-    "category":"fantasia"
-  },
-  {
-    "answer":"elastico",
-    "category":"objeto"
-  },
-  {
-    "answer":"espinafre",
-    "category":"comida saudável"
-  },
-  {
-    "answer":"estados unidos",
-    "category":"país"
-  },
-  {
-    "answer":"equador",
-    "category":"país"
-  },
-  {
-    "answer":"espanha",
-    "category":"país"
-  },
-  {
-    "answer":"eduardo",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"emanuel",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"elimar",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"eliza",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"emanuele",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"espinafre",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"ervilha",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"elefante",
-    "category":"mamífero"
-  },
-  {
-    "answer":"espada plastico",
-    "category":"brinquedo"
-  },
-  {
-    "answer":"electra",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"estoy",
-    "category":"palavra em espanhol"
-  },
-  {
-    "answer":"ebola",
-    "category":"doença"
-  },
-  {
-    "answer":"eletrica",
-    "category":"msé"
-  },
-  {
-    "answer":"escalar",
-    "category":"verbo"
-  },
-  {
-    "answer":"escavar",
-    "category":"verbo"
-  },
-  {
-    "answer":"esticar",
-    "category":"verbo"
-  },
-  {
-    "answer":"energy",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"espanha",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"elektra",
-    "category":"super-herói"
+    "category":"flv",
+    "answer":["espinafre"]
   }
 ]

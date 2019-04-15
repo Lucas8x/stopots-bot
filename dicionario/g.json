@@ -1,466 +1,254 @@
 [
   {
-    "answer":"Genova",
-    "category":"CEP"
+    "category":"adjetivo",
+    "answer":["gentil"]
   },
   {
-    "answer":"Ghost N Stuff",
-    "category":"Música"
+    "category":"animal",
+    "answer":["guaxinim", "gazela"]
   },
   {
-    "answer":"Gardenia",
-    "category":"Flor"
+    "category":"app ou site",
+    "answer":["google tradutor", "gartic"]
   },
   {
-    "answer":"Google Home",
-    "category":"Eletro Eletrônico"
+    "category":"ator",
+    "answer":["giovanna antonelli"]
   },
   {
-    "answer":"Goela",
-    "category":"PCH"
+    "category":"ave",
+    "answer":["gaviao"]
   },
   {
-    "answer":"Globo Rural",
-    "category":"Programa de TV"
+    "category":"banda",
+    "answer":["godsmack", "ghost"]
   },
   {
-    "answer":"Gazeta Esportiva",
-    "category":"JLR"
+    "category":"brinquedo",
+    "answer":["gude", "gangorra"]
   },
   {
-    "answer":"Gim",
-    "category":"Líquido"
+    "category":"cantor",
+    "answer":["goldfrapp"]
   },
   {
-    "answer":"Gramado",
-    "category":"CEP"
+    "category":"capital",
+    "answer":["gaborone"]
   },
   {
-    "answer":"Genoise",
-    "category":"Sobremesa"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Goleiro",
-    "category":"Profissão"
+    "category":"cep",
+    "answer":["genova", "gramado"]
   },
   {
-    "answer":"Gasparzinho",
-    "category":"Desenho animado"
+    "category":"cidade",
+    "answer":["genova"]
   },
   {
-    "answer":"Gasolina",
-    "category":"Líquido"
+    "category":"comida saudável",
+    "answer":[]
   },
   {
-    "answer":"Gorgonzola",
-    "category":"Comida"
+    "category":"cor",
+    "answer":["grena", "gelo"]
   },
   {
-    "answer":"Grafiteiro",
-    "category":"Profissão"
+    "category":"desenho animado",
+    "answer":["gasparzinho"]
   },
   {
-    "answer":"Gold Hawk",
-    "category":"Marca"
+    "category":"doce",
+    "answer":["goiabada"]
   },
   {
-    "answer":"Good For You",
-    "category":"Música"
+    "category":"doença",
+    "answer":["gonorreia", "gastrite", "gripe"]
   },
   {
-    "answer":"Gengiva",
-    "category":"PCH"
+    "category":"eletro eletrônico",
+    "answer":["google home"]
   },
   {
-    "answer":"Grand Cherokee",
-    "category":"Carro"
+    "category":"esporte",
+    "answer":["ginastica"]
   },
   {
-    "answer":"Ginecologista",
-    "category":"Profissão"
+    "category":"esportista",
+    "answer":["gareth bale"]
   },
   {
-    "answer":"Giacobino",
-    "category":"Marca"
+    "category":"fantasia",
+    "answer":["gorila"]
   },
   {
-    "answer":"Geografo",
-    "category":"Profissão"
+    "category":"filme",
+    "answer":["grinch"]
   },
   {
-    "answer":"Google Tradutor",
-    "category":"App ou site"
+    "category":"flor",
+    "answer":["gardenia"]
   },
   {
-    "answer":"Guaxinim",
-    "category":"Animal"
+    "category":"flv",
+    "answer":["genipapo"]
   },
   {
-    "answer":"Giovanna Antonelli",
-    "category":"Ator"
+    "category":"fruta",
+    "answer":["graviola"]
   },
   {
-    "answer":"Gentil",
-    "category":"Adjetivo"
+    "category":"game",
+    "answer":["garys mod"]
   },
   {
-    "answer":"Genova",
-    "category":"Cidade"
+    "category":"gentílico",
+    "answer":["gibraltino"]
   },
   {
-    "answer":"Ginastica",
-    "category":"Esporte"
+    "category":"idioma",
+    "answer":["grego"]
   },
   {
-    "answer":"Godsmack",
-    "category":"Banda"
+    "category":"ingrediente",
+    "answer":["gengibre"]
   },
   {
-    "answer":"Graviola",
-    "category":"Fruta"
+    "category":"inseto",
+    "answer":["gorgulho"]
   },
   {
-    "answer":"Globo Ecologia",
-    "category":"Programa de TV"
+    "category":"instrumento musical",
+    "answer":["gaita"]
   },
   {
-    "answer":"GONEW",
-    "category":"Marca"
+    "category":"jlr",
+    "answer":["gazeta esportiva"]
   },
   {
-    "answer":"Gartic",
-    "category":"App ou site"
+    "category":"líquido",
+    "answer":["gim", "gasolina", "guampa"]
   },
   {
-    "answer":"Globo Esporte",
-    "category":"Programa de TV"
+    "category":"mamífero",
+    "answer":["gato"]
   },
   {
-    "answer":"Gaita",
-    "category":"Instrumento Musical"
+    "category":"marca",
+    "answer":["gold hawk", "giacobino", "gonew", "gallucci", "grendene", "gucci", "gold hawk"]
   },
   {
-    "answer":"Guampa",
-    "category":"Líquido"
+    "category":"meio de transporte",
+    "answer":["gondola"]
   },
   {
-    "answer":"Gallucci",
-    "category":"Marca"
+    "category":"msé",
+    "answer":["gorda"]
   },
   {
-    "answer":"Garconete",
-    "category":"Profissão"
+    "category":"música",
+    "answer":["ghost n stuff", "good for you", "gucci gang", "girl from lebanon", "go robot"]
   },
   {
-    "answer":"Gelatina",
-    "category":"Sobremesa"
+    "category":"nome feminino",
+    "answer":["gabriela"]
   },
   {
-    "answer":"Gargantilha",
-    "category":"Vestuário"
+    "category":"nome masculino",
+    "answer":["geraldo", "gustavo"]
   },
   {
-    "answer":"Gazela",
-    "category":"Animal"
+    "category":"objeto",
+    "answer":["garfo"]
   },
   {
-    "answer":"Grendene",
-    "category":"Marca"
+    "category":"palavra em espanhol",
+    "answer":["gorra"]
   },
   {
-    "answer":"Guitarrista",
-    "category":"Profissão"
+    "category":"palavra em inglês",
+    "answer":["garbage", "gasoline"]
   },
   {
-    "answer":"Grand gateau",
-    "category":"Sobremesa"
+    "category":"país",
+    "answer":["georgia", "grecia"]
   },
   {
-    "answer":"Geriatra",
-    "category":"Profissão"
+    "category":"pch",
+    "answer":["goela", "gengiva", "genitalia", "garganta"]
   },
   {
-    "answer":"Genipapo",
-    "category":"FLV"
+    "category":"pda",
+    "answer":["george jetson", "gary"]
   },
   {
-    "answer":"Ghost",
-    "category":"Banda"
+    "category":"personagem fictício",
+    "answer":["garfield"]
   },
   {
-    "answer":"Grena",
-    "category":"Cor"
+    "category":"presente",
+    "answer":["guitarra", "gorro", "gravata"]
   },
   {
-    "answer":"Genitalia",
-    "category":"PCH"
+    "category":"profissão",
+    "answer":["goleiro", "grafiteiro", "ginecologista", "geografo", "garconete", "guitarrista", "geriatra", "geologo", "gari", "garcon", "ginasta"]
   },
   {
-    "answer":"Gibraltino",
-    "category":"Gentílico"
+    "category":"programa de tv",
+    "answer":["globo rural", "globo ecologia", "globo esporte", "globo ciencia"]
   },
   {
-    "answer":"Gisele Bundchen",
-    "category":"Celebridade"
+    "category":"raça de cachorro",
+    "answer":["golden retriever"]
   },
   {
-    "answer":"Gravata",
-    "category":"Vestuário"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"Gallardo LP",
-    "category":"Carro"
+    "category":"sabor de pizza",
+    "answer":["gorgonzola"]
   },
   {
-    "answer":"Goldfrapp",
-    "category":"Cantor"
+    "category":"sabor de sorvete",
+    "answer":["goiaba"]
   },
   {
-    "answer":"Geologo",
-    "category":"Profissão"
+    "category":"sobremesa",
+    "answer":["genoise", "gelatina", "grand gateau", "gianduja"]
   },
   {
-    "answer":"Gaborone",
-    "category":"Capital"
+    "category":"sobrenome",
+    "answer":["gomes"]
   },
   {
-    "answer":"Gareth Bale",
-    "category":"Esportista"
+    "category":"super-herói",
+    "answer":["green lantern", "guardioes da galaxia"]
   },
   {
-    "answer":"Gari",
-    "category":"Profissão"
+    "category":"série",
+    "answer":["greys anatomy"]
   },
   {
-    "answer":"George Jetson",
-    "category":"PDA"
+    "category":"time esportivo",
+    "answer":["gremio", "goias", "guarani"]
   },
   {
-    "answer":"Gelo",
-    "category":"Cor"
+    "category":"verbo",
+    "answer":["girar", "gastar"]
   },
   {
-    "answer":"Gorro",
-    "category":"Vestuário"
+    "category":"vestuário",
+    "answer":["gargantilha", "gravata", "gorro"]
   },
   {
-    "answer":"Garcon",
-    "category":"Profissão"
+    "category":"vilão",
+    "answer":["gozilla", "ganondorf"]
   },
   {
-    "answer":"Gucci Gang",
-    "category":"Música"
-  },
-  {
-    "answer":"Globo Ciencia",
-    "category":"Programa de TV"
-  },
-  {
-    "answer":"Garys Mod",
-    "category":"Game"
-  },
-  {
-    "answer":"Gianduja",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Grinch",
-    "category":"Filme"
-  },
-  {
-    "answer":"Gucci",
-    "category":"Marca"
-  },
-  {
-    "answer":"Girl From Lebanon",
-    "category":"Música"
-  },
-  {
-    "answer":"Garganta",
-    "category":"PCH"
-  },
-  {
-    "answer":"Go Robot",
-    "category":"Música"
-  },
-  {
-    "answer":"Gold Hawk",
-    "category":"Marca"
-  },
-  {
-    "answer":"Gary",
-    "category":"PDA"
-  },
-  {
-    "answer":"Gorgulho",
-    "category":"Inseto"
-  },
-  {
-    "answer":"Ginasta",
-    "category":"Profissão"
-  },
-  {
-    "answer":"garfield",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"gomes",
-    "category":"sobrenome"
-  },
-  {
-    "answer":"goiaba",
-    "category":"sabor de sorvete"
-  },
-  {
-    "answer":"girar",
-    "category":"verbo"
-  },
-  {
-    "answer":"gastar",
-    "category":"verbo"
-  },
-  {
-    "answer":"gude",
-    "category":"brinquedo"
-  },
-  {
-    "answer":"gangorra",
-    "category":"brinquedo"
-  },
-  {
-    "answer":"gozilla",
-    "category":"vilão"
-  },
-  {
-    "answer":"ganondorf",
-    "category":"vilão"
-  },
-  {
-    "answer":"gorila",
-    "category":"fantasia"
-  },
-  {
-    "answer":"guitarra",
-    "category":"presente"
-  },
-  {
-    "answer":"gorro",
-    "category":"presente"
-  },
-  {
-    "answer":"gravata",
-    "category":"presente"
-  },
-  {
-    "answer":"gabriel",
-    "category":"nome"
-  },
-  {
-    "answer":"gorda",
-    "category":"msé"
-  },
-  {
-    "answer":"geraldo",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"gustavo",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"gondola",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"goiabada",
-    "category":"doce"
-  },
-  {
-    "answer":"gaviao",
-    "category":"ave"
-  },
-  {
-    "answer":"georgia",
-    "category":"país"
-  },
-  {
-    "answer":"grecia",
-    "category":"país"
-  },
-  {
-    "answer":"golden retriever",
-    "category":"raça de cachorro"
-  },
-  {
-    "answer":"gabriela",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"garfo",
-    "category":"objeto"
-  },
-  {
-    "answer":"gonorreia",
-    "category":"doença"
-  },
-  {
-    "answer":"gastrite",
-    "category":"doença"
-  },
-  {
-    "answer":"gripe",
-    "category":"doença"
-  },
-  {
-    "answer":"gorra",
-    "category":"palavra em espanhol"
-  },
-  {
-    "answer":"grego",
-    "category":"idioma"
-  },
-  {
-    "answer":"gengibre",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"gorgonzola",
-    "category":"sabor de pizza"
-  },
-  {
-    "answer":"green lantern",
-    "category":"super-herói"
-  },
-  {
-    "answer":"guardioes da galaxia",
-    "category":"super-herói"
-  },
-  {
-    "answer":"greys anatomy",
-    "category":"série"
-  },
-  {
-    "answer":"garbage",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"gasoline",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"gremio",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"goias",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"guarani",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"gato",
-    "category":"mamífero"
+    "category":"flv",
+    "answer":["genipapo"]
   }
 ]

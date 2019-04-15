@@ -1,506 +1,254 @@
 [
   {
-    "answer":"Mao",
-    "category":"PCH"
+    "category":"adjetivo",
+    "answer":["medroso"]
   },
   {
-    "answer":"Macrauquenia",
-    "category":"Animal"
+    "category":"animal",
+    "answer":["macrauquenia", "morsa", "musaranho"]
   },
   {
-    "answer":"Motoboy",
-    "category":"Profissão"
+    "category":"app ou site",
+    "answer":["minion rush", "messenger"]
   },
   {
-    "answer":"Macadamia",
-    "category":"FLV"
+    "category":"ator",
+    "answer":["michelle maylene", "morgan freeman"]
   },
   {
-    "answer":"Manobrista",
-    "category":"Profissão"
+    "category":"ave",
+    "answer":[]
   },
   {
-    "answer":"Morsa",
-    "category":"Animal"
+    "category":"banda",
+    "answer":["muse", "marakesh"]
   },
   {
-    "answer":"Macacao",
-    "category":"Vestuário"
+    "category":"brinquedo",
+    "answer":["marionete"]
   },
   {
-    "answer":"Mary Kay",
-    "category":"Marca"
+    "category":"cantor",
+    "answer":["madonna"]
   },
   {
-    "answer":"Magnolia",
-    "category":"Flor"
+    "category":"capital",
+    "answer":["manila"]
   },
   {
-    "answer":"Mask Machine",
-    "category":"Música"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Mary Jane",
-    "category":"Marca"
+    "category":"cep",
+    "answer":["maranguape", "macau"]
   },
   {
-    "answer":"Macadamia",
-    "category":"Marca"
+    "category":"cidade",
+    "answer":["macau"]
   },
   {
-    "answer":"Motociclista",
-    "category":"Profissão"
+    "category":"comida saudável",
+    "answer":["macaxeira", "mandioca", "mamao"]
   },
   {
-    "answer":"Muse",
-    "category":"Banda"
+    "category":"cor",
+    "answer":["magenta", "marfim"]
   },
   {
-    "answer":"Montgomery Burns",
-    "category":"PDA"
+    "category":"desenho animado",
+    "answer":["manda chuva"]
   },
   {
-    "answer":"Madonna",
-    "category":"Celebridade"
+    "category":"doce",
+    "answer":[]
   },
   {
-    "answer":"Manjar",
-    "category":"Sobremesa"
+    "category":"doença",
+    "answer":["malaria"]
   },
   {
-    "answer":"Moncler",
-    "category":"Marca"
+    "category":"eletro eletrônico",
+    "answer":["micro ondas"]
   },
   {
-    "answer":"Moldureiro",
-    "category":"Profissão"
+    "category":"esporte",
+    "answer":["motociclismo"]
   },
   {
-    "answer":"Mensageiro",
-    "category":"Profissão"
+    "category":"esportista",
+    "answer":["maria sharapova"]
   },
   {
-    "answer":"Meia",
-    "category":"Vestuário"
+    "category":"fantasia",
+    "answer":["marinheiro", "medico"]
   },
   {
-    "answer":"Manila",
-    "category":"Capital"
+    "category":"filme",
+    "answer":["megamente"]
   },
   {
-    "answer":"Malabarista",
-    "category":"Profissão"
+    "category":"flor",
+    "answer":["magnolia"]
   },
   {
-    "answer":"Minion Rush",
-    "category":"App ou site"
+    "category":"flv",
+    "answer":["macadamia"]
   },
   {
-    "answer":"Mustang",
-    "category":"Carro"
+    "category":"fruta",
+    "answer":["mangaba"]
   },
   {
-    "answer":"Motociclismo",
-    "category":"Esporte"
+    "category":"game",
+    "answer":["metal gear"]
   },
   {
-    "answer":"Maio",
-    "category":"Vestuário"
+    "category":"gentílico",
+    "answer":["mesopotamico"]
   },
   {
-    "answer":"Medroso",
-    "category":"Adjetivo"
+    "category":"idioma",
+    "answer":["mandarim"]
   },
   {
-    "answer":"Magenta",
-    "category":"Cor"
+    "category":"ingrediente",
+    "answer":["manjericao", "margarina", "manteiga", "macarrao", "maionese"]
   },
   {
-    "answer":"Marakesh",
-    "category":"Banda"
+    "category":"inseto",
+    "answer":["maruim"]
   },
   {
-    "answer":"Mercurio",
-    "category":"Líquido"
+    "category":"instrumento musical",
+    "answer":["maraca"]
   },
   {
-    "answer":"Meteorologista",
-    "category":"Profissão"
+    "category":"jlr",
+    "answer":["mens health"]
   },
   {
-    "answer":"Maruim",
-    "category":"Inseto"
+    "category":"líquido",
+    "answer":["mercurio", "mel", "mupy"]
   },
   {
-    "answer":"Meriva",
-    "category":"Carro"
+    "category":"mamífero",
+    "answer":["macaco"]
   },
   {
-    "answer":"Mais Voce",
-    "category":"Programa de TV"
+    "category":"marca",
+    "answer":["mary kay", "mary jane", "macadamia", "moncler", "malwee", "marchesa", "mizuno"]
   },
   {
-    "answer":"Maxilar",
-    "category":"PCH"
+    "category":"meio de transporte",
+    "answer":["moto", "metro"]
   },
   {
-    "answer":"Mangaba",
-    "category":"Fruta"
+    "category":"msé",
+    "answer":[]
   },
   {
-    "answer":"Musaranho",
-    "category":"Animal"
+    "category":"música",
+    "answer":["mask machine", "man in the box", "mad about you", "maybe tomorrow", "malibu"]
   },
   {
-    "answer":"Manicure",
-    "category":"Profissão"
+    "category":"nome feminino",
+    "answer":[]
   },
   {
-    "answer":"Michelle Maylene",
-    "category":"Ator"
+    "category":"nome masculino",
+    "answer":["mario", "marcos", "matheus"]
   },
   {
-    "answer":"Mordomo",
-    "category":"Profissão"
+    "category":"objeto",
+    "answer":["mola", "mesa"]
   },
   {
-    "answer":"Mecanico",
-    "category":"Profissão"
+    "category":"palavra em espanhol",
+    "answer":[]
   },
   {
-    "answer":"Medula ossea",
-    "category":"PCH"
+    "category":"palavra em inglês",
+    "answer":["moon", "more"]
   },
   {
-    "answer":"Maquiador",
-    "category":"Profissão"
+    "category":"país",
+    "answer":["madagascar", "malasia"]
   },
   {
-    "answer":"Man In The Box",
-    "category":"Música"
+    "category":"pch",
+    "answer":["mao", "maxilar", "medula ossea", "munheca", "mandibula", "medula espinhal", "martelo"]
   },
   {
-    "answer":"Malwee",
-    "category":"Marca"
+    "category":"pda",
+    "answer":["montgomery burns", "marge simpson", "moe szyslak", "mona simpson", "mestre dos magos", "mr. peanutbutter", "milhouse van houten", "minnie mouse"]
   },
   {
-    "answer":"Mad About You",
-    "category":"Música"
+    "category":"personagem fictício",
+    "answer":["mafalda"]
   },
   {
-    "answer":"Macau",
-    "category":"Cidade"
+    "category":"presente",
+    "answer":["martelo", "maleta"]
   },
   {
-    "answer":"Mel",
-    "category":"Líquido"
+    "category":"profissão",
+    "answer":["motoboy", "manobrista", "motociclista", "moldureiro", "mensageiro", "malabarista", "meteorologista", "manicure", "mordomo", "mecanico", "maquiador", "metalurgico", "massagista", "microbiologista", "motorista", "marceneiro", "medico"]
   },
   {
-    "answer":"Maybe Tomorrow",
-    "category":"Música"
+    "category":"programa de tv",
+    "answer":["mais voce", "malhacao"]
   },
   {
-    "answer":"Marge Simpson",
-    "category":"PDA"
+    "category":"raça de cachorro",
+    "answer":["maltes"]
   },
   {
-    "answer":"Moe Szyslak",
-    "category":"PDA"
+    "category":"remédio",
+    "answer":["merthiolate"]
   },
   {
-    "answer":"Munheca",
-    "category":"PCH"
+    "category":"sabor de pizza",
+    "answer":["marguerita", "mussarela"]
   },
   {
-    "answer":"Micro ondas",
-    "category":"Eletro Eletrônico"
+    "category":"sabor de sorvete",
+    "answer":["morango"]
   },
   {
-    "answer":"Mona Simpson",
-    "category":"PDA"
+    "category":"sobremesa",
+    "answer":["manjar", "mousse", "maca do amor", "milkshake", "mascarpone"]
   },
   {
-    "answer":"Marchesa",
-    "category":"Marca"
+    "category":"sobrenome",
+    "answer":["martins"]
   },
   {
-    "answer":"Malhacao",
-    "category":"Programa de TV"
+    "category":"super-herói",
+    "answer":["mulher maravilha"]
   },
   {
-    "answer":"Mandibula",
-    "category":"PCH"
+    "category":"série",
+    "answer":["meu malvado favorito"]
   },
   {
-    "answer":"Metal Gear",
-    "category":"Game"
+    "category":"time esportivo",
+    "answer":["metropolitano"]
   },
   {
-    "answer":"Metalurgico",
-    "category":"Profissão"
+    "category":"verbo",
+    "answer":["morder", "medir"]
   },
   {
-    "answer":"Massagista",
-    "category":"Profissão"
+    "category":"vestuário",
+    "answer":["macacao", "meia", "maio", "meia calca"]
   },
   {
-    "answer":"Marfim",
-    "category":"Cor"
+    "category":"vilão",
+    "answer":[]
   },
   {
-    "answer":"Microbiologista",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Maria Sharapova",
-    "category":"Esportista"
-  },
-  {
-    "answer":"Morgan Freeman",
-    "category":"Ator"
-  },
-  {
-    "answer":"Mestre dos Magos",
-    "category":"PDA"
-  },
-  {
-    "answer":"Madonna",
-    "category":"Cantor"
-  },
-  {
-    "answer":"Mesopotamico",
-    "category":"Gentílico"
-  },
-  {
-    "answer":"Mousse",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Motorista",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Mizuno",
-    "category":"Marca"
-  },
-  {
-    "answer":"Mr. Peanutbutter",
-    "category":"PDA"
-  },
-  {
-    "answer":"Marceneiro",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Maca do amor",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Manda Chuva",
-    "category":"Desenho animado"
-  },
-  {
-    "answer":"Medula espinhal",
-    "category":"PCH"
-  },
-  {
-    "answer":"Maraca",
-    "category":"Instrumento Musical"
-  },
-  {
-    "answer":"Meia calca",
-    "category":"Vestuário"
-  },
-  {
-    "answer":"Maranguape",
-    "category":"CEP"
-  },
-  {
-    "answer":"Macarronada",
-    "category":"Comida"
-  },
-  {
-    "answer":"Martelo",
-    "category":"PCH"
-  },
-  {
-    "answer":"Milhouse Van Houten",
-    "category":"PDA"
-  },
-  {
-    "answer":"Minnie Mouse",
-    "category":"PDA"
-  },
-  {
-    "answer":"Messenger",
-    "category":"App ou site"
-  },
-  {
-    "answer":"Milkshake",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Medico",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Malibu",
-    "category":"Música"
-  },
-  {
-    "answer":"Mens Health",
-    "category":"JLR"
-  },
-  {
-    "answer":"Mascarpone",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Mupy",
-    "category":"Líquido"
-  },
-  {
-    "answer":"Megamente",
-    "category":"Filme"
-  },
-  {
-    "answer":"Macau",
-    "category":"CEP"
-  },
-  {
-    "answer":"mario",
-    "category":"nome"
-  },
-  {
-    "answer":"malaria",
-    "category":"doença"
-  },
-  {
-    "answer":"morango",
-    "category":"sabor de sorvete"
-  },
-  {
-    "answer":"metropolitano",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"morder",
-    "category":"verbo"
-  },
-  {
-    "answer":"medir",
-    "category":"verbo"
-  },
-  {
-    "answer":"mola",
-    "category":"objeto"
-  },
-  {
-    "answer":"mesa",
-    "category":"objeto"
-  },
-  {
-    "answer":"martelo",
-    "category":"presente"
-  },
-  {
-    "answer":"maleta",
-    "category":"presente"
-  },
-  {
-    "answer":"mario",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"marcos",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"matheus",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"merthiolate",
-    "category":"remédio"
-  },
-  {
-    "answer":"marinheiro",
-    "category":"fantasia"
-  },
-  {
-    "answer":"medico",
-    "category":"fantasia"
-  },
-  {
-    "answer":"maltes",
-    "category":"raça de cachorro"
-  },
-  {
-    "answer":"marionete",
-    "category":"brinquedo"
-  },
-  {
-    "answer":"martins",
-    "category":"sobrenome"
-  },
-  {
-    "answer":"mafalda",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"manjericao",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"margarina",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"manteiga",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"macarrao",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"maionese",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"meu malvado favorito",
-    "category":"série"
-  },
-  {
-    "answer":"moon",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"more",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"moto",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"metro",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"mulher maravilha",
-    "category":"super-herói"
-  },
-  {
-    "answer":"macaco",
-    "category":"mamífero"
-  },
-  {
-    "answer":"madagascar",
-    "category":"país"
-  },
-  {
-    "answer":"malasia",
-    "category":"país"
+    "category":"flv",
+    "answer":["macadamia"]
   }
 ]

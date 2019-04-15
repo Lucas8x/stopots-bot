@@ -1,218 +1,254 @@
 [
   {
-    "answer":"Ud",
-    "category":"Instrumento Musical"
+    "category":"adjetivo",
+    "answer":["umido"]
   },
   {
-    "answer":"Uberaba",
-    "category":"CEP"
+    "category":"animal",
+    "answer":["urso", "uapiti"]
   },
   {
-    "answer":"Ugni",
-    "category":"Comida"
+    "category":"app ou site",
+    "answer":["uber"]
   },
   {
-    "answer":"Undercover",
-    "category":"Marca"
+    "category":"ator",
+    "answer":["uma thurman", "umberto magnani"]
   },
   {
-    "answer":"Usher",
-    "category":"Cantor"
+    "category":"ave",
+    "answer":["urubu"]
   },
   {
-    "answer":"Uisque",
-    "category":"Líquido"
+    "category":"banda",
+    "answer":["unkle"]
   },
   {
-    "answer":"Utero",
-    "category":"PCH"
+    "category":"brinquedo",
+    "answer":["urso pelucia"]
   },
   {
-    "answer":"Unha postica",
-    "category":"Vestuário"
+    "category":"cantor",
+    "answer":["usher"]
   },
   {
-    "answer":"Umtiti",
-    "category":"Esportista"
+    "category":"capital",
+    "answer":["ulan bator"]
   },
   {
-    "answer":"Uncomfortably Numb",
-    "category":"Música"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Urso",
-    "category":"Animal"
+    "category":"cep",
+    "answer":["uberaba"]
   },
   {
-    "answer":"Universe",
-    "category":"Música"
+    "category":"cidade",
+    "answer":["uberaba"]
   },
   {
-    "answer":"Umari",
-    "category":"FLV"
+    "category":"comida saudável",
+    "answer":[]
   },
   {
-    "answer":"Universo Blaster",
-    "category":"Desenho animado"
+    "category":"cor",
+    "answer":["urucum"]
   },
   {
-    "answer":"Unkle",
-    "category":"Banda"
+    "category":"desenho animado",
+    "answer":["universo blaster"]
   },
   {
-    "answer":"Ufologo",
-    "category":"Profissão"
+    "category":"doce",
+    "answer":[]
   },
   {
-    "answer":"Urban",
-    "category":"Marca"
+    "category":"doença",
+    "answer":["ulcera"]
   },
   {
-    "answer":"Umbrella",
-    "category":"Música"
+    "category":"eletro eletrônico",
+    "answer":["ultrabook"]
   },
   {
-    "answer":"Umido",
-    "category":"Adjetivo"
+    "category":"esporte",
+    "answer":[]
   },
   {
-    "answer":"Ultrabook",
-    "category":"Eletro Eletrônico"
+    "category":"esportista",
+    "answer":["umtiti"]
   },
   {
-    "answer":"Unravel",
-    "category":"Marca"
+    "category":"fantasia",
+    "answer":["urso"]
   },
   {
-    "answer":"Urze",
-    "category":"Flor"
+    "category":"filme",
+    "answer":["up altas aventuras"]
   },
   {
-    "answer":"Universo Z",
-    "category":"Programa de TV"
+    "category":"flor",
+    "answer":["urze"]
   },
   {
-    "answer":"Under The Same Sun",
-    "category":"Música"
+    "category":"flv",
+    "answer":["umari"]
   },
   {
-    "answer":"Uapiti",
-    "category":"Animal"
+    "category":"fruta",
+    "answer":["uva"]
   },
   {
-    "answer":"Underwear",
-    "category":"Vestuário"
+    "category":"game",
+    "answer":["unturned"]
   },
   {
-    "answer":"Uberaba",
-    "category":"Cidade"
+    "category":"gentílico",
+    "answer":["uzbequistanes"]
   },
   {
-    "answer":"Uretra",
-    "category":"PCH"
+    "category":"idioma",
+    "answer":[]
   },
   {
-    "answer":"Up Altas Aventuras",
-    "category":"Filme"
+    "category":"ingrediente",
+    "answer":[]
   },
   {
-    "answer":"Unturned",
-    "category":"Game"
+    "category":"inseto",
+    "answer":["uaua"]
   },
   {
-    "answer":"Umbro",
-    "category":"Marca"
+    "category":"instrumento musical",
+    "answer":["ud"]
   },
   {
-    "answer":"Uma Thurman",
-    "category":"Ator"
+    "category":"jlr",
+    "answer":["ultima hora"]
   },
   {
-    "answer":"Uva",
-    "category":"Sobremesa"
+    "category":"líquido",
+    "answer":["uisque", "urina"]
   },
   {
-    "answer":"Uzbequistanes",
-    "category":"Gentílico"
+    "category":"mamífero",
+    "answer":[]
   },
   {
-    "answer":"Umberto Magnani",
-    "category":"Ator"
+    "category":"marca",
+    "answer":["undercover", "urban", "unravel", "umbro", "under armour"]
   },
   {
-    "answer":"Uva",
-    "category":"Fruta"
+    "category":"meio de transporte",
+    "answer":["uber"]
   },
   {
-    "answer":"Urologista",
-    "category":"Profissão"
+    "category":"msé",
+    "answer":["unica"]
   },
   {
-    "answer":"Ulan Bator",
-    "category":"Capital"
+    "category":"música",
+    "answer":["uncomfortably numb", "universe", "umbrella", "under the same sun"]
   },
   {
-    "answer":"Uber",
-    "category":"App ou site"
+    "category":"nome feminino",
+    "answer":[]
   },
   {
-    "answer":"Ultima Hora",
-    "category":"JLR"
+    "category":"nome masculino",
+    "answer":["uriel"]
   },
   {
-    "answer":"Under Armour",
-    "category":"Marca"
+    "category":"objeto",
+    "answer":[]
   },
   {
-    "answer":"Uaua",
-    "category":"Inseto"
+    "category":"palavra em espanhol",
+    "answer":["usted"]
   },
   {
-    "answer":"Umberto Magnani",
-    "category":"Celebridade"
+    "category":"palavra em inglês",
+    "answer":[]
   },
   {
-    "answer":"Uno",
-    "category":"Carro"
+    "category":"país",
+    "answer":["uruguai"]
   },
   {
-    "answer":"Urina",
-    "category":"Líquido"
+    "category":"pch",
+    "answer":["utero", "uretra"]
   },
   {
-    "answer":"Urucum",
-    "category":"Cor"
+    "category":"pda",
+    "answer":[]
   },
   {
-    "answer":"uber",
-    "category":"meio de transporte"
+    "category":"personagem fictício",
+    "answer":["ultron"]
   },
   {
-    "answer":"ulcera",
-    "category":"doença"
+    "category":"presente",
+    "answer":["urso pelucia"]
   },
   {
-    "answer":"uriel",
-    "category":"nome masculino"
+    "category":"profissão",
+    "answer":["ufologo", "urologista"]
   },
   {
-    "answer":"urubu",
-    "category":"ave"
+    "category":"programa de tv",
+    "answer":["universo z"]
   },
   {
-    "answer":"usted",
-    "category":"palavra em espanhol"
+    "category":"raça de cachorro",
+    "answer":[]
   },
   {
-    "answer":"urso",
-    "category":"fantasia"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"urso pelucia",
-    "category":"presente"
+    "category":"sabor de pizza",
+    "answer":[]
   },
   {
-    "answer":"urso pelucia",
-    "category":"brinquedo"
+    "category":"sabor de sorvete",
+    "answer":[]
+  },
+  {
+    "category":"sobremesa",
+    "answer":["uva"]
+  },
+  {
+    "category":"sobrenome",
+    "answer":[]
+  },
+  {
+    "category":"super-herói",
+    "answer":[]
+  },
+  {
+    "category":"série",
+    "answer":[]
+  },
+  {
+    "category":"time esportivo",
+    "answer":[]
+  },
+  {
+    "category":"verbo",
+    "answer":[]
+  },
+  {
+    "category":"vestuário",
+    "answer":["unha postica", "underwear"]
+  },
+  {
+    "category":"vilão",
+    "answer":[]
+  },
+  {
+    "category":"flv",
+    "answer":["umari"]
   }
 ]

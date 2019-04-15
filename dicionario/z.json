@@ -1,278 +1,254 @@
 [
   {
-    "answer":"Zombie",
-    "category":"Música"
+    "category":"adjetivo",
+    "answer":["zeloso"]
   },
   {
-    "answer":"Zabaglione",
-    "category":"Sobremesa"
+    "category":"animal",
+    "answer":["zebu", "zangao", "zebra"]
   },
   {
-    "answer":"Zapalla",
-    "category":"Marca"
+    "category":"app ou site",
+    "answer":["zap"]
   },
   {
-    "answer":"Zimbabuano",
-    "category":"Gentílico"
+    "category":"ator",
+    "answer":["zoe saldana", "zachary levi"]
   },
   {
-    "answer":"Ze Colmeia",
-    "category":"Desenho animado"
+    "category":"ave",
+    "answer":[]
   },
   {
-    "answer":"Zeppola",
-    "category":"Sobremesa"
+    "category":"banda",
+    "answer":["zaz", "zombie hyperdrive", "zac brown band"]
   },
   {
-    "answer":"Zero Hora",
-    "category":"JLR"
+    "category":"brinquedo",
+    "answer":["zubbles", "zebra de plastico"]
   },
   {
-    "answer":"Zinedine Zidane",
-    "category":"Esportista"
+    "category":"cantor",
+    "answer":["zaz"]
   },
   {
-    "answer":"Zelador",
-    "category":"Profissão"
+    "category":"capital",
+    "answer":["zagreb"]
   },
   {
-    "answer":"Zoe Saldana",
-    "category":"Ator"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Zaz",
-    "category":"Banda"
+    "category":"cep",
+    "answer":["zimbabwe"]
   },
   {
-    "answer":"Zinia",
-    "category":"Flor"
+    "category":"cidade",
+    "answer":["zagreb", "zurique"]
   },
   {
-    "answer":"Zaffre",
-    "category":"Cor"
+    "category":"comida saudável",
+    "answer":[]
   },
   {
-    "answer":"Zeloso",
-    "category":"Adjetivo"
+    "category":"cor",
+    "answer":["zaffre"]
   },
   {
-    "answer":"Zucca",
-    "category":"Marca"
+    "category":"desenho animado",
+    "answer":["ze colmeia"]
   },
   {
-    "answer":"Zimbabwe",
-    "category":"CEP"
+    "category":"doce",
+    "answer":["zefir"]
   },
   {
-    "answer":"Ziggy Stardust",
-    "category":"Música"
+    "category":"doença",
+    "answer":["zika"]
   },
   {
-    "answer":"Zohan",
-    "category":"Filme"
+    "category":"eletro eletrônico",
+    "answer":[]
   },
   {
-    "answer":"Zuccotto",
-    "category":"Sobremesa"
+    "category":"esporte",
+    "answer":["zarabatana", "zumba"]
   },
   {
-    "answer":"Zimmermann",
-    "category":"Marca"
+    "category":"esportista",
+    "answer":["zinedine zidane"]
   },
   {
-    "answer":"Zebu",
-    "category":"Animal"
+    "category":"fantasia",
+    "answer":["zumbi"]
   },
   {
-    "answer":"Zelador Willie",
-    "category":"PDA"
+    "category":"filme",
+    "answer":["zohan"]
   },
   {
-    "answer":"Zeitgeist",
-    "category":"Música"
+    "category":"flor",
+    "answer":["zinia"]
   },
   {
-    "answer":"Zero Clash",
-    "category":"Game"
+    "category":"flv",
+    "answer":["zitrone"]
   },
   {
-    "answer":"Zapp Banningan",
-    "category":"PDA"
+    "category":"fruta",
+    "answer":["zitrone"]
   },
   {
-    "answer":"Zorra Total",
-    "category":"Programa de TV"
+    "category":"game",
+    "answer":["zero clash"]
   },
   {
-    "answer":"Zagreb",
-    "category":"Cidade"
+    "category":"gentílico",
+    "answer":["zimbabuano"]
   },
   {
-    "answer":"Zuppa inglese",
-    "category":"Sobremesa"
+    "category":"idioma",
+    "answer":[]
   },
   {
-    "answer":"Zachary Levi",
-    "category":"Ator"
+    "category":"ingrediente",
+    "answer":[]
   },
   {
-    "answer":"Zabumba",
-    "category":"Instrumento Musical"
+    "category":"inseto",
+    "answer":["zangao"]
   },
   {
-    "answer":"Zoologista",
-    "category":"Profissão"
+    "category":"instrumento musical",
+    "answer":["zabumba"]
   },
   {
-    "answer":"Zero The Hero",
-    "category":"Música"
+    "category":"jlr",
+    "answer":["zero hora"]
   },
   {
-    "answer":"Zero Chance",
-    "category":"Música"
+    "category":"líquido",
+    "answer":[]
   },
   {
-    "answer":"Zangao",
-    "category":"Inseto"
+    "category":"mamífero",
+    "answer":[]
   },
   {
-    "answer":"Zebra",
-    "category":"Marca"
+    "category":"marca",
+    "answer":["zapalla", "zucca", "zimmermann", "zebra", "ziggy chen", "zorba"]
   },
   {
-    "answer":"Zafira",
-    "category":"Carro"
+    "category":"meio de transporte",
+    "answer":[]
   },
   {
-    "answer":"Zurique",
-    "category":"Cidade"
+    "category":"msé",
+    "answer":["zoeira"]
   },
   {
-    "answer":"Zuavo",
-    "category":"Vestuário"
+    "category":"música",
+    "answer":["zombie", "ziggy stardust", "zeitgeist", "zero the hero", "zero chance"]
   },
   {
-    "answer":"Zachary Levi",
-    "category":"Celebridade"
+    "category":"nome feminino",
+    "answer":[]
   },
   {
-    "answer":"Zangao",
-    "category":"Animal"
+    "category":"nome masculino",
+    "answer":["zack"]
   },
   {
-    "answer":"Zebra",
-    "category":"Animal"
+    "category":"objeto",
+    "answer":[]
   },
   {
-    "answer":"Zap",
-    "category":"App ou site"
+    "category":"palavra em espanhol",
+    "answer":["zafiro"]
   },
   {
-    "answer":"Zigomatico",
-    "category":"PCH"
+    "category":"palavra em inglês",
+    "answer":["zoom"]
   },
   {
-    "answer":"Ziggy Chen",
-    "category":"Marca"
+    "category":"país",
+    "answer":["zimbabwe", "zambia"]
   },
   {
-    "answer":"Zica e os Camaleoes",
-    "category":"Programa de TV"
+    "category":"pch",
+    "answer":["zigomatico"]
   },
   {
-    "answer":"Zaz",
-    "category":"Cantor"
+    "category":"pda",
+    "answer":["zelador willie", "zapp banningan"]
   },
   {
-    "answer":"Zitrone",
-    "category":"Fruta"
+    "category":"personagem fictício",
+    "answer":[]
   },
   {
-    "answer":"Zorba",
-    "category":"Marca"
+    "category":"presente",
+    "answer":[]
   },
   {
-    "answer":"Zombie Hyperdrive",
-    "category":"Banda"
+    "category":"profissão",
+    "answer":["zelador", "zoologista"]
   },
   {
-    "answer":"Zac Brown Band",
-    "category":"Banda"
+    "category":"programa de tv",
+    "answer":["zorra total", "zica e os camaleoes"]
   },
   {
-    "answer":"Zitrone",
-    "category":"FLV"
+    "category":"raça de cachorro",
+    "answer":[]
   },
   {
-    "answer":"Zitrone",
-    "category":"Comida"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"zagreb",
-    "category":"capital"
+    "category":"sabor de pizza",
+    "answer":[]
   },
   {
-    "answer":"zubbles",
-    "category":"brinquedo"
+    "category":"sabor de sorvete",
+    "answer":["zabaione"]
   },
   {
-    "answer":"zebra de plastico",
-    "category":"brinquedo"
+    "category":"sobremesa",
+    "answer":["zabaglione", "zeppola", "zuccotto", "zuppa inglese"]
   },
   {
-    "answer":"zorro",
-    "category":"super-herói"
+    "category":"sobrenome",
+    "answer":[]
   },
   {
-    "answer":"zarabatana",
-    "category":"esporte"
+    "category":"super-herói",
+    "answer":["zorro"]
   },
   {
-    "answer":"zumba",
-    "category":"esporte"
+    "category":"série",
+    "answer":[]
   },
   {
-    "answer":"zefir",
-    "category":"doce"
+    "category":"time esportivo",
+    "answer":["zenit", "zaragoza"]
   },
   {
-    "answer":"zacarias",
-    "category":"nome"
+    "category":"verbo",
+    "answer":[]
   },
   {
-    "answer":"zoom",
-    "category":"palavra em inglês"
+    "category":"vestuário",
+    "answer":["zuavo"]
   },
   {
-    "answer":"zoeira",
-    "category":"msé"
+    "category":"vilão",
+    "answer":[]
   },
   {
-    "answer":"zumbi",
-    "category":"fantasia"
-  },
-  {
-    "answer":"zimbabwe",
-    "category":"país"
-  },
-  {
-    "answer":"zambia",
-    "category":"país"
-  },
-  {
-    "answer":"zenit",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"zaragoza",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"zabaione",
-    "category":"sabor de sorvete"
-  },
-  {
-    "answer":"zafiro",
-    "category":"palavra em espanhol"
+    "category":"flv",
+    "answer":["zitrone"]
   }
 ]

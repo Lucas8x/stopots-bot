@@ -1,54 +1,254 @@
 [
   {
-    "answer":"Kaleo",
-    "category":"Banda"
+    "category":"adjetivo",
+    "answer":["kantista"]
   },
   {
-    "answer":"Kelly Key",
-    "category":"Cantor"
+    "category":"animal",
+    "answer":["kouprey"]
   },
   {
-    "answer":"Ka",
-    "category":"Carro"
+    "category":"app ou site",
+    "answer":[]
   },
   {
-    "answer":"Kiev",
-    "category":"Cidade"
+    "category":"ator",
+    "answer":["kristen bell"]
   },
   {
-    "answer":"kantista",
-    "category":"Adjetivo"
+    "category":"ave",
+    "answer":[]
   },
   {
-    "answer":"Krusty",
-    "category":"PDA"
+    "category":"banda",
+    "answer":["kaleo"]
   },
   {
-    "answer":"Kiwi",
-    "category":"Comida"
+    "category":"brinquedo",
+    "answer":[]
   },
   {
-    "answer":"Kouprey",
-    "category":"Animal"
+    "category":"cantor",
+    "answer":["kelly key"]
   },
   {
-    "answer":"Kevin DeBruyne",
-    "category":"Esportista"
+    "category":"capital",
+    "answer":["kampala"]
   },
   {
-    "answer":"Kampala",
-    "category":"Capital"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Kristen Bell",
-    "category":"Ator"
+    "category":"cep",
+    "answer":["kentucky"]
   },
   {
-    "answer":"Kentucky",
-    "category":"CEP"
+    "category":"cidade",
+    "answer":["kiev"]
   },
   {
-    "answer":"Kelly Key",
-    "category":"Celebridade"
+    "category":"comida saudável",
+    "answer":[]
+  },
+  {
+    "category":"cor",
+    "answer":[]
+  },
+  {
+    "category":"desenho animado",
+    "answer":[]
+  },
+  {
+    "category":"doce",
+    "answer":[]
+  },
+  {
+    "category":"doença",
+    "answer":[]
+  },
+  {
+    "category":"eletro eletrônico",
+    "answer":[]
+  },
+  {
+    "category":"esporte",
+    "answer":[]
+  },
+  {
+    "category":"esportista",
+    "answer":["kevin debruyne"]
+  },
+  {
+    "category":"fantasia",
+    "answer":[]
+  },
+  {
+    "category":"filme",
+    "answer":[]
+  },
+  {
+    "category":"flor",
+    "answer":[]
+  },
+  {
+    "category":"flv",
+    "answer":[]
+  },
+  {
+    "category":"fruta",
+    "answer":[]
+  },
+  {
+    "category":"game",
+    "answer":[]
+  },
+  {
+    "category":"gentílico",
+    "answer":[]
+  },
+  {
+    "category":"idioma",
+    "answer":[]
+  },
+  {
+    "category":"ingrediente",
+    "answer":[]
+  },
+  {
+    "category":"inseto",
+    "answer":[]
+  },
+  {
+    "category":"instrumento musical",
+    "answer":[]
+  },
+  {
+    "category":"jlr",
+    "answer":[]
+  },
+  {
+    "category":"líquido",
+    "answer":[]
+  },
+  {
+    "category":"mamífero",
+    "answer":[]
+  },
+  {
+    "category":"marca",
+    "answer":[]
+  },
+  {
+    "category":"meio de transporte",
+    "answer":[]
+  },
+  {
+    "category":"msé",
+    "answer":[]
+  },
+  {
+    "category":"música",
+    "answer":[]
+  },
+  {
+    "category":"nome feminino",
+    "answer":[]
+  },
+  {
+    "category":"nome masculino",
+    "answer":[]
+  },
+  {
+    "category":"objeto",
+    "answer":[]
+  },
+  {
+    "category":"palavra em espanhol",
+    "answer":[]
+  },
+  {
+    "category":"palavra em inglês",
+    "answer":[]
+  },
+  {
+    "category":"país",
+    "answer":[]
+  },
+  {
+    "category":"pch",
+    "answer":[]
+  },
+  {
+    "category":"pda",
+    "answer":["krusty"]
+  },
+  {
+    "category":"personagem fictício",
+    "answer":[]
+  },
+  {
+    "category":"presente",
+    "answer":[]
+  },
+  {
+    "category":"profissão",
+    "answer":[]
+  },
+  {
+    "category":"programa de tv",
+    "answer":[]
+  },
+  {
+    "category":"raça de cachorro",
+    "answer":[]
+  },
+  {
+    "category":"remédio",
+    "answer":[]
+  },
+  {
+    "category":"sabor de pizza",
+    "answer":[]
+  },
+  {
+    "category":"sabor de sorvete",
+    "answer":[]
+  },
+  {
+    "category":"sobremesa",
+    "answer":[]
+  },
+  {
+    "category":"sobrenome",
+    "answer":[]
+  },
+  {
+    "category":"super-herói",
+    "answer":[]
+  },
+  {
+    "category":"série",
+    "answer":[]
+  },
+  {
+    "category":"time esportivo",
+    "answer":[]
+  },
+  {
+    "category":"verbo",
+    "answer":[]
+  },
+  {
+    "category":"vestuário",
+    "answer":[]
+  },
+  {
+    "category":"vilão",
+    "answer":[]
+  },
+  {
+    "category":"flv",
+    "answer":[]
   }
 ]

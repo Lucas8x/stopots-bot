@@ -1,422 +1,254 @@
 [
   {
-    "answer":"Acido",
-    "category":"Líquido"
+    "category":"adjetivo",
+    "answer":["atrasado"]
   },
   {
-    "answer":"Anne Hathaway",
-    "category":"Ator"
+    "category":"animal",
+    "answer":["andorinha", "anta"]
   },
   {
-    "answer":"Anabel",
-    "category":"Desenho animado"
+    "category":"app ou site",
+    "answer":["alibaba", "antutu", "american airlines"]
   },
   {
-    "answer":"Acordeao",
-    "category":"Instrumento Musical"
+    "category":"ator",
+    "answer":["anne hathaway", "angelina jolie", "ana rosa"]
   },
   {
-    "answer":"Ainda Gosto Dela",
-    "category":"Música"
+    "category":"ave",
+    "answer":["aguia"]
   },
   {
-    "answer":"Angelina Jolie",
-    "category":"Ator"
+    "category":"banda",
+    "answer":["acdc", "alice in chains", "alice cooper"]
   },
   {
-    "answer":"Ata",
-    "category":"FLV"
+    "category":"brinquedo",
+    "answer":["aviao plastico"]
   },
   {
-    "answer":"Almere",
-    "category":"Cidade"
+    "category":"cantor",
+    "answer":["akon", "adele"]
   },
   {
-    "answer":"Anel",
-    "category":"Vestuário"
+    "category":"capital",
+    "answer":["atenas"]
   },
   {
-    "answer":"Atenas",
-    "category":"Capital"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Angel of Mercy",
-    "category":"Música"
+    "category":"cep",
+    "answer":["americana", "amazonas"]
   },
   {
-    "answer":"All My Love",
-    "category":"Música"
+    "category":"cidade",
+    "answer":["almere"]
   },
   {
-    "answer":"Alyne",
-    "category":"Marca"
+    "category":"comida saudável",
+    "answer":["alface", "abobora"]
   },
   {
-    "answer":"Arteria",
-    "category":"PCH"
+    "category":"cor",
+    "answer":["ametista", "anil"]
   },
   {
-    "answer":"Asics",
-    "category":"Marca"
+    "category":"desenho animado",
+    "answer":["anabel"]
   },
   {
-    "answer":"AutoEsporte",
-    "category":"Programa de TV"
+    "category":"doce",
+    "answer":["ambrosia"]
   },
   {
-    "answer":"Arapua",
-    "category":"Inseto"
+    "category":"doença",
+    "answer":["aids"]
   },
   {
-    "answer":"Adocante",
-    "category":"Líquido"
+    "category":"eletro eletrônico",
+    "answer":["agronomo", "airpods"]
   },
   {
-    "answer":"Americana",
-    "category":"CEP"
+    "category":"esporte",
+    "answer":["automobilismo"]
   },
   {
-    "answer":"Asphalt",
-    "category":"Game"
+    "category":"esportista",
+    "answer":["andrea pirlo"]
   },
   {
-    "answer":"Automobilismo",
-    "category":"Esporte"
+    "category":"fantasia",
+    "answer":["aranha"]
   },
   {
-    "answer":"Aorta",
-    "category":"PCH"
+    "category":"filme",
+    "answer":["a rede social"]
   },
   {
-    "answer":"Agronomo",
-    "category":"Eletro Eletrônico"
+    "category":"flor",
+    "answer":["anemona"]
   },
   {
-    "answer":"Alibaba",
-    "category":"App ou site"
+    "category":"flv",
+    "answer":["ata", "alface", "alface"]
   },
   {
-    "answer":"Animania",
-    "category":"Programa de TV"
+    "category":"fruta",
+    "answer":["ameixa"]
   },
   {
-    "answer":"Atrasado",
-    "category":"Adjetivo"
+    "category":"game",
+    "answer":["asphalt"]
   },
   {
-    "answer":"Angelica",
-    "category":"Nome"
+    "category":"gentílico",
+    "answer":["angolano"]
   },
   {
-    "answer":"Actyon Sports",
-    "category":"Carro"
+    "category":"idioma",
+    "answer":["alemao"]
   },
   {
-    "answer":"ABZ do Ziraldo",
-    "category":"Programa de TV"
+    "category":"ingrediente",
+    "answer":[]
   },
   {
-    "answer":"Andorinha",
-    "category":"Animal"
+    "category":"inseto",
+    "answer":["arapua"]
   },
   {
-    "answer":"Ametista",
-    "category":"Cor"
+    "category":"instrumento musical",
+    "answer":["acordeao"]
   },
   {
-    "answer":"Amazonas",
-    "category":"CEP"
+    "category":"jlr",
+    "answer":["arduino colaborativo"]
   },
   {
-    "answer":"Almanaque Brasil",
-    "category":"Programa de TV"
+    "category":"líquido",
+    "answer":["acido", "adocante", "acetona", "alcool", "azeite"]
   },
   {
-    "answer":"Arduino Colaborativo",
-    "category":"JLR"
+    "category":"mamífero",
+    "answer":["alce", "alce"]
   },
   {
-    "answer":"American Idol",
-    "category":"Programa de TV"
+    "category":"marca",
+    "answer":["alyne", "asics", "asus", "azaleia", "avon", "assolan"]
   },
   {
-    "answer":"Acetona",
-    "category":"Líquido"
+    "category":"meio de transporte",
+    "answer":["aviao"]
   },
   {
-    "answer":"Alinne Moraes",
-    "category":"Celebridade"
+    "category":"msé",
+    "answer":[]
   },
   {
-    "answer":"Alcool",
-    "category":"Líquido"
+    "category":"música",
+    "answer":["ainda gosto dela", "angel of mercy", "all my love", "adios", "aint it fun", "all the stars", "answer to yourself"]
   },
   {
-    "answer":"Alface",
-    "category":"FLV"
+    "category":"nome feminino",
+    "answer":["ana"]
   },
   {
-    "answer":"Andrea Pirlo",
-    "category":"Esportista"
+    "category":"nome masculino",
+    "answer":["alan"]
   },
   {
-    "answer":"Anil",
-    "category":"Cor"
+    "category":"objeto",
+    "answer":["alarme"]
   },
   {
-    "answer":"Akon",
-    "category":"Cantor"
+    "category":"palavra em espanhol",
+    "answer":["adios"]
   },
   {
-    "answer":"Amy Wong",
-    "category":"PDA"
+    "category":"palavra em inglês",
+    "answer":["after"]
   },
   {
-    "answer":"Ana Rosa",
-    "category":"Ator"
+    "category":"país",
+    "answer":[]
   },
   {
-    "answer":"Assistente social",
-    "category":"Profissão"
+    "category":"pch",
+    "answer":["arteria", "aorta", "apendice", "axila"]
   },
   {
-    "answer":"Arnold",
-    "category":"PDA"
+    "category":"pda",
+    "answer":["amy wong", "arnold"]
   },
   {
-    "answer":"Azeite",
-    "category":"Líquido"
+    "category":"personagem fictício",
+    "answer":["alita"]
   },
   {
-    "answer":"Adios",
-    "category":"Música"
+    "category":"presente",
+    "answer":["anel", "argolas"]
   },
   {
-    "answer":"Apendice",
-    "category":"PCH"
+    "category":"profissão",
+    "answer":["assistente social", "alpinista", "atleta"]
   },
   {
-    "answer":"Antutu",
-    "category":"App ou site"
+    "category":"programa de tv",
+    "answer":["autoesporte", "animania", "abz do ziraldo", "almanaque brasil", "american idol", "altas horas", "aborrecentes"]
   },
   {
-    "answer":"American Airlines",
-    "category":"App ou site"
+    "category":"raça de cachorro",
+    "answer":["akita"]
   },
   {
-    "answer":"Asus",
-    "category":"Marca"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"Alface",
-    "category":"FLV"
+    "category":"sabor de pizza",
+    "answer":["atum"]
   },
   {
-    "answer":"Azaleia",
-    "category":"Marca"
+    "category":"sabor de sorvete",
+    "answer":["abacaxi"]
   },
   {
-    "answer":"ACDC",
-    "category":"Banda"
+    "category":"sobremesa",
+    "answer":["amendoim praline", "arroz doce"]
   },
   {
-    "answer":"Argo",
-    "category":"Carro"
+    "category":"sobrenome",
+    "answer":[]
   },
   {
-    "answer":"Avon",
-    "category":"Marca"
+    "category":"super-herói",
+    "answer":["aquaman"]
   },
   {
-    "answer":"Avental",
-    "category":"Vestuário"
+    "category":"série",
+    "answer":["adventure time"]
   },
   {
-    "answer":"Angolano",
-    "category":"Gentílico"
+    "category":"time esportivo",
+    "answer":["atletico"]
   },
   {
-    "answer":"Altas Horas",
-    "category":"Programa de TV"
+    "category":"verbo",
+    "answer":["amarrar"]
   },
   {
-    "answer":"Alpinista",
-    "category":"Profissão"
+    "category":"vestuário",
+    "answer":["anel", "avental"]
   },
   {
-    "answer":"Aint it Fun",
-    "category":"Música"
+    "category":"vilão",
+    "answer":[]
   },
   {
-    "answer":"Assolan",
-    "category":"Marca"
-  },
-  {
-    "answer":"AirPods",
-    "category":"Eletro Eletrônico"
-  },
-  {
-    "answer":"A Rede Social",
-    "category":"Filme"
-  },
-  {
-    "answer":"All The Stars",
-    "category":"Música"
-  },
-  {
-    "answer":"Anta",
-    "category":"Animal"
-  },
-  {
-    "answer":"Amendoim praline",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Arroz doce",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Alice in Chains",
-    "category":"Banda"
-  },
-  {
-    "answer":"Alice Cooper",
-    "category":"Banda"
-  },
-  {
-    "answer":"Aborrecentes",
-    "category":"Programa de TV"
-  },
-  {
-    "answer":"Axila",
-    "category":"PCH"
-  },
-  {
-    "answer":"Anemona",
-    "category":"Flor"
-  },
-  {
-    "answer":"Atleta",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Ameixa",
-    "category":"Fruta"
-  },
-  {
-    "answer":"Answer To Yourself",
-    "category":"Música"
-  },
-  {
-    "answer":"Arroz",
-    "category":"Comida"
-  },
-  {
-    "answer":"Adele",
-    "category":"Cantor"
-  },
-  {
-    "answer":"alan",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"alarme",
-    "category":"objeto"
-  },
-  {
-    "answer":"akita",
-    "category":"raça de cachorro"
-  },
-  {
-    "answer":"alce",
-    "category":"mamífero"
-  },
-  {
-    "answer":"after",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"aviao",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"ana",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"adventure time",
-    "category":"série"
-  },
-  {
-    "answer":"aquaman",
-    "category":"super-herói"
-  },
-  {
-    "answer":"amarrar",
-    "category":"verbo"
-  },
-  {
-    "answer":"ambrosia",
-    "category":"doce"
-  },
-  {
-    "answer":"aids",
-    "category":"doença"
-  },
-  {
-    "answer":"alce",
-    "category":"mamífero"
-  },
-  {
-    "answer":"aranha",
-    "category":"fantasia"
-  },
-  {
-    "answer":"atum",
-    "category":"sabor de pizza"
-  },
-  {
-    "answer":"alface",
-    "category":"comida saudável"
-  },
-  {
-    "answer":"abobora",
-    "category":"comida saudável"
-  },
-  {
-    "answer":"adios",
-    "category":"palavra em espanhol"
-  },
-  {
-    "answer":"anel",
-    "category":"presente"
-  },
-  {
-    "answer":"argolas",
-    "category":"presente"
-  },
-  {
-    "answer":"abacaxi",
-    "category":"sabor de sorvete"
-  },
-  {
-    "answer":"alita",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"alemao",
-    "category":"idioma"
-  },
-  {
-    "answer":"aguia",
-    "category":"ave"
-  },
-  {
-    "answer":"aviao plastico",
-    "category":"brinquedo"
-  },
-  {
-    "answer":"atletico",
-    "category":"time esportivo"
+    "category":"flv",
+    "answer":["ata", "alface", "alface"]
   }
 ]

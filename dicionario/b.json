@@ -1,534 +1,254 @@
 [
   {
-    "answer":"Banjo",
-    "category":"Instrumento Musical"
+    "category":"adjetivo",
+    "answer":["brando"]
   },
   {
-    "answer":"Bota",
-    "category":"Vestuário"
+    "category":"animal",
+    "answer":["bufalo", "babuino"]
   },
   {
-    "category":"Cor",
-    "answer":"Bege"
+    "category":"app ou site",
+    "answer":["blablacar"]
   },
   {
-    "answer":"Bom Dia Brasil",
-    "category":"Programa de TV"
+    "category":"ator",
+    "answer":["bia arantes"]
   },
   {
-    "answer":"Breaking Benjamin",
-    "category":"Banda"
+    "category":"ave",
+    "answer":["bem te vi"]
   },
   {
-    "answer":"Biquini",
-    "category":"Vestuário"
+    "category":"banda",
+    "answer":["breaking benjamin", "beatles"]
   },
   {
-    "answer":"Biologo",
-    "category":"Profissão"
+    "category":"brinquedo",
+    "answer":["bola"]
   },
   {
-    "category":"Música",
-    "answer":"Bad Karma"
+    "category":"cantor",
+    "answer":["belchior", "bruno mars"]
   },
   {
-    "answer":"Barney Rubble",
-    "category":"PDA"
+    "category":"capital",
+    "answer":["bruxelas"]
   },
   {
-    "answer":"Bufalo",
-    "category":"Animal"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Beico",
-    "category":"PCH"
+    "category":"cep",
+    "answer":["bielorrussia"]
   },
   {
-    "answer":"Biceps",
-    "category":"PCH"
+    "category":"cidade",
+    "answer":["breda"]
   },
   {
-    "answer":"Bombeiro",
-    "category":"Profissão"
+    "category":"comida saudável",
+    "answer":["banana", "batata"]
   },
   {
-    "answer":"Bioquimico",
-    "category":"Profissão"
+    "category":"cor",
+    "answer":["bege", "bordo"]
   },
   {
-    "answer":"Bordo",
-    "category":"Cor"
+    "category":"desenho animado",
+    "answer":["beyblade"]
   },
   {
-    "answer":"Bic",
-    "category":"Marca"
+    "category":"doce",
+    "answer":["bombom"]
   },
   {
-    "answer":"Brasil Adentro",
-    "category":"Programa de TV"
+    "category":"doença",
+    "answer":["bronquite"]
   },
   {
-    "answer":"Beatles",
-    "category":"Banda"
+    "category":"eletro eletrônico",
+    "answer":["blueray"]
   },
   {
-    "answer":"Bruxelense",
-    "category":"Gentílico"
+    "category":"esporte",
+    "answer":["beisebol"]
   },
   {
-    "answer":"Boca",
-    "category":"PCH"
+    "category":"esportista",
+    "answer":["bradley beal"]
   },
   {
-    "answer":"Big Brother Brasil",
-    "category":"Programa de TV"
+    "category":"fantasia",
+    "answer":["batman"]
   },
   {
-    "answer":"Boina",
-    "category":"Vestuário"
+    "category":"filme",
+    "answer":["bravura indomita"]
   },
   {
-    "answer":"Bromo",
-    "category":"Líquido"
+    "category":"flor",
+    "answer":["bromelia"]
   },
   {
-    "answer":"Billabong",
-    "category":"Marca"
+    "category":"flv",
+    "answer":["beterraba"]
   },
   {
-    "category":"Música",
-    "answer":"Blood Hands"
+    "category":"fruta",
+    "answer":["buriti"]
   },
   {
-    "answer":"Betty Rubble",
-    "category":"PDA"
+    "category":"game",
+    "answer":["brawlhalla"]
   },
   {
-    "category":"Programa de TV",
-    "answer":"Bossa Sempre Nova"
+    "category":"gentílico",
+    "answer":["bruxelense"]
   },
   {
-    "answer":"Bolo",
-    "category":"Sobremesa"
+    "category":"idioma",
+    "answer":[]
   },
   {
-    "answer":"Bolsa",
-    "category":"Vestuário"
+    "category":"ingrediente",
+    "answer":["brocolis", "banana"]
   },
   {
-    "answer":"Broche",
-    "category":"Vestuário"
+    "category":"inseto",
+    "answer":["barbeiro"]
   },
   {
-    "answer":"Basics",
-    "category":"Marca"
+    "category":"instrumento musical",
+    "answer":["banjo"]
   },
   {
-    "answer":"Brando",
-    "category":"Adjetivo"
+    "category":"jlr",
+    "answer":["brasil tv"]
   },
   {
-    "answer":"Bruxelas",
-    "category":"Capital"
+    "category":"líquido",
+    "answer":["bromo", "bananada", "boza"]
   },
   {
-    "answer":"Beyblade",
-    "category":"Desenho animado"
+    "category":"mamífero",
+    "answer":[]
   },
   {
-    "answer":"Barista",
-    "category":"Profissão"
+    "category":"marca",
+    "answer":["bic", "billabong", "basics", "brandili", "bianza", "bombril"]
   },
   {
-    "answer":"Brandili",
-    "category":"Marca"
+    "category":"meio de transporte",
+    "answer":["bondinho", "balao"]
   },
   {
-    "answer":"Bianza",
-    "category":"Marca"
+    "category":"msé",
+    "answer":["bonita"]
   },
   {
-    "answer":"Barbeiro",
-    "category":"Inseto"
+    "category":"música",
+    "answer":["bad karma", "blood hands", "be yourself", "bird set free", "bitch", "better strangers", "beast of burden", "beastmode", "born ready", "blow your mind", "bored to death", "blood water", "bloodfeather"]
   },
   {
-    "answer":"Bart Simpson",
-    "category":"PDA"
+    "category":"nome feminino",
+    "answer":["bruna", "beatriz"]
   },
   {
-    "answer":"Beisebol",
-    "category":"Esporte"
+    "category":"nome masculino",
+    "answer":["bruno"]
   },
   {
-    "answer":"Brinco",
-    "category":"Vestuário"
+    "category":"objeto",
+    "answer":["bola"]
   },
   {
-    "answer":"Be Yourself",
-    "category":"Música"
+    "category":"palavra em espanhol",
+    "answer":["bueno", "buen"]
   },
   {
-    "answer":"Bia Arantes",
-    "category":"Ator"
+    "category":"palavra em inglês",
+    "answer":["buy", "bad"]
   },
   {
-    "answer":"Bromelia",
-    "category":"Flor"
+    "category":"país",
+    "answer":["brasil"]
   },
   {
-    "answer":"Baixista",
-    "category":"Profissão"
+    "category":"pch",
+    "answer":["beico", "biceps", "boca", "braco", "bexiga", "bronquios", "baco"]
   },
   {
-    "category":"Carro",
-    "answer":"Blazer"
+    "category":"pda",
+    "answer":["barney rubble", "betty rubble", "bart simpson", "bender", "bojack horseman"]
   },
   {
-    "answer":"Bermuda",
-    "category":"Vestuário"
+    "category":"personagem fictício",
+    "answer":["batman", "bob esponja"]
   },
   {
-    "category":"FLV",
-    "answer":"Beterraba"
+    "category":"presente",
+    "answer":["brinco", "boneca", "blusa"]
   },
   {
-    "answer":"Brawlhalla",
-    "category":"Game"
+    "category":"profissão",
+    "answer":["biologo", "bombeiro", "bioquimico", "barista", "baixista", "bibliotecario", "barbeiro", "bailarina"]
   },
   {
-    "answer":"BlueRay",
-    "category":"Eletro Eletrônico"
+    "category":"programa de tv",
+    "answer":["bom dia brasil", "brasil adentro", "big brother brasil", "bossa sempre nova", "brasil visual"]
   },
   {
-    "answer":"Bird Set Free",
-    "category":"Música"
+    "category":"raça de cachorro",
+    "answer":["beagle"]
   },
   {
-    "answer":"Bradley Beal",
-    "category":"Esportista"
+    "category":"remédio",
+    "answer":["buscopan"]
   },
   {
-    "answer":"Brasil TV",
-    "category":"JLR"
+    "category":"sabor de pizza",
+    "answer":["bolonhesa", "bacon"]
   },
   {
-    "answer":"Blazer",
-    "category":"Vestuário"
+    "category":"sabor de sorvete",
+    "answer":["baunilha"]
   },
   {
-    "answer":"Bomba de chocolate",
-    "category":"Sobremesa"
+    "category":"sobremesa",
+    "answer":["bolo", "bomba de chocolate", "brownie", "bombom"]
   },
   {
-    "answer":"Bitch",
-    "category":"Música"
+    "category":"sobrenome",
+    "answer":["barbosa", "barros"]
   },
   {
-    "answer":"Body",
-    "category":"Vestuário"
+    "category":"super-herói",
+    "answer":["batman"]
   },
   {
-    "answer":"Beyonce",
-    "category":"Celebridade"
+    "category":"série",
+    "answer":[]
   },
   {
-    "answer":"Braco",
-    "category":"PCH"
+    "category":"time esportivo",
+    "answer":["barcelona"]
   },
   {
-    "answer":"Bibliotecario",
-    "category":"Profissão"
+    "category":"verbo",
+    "answer":["beijar", "burlar"]
   },
   {
-    "answer":"Bravura Indomita",
-    "category":"Filme"
+    "category":"vestuário",
+    "answer":["bota", "biquini", "boina", "bolsa", "broche", "brinco", "bermuda", "blazer", "body", "blusa", "blusao"]
   },
   {
-    "answer":"Bender",
-    "category":"PDA"
+    "category":"vilão",
+    "answer":["blob", "brutus"]
   },
   {
-    "answer":"Blablacar",
-    "category":"App ou site"
-  },
-  {
-    "answer":"Blusa",
-    "category":"Vestuário"
-  },
-  {
-    "category":"Música",
-    "answer":"Better Strangers"
-  },
-  {
-    "answer":"Beast of Burden",
-    "category":"Música"
-  },
-  {
-    "answer":"Bexiga",
-    "category":"PCH"
-  },
-  {
-    "answer":"Breda",
-    "category":"Cidade"
-  },
-  {
-    "answer":"Bronquios",
-    "category":"PCH"
-  },
-  {
-    "answer":"Beastmode",
-    "category":"Música"
-  },
-  {
-    "answer":"Born Ready",
-    "category":"Música"
-  },
-  {
-    "answer":"Blow Your Mind",
-    "category":"Música"
-  },
-  {
-    "answer":"Brownie",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Bored to Death",
-    "category":"Música"
-  },
-  {
-    "answer":"Babuino",
-    "category":"Animal"
-  },
-  {
-    "answer":"Belchior",
-    "category":"Cantor"
-  },
-  {
-    "answer":"Blusao",
-    "category":"Vestuário"
-  },
-  {
-    "answer":"Bruno Mars",
-    "category":"Cantor"
-  },
-  {
-    "answer":"Bolo",
-    "category":"Comida"
-  },
-  {
-    "answer":"Brasil Visual",
-    "category":"Programa de TV"
-  },
-  {
-    "answer":"Bielorrussia",
-    "category":"CEP"
-  },
-  {
-    "answer":"Bombril",
-    "category":"Marca"
-  },
-  {
-    "answer":"Barbeiro",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Bailarina",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Baco",
-    "category":"PCH"
-  },
-  {
-    "answer":"Buriti",
-    "category":"Fruta"
-  },
-  {
-    "answer":"Blood Water",
-    "category":"Música"
-  },
-  {
-    "answer":"Bananada",
-    "category":"Líquido"
-  },
-  {
-    "answer":"Boza",
-    "category":"Líquido"
-  },
-  {
-    "answer":"BoJack Horseman",
-    "category":"PDA"
-  },
-  {
-    "answer":"Bombom",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Bloodfeather",
-    "category":"Música"
-  },
-  {
-    "answer":"bola",
-    "category":"brinquedo"
-  },
-  {
-    "answer":"bola",
-    "category":"objeto"
-  },
-  {
-    "answer":"bolonhesa",
-    "category":"sabor de pizza"
-  },
-  {
-    "answer":"batman",
-    "category":"fantasia"
-  },
-  {
-    "answer":"bacon",
-    "category":"sabor de pizza"
-  },
-  {
-    "answer":"beijar",
-    "category":"verbo"
-  },
-  {
-    "answer":"burlar",
-    "category":"verbo"
-  },
-  {
-    "answer":"brinco",
-    "category":"presente"
-  },
-  {
-    "answer":"boneca",
-    "category":"presente"
-  },
-  {
-    "answer":"blusa",
-    "category":"presente"
-  },
-  {
-    "answer":"bruna",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"beatriz",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"bronquite",
-    "category":"doença"
-  },
-  {
-    "answer":"bem te vi",
-    "category":"ave"
-  },
-  {
-    "answer":"bruno",
-    "category":"nome"
-  },
-  {
-    "answer":"beatriz",
-    "category":"nome"
-  },
-  {
-    "answer":"bonita",
-    "category":"msé"
-  },
-  {
-    "answer":"banana",
-    "category":"comida saudável"
-  },
-  {
-    "answer":"batata",
-    "category":"comida saudável"
-  },
-  {
-    "answer":"baunilha",
-    "category":"sabor de sorvete"
-  },
-  {
-    "answer":"bueno",
-    "category":"palavra em espanhol"
-  },
-  {
-    "answer":"batman",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"bob esponja",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"barcelona",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"brasil",
-    "category":"país"
-  },
-  {
-    "answer":"brocolis",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"banana",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"buy",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"bad",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"bruno",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"blob",
-    "category":"vilão"
-  },
-  {
-    "answer":"brutus",
-    "category":"vilão"
-  },
-  {
-    "answer":"buen",
-    "category":"palavra em espanhol"
-  },
-  {
-    "answer":"buscopan",
-    "category":"remédio"
-  },
-  {
-    "answer":"beagle",
-    "category":"raça de cachorro"
-  },
-  {
-    "answer":"batman",
-    "category":"super-herói"
-  },
-  {
-    "answer":"bombom",
-    "category":"doce"
-  },
-  {
-    "answer":"barbosa",
-    "category":"sobrenome"
-  },
-  {
-    "answer":"barros",
-    "category":"sobrenome"
-  },
-  {
-    "answer":"bondinho",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"balao",
-    "category":"meio de transporte"
+    "category":"flv",
+    "answer":["beterraba"]
   }
 ]

@@ -1,430 +1,254 @@
 [
   {
-    "answer":"Simone",
-    "category":"Cantor"
+    "category":"adjetivo",
+    "answer":["solidario"]
   },
   {
-    "answer":"Starter",
-    "category":"Marca"
+    "category":"animal",
+    "answer":["suricata", "salamandra"]
   },
   {
-    "answer":"Salgadeiro",
-    "category":"Profissão"
+    "category":"app ou site",
+    "answer":["sputniks", "snapchat"]
   },
   {
-    "answer":"Set Me Free",
-    "category":"Música"
+    "category":"ator",
+    "answer":["sylvester stallone", "shailene woodley", "scarlett johansson"]
   },
   {
-    "answer":"Saga",
-    "category":"JLR"
+    "category":"ave",
+    "answer":[]
   },
   {
-    "answer":"Satellite 15",
-    "category":"Música"
+    "category":"banda",
+    "answer":["seether", "screaming trees"]
   },
   {
-    "answer":"Short",
-    "category":"Vestuário"
+    "category":"brinquedo",
+    "answer":[]
   },
   {
-    "answer":"Salto para o Futuro",
-    "category":"Programa de TV"
+    "category":"cantor",
+    "answer":["simone", "simaria"]
   },
   {
-    "answer":"Seether",
-    "category":"Banda"
+    "category":"capital",
+    "answer":["santiago"]
   },
   {
-    "answer":"Saint Of Me",
-    "category":"Música"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"SmartWatch",
-    "category":"Eletro Eletrônico"
+    "category":"cep",
+    "answer":["somalia", "suriname"]
   },
   {
-    "answer":"Sherlock Holmes",
-    "category":"Filme"
+    "category":"cidade",
+    "answer":["sacramento"]
   },
   {
-    "answer":"Serena Williams",
-    "category":"Esportista"
+    "category":"comida saudável",
+    "answer":["salada"]
   },
   {
-    "answer":"Solvente",
-    "category":"Líquido"
+    "category":"cor",
+    "answer":["sepia", "salmao"]
   },
   {
-    "answer":"Saco escrotal",
-    "category":"PCH"
+    "category":"desenho animado",
+    "answer":["super choque"]
   },
   {
-    "answer":"Sapateiro",
-    "category":"Profissão"
+    "category":"doce",
+    "answer":["sorvete"]
   },
   {
-    "answer":"Sachertorte",
-    "category":"Sobremesa"
+    "category":"doença",
+    "answer":["sarampo", "sifilis"]
   },
   {
-    "answer":"Sem Censura",
-    "category":"Programa de TV"
+    "category":"eletro eletrônico",
+    "answer":["smartwatch"]
   },
   {
-    "answer":"Sylvester Stallone",
-    "category":"Ator"
+    "category":"esporte",
+    "answer":["salto ornamental"]
   },
   {
-    "answer":"Sepia",
-    "category":"Cor"
+    "category":"esportista",
+    "answer":["serena williams"]
   },
   {
-    "answer":"Sideshow Bob",
-    "category":"PDA"
+    "category":"fantasia",
+    "answer":["superman", "sasuke"]
   },
   {
-    "answer":"Seringueiro",
-    "category":"Profissão"
+    "category":"filme",
+    "answer":["sherlock holmes"]
   },
   {
-    "answer":"Santiago",
-    "category":"Capital"
+    "category":"flor",
+    "answer":["salvia"]
   },
   {
-    "answer":"Santoni",
-    "category":"Marca"
+    "category":"flv",
+    "answer":["sapoti"]
   },
   {
-    "answer":"Simaria",
-    "category":"Cantor"
+    "category":"fruta",
+    "answer":["sapoti"]
   },
   {
-    "answer":"Sapoti",
-    "category":"Fruta"
+    "category":"game",
+    "answer":["saints row"]
   },
   {
-    "answer":"Sad",
-    "category":"Música"
+    "category":"gentílico",
+    "answer":["senegales"]
   },
   {
-    "answer":"Secretaria",
-    "category":"Profissão"
+    "category":"idioma",
+    "answer":["sueco"]
   },
   {
-    "answer":"Sandstorm",
-    "category":"Música"
+    "category":"ingrediente",
+    "answer":["sal"]
   },
   {
-    "answer":"Susuki",
-    "category":"Marca"
+    "category":"inseto",
+    "answer":[]
   },
   {
-    "answer":"Sundown",
-    "category":"Marca"
+    "category":"instrumento musical",
+    "answer":["saxofone"]
   },
   {
-    "answer":"Suco",
-    "category":"Líquido"
+    "category":"jlr",
+    "answer":["saga"]
   },
   {
-    "answer":"Sandero",
-    "category":"Carro"
+    "category":"líquido",
+    "answer":["solvente", "suco", "soda", "saque"]
   },
   {
-    "answer":"Sargento",
-    "category":"Profissão"
+    "category":"mamífero",
+    "answer":[]
   },
   {
-    "answer":"Sapoti",
-    "category":"FLV"
+    "category":"marca",
+    "answer":["starter", "santoni", "susuki", "sundown", "siola", "saint laurent", "styland"]
   },
   {
-    "answer":"Shailene Woodley",
-    "category":"Ator"
+    "category":"meio de transporte",
+    "answer":[]
   },
   {
-    "answer":"Siola",
-    "category":"Marca"
+    "category":"msé",
+    "answer":["solteira", "sortuda", "santa"]
   },
   {
-    "answer":"Saladeiro",
-    "category":"Profissão"
+    "category":"música",
+    "answer":["set me free", "satellite 15", "saint of me", "sad", "sandstorm", "self esteem", "ship to wreck"]
   },
   {
-    "answer":"Sunga",
-    "category":"Vestuário"
+    "category":"nome feminino",
+    "answer":["sandra"]
   },
   {
-    "answer":"Sacole",
-    "category":"Sobremesa"
+    "category":"nome masculino",
+    "answer":["samuel", "sergio"]
   },
   {
-    "answer":"Soda",
-    "category":"Líquido"
+    "category":"objeto",
+    "answer":["sapatilha", "sacola"]
   },
   {
-    "answer":"Sacramento",
-    "category":"Cidade"
+    "category":"palavra em espanhol",
+    "answer":[]
   },
   {
-    "answer":"Salvia",
-    "category":"Flor"
+    "category":"palavra em inglês",
+    "answer":["sorry", "sun", "send"]
   },
   {
-    "answer":"Suricata",
-    "category":"Animal"
+    "category":"país",
+    "answer":["suecia"]
   },
   {
-    "answer":"Saruel",
-    "category":"Vestuário"
+    "category":"pch",
+    "answer":["saco escrotal", "serratil", "suprarrenais", "sovaco", "sombrancelha"]
   },
   {
-    "answer":"Serratil",
-    "category":"PCH"
+    "category":"pda",
+    "answer":["sideshow bob"]
   },
   {
-    "answer":"Sputniks",
-    "category":"App ou site"
+    "category":"personagem fictício",
+    "answer":["sasuke", "shenlong"]
   },
   {
-    "answer":"Saints Row",
-    "category":"Game"
+    "category":"presente",
+    "answer":["sapato", "sandalia"]
   },
   {
-    "answer":"Saque",
-    "category":"Líquido"
+    "category":"profissão",
+    "answer":["salgadeiro", "sapateiro", "seringueiro", "secretaria", "sargento", "saladeiro", "sorveteiro", "seguranca", "soldador"]
   },
   {
-    "answer":"Saia",
-    "category":"Vestuário"
+    "category":"programa de tv",
+    "answer":["salto para o futuro", "sem censura", "samba na gamboa"]
   },
   {
-    "answer":"Suspiro",
-    "category":"Sobremesa"
+    "category":"raça de cachorro",
+    "answer":[]
   },
   {
-    "answer":"Suprarrenais",
-    "category":"PCH"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"Self Esteem",
-    "category":"Música"
+    "category":"sabor de pizza",
+    "answer":[]
   },
   {
-    "answer":"Somalia",
-    "category":"CEP"
+    "category":"sabor de sorvete",
+    "answer":["seriguela"]
   },
   {
-    "answer":"Salsicha",
-    "category":"Comida"
+    "category":"sobremesa",
+    "answer":["sachertorte", "sacole", "suspiro", "sonho", "sorvete"]
   },
   {
-    "answer":"Sorveteiro",
-    "category":"Profissão"
+    "category":"sobrenome",
+    "answer":["souza", "santos"]
   },
   {
-    "answer":"Snapchat",
-    "category":"App ou site"
+    "category":"super-herói",
+    "answer":["superman"]
   },
   {
-    "answer":"Sovaco",
-    "category":"PCH"
+    "category":"série",
+    "answer":[]
   },
   {
-    "answer":"Suriname",
-    "category":"CEP"
+    "category":"time esportivo",
+    "answer":["sao paulo"]
   },
   {
-    "answer":"Salamandra",
-    "category":"Animal"
+    "category":"verbo",
+    "answer":["soltar", "subir", "saltar"]
   },
   {
-    "answer":"Salmao",
-    "category":"Cor"
+    "category":"vestuário",
+    "answer":["short", "sunga", "saruel", "saia"]
   },
   {
-    "answer":"Scarlett Johansson",
-    "category":"Ator"
+    "category":"vilão",
+    "answer":["savitar"]
   },
   {
-    "answer":"Super Choque",
-    "category":"Desenho animado"
-  },
-  {
-    "answer":"Salto Ornamental",
-    "category":"Esporte"
-  },
-  {
-    "answer":"Sombrancelha",
-    "category":"PCH"
-  },
-  {
-    "answer":"Saint Laurent",
-    "category":"Marca"
-  },
-  {
-    "answer":"Solidario",
-    "category":"Adjetivo"
-  },
-  {
-    "answer":"Sabrina Sato",
-    "category":"Celebridade"
-  },
-  {
-    "answer":"Seguranca",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Samba na Gamboa",
-    "category":"Programa de TV"
-  },
-  {
-    "answer":"SpaceFox",
-    "category":"Carro"
-  },
-  {
-    "answer":"Sonho",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Screaming Trees",
-    "category":"Banda"
-  },
-  {
-    "answer":"Styland",
-    "category":"Marca"
-  },
-  {
-    "answer":"Sorvete",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Ship To Wreck",
-    "category":"Música"
-  },
-  {
-    "answer":"Soldador",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Senegales",
-    "category":"Gentílico"
-  },
-  {
-    "answer":"sasuke",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"shenlong",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"solteira",
-    "category":"msé"
-  },
-  {
-    "answer":"sortuda",
-    "category":"msé"
-  },
-  {
-    "answer":"santa",
-    "category":"msé"
-  },
-  {
-    "answer":"sapato",
-    "category":"presente"
-  },
-  {
-    "answer":"sandalia",
-    "category":"presente"
-  },
-  {
-    "answer":"sapatilha",
-    "category":"objeto"
-  },
-  {
-    "answer":"sacola",
-    "category":"objeto"
-  },
-  {
-    "answer":"sao paulo",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"superman",
-    "category":"fantasia"
-  },
-  {
-    "answer":"sasuke",
-    "category":"fantasia"
-  },
-  {
-    "answer":"sorry",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"sun",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"send",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"suecia",
-    "category":"país"
-  },
-  {
-    "answer":"savitar",
-    "category":"vilão"
-  },
-  {
-    "answer":"sueco",
-    "category":"idioma"
-  },
-  {
-    "answer":"seriguela",
-    "category":"sabor de sorvete"
-  },
-  {
-    "answer":"sandra",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"saxofone",
-    "category":"instrumento musical"
-  },
-  {
-    "answer":"superman",
-    "category":"super-herói"
-  },
-  {
-    "answer":"salada",
-    "category":"comida saudável"
-  },
-  {
-    "answer":"sal",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"samuel",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"sergio",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"souza",
-    "category":"sobrenome"
-  },
-  {
-    "answer":"santos",
-    "category":"sobrenome"
-  },
-  {
-    "answer":"sorvete",
-    "category":"doce"
+    "category":"flv",
+    "answer":["sapoti"]
   }
 ]

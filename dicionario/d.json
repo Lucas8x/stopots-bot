@@ -1,370 +1,254 @@
 [
   {
-    "answer":"Damasco",
-    "category":"CEP"
+    "category":"adjetivo",
+    "answer":["divino"]
   },
   {
-    "answer":"Dia D",
-    "category":"JLR"
+    "category":"animal",
+    "answer":["dragao de komodo", "doninha"]
   },
   {
-    "category":"Animal",
-    "answer":"Dragao de komodo"
+    "category":"app ou site",
+    "answer":["drive", "datally", "dropbox"]
   },
   {
-    "answer":"Diario do Nordeste",
-    "category":"JLR"
+    "category":"ator",
+    "answer":["deborah secco", "daniela faria"]
   },
   {
-    "answer":"Detergente",
-    "category":"Líquido"
+    "category":"ave",
+    "answer":["diuca", "diablotim", "degolado"]
   },
   {
-    "answer":"Dedal",
-    "category":"Vestuário"
+    "category":"banda",
+    "answer":["disturbed", "daft punk"]
   },
   {
-    "answer":"Doctor Zoidberd",
-    "category":"PDA"
+    "category":"brinquedo",
+    "answer":["dado"]
   },
   {
-    "answer":"Dead Flowers",
-    "category":"Música"
+    "category":"cantor",
+    "answer":["daniel", "dorothy"]
   },
   {
-    "answer":"Diane Nguyen",
-    "category":"PDA"
+    "category":"capital",
+    "answer":["damasco"]
   },
   {
-    "category":"PCH",
-    "answer":"Diafragma"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Dobradinha",
-    "category":"Comida"
+    "category":"cep",
+    "answer":["damasco"]
   },
   {
-    "answer":"Delegado",
-    "category":"Profissão"
+    "category":"cidade",
+    "answer":["damasco"]
   },
   {
-    "answer":"Diadora",
-    "category":"Marca"
+    "category":"comida saudável",
+    "answer":[]
   },
   {
-    "answer":"Doce de abobora",
-    "category":"Sobremesa"
+    "category":"cor",
+    "answer":["dourado"]
   },
   {
-    "category":"Música",
-    "answer":"Dark Desires"
+    "category":"desenho animado",
+    "answer":["digimon"]
   },
   {
-    "answer":"Doll Parts",
-    "category":"Música"
+    "category":"doce",
+    "answer":[]
   },
   {
-    "answer":"Digimon",
-    "category":"Desenho animado"
+    "category":"doença",
+    "answer":["dengue", "daltonismo"]
   },
   {
-    "answer":"Divino",
-    "category":"Adjetivo"
+    "category":"eletro eletrônico",
+    "answer":["display dock"]
   },
   {
-    "answer":"Dakota",
-    "category":"Marca"
+    "category":"esporte",
+    "answer":["declato"]
   },
   {
-    "category":"App ou site",
-    "answer":"Drive"
+    "category":"esportista",
+    "answer":["drew brees"]
   },
   {
-    "answer":"Dourado",
-    "category":"Cor"
+    "category":"fantasia",
+    "answer":["dracula"]
   },
   {
-    "answer":"Diarista",
-    "category":"Profissão"
+    "category":"filme",
+    "answer":["divergente"]
   },
   {
-    "answer":"Damasco",
-    "category":"FLV"
+    "category":"flor",
+    "answer":["dalia"]
   },
   {
-    "answer":"Disturbed",
-    "category":"Banda"
+    "category":"flv",
+    "answer":["damasco"]
   },
   {
-    "answer":"Datilografo",
-    "category":"Profissão"
+    "category":"fruta",
+    "answer":["diospiro"]
   },
   {
-    "answer":"Diospiro",
-    "category":"Fruta"
+    "category":"game",
+    "answer":["demons crest"]
   },
   {
-    "answer":"Dancarino",
-    "category":"Profissão"
+    "category":"gentílico",
+    "answer":["dominicano"]
   },
   {
-    "answer":"Diretor",
-    "category":"Profissão"
+    "category":"idioma",
+    "answer":[]
   },
   {
-    "answer":"Damasco",
-    "category":"Cidade"
+    "category":"ingrediente",
+    "answer":[]
   },
   {
-    "answer":"Dr. Nick Riviera",
-    "category":"PDA"
+    "category":"inseto",
+    "answer":[]
   },
   {
-    "answer":"Demons Crest",
-    "category":"Game"
+    "category":"instrumento musical",
+    "answer":["dutar"]
   },
   {
-    "category":"Marca",
-    "answer":"Delpozo"
+    "category":"jlr",
+    "answer":["dia d", "diario do nordeste"]
   },
   {
-    "answer":"Display Dock",
-    "category":"Eletro Eletrônico"
+    "category":"líquido",
+    "answer":["detergente", "desinfetante"]
   },
   {
-    "answer":"Duster",
-    "category":"Carro"
+    "category":"mamífero",
+    "answer":["dromedario"]
   },
   {
-    "category":"Capital",
-    "answer":"Damasco"
+    "category":"marca",
+    "answer":["diadora", "dakota", "delpozo", "dzarm", "dafiti"]
   },
   {
-    "answer":"Doug Yancy Fannie",
-    "category":"PDA"
+    "category":"meio de transporte",
+    "answer":["dutoviario"]
   },
   {
-    "category":"PDA",
-    "answer":"Doctor Zoidberg"
+    "category":"msé",
+    "answer":["doida"]
   },
   {
-    "answer":"Deltoide",
-    "category":"PCH"
+    "category":"música",
+    "answer":["dead flowers", "dark desires", "doll parts", "dreamer", "delilah", "down in a hole", "dark nights", "dirty sexy money"]
   },
   {
-    "answer":"Do Re Mi Fabrica",
-    "category":"Programa de TV"
+    "category":"nome feminino",
+    "answer":["daisy"]
   },
   {
-    "answer":"Dzarm",
-    "category":"Marca"
+    "category":"nome masculino",
+    "answer":[]
   },
   {
-    "answer":"Domingao do Faustao",
-    "category":"Programa de TV"
+    "category":"objeto",
+    "answer":["dado"]
   },
   {
-    "answer":"Doleiro",
-    "category":"Profissão"
+    "category":"palavra em espanhol",
+    "answer":[]
   },
   {
-    "answer":"Dentista",
-    "category":"Profissão"
+    "category":"palavra em inglês",
+    "answer":["define"]
   },
   {
-    "category":"PDA",
-    "answer":"Dino"
+    "category":"país",
+    "answer":["dinamarca"]
   },
   {
-    "answer":"Doce de leite",
-    "category":"Sobremesa"
+    "category":"pch",
+    "answer":["diafragma", "deltoide", "dorsal", "dedo"]
   },
   {
-    "answer":"Dorsal",
-    "category":"PCH"
+    "category":"pda",
+    "answer":["doctor zoidberd", "diane nguyen", "dr. nick riviera", "doug yancy fannie", "doctor zoidberg", "dino", "donald", "diretor skinner"]
   },
   {
-    "category":"Profissão",
-    "answer":"Depiladora"
+    "category":"personagem fictício",
+    "answer":["demolidor", "dr estranho"]
   },
   {
-    "answer":"Dutar",
-    "category":"Instrumento Musical"
+    "category":"presente",
+    "answer":["dado"]
   },
   {
-    "answer":"Datally",
-    "category":"App ou site"
+    "category":"profissão",
+    "answer":["delegado", "diarista", "datilografo", "dancarino", "diretor", "doleiro", "dentista", "depiladora", "decorador", "digitador", "dermatologista", "doceiro"]
   },
   {
-    "category":"Líquido",
-    "answer":"Desinfetante"
+    "category":"programa de tv",
+    "answer":["do re mi fabrica", "domingao do faustao"]
   },
   {
-    "answer":"Donald",
-    "category":"PDA"
+    "category":"raça de cachorro",
+    "answer":["dalmata", "doberman"]
   },
   {
-    "answer":"Daft Punk",
-    "category":"Banda"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"Dreamer",
-    "category":"Música"
+    "category":"sabor de pizza",
+    "answer":["doce"]
   },
   {
-    "answer":"Daniel",
-    "category":"Cantor"
+    "category":"sabor de sorvete",
+    "answer":["damasco"]
   },
   {
-    "answer":"Danielle Winits",
-    "category":"Celebridade"
+    "category":"sobremesa",
+    "answer":["doce de abobora", "doce de leite"]
   },
   {
-    "answer":"Doninha",
-    "category":"Animal"
+    "category":"sobrenome",
+    "answer":["dantas"]
   },
   {
-    "answer":"Dalia",
-    "category":"Flor"
+    "category":"super-herói",
+    "answer":["demolidor", "dr estranho"]
   },
   {
-    "answer":"Delilah",
-    "category":"Música"
+    "category":"série",
+    "answer":["defensores marvel"]
   },
   {
-    "answer":"Drew Brees",
-    "category":"Esportista"
+    "category":"time esportivo",
+    "answer":["dinamarca"]
   },
   {
-    "answer":"Dafiti",
-    "category":"Marca"
+    "category":"verbo",
+    "answer":["doar", "dar"]
   },
   {
-    "answer":"Decorador",
-    "category":"Profissão"
+    "category":"vestuário",
+    "answer":["dedal"]
   },
   {
-    "answer":"Down In A Hole",
-    "category":"Música"
+    "category":"vilão",
+    "answer":["doutor destino"]
   },
   {
-    "answer":"Dominicano",
-    "category":"Gentílico"
-  },
-  {
-    "answer":"Dark Nights",
-    "category":"Música"
-  },
-  {
-    "answer":"Digitador",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Deborah Secco",
-    "category":"Ator"
-  },
-  {
-    "answer":"Dorothy",
-    "category":"Cantor"
-  },
-  {
-    "answer":"Daniela Faria",
-    "category":"Ator"
-  },
-  {
-    "answer":"Declato",
-    "category":"Esporte"
-  },
-  {
-    "answer":"Dirty Sexy Money",
-    "category":"Música"
-  },
-  {
-    "answer":"Dropbox",
-    "category":"App ou site"
-  },
-  {
-    "answer":"Dermatologista",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Diretor Skinner",
-    "category":"PDA"
-  },
-  {
-    "answer":"Divergente",
-    "category":"Filme"
-  },
-  {
-    "answer":"Dedo",
-    "category":"PCH"
-  },
-  {
-    "category":"Profissão",
-    "answer":"Doceiro"
-  },
-  {
-    "answer":"dado",
-    "category":"presente"
-  },
-  {
-    "answer":"doar",
-    "category":"verbo"
-  },
-  {
-    "answer":"dar",
-    "category":"verbo"
-  },
-  {
-    "answer":"dracula",
-    "category":"fantasia"
-  },
-  {
-    "answer":"defensores marvel",
-    "category":"série"
-  },
-  {
-    "answer":"dinamarca",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"dinamarca",
-    "category":"país"
-  },
-  {
-    "answer":"dantas",
-    "category":"sobrenome"
-  },
-  {
-    "answer":"dengue",
-    "category":"doença"
-  },
-  {
-    "answer":"daltonismo",
-    "category":"doença"
-  },
-  {
-    "answer":"define",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"doutor destino",
-    "category":"vilão"
-  },
-  {
-    "answer":"dutoviario",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"doce",
-    "category":"sabor de pizza"
-  },
-  {
-    "answer":"david",
-    "category":"nome"
-  },
-  {
-    "answer":"dado",
-    "category":"brinquedo"
+    "category":"flv",
+    "answer":["damasco"]
   }
 ]

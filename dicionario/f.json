@@ -1,414 +1,254 @@
 [
   {
-    "answer":"Fonoaudiologo",
-    "category":"Profissão"
+    "category":"adjetivo",
+    "answer":["famoso"]
   },
   {
-    "answer":"Fones de ouvido",
-    "category":"Eletro Eletrônico"
+    "category":"animal",
+    "answer":["furao", "falcao", "fuinha"]
   },
   {
-    "answer":"Flash And Bone",
-    "category":"Música"
+    "category":"app ou site",
+    "answer":["facebook", "fgts"]
   },
   {
-    "answer":"Fantastico",
-    "category":"Programa de TV"
+    "category":"ator",
+    "answer":["fernanda lima"]
   },
   {
-    "answer":"Flanela",
-    "category":"Vestuário"
+    "category":"ave",
+    "answer":["falcao", "flamingo"]
   },
   {
-    "answer":"Filipino",
-    "category":"Gentílico"
+    "category":"banda",
+    "answer":["foster the people", "foo fighters"]
   },
   {
-    "answer":"For The King",
-    "category":"Música"
+    "category":"brinquedo",
+    "answer":["fliperama"]
   },
   {
-    "answer":"Flor de larangeira",
-    "category":"Flor"
+    "category":"cantor",
+    "answer":["fagner"]
   },
   {
-    "answer":"Fahrenheit",
-    "category":"Game"
+    "category":"capital",
+    "answer":["fortaleza"]
   },
   {
-    "answer":"Formiga",
-    "category":"Inseto"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Figado",
-    "category":"PCH"
+    "category":"cep",
+    "answer":["florenca", "florianopolis"]
   },
   {
-    "answer":"Francalce",
-    "category":"Marca"
+    "category":"cidade",
+    "answer":["fortaleza", "florianopolis"]
   },
   {
-    "answer":"Fortaleza",
-    "category":"Cidade"
+    "category":"comida saudável",
+    "answer":["figo", "feijão"]
   },
   {
-    "answer":"Forum",
-    "category":"Marca"
+    "category":"cor",
+    "answer":["ferrugem"]
   },
   {
-    "answer":"Facebook",
-    "category":"App ou site"
+    "category":"desenho animado",
+    "answer":["futurama"]
   },
   {
-    "answer":"Face",
-    "category":"PCH"
+    "category":"doce",
+    "answer":["fini"]
   },
   {
-    "answer":"Forca Tarefa",
-    "category":"Programa de TV"
+    "category":"doença",
+    "answer":["faringite", "febre"]
   },
   {
-    "answer":"Fahrenheit 451",
-    "category":"JLR"
+    "category":"eletro eletrônico",
+    "answer":["fones de ouvido"]
   },
   {
-    "answer":"FiveBlu",
-    "category":"Marca"
+    "category":"esporte",
+    "answer":["fisiculturismo"]
   },
   {
-    "answer":"Fortaleza",
-    "category":"Capital"
+    "category":"esportista",
+    "answer":["fernando alonso"]
   },
   {
-    "answer":"Fila",
-    "category":"Marca"
+    "category":"fantasia",
+    "answer":["fantasma", "flash"]
   },
   {
-    "answer":"Famoso",
-    "category":"Adjetivo"
+    "category":"filme",
+    "answer":["free willy"]
   },
   {
-    "answer":"Floricultor",
-    "category":"Profissão"
+    "category":"flor",
+    "answer":["flor de larangeira"]
   },
   {
-    "answer":"Folhadinho",
-    "category":"Sobremesa"
+    "category":"flv",
+    "answer":["figo"]
   },
   {
-    "answer":"Fita",
-    "category":"Vestuário"
+    "category":"fruta",
+    "answer":["framboesa"]
   },
   {
-    "answer":"Frontier",
-    "category":"Carro"
+    "category":"game",
+    "answer":["fahrenheit"]
   },
   {
-    "answer":"Falling Skies",
-    "category":"Música"
+    "category":"gentílico",
+    "answer":["filipino"]
   },
   {
-    "answer":"Farda",
-    "category":"Vestuário"
+    "category":"idioma",
+    "answer":["francês", "finlandês"]
   },
   {
-    "answer":"Furao",
-    "category":"Animal"
+    "category":"ingrediente",
+    "answer":["farinha"]
   },
   {
-    "answer":"Ferreiro",
-    "category":"Profissão"
+    "category":"inseto",
+    "answer":["formiga"]
   },
   {
-    "answer":"Fisiculturismo",
-    "category":"Esporte"
+    "category":"instrumento musical",
+    "answer":["flauta"]
   },
   {
-    "answer":"Flames",
-    "category":"Música"
+    "category":"jlr",
+    "answer":["fahrenheit 451", "forbes"]
   },
   {
-    "answer":"Fagner",
-    "category":"Cantor"
+    "category":"líquido",
+    "answer":["formol"]
   },
   {
-    "answer":"Fundoshi",
-    "category":"Vestuário"
+    "category":"mamífero",
+    "answer":[]
   },
   {
-    "answer":"Faca Sua Historia",
-    "category":"Programa de TV"
+    "category":"marca",
+    "answer":["francalce", "forum", "fiveblu", "fila", "facinelli", "forte couture"]
   },
   {
-    "answer":"Feirante",
-    "category":"Profissão"
+    "category":"meio de transporte",
+    "answer":["ferroviario"]
   },
   {
-    "answer":"Framboesa",
-    "category":"Fruta"
+    "category":"msé",
+    "answer":[]
   },
   {
-    "answer":"Feuer Und Wasser",
-    "category":"Música"
+    "category":"música",
+    "answer":["flash and bone", "for the king", "falling skies", "flames", "feuer und wasser", "first time", "fix you", "for tomorrow", "far behind", "figure it out"]
   },
   {
-    "answer":"First Time",
-    "category":"Música"
+    "category":"nome feminino",
+    "answer":["fernanda", "fabiana"]
   },
   {
-    "answer":"Fiesta",
-    "category":"Carro"
+    "category":"nome masculino",
+    "answer":["fernando", "fabio", "felipe"]
   },
   {
-    "answer":"Fix You",
-    "category":"Música"
+    "category":"objeto",
+    "answer":["flauta", "faca"]
   },
   {
-    "answer":"Figo",
-    "category":"FLV"
+    "category":"palavra em espanhol",
+    "answer":[]
   },
   {
-    "answer":"Formol",
-    "category":"Líquido"
+    "category":"palavra em inglês",
+    "answer":["full", "first"]
   },
   {
-    "answer":"Florianopolis",
-    "category":"Cidade"
+    "category":"país",
+    "answer":["finlandia"]
   },
   {
-    "answer":"Forbes",
-    "category":"JLR"
+    "category":"pch",
+    "answer":["figado", "face", "femur", "faringe"]
   },
   {
-    "answer":"Femur",
-    "category":"PCH"
+    "category":"pda",
+    "answer":["ferb"]
   },
   {
-    "answer":"Fernando Alonso",
-    "category":"Esportista"
+    "category":"personagem fictício",
+    "answer":["frajola"]
   },
   {
-    "answer":"Frentista",
-    "category":"Profissão"
+    "category":"presente",
+    "answer":["faixa", "faca"]
   },
   {
-    "answer":"Farofa",
-    "category":"Comida"
+    "category":"profissão",
+    "answer":["fonoaudiologo", "floricultor", "ferreiro", "feirante", "frentista", "farmaceutico", "fazendeiro"]
   },
   {
-    "answer":"Facinelli",
-    "category":"Marca"
+    "category":"programa de tv",
+    "answer":["fantastico", "forca tarefa", "faca sua historia"]
   },
   {
-    "answer":"Foster The People",
-    "category":"Banda"
+    "category":"raça de cachorro",
+    "answer":[]
   },
   {
-    "answer":"Florenca",
-    "category":"CEP"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"Free Willy",
-    "category":"Filme"
+    "category":"sabor de pizza",
+    "answer":["frango"]
   },
   {
-    "answer":"Fernanda Lima",
-    "category":"Celebridade"
+    "category":"sabor de sorvete",
+    "answer":[]
   },
   {
-    "answer":"Ferrugem",
-    "category":"Cor"
+    "category":"sobremesa",
+    "answer":["folhadinho"]
   },
   {
-    "answer":"For Tomorrow",
-    "category":"Música"
+    "category":"sobrenome",
+    "answer":[]
   },
   {
-    "answer":"Falcao",
-    "category":"Animal"
+    "category":"super-herói",
+    "answer":[]
   },
   {
-    "answer":"Far Behind",
-    "category":"Música"
+    "category":"série",
+    "answer":["friends"]
   },
   {
-    "answer":"Fernanda Lima",
-    "category":"Ator"
+    "category":"time esportivo",
+    "answer":[]
   },
   {
-    "answer":"Fox",
-    "category":"Carro"
+    "category":"verbo",
+    "answer":["fazer", "falar"]
   },
   {
-    "answer":"Fuinha",
-    "category":"Animal"
+    "category":"vestuário",
+    "answer":["flanela", "fita", "farda", "fundoshi"]
   },
   {
-    "answer":"Farmaceutico",
-    "category":"Profissão"
+    "category":"vilão",
+    "answer":["flash reverso"]
   },
   {
-    "answer":"Flauta",
-    "category":"Instrumento Musical"
-  },
-  {
-    "answer":"Forte Couture",
-    "category":"Marca"
-  },
-  {
-    "answer":"Florianopolis",
-    "category":"CEP"
-  },
-  {
-    "answer":"FGTS",
-    "category":"App ou site"
-  },
-  {
-    "answer":"Futurama",
-    "category":"Desenho animado"
-  },
-  {
-    "answer":"Faringe",
-    "category":"PCH"
-  },
-  {
-    "answer":"Foo Fighters",
-    "category":"Banda"
-  },
-  {
-    "answer":"Figure it Out",
-    "category":"Música"
-  },
-  {
-    "answer":"Ferb",
-    "category":"PDA"
-  },
-  {
-    "answer":"Fazendeiro",
-    "category":"Profissão"
-  },
-  {
-    "answer":"figo",
-    "category":"comida saudável"
-  },
-  {
-    "answer":"francês",
-    "category":"idioma"
-  },
-  {
-    "answer":"finlandês",
-    "category":"idioma"
-  },
-  {
-    "answer":"feijão",
-    "category":"comida saudável"
-  },
-  {
-    "answer":"flash reverso",
-    "category":"vilão"
-  },
-  {
-    "answer":"fantasma",
-    "category":"fantasia"
-  },
-  {
-    "answer":"flash",
-    "category":"fantasia"
-  },
-  {
-    "answer":"fernanda",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"fabiana",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"full",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"first",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"flauta",
-    "category":"objeto"
-  },
-  {
-    "answer":"faca",
-    "category":"objeto"
-  },
-  {
-    "answer":"finlandia",
-    "category":"país"
-  },
-  {
-    "answer":"falcao",
-    "category":"ave"
-  },
-  {
-    "answer":"flamingo",
-    "category":"ave"
-  },
-  {
-    "answer":"fernando",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"fabio",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"felipe",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"faixa",
-    "category":"presente"
-  },
-  {
-    "answer":"faca",
-    "category":"presente"
-  },
-  {
-    "answer":"ferroviario",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"fazer",
-    "category":"verbo"
-  },
-  {
-    "answer":"falar",
-    "category":"verbo"
-  },
-  {
-    "answer":"frajola",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"farinha",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"fini",
-    "category":"doce"
-  },
-  {
-    "answer":"frango",
-    "category":"sabor de pizza"
-  },
-  {
-    "answer":"faringite",
-    "category":"doença"
-  },
-  {
-    "answer":"febre",
-    "category":"doença"
-  },
-  {
-    "answer":"fliperama",
-    "category":"brinquedo"
+    "category":"flv",
+    "answer":["figo"]
   }
 ]

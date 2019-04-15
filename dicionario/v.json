@@ -1,342 +1,254 @@
 [
   {
-    "answer":"Vidraceiro",
-    "category":"Profissão"
+    "category":"adjetivo",
+    "answer":["vertiginoso"]
   },
   {
-    "answer":"Vampeta",
-    "category":"Esportista"
+    "category":"animal",
+    "answer":["vibora", "veado"]
   },
   {
-    "answer":"Veu",
-    "category":"Vestuário"
+    "category":"app ou site",
+    "answer":["vine"]
   },
   {
-    "answer":"Vida de Estagiario",
-    "category":"Programa de TV"
+    "category":"ator",
+    "answer":["vin diesel", "vanessa hudgens"]
   },
   {
-    "answer":"Vectra",
-    "category":"Carro"
+    "category":"ave",
+    "answer":["vite vite"]
   },
   {
-    "answer":"Vestido",
-    "category":"Vestuário"
+    "category":"banda",
+    "answer":["vant", "vandaveer"]
   },
   {
-    "answer":"Veronica",
-    "category":"Flor"
+    "category":"brinquedo",
+    "answer":[]
   },
   {
-    "answer":"Veja",
-    "category":"JLR"
+    "category":"cantor",
+    "answer":["vando"]
   },
   {
-    "answer":"Verguita",
-    "category":"Fruta"
+    "category":"capital",
+    "answer":["viena"]
   },
   {
-    "answer":"Ventriloco",
-    "category":"Profissão"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Vant",
-    "category":"Banda"
+    "category":"cep",
+    "answer":["viena"]
   },
   {
-    "answer":"Vampyr",
-    "category":"Game"
+    "category":"cidade",
+    "answer":["viena"]
   },
   {
-    "answer":"Velocista",
-    "category":"Profissão"
+    "category":"comida saudável",
+    "answer":["verdura"]
   },
   {
-    "answer":"Video Cassete",
-    "category":"Eletro Eletrônico"
+    "category":"cor",
+    "answer":["violeta"]
   },
   {
-    "answer":"Violeta",
-    "category":"Flor"
+    "category":"desenho animado",
+    "answer":["vandread"]
   },
   {
-    "answer":"Varejista",
-    "category":"Profissão"
+    "category":"doce",
+    "answer":[]
   },
   {
-    "answer":"Victoria Beckham",
-    "category":"Celebridade"
+    "category":"doença",
+    "answer":["variola"]
   },
   {
-    "answer":"Vendedor",
-    "category":"Profissão"
+    "category":"eletro eletrônico",
+    "answer":["video cassete"]
   },
   {
-    "answer":"Virilha",
-    "category":"PCH"
+    "category":"esporte",
+    "answer":["volei de praia"]
   },
   {
-    "answer":"Velocidade Maxima",
-    "category":"Filme"
+    "category":"esportista",
+    "answer":["vampeta"]
   },
   {
-    "answer":"Via Marte",
-    "category":"Marca"
+    "category":"fantasia",
+    "answer":["vampiro"]
   },
   {
-    "answer":"Vandaveer",
-    "category":"Banda"
+    "category":"filme",
+    "answer":["velocidade maxima"]
   },
   {
-    "answer":"Vogue",
-    "category":"Marca"
+    "category":"flor",
+    "answer":["veronica", "violeta"]
   },
   {
-    "answer":"Viseira",
-    "category":"Vestuário"
+    "category":"flv",
+    "answer":["verguita"]
   },
   {
-    "answer":"Voodoo Child",
-    "category":"Música"
+    "category":"fruta",
+    "answer":["verguita"]
   },
   {
-    "answer":"Violeta",
-    "category":"Cor"
+    "category":"game",
+    "answer":["vampyr"]
   },
   {
-    "answer":"Velveteen",
-    "category":"Marca"
+    "category":"gentílico",
+    "answer":["vietnamita"]
   },
   {
-    "answer":"Velejador",
-    "category":"Profissão"
+    "category":"idioma",
+    "answer":["vietnamita"]
   },
   {
-    "answer":"Vando",
-    "category":"Cantor"
+    "category":"ingrediente",
+    "answer":[]
   },
   {
-    "answer":"Verguita",
-    "category":"Comida"
+    "category":"inseto",
+    "answer":["vespa"]
   },
   {
-    "answer":"Vertiginoso",
-    "category":"Adjetivo"
+    "category":"instrumento musical",
+    "answer":["violoncelo"]
   },
   {
-    "answer":"Volei de praia",
-    "category":"Esporte"
+    "category":"jlr",
+    "answer":["veja"]
   },
   {
-    "answer":"Vandread",
-    "category":"Desenho animado"
+    "category":"líquido",
+    "answer":["vodka", "vinho"]
   },
   {
-    "answer":"Vodka",
-    "category":"Líquido"
+    "category":"mamífero",
+    "answer":["vaca"]
   },
   {
-    "answer":"Vaca preta",
-    "category":"Sobremesa"
+    "category":"marca",
+    "answer":["via marte", "vogue", "velveteen", "vivetta", "vicenza"]
   },
   {
-    "answer":"Vaqueiro",
-    "category":"Profissão"
+    "category":"meio de transporte",
+    "answer":["van"]
   },
   {
-    "answer":"Violoncelo",
-    "category":"Instrumento Musical"
+    "category":"msé",
+    "answer":["verdadeira"]
   },
   {
-    "answer":"Venger",
-    "category":"Música"
+    "category":"música",
+    "answer":["voodoo child", "venger", "violet", "voices"]
   },
   {
-    "answer":"Voyage",
-    "category":"Carro"
+    "category":"nome feminino",
+    "answer":["valeria"]
   },
   {
-    "answer":"Vibora",
-    "category":"Animal"
+    "category":"nome masculino",
+    "answer":["vitor"]
   },
   {
-    "answer":"Veterinario",
-    "category":"Profissão"
+    "category":"objeto",
+    "answer":["vassoura", "vela"]
   },
   {
-    "answer":"Violet",
-    "category":"Música"
+    "category":"palavra em espanhol",
+    "answer":["vacacion"]
   },
   {
-    "answer":"Vietnamita",
-    "category":"Gentílico"
+    "category":"palavra em inglês",
+    "answer":["value"]
   },
   {
-    "answer":"Vespa",
-    "category":"Inseto"
+    "category":"país",
+    "answer":["venezuela", "vaticano"]
   },
   {
-    "answer":"Viena",
-    "category":"CEP"
+    "category":"pch",
+    "answer":["virilha", "vasos sanguineos", "vagina"]
   },
   {
-    "answer":"Vasos sanguineos",
-    "category":"PCH"
+    "category":"pda",
+    "answer":[]
   },
   {
-    "answer":"Vivetta",
-    "category":"Marca"
+    "category":"personagem fictício",
+    "answer":["venom"]
   },
   {
-    "answer":"Viena",
-    "category":"Capital"
+    "category":"presente",
+    "answer":[]
   },
   {
-    "answer":"Vin Diesel",
-    "category":"Ator"
+    "category":"profissão",
+    "answer":["vidraceiro", "ventriloco", "velocista", "varejista", "vendedor", "velejador", "vaqueiro", "veterinario"]
   },
   {
-    "answer":"Verguita",
-    "category":"FLV"
+    "category":"programa de tv",
+    "answer":["vida de estagiario", "viralizando", "vila sesamo", "vitrine do campo"]
   },
   {
-    "answer":"Viralizando",
-    "category":"Programa de TV"
+    "category":"raça de cachorro",
+    "answer":["vira lata"]
   },
   {
-    "answer":"Vagina",
-    "category":"PCH"
+    "category":"remédio",
+    "answer":["viagra"]
   },
   {
-    "answer":"Vine",
-    "category":"App ou site"
+    "category":"sabor de pizza",
+    "answer":["vinagrete"]
   },
   {
-    "answer":"Vanessa Hudgens",
-    "category":"Ator"
+    "category":"sabor de sorvete",
+    "answer":[]
   },
   {
-    "answer":"Voices",
-    "category":"Música"
+    "category":"sobremesa",
+    "answer":["vaca preta"]
   },
   {
-    "answer":"Vicenza",
-    "category":"Marca"
+    "category":"sobrenome",
+    "answer":[]
   },
   {
-    "answer":"Vinho",
-    "category":"Líquido"
+    "category":"super-herói",
+    "answer":["venom"]
   },
   {
-    "answer":"Vila Sesamo",
-    "category":"Programa de TV"
+    "category":"série",
+    "answer":[]
   },
   {
-    "answer":"Viena",
-    "category":"Cidade"
+    "category":"time esportivo",
+    "answer":["vasco"]
   },
   {
-    "answer":"Vitrine do Campo",
-    "category":"Programa de TV"
+    "category":"verbo",
+    "answer":[]
   },
   {
-    "answer":"Veado",
-    "category":"Animal"
+    "category":"vestuário",
+    "answer":["veu", "vestido", "viseira"]
   },
   {
-    "answer":"valeria",
-    "category":"nome feminino"
+    "category":"vilão",
+    "answer":[]
   },
   {
-    "answer":"verdadeira",
-    "category":"msé"
-  },
-  {
-    "answer":"variola",
-    "category":"doença"
-  },
-  {
-    "answer":"venezuela",
-    "category":"país"
-  },
-  {
-    "answer":"vaticano",
-    "category":"país"
-  },
-  {
-    "answer":"vampiro",
-    "category":"fantasia"
-  },
-  {
-    "answer":"verdura",
-    "category":"comida saudável"
-  },
-  {
-    "answer":"van",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"vinagrete",
-    "category":"sabor de pizza"
-  },
-  {
-    "answer":"vira lata",
-    "category":"raça de cachorro"
-  },
-  {
-    "answer":"viagra",
-    "category":"remédio"
-  },
-  {
-    "answer":"venom",
-    "category":"super-herói"
-  },
-  {
-    "answer":"vite vite",
-    "category":"ave"
-  },
-  {
-    "answer":"vietnamita",
-    "category":"idioma"
-  },
-  {
-    "answer":"vaca",
-    "category":"mamífero"
-  },
-  {
-    "answer":"vassoura",
-    "category":"objeto"
-  },
-  {
-    "answer":"vela",
-    "category":"objeto"
-  },
-  {
-    "answer":"venom",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"vasco",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"vitor",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"value",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"vitor",
-    "category":"nome"
-  },
-  {
-    "answer":"vitoria",
-    "category":"nome"
-  },
-  {
-    "answer":"vacacion",
-    "category":"palavra em espanhol"
+    "category":"flv",
+    "answer":["verguita"]
   }
 ]

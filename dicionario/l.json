@@ -1,454 +1,254 @@
 [
   {
-    "answer":"Levitate",
-    "category":"Música"
+    "category":"adjetivo",
+    "answer":["lesado"]
   },
   {
-    "answer":"Locutor",
-    "category":"Profissão"
+    "category":"animal",
+    "answer":["loris", "lontra", "lemure"]
   },
   {
-    "answer":"Leiteiro",
-    "category":"Profissão"
+    "category":"app ou site",
+    "answer":["lingo", "line"]
   },
   {
-    "answer":"Luciana Gimenez",
-    "category":"Celebridade"
+    "category":"ator",
+    "answer":["lola reeve", "leonardo dicaprio", "lola reve"]
   },
   {
-    "answer":"Lilas",
-    "category":"Cor"
+    "category":"ave",
+    "answer":[]
   },
   {
-    "answer":"Lactarista",
-    "category":"Profissão"
+    "category":"banda",
+    "answer":["lamb of god", "lapko", "led zeppelin"]
   },
   {
-    "answer":"Lavanda",
-    "category":"Flor"
+    "category":"brinquedo",
+    "answer":["lapis de cor"]
   },
   {
-    "answer":"Lux",
-    "category":"Marca"
+    "category":"cantor",
+    "answer":["ludacris"]
   },
   {
-    "answer":"Lola Reeve",
-    "category":"Ator"
+    "category":"capital",
+    "answer":["la paz"]
   },
   {
-    "answer":"Loris",
-    "category":"Animal"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Lavanda",
-    "category":"Cor"
+    "category":"cep",
+    "answer":["limoeiro do norte"]
   },
   {
-    "answer":"Laid To Rest",
-    "category":"Música"
+    "category":"cidade",
+    "answer":["limoeiro do norte"]
   },
   {
-    "answer":"Lontra",
-    "category":"Animal"
+    "category":"comida saudável",
+    "answer":["laranja"]
   },
   {
-    "answer":"Left Behind",
-    "category":"Música"
+    "category":"cor",
+    "answer":["lilas", "lavanda"]
   },
   {
-    "answer":"Luva",
-    "category":"Vestuário"
+    "category":"desenho animado",
+    "answer":["luluzinha"]
   },
   {
-    "answer":"Licor",
-    "category":"Líquido"
+    "category":"doce",
+    "answer":["leite condensado"]
   },
   {
-    "answer":"Love Moschino",
-    "category":"Marca"
+    "category":"doença",
+    "answer":[]
   },
   {
-    "answer":"Livre de ansiedade",
-    "category":"JLR"
+    "category":"eletro eletrônico",
+    "answer":["lifeband touch"]
   },
   {
-    "answer":"Legacy",
-    "category":"Carro"
+    "category":"esporte",
+    "answer":["lancamento de disco"]
   },
   {
-    "answer":"Lexus",
-    "category":"Carro"
+    "category":"esportista",
+    "answer":["lewis hamilton"]
   },
   {
-    "answer":"Leite condensado",
-    "category":"Sobremesa"
+    "category":"fantasia",
+    "answer":["lobo", "ladrao"]
   },
   {
-    "answer":"Limonada",
-    "category":"Líquido"
+    "category":"filme",
+    "answer":["licenca para casar"]
   },
   {
-    "answer":"Limoeiro do Norte",
-    "category":"CEP"
+    "category":"flor",
+    "answer":["lavanda"]
   },
   {
-    "answer":"Lingua de gato",
-    "category":"Sobremesa"
+    "category":"flv",
+    "answer":["lobeira"]
   },
   {
-    "answer":"Lifeband touch",
-    "category":"Eletro Eletrônico"
+    "category":"fruta",
+    "answer":["lima"]
   },
   {
-    "answer":"Lima",
-    "category":"Fruta"
+    "category":"game",
+    "answer":["league of evil"]
   },
   {
-    "answer":"Labios",
-    "category":"PCH"
+    "category":"gentílico",
+    "answer":["luxemburgues"]
   },
   {
-    "answer":"Lardini",
-    "category":"Marca"
+    "category":"idioma",
+    "answer":["latim", "libras"]
   },
   {
-    "answer":"Laringe",
-    "category":"PCH"
+    "category":"ingrediente",
+    "answer":["leite", "laranja"]
   },
   {
-    "answer":"Lingo",
-    "category":"App ou site"
+    "category":"inseto",
+    "answer":["libelula"]
   },
   {
-    "answer":"League of Evil",
-    "category":"Game"
+    "category":"instrumento musical",
+    "answer":["lira"]
   },
   {
-    "answer":"La Paz",
-    "category":"Capital"
+    "category":"jlr",
+    "answer":["livre de ansiedade"]
   },
   {
-    "answer":"Lemure",
-    "category":"Animal"
+    "category":"líquido",
+    "answer":["licor", "limonada", "leite", "lubrificante"]
   },
   {
-    "answer":"Lavrador",
-    "category":"Profissão"
+    "category":"mamífero",
+    "answer":["leao", "lontra", "lobo", "lhama"]
   },
   {
-    "answer":"Linger",
-    "category":"Música"
+    "category":"marca",
+    "answer":["lux", "love moschino", "lardini", "lacoste", "lacet", "lapin house", "luma ventura", "lupo"]
   },
   {
-    "answer":"Legista",
-    "category":"Profissão"
+    "category":"meio de transporte",
+    "answer":["lambreta"]
   },
   {
-    "answer":"LINE",
-    "category":"App ou site"
+    "category":"msé",
+    "answer":["loira", "louca"]
   },
   {
-    "answer":"Licenca para Casar",
-    "category":"Filme"
+    "category":"música",
+    "answer":["levitate", "laid to rest", "left behind", "linger", "la part dombre", "lithium", "little wing", "let the band play", "like a rolling stone"]
   },
   {
-    "answer":"Lasanha",
-    "category":"Comida"
+    "category":"nome feminino",
+    "answer":["laura", "lais"]
   },
   {
-    "answer":"Leite",
-    "category":"Líquido"
+    "category":"nome masculino",
+    "answer":["lucas"]
   },
   {
-    "answer":"Lacoste",
-    "category":"Marca"
+    "category":"objeto",
+    "answer":["lupa"]
   },
   {
-    "answer":"Lie to Me",
-    "category":"Programa de TV"
+    "category":"palavra em espanhol",
+    "answer":[]
   },
   {
-    "answer":"La part dombre",
-    "category":"Música"
+    "category":"palavra em inglês",
+    "answer":["love", "look", "level"]
   },
   {
-    "answer":"Lithium",
-    "category":"Música"
+    "category":"país",
+    "answer":["libia"]
   },
   {
-    "answer":"Legging",
-    "category":"Vestuário"
+    "category":"pch",
+    "answer":["labios", "laringe", "lombar"]
   },
   {
-    "answer":"Lira",
-    "category":"Instrumento Musical"
+    "category":"pda",
+    "answer":["lenny leonard", "lisa simpson"]
   },
   {
-    "answer":"Lenhador",
-    "category":"Profissão"
+    "category":"personagem fictício",
+    "answer":[]
   },
   {
-    "answer":"Ludacris",
-    "category":"Cantor"
+    "category":"presente",
+    "answer":["livro", "luva", "lupa"]
   },
   {
-    "answer":"Leonardo DiCaprio",
-    "category":"Ator"
+    "category":"profissão",
+    "answer":["locutor", "leiteiro", "lactarista", "lavrador", "legista", "lenhador"]
   },
   {
-    "answer":"Lacet",
-    "category":"Marca"
+    "category":"programa de tv",
+    "answer":["lie to me"]
   },
   {
-    "answer":"Lombar",
-    "category":"PCH"
+    "category":"raça de cachorro",
+    "answer":["labrador retriever"]
   },
   {
-    "answer":"Lesado",
-    "category":"Adjetivo"
+    "category":"remédio",
+    "answer":["lactase"]
   },
   {
-    "answer":"Lamb of God",
-    "category":"Banda"
+    "category":"sabor de pizza",
+    "answer":["lombo"]
   },
   {
-    "answer":"Little Wing",
-    "category":"Música"
+    "category":"sabor de sorvete",
+    "answer":["limao"]
   },
   {
-    "answer":"Lenny Leonard",
-    "category":"PDA"
+    "category":"sobremesa",
+    "answer":["leite condensado", "lingua de gato"]
   },
   {
-    "answer":"Lapin House",
-    "category":"Marca"
+    "category":"sobrenome",
+    "answer":["lima"]
   },
   {
-    "answer":"Luluzinha",
-    "category":"Desenho animado"
+    "category":"super-herói",
+    "answer":["lanterna verde"]
   },
   {
-    "answer":"Lewis Hamilton",
-    "category":"Esportista"
+    "category":"série",
+    "answer":["la casa de papel"]
   },
   {
-    "answer":"Lisa Simpson",
-    "category":"PDA"
+    "category":"time esportivo",
+    "answer":["londrina", "liverpool"]
   },
   {
-    "answer":"Luma Ventura",
-    "category":"Marca"
+    "category":"verbo",
+    "answer":["largar"]
   },
   {
-    "answer":"Lapko",
-    "category":"Banda"
+    "category":"vestuário",
+    "answer":["luva", "legging", "lenco"]
   },
   {
-    "answer":"Logan",
-    "category":"Carro"
+    "category":"vilão",
+    "answer":["loki", "loki"]
   },
   {
-    "answer":"Lenco",
-    "category":"Vestuário"
-  },
-  {
-    "answer":"Limoeiro do Norte",
-    "category":"Cidade"
-  },
-  {
-    "answer":"Lobeira",
-    "category":"FLV"
-  },
-  {
-    "answer":"Lupo",
-    "category":"Marca"
-  },
-  {
-    "answer":"Luxemburgues",
-    "category":"Gentílico"
-  },
-  {
-    "answer":"Lola Reve",
-    "category":"Ator"
-  },
-  {
-    "answer":"Lubrificante",
-    "category":"Líquido"
-  },
-  {
-    "answer":"Libelula",
-    "category":"Inseto"
-  },
-  {
-    "answer":"Let The Band Play",
-    "category":"Música"
-  },
-  {
-    "answer":"Like A Rolling Stone",
-    "category":"Música"
-  },
-  {
-    "answer":"Lancamento de disco",
-    "category":"Esporte"
-  },
-  {
-    "answer":"Led Zeppelin",
-    "category":"Banda"
-  },
-  {
-    "answer":"limao",
-    "category":"sabor de sorvete"
-  },
-  {
-    "answer":"latim",
-    "category":"idioma"
-  },
-  {
-    "answer":"libras",
-    "category":"idioma"
-  },
-  {
-    "answer":"leite condensado",
-    "category":"doce"
-  },
-  {
-    "answer":"lanterna verde",
-    "category":"super-herói"
-  },
-  {
-    "answer":"lapis de cor",
-    "category":"brinquedo"
-  },
-  {
-    "answer":"lucas",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"londrina",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"liverpool",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"largar",
-    "category":"verbo"
-  },
-  {
-    "answer":"la casa de papel",
-    "category":"série"
-  },
-  {
-    "answer":"leao",
-    "category":"mamífero"
-  },
-  {
-    "answer":"lontra",
-    "category":"mamífero"
-  },
-  {
-    "answer":"lobo",
-    "category":"mamífero"
-  },
-  {
-    "answer":"lhama",
-    "category":"mamífero"
-  },
-  {
-    "answer":"labrador retriever",
-    "category":"raça de cachorro"
-  },
-  {
-    "answer":"libia",
-    "category":"país"
-  },
-  {
-    "answer":"lactase",
-    "category":"remédio"
-  },
-  {
-    "answer":"loki",
-    "category":"vilão"
-  },
-  {
-    "answer":"loki",
-    "category":"vilão"
-  },
-  {
-    "answer":"lima",
-    "category":"sobrenome"
-  },
-  {
-    "answer":"lupa",
-    "category":"objeto"
-  },
-  {
-    "answer":"leite",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"laranja",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"livro",
-    "category":"presente"
-  },
-  {
-    "answer":"luva",
-    "category":"presente"
-  },
-  {
-    "answer":"lupa",
-    "category":"presente"
-  },
-  {
-    "answer":"loira",
-    "category":"msé"
-  },
-  {
-    "answer":"louca",
-    "category":"msé"
-  },
-  {
-    "answer":"love",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"look",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"level",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"laura",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"lais",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"laranja",
-    "category":"comida saudável"
-  },
-  {
-    "answer":"lombo",
-    "category":"sabor de pizza"
-  },
-  {
-    "answer":"lambreta",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"lobo",
-    "category":"fantasia"
-  },
-  {
-    "answer":"ladrao",
-    "category":"fantasia"
+    "category":"flv",
+    "answer":["lobeira"]
   }
 ]

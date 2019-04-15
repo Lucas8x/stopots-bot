@@ -1,510 +1,254 @@
 [
   {
-    "answer":"Procurador",
-    "category":"Profissão"
+    "category":"adjetivo",
+    "answer":["pertinente"]
   },
   {
-    "answer":"Polo Royal",
-    "category":"Marca"
+    "category":"animal",
+    "answer":["perdiz", "pelicano", "pavao"]
   },
   {
-    "answer":"Pietra Principe",
-    "category":"Celebridade"
+    "category":"app ou site",
+    "answer":["perguntados", "pinterest"]
   },
   {
-    "answer":"Penis",
-    "category":"PCH"
+    "category":"ator",
+    "answer":["paul walker", "penelope cruz"]
   },
   {
-    "answer":"Piccadilly",
-    "category":"Marca"
+    "category":"ave",
+    "answer":["pelicano"]
   },
   {
-    "answer":"Paraquedista",
-    "category":"Profissão"
+    "category":"banda",
+    "answer":["paramore", "pearl jam"]
   },
   {
-    "answer":"Projeto Zeta",
-    "category":"Desenho animado"
+    "category":"brinquedo",
+    "answer":["pipa", "pogobol"]
   },
   {
-    "answer":"Paramore",
-    "category":"Banda"
+    "category":"cantor",
+    "answer":["pink"]
   },
   {
-    "answer":"Pretty Noose",
-    "category":"Música"
+    "category":"capital",
+    "answer":["pequim"]
   },
   {
-    "answer":"Panetone",
-    "category":"Sobremesa"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Pingente",
-    "category":"Vestuário"
+    "category":"cep",
+    "answer":["paquistao", "panama"]
   },
   {
-    "answer":"Peter Pan",
-    "category":"JLR"
+    "category":"cidade",
+    "answer":["pelotas"]
   },
   {
-    "answer":"Pinhoada",
-    "category":"Sobremesa"
+    "category":"comida saudável",
+    "answer":[]
   },
   {
-    "answer":"Profissao Reporter",
-    "category":"Programa de TV"
+    "category":"cor",
+    "answer":["purpura"]
   },
   {
-    "answer":"Pertinente",
-    "category":"Adjetivo"
+    "category":"desenho animado",
+    "answer":["projeto zeta"]
   },
   {
-    "answer":"Prisma",
-    "category":"Carro"
+    "category":"doce",
+    "answer":["pirulito"]
   },
   {
-    "answer":"Pijama",
-    "category":"Vestuário"
+    "category":"doença",
+    "answer":["pneumonia", "parkson"]
   },
   {
-    "answer":"Programa do Jo",
-    "category":"Programa de TV"
+    "category":"eletro eletrônico",
+    "answer":["polaroid"]
   },
   {
-    "answer":"Petunia",
-    "category":"Flor"
+    "category":"esporte",
+    "answer":["polo aquatico"]
   },
   {
-    "answer":"Pedreiro",
-    "category":"Profissão"
+    "category":"esportista",
+    "answer":["peyton manning"]
   },
   {
-    "answer":"Peyton Manning",
-    "category":"Esportista"
+    "category":"fantasia",
+    "answer":["pirata", "princessa"]
   },
   {
-    "answer":"Pulmao",
-    "category":"PCH"
+    "category":"filme",
+    "answer":["poltergeist", "piratas do caribe"]
   },
   {
-    "answer":"Polly",
-    "category":"Música"
+    "category":"flor",
+    "answer":["petunia"]
   },
   {
-    "answer":"Pantufa",
-    "category":"Vestuário"
+    "category":"flv",
+    "answer":["pitomba"]
   },
   {
-    "answer":"Pescoco",
-    "category":"PCH"
+    "category":"fruta",
+    "answer":["pitaia"]
   },
   {
-    "answer":"Pearl Jam",
-    "category":"Banda"
+    "category":"game",
+    "answer":["prey"]
   },
   {
-    "answer":"Pitaia",
-    "category":"Fruta"
+    "category":"gentílico",
+    "answer":["polinesio"]
   },
   {
-    "answer":"Pegada",
-    "category":"Marca"
+    "category":"idioma",
+    "answer":["portugues"]
   },
   {
-    "answer":"Parking Lot",
-    "category":"Música"
+    "category":"ingrediente",
+    "answer":["parmesao"]
   },
   {
-    "answer":"Parques do Brasil",
-    "category":"Programa de TV"
+    "category":"inseto",
+    "answer":["percevejo"]
   },
   {
-    "answer":"Perguntados",
-    "category":"App ou site"
+    "category":"instrumento musical",
+    "answer":["piano"]
   },
   {
-    "answer":"Prey",
-    "category":"Game"
+    "category":"jlr",
+    "answer":["peter pan"]
   },
   {
-    "answer":"Percevejo",
-    "category":"Inseto"
+    "category":"líquido",
+    "answer":["ponche", "pocao"]
   },
   {
-    "answer":"Pipoqueiro",
-    "category":"Profissão"
+    "category":"mamífero",
+    "answer":["panda", "porco"]
   },
   {
-    "answer":"Paul Walker",
-    "category":"Ator"
+    "category":"marca",
+    "answer":["polo royal", "piccadilly", "pegada", "prada", "penalty", "philips", "puma"]
   },
   {
-    "answer":"Paratireoides",
-    "category":"PCH"
+    "category":"meio de transporte",
+    "answer":["patins"]
   },
   {
-    "answer":"Paisagista",
-    "category":"Profissão"
+    "category":"msé",
+    "answer":["pessimista", "pacifista"]
   },
   {
-    "answer":"Profiterole",
-    "category":"Sobremesa"
+    "category":"música",
+    "answer":["pretty noose", "polly", "parking lot", "plush", "paranoid android", "promiscuous", "pretty polly", "portrait of red"]
   },
   {
-    "answer":"Perdiz",
-    "category":"Animal"
+    "category":"nome feminino",
+    "answer":["paula", "paloma"]
   },
   {
-    "answer":"Palestrante",
-    "category":"Profissão"
+    "category":"nome masculino",
+    "answer":[]
   },
   {
-    "answer":"Pancreas",
-    "category":"PCH"
+    "category":"objeto",
+    "answer":["panela"]
   },
   {
-    "answer":"Paleto",
-    "category":"Vestuário"
+    "category":"palavra em espanhol",
+    "answer":["pero"]
   },
   {
-    "answer":"Proctologista",
-    "category":"Profissão"
+    "category":"palavra em inglês",
+    "answer":["power"]
   },
   {
-    "answer":"Plush",
-    "category":"Música"
+    "category":"país",
+    "answer":["portugal"]
   },
   {
-    "answer":"Perfumista",
-    "category":"Profissão"
+    "category":"pch",
+    "answer":["penis", "pulmao", "pescoco", "paratireoides", "pancreas", "prostata", "pe"]
   },
   {
-    "answer":"Pinterest",
-    "category":"App ou site"
+    "category":"pda",
+    "answer":["patty bouvier"]
   },
   {
-    "answer":"Pepino",
-    "category":"Comida"
+    "category":"personagem fictício",
+    "answer":["pateta"]
   },
   {
-    "answer":"Paranoid Android",
-    "category":"Música"
+    "category":"presente",
+    "answer":["patins"]
   },
   {
-    "answer":"Panqueca",
-    "category":"Comida"
+    "category":"profissão",
+    "answer":["procurador", "paraquedista", "pedreiro", "pipoqueiro", "paisagista", "palestrante", "proctologista", "perfumista", "personal trainer", "pneumologista", "presidente", "padeiro"]
   },
   {
-    "answer":"Polaroid",
-    "category":"Eletro Eletrônico"
+    "category":"programa de tv",
+    "answer":["profissao reporter", "programa do jo", "parques do brasil", "placar da rodada"]
   },
   {
-    "answer":"Peixe",
-    "category":"Comida"
+    "category":"raça de cachorro",
+    "answer":["pinscher", "pug"]
   },
   {
-    "answer":"Prada",
-    "category":"Marca"
+    "category":"remédio",
+    "answer":[]
   },
   {
-    "answer":"Ponche",
-    "category":"Líquido"
+    "category":"sabor de pizza",
+    "answer":["portugesa", "pepperoni"]
   },
   {
-    "answer":"Paquistao",
-    "category":"CEP"
+    "category":"sabor de sorvete",
+    "answer":["pistache"]
   },
   {
-    "answer":"Penalty",
-    "category":"Marca"
+    "category":"sobremesa",
+    "answer":["panetone", "pinhoada", "profiterole", "pudim", "panna cotta", "pave", "pacoca", "profiterole"]
   },
   {
-    "answer":"Patty Bouvier",
-    "category":"PDA"
+    "category":"sobrenome",
+    "answer":["pereira"]
   },
   {
-    "answer":"Penelope Cruz",
-    "category":"Ator"
+    "category":"super-herói",
+    "answer":["poison ivy", "punisher"]
   },
   {
-    "answer":"Promiscuous",
-    "category":"Música"
+    "category":"série",
+    "answer":["paranormal", "prison break"]
   },
   {
-    "answer":"Personal trainer",
-    "category":"Profissão"
+    "category":"time esportivo",
+    "answer":["palmeiras"]
   },
   {
-    "answer":"Pitomba",
-    "category":"FLV"
+    "category":"verbo",
+    "answer":["parar"]
   },
   {
-    "answer":"Pudim",
-    "category":"Sobremesa"
+    "category":"vestuário",
+    "answer":["pingente", "pijama", "pantufa", "paleto"]
   },
   {
-    "answer":"Pelicano",
-    "category":"Animal"
+    "category":"vilão",
+    "answer":["pinguim batman"]
   },
   {
-    "answer":"Panna Cotta",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Prostata",
-    "category":"PCH"
-  },
-  {
-    "answer":"Pneumologista",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Poltergeist",
-    "category":"Filme"
-  },
-  {
-    "answer":"Philips",
-    "category":"Marca"
-  },
-  {
-    "answer":"Pocao",
-    "category":"Líquido"
-  },
-  {
-    "answer":"Presidente",
-    "category":"Profissão"
-  },
-  {
-    "answer":"Puma",
-    "category":"Marca"
-  },
-  {
-    "answer":"Pink",
-    "category":"Cantor"
-  },
-  {
-    "answer":"Pequim",
-    "category":"Capital"
-  },
-  {
-    "answer":"Panama",
-    "category":"CEP"
-  },
-  {
-    "answer":"Purpura",
-    "category":"Cor"
-  },
-  {
-    "answer":"Polinesio",
-    "category":"Gentílico"
-  },
-  {
-    "answer":"Pave",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Pelotas",
-    "category":"Cidade"
-  },
-  {
-    "answer":"Pe",
-    "category":"PCH"
-  },
-  {
-    "answer":"Piratas do Caribe",
-    "category":"Filme"
-  },
-  {
-    "answer":"Pacoca",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Palio",
-    "category":"Carro"
-  },
-  {
-    "answer":"Profiterole",
-    "category":"Sobremesa"
-  },
-  {
-    "answer":"Pretty Polly",
-    "category":"Música"
-  },
-  {
-    "answer":"Pavao",
-    "category":"Animal"
-  },
-  {
-    "answer":"Portrait Of Red",
-    "category":"Música"
-  },
-  {
-    "answer":"Placar da Rodada",
-    "category":"Programa de TV"
-  },
-  {
-    "answer":"Piano",
-    "category":"Instrumento Musical"
-  },
-  {
-    "answer":"Polo Aquatico",
-    "category":"Esporte"
-  },
-  {
-    "answer":"Padeiro",
-    "category":"Profissão"
-  },
-  {
-    "answer":"power",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"parar",
-    "category":"verbo"
-  },
-  {
-    "answer":"portugesa",
-    "category":"sabor de pizza"
-  },
-  {
-    "answer":"pepperoni",
-    "category":"sabor de pizza"
-  },
-  {
-    "answer":"palmeiras",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"pinscher",
-    "category":"raça de cachorro"
-  },
-  {
-    "answer":"pug",
-    "category":"raça de cachorro"
-  },
-  {
-    "answer":"patins",
-    "category":"presente"
-  },
-  {
-    "answer":"pateta",
-    "category":"personagem fictício"
-  },
-  {
-    "answer":"pirata",
-    "category":"fantasia"
-  },
-  {
-    "answer":"princessa",
-    "category":"fantasia"
-  },
-  {
-    "answer":"patins",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"pereira",
-    "category":"sobrenome"
-  },
-  {
-    "answer":"paulo",
-    "category":"nome"
-  },
-  {
-    "answer":"paloma",
-    "category":"nome"
-  },
-  {
-    "answer":"pneumonia",
-    "category":"doença"
-  },
-  {
-    "answer":"parkson",
-    "category":"doença"
-  },
-  {
-    "answer":"pessimista",
-    "category":"msé"
-  },
-  {
-    "answer":"pacifista",
-    "category":"msé"
-  },
-  {
-    "answer":"paula",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"paloma",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"parmesao",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"pistache",
-    "category":"sabor de sorvete"
-  },
-  {
-    "answer":"portugal",
-    "category":"país"
-  },
-  {
-    "answer":"portugues",
-    "category":"idioma"
-  },
-  {
-    "answer":"pero",
-    "category":"palavra em espanhol"
-  },
-  {
-    "answer":"pipa",
-    "category":"brinquedo"
-  },
-  {
-    "answer":"pogobol",
-    "category":"brinquedo"
-  },
-  {
-    "answer":"paranormal",
-    "category":"série"
-  },
-  {
-    "answer":"prison break",
-    "category":"série"
-  },
-  {
-    "answer":"panela",
-    "category":"objeto"
-  },
-  {
-    "answer":"poison ivy",
-    "category":"super-herói"
-  },
-  {
-    "answer":"punisher",
-    "category":"super-herói"
-  },
-  {
-    "answer":"panda",
-    "category":"mamífero"
-  },
-  {
-    "answer":"porco",
-    "category":"mamífero"
-  },
-  {
-    "answer":"pirulito",
-    "category":"doce"
-  },
-  {
-    "answer":"pelicano",
-    "category":"ave"
-  },
-  {
-    "answer":"pinguim batman",
-    "category":"vilão"
+    "category":"flv",
+    "answer":["pitomba"]
   }
 ]

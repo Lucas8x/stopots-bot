@@ -1,378 +1,254 @@
 [
   {
-    "answer":"Oasis",
-    "category":"Banda"
+    "category":"adjetivo",
+    "answer":["obediente"]
   },
   {
-    "answer":"Oakley",
-    "category":"Marca"
+    "category":"animal",
+    "answer":["ostra", "ourico"]
   },
   {
-    "answer":"Orientacao",
-    "category":"Esporte"
+    "category":"app ou site",
+    "answer":["onefootball", "olx"]
   },
   {
-    "answer":"Orient",
-    "category":"Marca"
+    "category":"ator",
+    "answer":["orlando bloom", "owen wilson"]
   },
   {
-    "answer":"Orlando Bloom",
-    "category":"Ator"
+    "category":"ave",
+    "answer":["ostraceiro"]
   },
   {
-    "answer":"O Corpo Virtual",
-    "category":"Programa de TV"
+    "category":"banda",
+    "answer":["oasis", "os miseraveis", "opeth"]
   },
   {
-    "answer":"Ostra",
-    "category":"Animal"
+    "category":"brinquedo",
+    "answer":[]
   },
   {
-    "answer":"Onix",
-    "category":"Carro"
+    "category":"cantor",
+    "answer":["olivia ong"]
   },
   {
-    "answer":"Ossos",
-    "category":"PCH"
+    "category":"capital",
+    "answer":["oslo"]
   },
   {
-    "answer":"Oculus Rift",
-    "category":"Eletro Eletrônico"
+    "category":"carrocelebridade",
+    "answer":[]
   },
   {
-    "answer":"Oiticica",
-    "category":"Fruta"
+    "category":"cep",
+    "answer":["orlando"]
   },
   {
-    "answer":"Out Of Time Man",
-    "category":"Música"
+    "category":"cidade",
+    "answer":["orlando"]
   },
   {
-    "answer":"Orlando",
-    "category":"CEP"
+    "category":"comida saudável",
+    "answer":[]
   },
   {
-    "answer":"Open Your Heart",
-    "category":"Música"
+    "category":"cor",
+    "answer":["ocre", "ouro"]
   },
   {
-    "answer":"O Brasil tem disso",
-    "category":"Programa de TV"
+    "category":"desenho animado",
+    "answer":["one piece"]
   },
   {
-    "answer":"Ombreira",
-    "category":"Vestuário"
+    "category":"doce",
+    "answer":["ovo pascoa"]
   },
   {
-    "answer":"Olivia Ong",
-    "category":"Cantor"
+    "category":"doença",
+    "answer":["osteoporose"]
   },
   {
-    "answer":"OneFootball",
-    "category":"App ou site"
+    "category":"eletro eletrônico",
+    "answer":["oculus rift"]
   },
   {
-    "answer":"O Pequenino",
-    "category":"Filme"
+    "category":"esporte",
+    "answer":["orientacao"]
   },
   {
-    "answer":"Orciani",
-    "category":"Marca"
+    "category":"esportista",
+    "answer":["odell beckham jr"]
   },
   {
-    "answer":"Omanense",
-    "category":"Gentílico"
+    "category":"fantasia",
+    "answer":["ovelha"]
   },
   {
-    "answer":"Oculos",
-    "category":"Vestuário"
+    "category":"filme",
+    "answer":["o pequenino"]
   },
   {
-    "answer":"Overcooked",
-    "category":"Game"
+    "category":"flor",
+    "answer":["orquidea"]
   },
   {
-    "answer":"Os miseraveis",
-    "category":"Banda"
+    "category":"flv",
+    "answer":["oiticica"]
   },
   {
-    "answer":"Ogio",
-    "category":"Marca"
+    "category":"fruta",
+    "answer":["oiticica"]
   },
   {
-    "answer":"Oslo",
-    "category":"Capital"
+    "category":"game",
+    "answer":["overcooked"]
   },
   {
-    "answer":"Ocarina",
-    "category":"Instrumento Musical"
+    "category":"gentílico",
+    "answer":["omanense"]
   },
   {
-    "answer":"One Piece",
-    "category":"Desenho animado"
+    "category":"idioma",
+    "answer":[]
   },
   {
-    "answer":"Orbita ocular",
-    "category":"PCH"
+    "category":"ingrediente",
+    "answer":["ovo", "oregano"]
   },
   {
-    "answer":"Operador de caixa",
-    "category":"Profissão"
+    "category":"inseto",
+    "answer":[]
   },
   {
-    "answer":"Oculista",
-    "category":"Profissão"
+    "category":"instrumento musical",
+    "answer":["ocarina"]
   },
   {
-    "answer":"O Diario de Mika",
-    "category":"Programa de TV"
+    "category":"jlr",
+    "answer":["os miseraveis", "os tres mosqueteiros"]
   },
   {
-    "answer":"Oleo",
-    "category":"Líquido"
+    "category":"líquido",
+    "answer":["oleo", "orchata"]
   },
   {
-    "answer":"OLX",
-    "category":"App ou site"
+    "category":"mamífero",
+    "answer":["ovelha", "orca"]
   },
   {
-    "answer":"On Fire",
-    "category":"Música"
+    "category":"marca",
+    "answer":["oakley", "orient", "orciani", "ogio", "ottolinger", "olympikus", "ortobom", "osprey"]
   },
   {
-    "answer":"Olho de sogra",
-    "category":"Sobremesa"
+    "category":"meio de transporte",
+    "answer":["onibus"]
   },
   {
-    "answer":"Orlando",
-    "category":"Cidade"
+    "category":"msé",
+    "answer":[]
   },
   {
-    "answer":"Os miseraveis",
-    "category":"JLR"
+    "category":"música",
+    "answer":["out of time man", "open your heart", "on fire", "ocean avenue", "o tempo nao para", "ode to my family"]
   },
   {
-    "answer":"Ortopedista",
-    "category":"Profissão"
+    "category":"nome feminino",
+    "answer":["olivia"]
   },
   {
-    "answer":"Operario",
-    "category":"Profissão"
+    "category":"nome masculino",
+    "answer":["otavio", "oliver"]
   },
   {
-    "answer":"Ocre",
-    "category":"Cor"
+    "category":"objeto",
+    "answer":["oculos"]
   },
   {
-    "answer":"Oftalmologista",
-    "category":"Profissão"
+    "category":"palavra em espanhol",
+    "answer":["orono"]
   },
   {
-    "answer":"Odell Beckham Jr",
-    "category":"Esportista"
+    "category":"palavra em inglês",
+    "answer":["offline"]
   },
   {
-    "answer":"Os Tres Mosqueteiros",
-    "category":"JLR"
+    "category":"país",
+    "answer":["oma"]
   },
   {
-    "answer":"Opeth",
-    "category":"Banda"
+    "category":"pch",
+    "answer":["ossos", "orbita ocular", "olho", "ombro", "orelha", "ovarios"]
   },
   {
-    "answer":"Ottolinger",
-    "category":"Marca"
+    "category":"pda",
+    "answer":["olivia palito"]
   },
   {
-    "answer":"Olympikus",
-    "category":"Marca"
+    "category":"personagem fictício",
+    "answer":[]
   },
   {
-    "answer":"Olivia Palito",
-    "category":"PDA"
+    "category":"presente",
+    "answer":["oculos"]
   },
   {
-    "answer":"Ortobom",
-    "category":"Marca"
+    "category":"profissão",
+    "answer":["operador de caixa", "oculista", "ortopedista", "operario", "oftalmologista"]
   },
   {
-    "answer":"Ourico",
-    "category":"Animal"
+    "category":"programa de tv",
+    "answer":["o corpo virtual", "o brasil tem disso", "o diario de mika", "olhar nacional"]
   },
   {
-    "answer":"Olhar Nacional",
-    "category":"Programa de TV"
+    "category":"raça de cachorro",
+    "answer":[]
   },
   {
-    "answer":"Olho",
-    "category":"PCH"
+    "category":"remédio",
+    "answer":["omeprazol"]
   },
   {
-    "answer":"Orquidea",
-    "category":"Flor"
+    "category":"sabor de pizza",
+    "answer":[]
   },
   {
-    "answer":"Osprey",
-    "category":"Marca"
+    "category":"sabor de sorvete",
+    "answer":["oreo", "ovomaltine"]
   },
   {
-    "answer":"Ocean Avenue",
-    "category":"Música"
+    "category":"sobremesa",
+    "answer":["olho de sogra"]
   },
   {
-    "answer":"Omelete",
-    "category":"Comida"
+    "category":"sobrenome",
+    "answer":["oliveira"]
   },
   {
-    "answer":"Outlander",
-    "category":"Carro"
+    "category":"super-herói",
+    "answer":[]
   },
   {
-    "answer":"Oswaldo Montenegro",
-    "category":"Celebridade"
+    "category":"série",
+    "answer":["o mecanismo"]
   },
   {
-    "answer":"Obediente",
-    "category":"Adjetivo"
+    "category":"time esportivo",
+    "answer":["olimpico"]
   },
   {
-    "answer":"Ombro",
-    "category":"PCH"
+    "category":"verbo",
+    "answer":["olhar"]
   },
   {
-    "answer":"Orelha",
-    "category":"PCH"
+    "category":"vestuário",
+    "answer":["ombreira", "oculos"]
   },
   {
-    "answer":"Orchata",
-    "category":"Líquido"
+    "category":"vilão",
+    "answer":[]
   },
   {
-    "answer":"Owen Wilson",
-    "category":"Ator"
-  },
-  {
-    "answer":"O Tempo Nao Para",
-    "category":"Música"
-  },
-  {
-    "answer":"Ouro",
-    "category":"Cor"
-  },
-  {
-    "answer":"Ovarios",
-    "category":"PCH"
-  },
-  {
-    "answer":"Ode To My Family",
-    "category":"Música"
-  },
-  {
-    "answer":"Oiticica",
-    "category":"FLV"
-  },
-  {
-    "answer":"olhar",
-    "category":"verbo"
-  },
-  {
-    "answer":"onibus",
-    "category":"meio de transporte"
-  },
-  {
-    "answer":"oculos",
-    "category":"presente"
-  },
-  {
-    "answer":"otavio",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"oliver",
-    "category":"nome masculino"
-  },
-  {
-    "answer":"oculos",
-    "category":"objeto"
-  },
-  {
-    "answer":"offline",
-    "category":"palavra em inglês"
-  },
-  {
-    "answer":"otavio",
-    "category":"nome"
-  },
-  {
-    "answer":"oliver",
-    "category":"nome"
-  },
-  {
-    "answer":"ovo pascoa",
-    "category":"doce"
-  },
-  {
-    "answer":"o mecanismo",
-    "category":"série"
-  },
-  {
-    "answer":"oreo",
-    "category":"sabor de sorvete"
-  },
-  {
-    "answer":"ovomaltine",
-    "category":"sabor de sorvete"
-  },
-  {
-    "answer":"oliveira",
-    "category":"sobrenome"
-  },
-  {
-    "answer":"ovelha",
-    "category":"fantasia"
-  },
-  {
-    "answer":"olimpico",
-    "category":"time esportivo"
-  },
-  {
-    "answer":"ostraceiro",
-    "category":"ave"
-  },
-  {
-    "answer":"orono",
-    "category":"palavra em espanhol"
-  },
-  {
-    "answer":"oma",
-    "category":"país"
-  },
-  {
-    "answer":"ovelha",
-    "category":"mamífero"
-  },
-  {
-    "answer":"orca",
-    "category":"mamífero"
-  },
-  {
-    "answer":"osteoporose",
-    "category":"doença"
-  },
-  {
-    "answer":"olivia",
-    "category":"nome feminino"
-  },
-  {
-    "answer":"omeprazol",
-    "category":"remédio"
-  },
-  {
-    "answer":"ovo",
-    "category":"ingrediente"
-  },
-  {
-    "answer":"oregano",
-    "category":"ingrediente"
+    "category":"flv",
+    "answer":["oiticica"]
   }
 ]
