@@ -57,7 +57,7 @@ if __name__ == "__main__":
         if answer == '0': break
         addtojson(answer, categoria)
       elif categoria == '0': break
-	  else: print("Essa categoria não existe")
+      else: print("Essa categoria não existe")
 
   elif option == '2':
     letter = input("letra:")
