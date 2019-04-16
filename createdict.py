@@ -6,39 +6,64 @@ import string
 import json
 
 letras = list(string.ascii_lowercase)
-categorias = ["Adjetivo","Animal","App ou site","Ator","Banda","Cantor","Carro","Capital","Celebridade","CEP","Cidade",
-              "Comida","Cor","Desenho animado","Eletro Eletrônico","Esporte","Esportista","Filme","Flor","FLV","Fruta",
-              "Game","Gentílico","Inseto","Instrumento Musical","JLR","Líquido","Marca","Música","MSÉ","Nome Feminino",
-              "Nome Masculino","Objeto","País","Palavra em inglês","PCH","PDA","Personagem Fictício","Profissão",
-              "Programa de TV","Série","Sobremesa","Sobrenome","Time Esportivo","Verbo","Vestuário",
-              "Nome","Gentílico","Super-Herói","Meio de Transporte","Idioma","Doce"]
+categorias = ["ADJETIVO","ANIMAL","APP OU SITE","ATOR","AVE","BANDA","BRINQUEDO",
+              "CANTOR","CAPITAL","CARRO","CELEBRIDADE","CEP","CIDADE","COMIDA SAUDÁVEL",
+              "COR","DESENHO ANIMADO","DOCE","DOENÇA","ELETRO ELETRÔNICO","ESPORTE",
+              "ESPORTISTA","FANTASIA","FILME","FLOR","FLV","FRUTA","GAME","GENTÍLICO",
+              "IDIOMA","INGREDIENTE","INSETO","INSTRUMENTO MUSICAL","JLR","LÍQUIDO",
+              "MAMÍFERO","MARCA","MEIO DE TRANSPORTE","MSÉ","MÚSICA","NOME FEMININO",
+              "NOME MASCULINO","OBJETO","PALAVRA EM ESPANHOL","PALAVRA EM INGLÊS","PAÍS",
+              "PCH","PDA","PERSONAGEM FICTÍCIO","PRESENTE","PROFISSÃO","PROGRAMA DE TV",
+              "RAÇA DE CACHORRO","REMÉDIO","SABOR DE PIZZA","SABOR DE SORVETE","SOBREMESA",
+              "SOBRENOME","SUPER-HERÓI","SÉRIE","TIME ESPORTIVO","VERBO","VESTUÁRIO","VILÃO",
+              "FLV"]
 
-def addtojson(answer,categoria):
+def addtojson(answer, categoria):
   letter = answer[0]
-  x = {
-    "answer":answer.lower(),
-    "category":categoria.lower()
-  }
-  with open('./dicionario/'+letter.lower()+'.json', 'r', encoding='utf-8') as j:
-    data = json.load(j)
-  with open('./dicionario/'+letter.lower()+'.json', 'w', encoding='utf-8') as j:
-    data.append(x)
-    j.seek(0)
+  with open('./dicionario/' + letter.lower() + '.json', 'r', encoding='utf-8') as current_letter:
+    data = json.load(current_letter)
+
+  for item in data:
+    if item['category'].lower() == categoria.lower():
+      item['answer'].append(answer.lower())
+  for item in data:
+    item['answer'] = str(item['answer']) #lista para string
+
+  with open('./dicionario/' + letter.lower() + '.json', 'w', encoding='utf-8') as j:
     json.dump(data, j, indent=2, separators=(',', ':'), ensure_ascii=False)
-    j.truncate()
+
+  with open('./dicionario/' + letter.lower() + '.json', 'r', encoding='utf-8') as x:
+    data = x.read()
+
+  data = data.replace('"[', '[')
+  data = data.replace(']"', ']')
+  data = data.replace("'", '"')
+
+  with open('./dicionario/' + letter.lower() + '.json', 'w', encoding='utf-8') as y:
+    y.write(data)
   print("Adicionado a letra:", letter)
 
 if __name__ == "__main__":
+  print("1 - Adicionar Respostas"
+        "\n2 - Mostrar Ausentes")
   option = str(input("> "))
 
   if option == '1':
+    print("Digite: 0 para encerrar")
     while True:
       categoria = input("Categoria:")
-      answer = input("Answer:")
-      if categoria == '0' or answer == '0': break
-      addtojson(answer, categoria)
+      if categoria.upper() in categorias:
+        answer = input("Resposta:")
+        if answer == '0': break
+        addtojson(answer, categoria)
+      elif categoria == '0': break
+	  else: print("Essa categoria não existe")
 
-  if option == '2':
-    pass
-
-
+  elif option == '2':
+    letter = input("letra:")
+    print("Letra:", letter)
+    with open('./dicionario/' + letter.lower() + '.json', 'r', encoding='utf-8') as current_letter:
+      data = json.load(current_letter)
+    for item in data:
+      if len(item['answer']) == 0:
+        print("Faltando:", item['category'])
