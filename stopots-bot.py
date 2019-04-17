@@ -67,7 +67,8 @@ def auto_complete(letter):
     data = json.load(current_letter)
   try:
     for x in range(1, 13):
-      itemType = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/span').text
+      itemType = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/span').text #TTema do campo
+      if itemType.lower() == 'nome': itemType = random.choice(["NOME FEMININO","NOME MASCULINO"])
       for item in data:
         if item['category'].lower() == itemType.lower():
           campo = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').get_attribute('value')
