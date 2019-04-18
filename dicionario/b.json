@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["beterraba"]
+  },
+  {
+    "category":"carro",
+    "answer":["blazer"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["beyonce"]
   }
 ]

@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["noni"]
+  },
+  {
+    "category":"carro",
+    "answer":["Nissan"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["Nicolas Cage"]
   }
 ]

@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["rabanete"]
+  },
+  {
+    "category":"carro",
+    "answer":["ranger", "r8 gt"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["rico mansur"]
   }
 ]

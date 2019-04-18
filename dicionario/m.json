@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["macadamia"]
+  },
+  {
+    "category":"carro",
+    "answer":["mustang", "meriva"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["madonna"]
   }
 ]

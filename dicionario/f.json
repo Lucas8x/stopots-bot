@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["figo"]
+  },
+  {
+    "category":"carro",
+    "answer":["frontier", "fiesta", "fox"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["fernanda lima"]
   }
 ]

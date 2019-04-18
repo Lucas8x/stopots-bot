@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["zitrone"]
+  },
+  {
+    "category":"carro",
+    "answer":["zafira"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["zachary levi"]
   }
 ]

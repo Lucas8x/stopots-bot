@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["ibapo"]
+  },
+  {
+    "category":"carro",
+    "answer":["idea"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["ivete sangalo"]
   }
 ]

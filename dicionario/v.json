@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["verguita"]
+  },
+  {
+    "category":"carro",
+    "answer":["vectra", "voyage"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["victoria beckham"]
   }
 ]

@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["jatoba"]
+  },
+  {
+    "category":"carro",
+    "answer":["journey", "jeep renegade"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["jennifer lopez"]
   }
 ]

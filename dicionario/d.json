@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["damasco"]
+  },
+  {
+    "category":"carro",
+    "answer":["duster"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["danielle winits"]
   }
 ]

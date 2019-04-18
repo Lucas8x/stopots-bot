@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["lobeira"]
+  },
+  {
+    "category":"carro",
+    "answer":["legacy", "lexus", "logan"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["luciana gimenez"]
   }
 ]

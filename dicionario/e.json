@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["espinafre"]
+  },
+  {
+    "category":"carro",
+    "answer":["elantra", "ecosport"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["eduardo moscovis"]
   }
 ]

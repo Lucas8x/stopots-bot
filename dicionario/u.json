@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["umari"]
+  },
+  {
+    "category":"carro",
+    "answer":["uno"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["umberto magnani"]
   }
 ]

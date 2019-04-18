@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["humiria"]
+  },
+  {
+    "category":"carro",
+    "answer":["hilux", "hb20"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["henri castelli"]
   }
 ]

@@ -89,7 +89,7 @@
   },
   {
     "category":"flv",
-    "answer":["ata", "alface", "alface"]
+    "answer":["ata", "alface", "alface", "abobora"]
   },
   {
     "category":"fruta",
@@ -244,7 +244,11 @@
     "answer":["abutre"]
   },
   {
-    "category":"flv",
-    "answer":["ata", "alface", "alface"]
+    "category":"carro",
+    "answer":["actyon sports", "argo"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["alinne moraes"]
   }
 ]

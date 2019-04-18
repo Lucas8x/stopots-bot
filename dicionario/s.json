@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["sapoti"]
+  },
+  {
+    "category":"carro",
+    "answer":["sandero", "spacefox"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["sabrina sato"]
   }
 ]

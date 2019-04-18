@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["pitomba"]
+  },
+  {
+    "category":"carro",
+    "answer":["prisma", "palio"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["pietra principe"]
   }
 ]

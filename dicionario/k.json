@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":[]
+  },
+  {
+    "category":"carro",
+    "answer":["ka"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["kelly key"]
   }
 ]

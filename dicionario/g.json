@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["genipapo"]
+  },
+  {
+    "category":"carro",
+    "answer":["grand cherokee", "gallardo lp"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["gisele bundchen"]
   }
 ]

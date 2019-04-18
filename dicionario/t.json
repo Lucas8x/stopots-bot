@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["toranja"]
+  },
+  {
+    "category":"carro",
+    "answer":["tiida sedan", "trailblazer"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["tais araujo"]
   }
 ]

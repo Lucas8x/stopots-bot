@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":["carambola"]
+  },
+  {
+    "category":"carro",
+    "answer":["camaro", "corolla"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["caio blat"]
   }
 ]

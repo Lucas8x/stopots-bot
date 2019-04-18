@@ -246,5 +246,13 @@
   {
     "category":"flv",
     "answer":[]
+  },
+  {
+    "category":"carro",
+    "answer":["q7"]
+  },
+  {
+    "category":"celebridade",
+    "answer":["quentin tarantino"]
   }
 ]
