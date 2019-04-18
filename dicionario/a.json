@@ -109,7 +109,7 @@
   },
   {
     "category":"ingrediente",
-    "answer":[]
+    "answer":["acafrao"]
   },
   {
     "category":"inseto",
@@ -141,7 +141,7 @@
   },
   {
     "category":"msé",
-    "answer":[]
+    "answer":["arrogante"]
   },
   {
     "category":"música",
@@ -169,7 +169,7 @@
   },
   {
     "category":"país",
-    "answer":[]
+    "answer":["argentina"]
   },
   {
     "category":"pch",
@@ -201,7 +201,7 @@
   },
   {
     "category":"remédio",
-    "answer":[]
+    "answer":["amoxicilina"]
   },
   {
     "category":"sabor de pizza",
@@ -217,7 +217,7 @@
   },
   {
     "category":"sobrenome",
-    "answer":[]
+    "answer":["araujo", "almeida", "azevedo"]
   },
   {
     "category":"super-herói",
@@ -241,7 +241,7 @@
   },
   {
     "category":"vilão",
-    "answer":[]
+    "answer":["abutre"]
   },
   {
     "category":"flv",

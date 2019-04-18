@@ -17,7 +17,7 @@
   },
   {
     "category":"ave",
-    "answer":[]
+    "answer":["ema"]
   },
   {
     "category":"banda",
@@ -105,7 +105,7 @@
   },
   {
     "category":"idioma",
-    "answer":[]
+    "answer":["espanhol", "eslovaco"]
   },
   {
     "category":"ingrediente",
@@ -137,7 +137,7 @@
   },
   {
     "category":"meio de transporte",
-    "answer":[]
+    "answer":["elevador"]
   },
   {
     "category":"msé",
@@ -201,7 +201,7 @@
   },
   {
     "category":"remédio",
-    "answer":[]
+    "answer":["estomazil"]
   },
   {
     "category":"sabor de pizza",
@@ -241,7 +241,7 @@
   },
   {
     "category":"vilão",
-    "answer":[]
+    "answer":["electro", "eddie brock"]
   },
   {
     "category":"flv",

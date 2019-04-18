@@ -25,7 +25,7 @@
   },
   {
     "category":"brinquedo",
-    "answer":[]
+    "answer":["oculos vr"]
   },
   {
     "category":"cantor",
@@ -45,7 +45,7 @@
   },
   {
     "category":"comida saudável",
-    "answer":[]
+    "answer":["ovo"]
   },
   {
     "category":"cor",
@@ -141,7 +141,7 @@
   },
   {
     "category":"msé",
-    "answer":[]
+    "answer":["onivora"]
   },
   {
     "category":"música",
@@ -181,7 +181,7 @@
   },
   {
     "category":"personagem fictício",
-    "answer":[]
+    "answer":["oliver queen"]
   },
   {
     "category":"presente",
@@ -221,7 +221,7 @@
   },
   {
     "category":"super-herói",
-    "answer":[]
+    "answer":["oliver queen"]
   },
   {
     "category":"série",
@@ -241,7 +241,7 @@
   },
   {
     "category":"vilão",
-    "answer":[]
+    "answer":["octopus", "orochimaru"]
   },
   {
     "category":"flv",
