@@ -20,28 +20,33 @@ categorias = ["ADJETIVO","ANIMAL","APP OU SITE","ATOR","AVE","BANDA","BRINQUEDO"
 
 def addtojson(answer, categoria):
   letter = answer[0]
-  with open('./dicionario/' + letter.lower() + '.json', 'r', encoding='utf-8') as current_letter:
+  folder = "./dicionario/"
+  with open(folder + letter.lower() + '.json', 'r', encoding='utf-8') as current_letter:
     data = json.load(current_letter)
 
   for item in data:
     if item['category'].lower() == categoria.lower():
-      item['answer'].append(answer.lower())
+      if not answer.lower() in item['answer']:
+        item['answer'].append(answer.lower())
+        print("Adicionado a letra:", letter)
+      else:
+        print("Essa resposta já existe")
+        return
   for item in data:
     item['answer'] = str(item['answer']) #lista para string
 
-  with open('./dicionario/' + letter.lower() + '.json', 'w', encoding='utf-8') as j:
+  with open(folder + letter.lower() + '.json', 'w', encoding='utf-8') as j:
     json.dump(data, j, indent=2, separators=(',', ':'), ensure_ascii=False)
 
-  with open('./dicionario/' + letter.lower() + '.json', 'r', encoding='utf-8') as x:
+  with open(folder + letter.lower() + '.json', 'r', encoding='utf-8') as x:
     data = x.read()
 
   data = data.replace('"[', '[')
   data = data.replace(']"', ']')
   data = data.replace("'", '"')
 
-  with open('./dicionario/' + letter.lower() + '.json', 'w', encoding='utf-8') as y:
+  with open(folder + letter.lower() + '.json', 'w', encoding='utf-8') as y:
     y.write(data)
-  print("Adicionado a letra:", letter)
 
 if __name__ == "__main__":
   print("1 - Adicionar Respostas"
