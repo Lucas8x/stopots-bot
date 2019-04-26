@@ -8,7 +8,6 @@ import random
 import re
 import json
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -17,11 +16,22 @@ from selenium.webdriver.support import expected_conditions as EC
 def cls():
   os.system('cls' if os.name == 'nt' else 'clear')
 
-options = Options()
-options.headless = False
-firefox_capabilities = DesiredCapabilities.FIREFOX
-firefox_capabilities['marionette'] = True
-driver = webdriver.Firefox(options=options, executable_path='./geckodriver.exe', capabilities=firefox_capabilities)
+try:
+  firefox_capabilities = DesiredCapabilities.FIREFOX
+  firefox_capabilities['marionette'] = True
+  driver = webdriver.Firefox(executable_path='./geckodriver.exe', capabilities=firefox_capabilities) #v23
+except:
+  try:
+    options = webdriver.ChromeOptions()
+    options.add_argument("--log-level=3")
+    options.add_argument("--silent")
+    options.add_argument("--disable-extensions")
+    options.add_argument('--disable-popup-blocking')
+    driver = webdriver.Chrome('./chromedriver.exe', options=options) #v74
+  except:
+    print("Instale/Atualize o seu Firefox/Chrome")
+    time.sleep(5)
+    quit()
 
 categorias = ["ADJETIVO","ANIMAL","APP OU SITE","ATOR","AVE","BANDA","BRINQUEDO",
               "CANTOR","CAPITAL","CARROCELEBRIDADE","CEP","CIDADE","COMIDA SAUDÁVEL",
@@ -191,7 +201,12 @@ if __name__ == "__main__":
     playTheGame()
 
   elif option == '2':
-    username = input("Digite nome: ")
+    while True:
+      username = input("Digite nome: ")
+      if len(username) <= 15:
+        break
+      else:
+        print("Nome muito longo max: 15 caractes")
     driver.get("https://stopots.com.br/")
     joinGame(username)
     playTheGame()
