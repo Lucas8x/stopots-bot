@@ -5,5 +5,6 @@ Auto Play StopotS Game
 * Python 3
 * selenium
   * geckodriver
+  * chromedriver
 
 Foi utilizado [StopAnswersAPI](https://github.com/nosliper/StopAnswersAPI) por [nosliper](https://github.com/nosliper) para formar um dicionário inicial
