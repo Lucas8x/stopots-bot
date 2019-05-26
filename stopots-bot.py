@@ -49,8 +49,8 @@ def joinGame(username):
   print("Entrando...")
   wait = WebDriverWait(driver, 10)
   # entrar button
-  wait.until(EC.presence_of_element_located((By.XPATH, '//*[@class="login"]/form/button')))
-  driver.find_element_by_xpath('//*[@class="login"]/form/button').click()
+  wait.until(EC.presence_of_element_located((By.XPATH, '//*[@class="login"]/button[@class="enter"]')))
+  driver.find_element_by_xpath('//*[@class="login"]/button[@class="enter"]').click()
   wait.until(EC.invisibility_of_element_located((By.XPATH, '//*[@class="load"]')))
   # username field
   if username != ' ':
