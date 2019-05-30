@@ -314,13 +314,16 @@ def playTheGame():
           break
         else:
           print("Opção invalida")
+
       if option == 's':
         wait = WebDriverWait(driver, 10)
         wait.until(EC.presence_of_element_located((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]')))
         time.sleep(1)
         driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]/strong').click()
         playTheGame()
+
       elif option == 'n':
+        driver.quit()
         exit()
 
     elif option == 2:
@@ -329,52 +332,49 @@ def playTheGame():
 if __name__ == "__main__":
   defaultFiles()
   driver = mydriver()
-  print("Opções:"
-        "\n1 - Entrada Rápida"
-        "\n2 - Entrar no Jogo"
-        "\n3 - Entrar com ID da Sala "
-        "\n4 - Configs"
-        "\n5 - Sair")
   while True:
-    try:
-      option = int(input("> "))
-      if 1 <= option <= 5:
-        break
-      else:
-        print("Opção invalida")
-    except:
-      print("Digite um número")
+    print("Opções:"
+          "\n1 - Entrada Rápida"
+          "\n2 - Entrar no Jogo"
+          "\n3 - Entrar com ID da Sala "
+          "\n4 - Configs"
+          "\n5 - Sair")
+    option = input("> ")
+    cls()
 
-  if option == 1:
-    driver.get("https://stopots.com.br/")
-    username = jsonVariables()[0]
-    if not 2 <= len(username) <= 15:
-      username = ' '
-    joinGame(username)
-    playTheGame()
+    if option == '1':
+      driver.get("https://stopots.com.br/")
+      username = jsonVariables()[0]
+      if not 2 <= len(username) <= 15:
+        username = ' '
+      joinGame(username)
+      playTheGame()
 
-  elif option == 2:
-    while True:
-      username = input("Digite nome: ")
-      if 2 <= len(username) <= 15:
-        break
-      else:
-        print("Seu nick deve possuir entre 2 e 15 caracteres")
-    driver.get("https://stopots.com.br/")
-    joinGame(username)
-    playTheGame()
+    elif option == '2':
+      while True:
+        username = input("Digite nome: ")
+        if 2 <= len(username) <= 15:
+          break
+        else:
+          print("Seu nick deve possuir entre 2 e 15 caracteres")
+      driver.get("https://stopots.com.br/")
+      joinGame(username)
+      playTheGame()
 
-  elif option == 3:
-    id = str(input("ID:"))
-    driver.get("https://stopots.com.br/" + id)
-    joinGame(username)
-    playTheGame()
+    elif option == '3':
+      id = str(input("ID:"))
+      driver.get("https://stopots.com.br/" + id)
+      joinGame(username)
+      playTheGame()
 
-  elif option == 4:
-    configJsonSettings()
+    elif option == '4':
+      configJsonSettings()
 
-  elif option == 5:
-    exit()
+    elif option == '5':
+      driver.quit()
+      exit()
+    else:
+      print("Opção invalida")
 
 
 '''
