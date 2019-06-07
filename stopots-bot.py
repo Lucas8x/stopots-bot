@@ -22,7 +22,8 @@ def default_files():
     data = {
       "username": "",
       "validator": "check",
-      "autoStop": False
+      "autoStop": False,
+      "avatar": 0
     }
     with open('./config.json', 'a+') as x:
       json.dump(data, x, indent=2)
@@ -32,8 +33,9 @@ def json_variables():
     data = json.load(config)
     username = data['username']
     validator = data['validator']
-    autoStop = data['autoStop']
-  return username,validator,autoStop
+    autostop = data['autoStop']
+    avatar_id = data['avatar']
+  return username,validator,autostop,avatar_id
 
 def config_json_settings():
   with open('config.json', 'r+') as j:
@@ -42,6 +44,7 @@ def config_json_settings():
       print("1 - Mudar username"
             "\n2 - Alterar o validador"
             "\n3 - Auto Stop [ Status:",data['autoStop'],"]"
+            "\n4 - Mudar avatar"
             "\n0 - Voltar")
       optionToConfig = str(input(">"))
       cls()
@@ -70,6 +73,13 @@ def config_json_settings():
         elif not data['autoStop']:
           data['autoStop'] = True
           print("Auto Stop Habilitado")
+      elif optionToConfig == '4':
+        while True:
+          avatar_num = int(input("Número do Avatar:"))
+          if 0 <= avatar_num <= 36:
+            data['avatar'] = avatar_num
+            break
+          else: print("Min: 0 Max: 36")
       elif optionToConfig == '0':
         cls()
         break
@@ -115,14 +125,20 @@ def join_game(username):
     driver.find_element_by_xpath('//*[@class="perfil"]//input').send_keys(username)
   else: username = driver.find_element_by_xpath('//*[@class="perfil"]//input').get_attribute('value')
 
+  #avatar
+  wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@class="edit"]')))
+  driver.find_element_by_xpath('//*[@class="edit"]').click() #botão edit
+  avatar_id = json_variables()[3]
+  wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@class="avatar avt'+str(avatar_id)+'"]')))
+  driver.find_element_by_xpath('//*[@class="avatar avt'+str(avatar_id)+'"]').click()
+  driver.find_element_by_xpath('//*[@class="buttons"]/button').click()
+
   # jogar button
-  wait.until(EC.presence_of_element_located((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]')))
-  time.sleep(1)
+  wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]/strong')))
   driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]/strong').click()
   print("Logado como:", username)
 
 def find_letter():
-  #global letter
   try:
     letter = driver.find_element_by_xpath('//*[@id="letter"]/span').text
     print("Letra Atual:", letter)
