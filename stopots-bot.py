@@ -126,16 +126,26 @@ def join_game(username):
   else: username = driver.find_element_by_xpath('//*[@class="perfil"]//input').get_attribute('value')
 
   #avatar
-  wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@class="edit"]')))
-  driver.find_element_by_xpath('//*[@class="edit"]').click() #botão edit
   avatar_id = json_variables()[3]
-  wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@class="avatar avt'+str(avatar_id)+'"]')))
-  driver.find_element_by_xpath('//*[@class="avatar avt'+str(avatar_id)+'"]').click()
-  driver.find_element_by_xpath('//*[@class="buttons"]/button').click()
+  if 1 <= avatar_id <= 36:
+    # botão edit
+    wait.until(EC.element_to_be_clickable((By.XPATH, '//button[@class="edit"]')))
+    driver.find_element_by_xpath('//button[@class="edit"]').click()
+
+    # icone do avatar
+    wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@class="avatar avt'+str(avatar_id)+'"]')))
+    driver.find_element_by_xpath('//*[@class="avatar avt'+str(avatar_id)+'"]').click()
+
+    # botão confirmar
+    wait.until(EC.element_to_be_clickable((By.XPATH,'//*[@class="buttons"]/button')))
+    driver.find_element_by_xpath('//*[@class="buttons"]/button').click()
+
+    # esperar a animação
+    wait.until(EC.invisibility_of_element_located((By.XPATH, '//*[@class="popup-enter-done" or @class="popup-exit popup-exit-active"]')))
 
   # jogar button
-  wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]/strong')))
-  driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]/strong').click()
+  wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]')))
+  driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]').click()
   print("Logado como:", username)
 
 def find_letter():
@@ -312,7 +322,7 @@ def play_the_game():
         if driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button'):
           time.sleep(2)
           driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button').click()
-        elif driver.find_elements_by_xpath('//*[@class="popup-enter-done"]'):
+        elif driver.find_elements_by_xpath('//*[@class="popup-exit popup-exit-active" or @class="class="popup-enter-done"]'):
           pass
       except:
         pass
