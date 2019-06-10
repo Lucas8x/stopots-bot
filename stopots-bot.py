@@ -14,6 +14,9 @@ from selenium.webdriver.support import expected_conditions as EC
 import locale
 locale.setlocale(locale.LC_ALL, '')
 
+with open('dicionario.json', 'r', encoding='utf-8') as dicio:
+  dicionario = json.load(dicio)
+
 def cls():
   os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -157,8 +160,6 @@ def find_letter():
 
 def auto_complete(letter):
   print("Auto Completando...")
-  with open('./dicionario/'+letter.lower()+'.json', 'r', encoding='utf-8') as current_letter:
-    data = json.load(current_letter)
   try:
     for x in range(1, 13):
       item_category = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/span').text #TTema do campo
@@ -168,14 +169,14 @@ def auto_complete(letter):
       if item_category.lower() == 'comida':
         item_category = 'COMIDA SAUDÁVEL'
 
-      for item in data:
-        if item['category'].lower() == item_category.lower():
-          campo = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').get_attribute('value')
-          if len(campo) == 0: #campo == '':
-            if len(item['answer']) > 0:
-              resposta = random.choice(item['answer'])
+      for item in dicionario:
+        if item['letter'].lower() == letter.lower():
+          if len(item['categories'][item_category.lower()]) > 0:
+            campo = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').get_attribute('value')
+            if len(campo) == 0: #campo == '':
+              resposta = random.choice(item['categories'][item_category.lower()])
               driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').send_keys(resposta)
-          break
+            break
   except:
     pass
 
@@ -223,7 +224,7 @@ def round_end_rank():
   # Rank Fim de Jogo (TOP 3)
   elif (driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//h3').text.upper() == 'FIM DE JOGO!') or (driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//h4').text.upper() == 'RANKING FINAL'):
     print("- Fim de Jogo -")
-    for x in range(1,3):
+    for x in range(1, 4):
       try:
         nick = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//*[@class="positions"]/div['+str(x)+']/*[@class="nick"]/text()').text
         pts = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//*[@class="positions"]/div['+str(x)+']/*[@class="points"]/text()').text
@@ -249,8 +250,6 @@ def validate(validator_type, letter):
     # Modo Avaliador
     elif validator_type == 'check':
       print("Verificando Respostas...")
-      with open('./dicionario/'+letter.lower()+'.json', 'r', encoding='utf-8') as current_letter:
-        data = json.load(current_letter)
 
       category = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]/div/h3').text
       category = re.sub('TEMA: ', '', category)
@@ -264,10 +263,10 @@ def validate(validator_type, letter):
             category_answer = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').text
 
             if category.lower() != 'nome':
-              if not any(item['category'].lower() == category.lower() and category_answer.lower() in item['answer'] for item in data):
+              if not any(item['categories'][category.lower()] and category_answer.lower() in item['categories'][category.lower()] for item in dicionario):
                 driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
             else:
-              if not any(category_answer.lower() in item['answer'] for item in data if item['category'].lower() in ['nome feminino', 'nome masculino']):
+              if not any(category_answer.lower() in item['categories'][category.lower()] for item in dicionario if item['categories'][category.lower()] in ['nome feminino', 'nome masculino']):
                 driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label[' + str(x) + ']/div').click()
         except:
           continue
