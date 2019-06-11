@@ -20,32 +20,34 @@ categorias = ["ADJETIVO","ANIMAL","APP OU SITE","ATOR","AVE","BANDA","BRINQUEDO"
 
 def addtojson(answer, categoria):
   letter = answer[0]
-  folder = "./dicionario/"
-  with open(folder + letter.lower() + '.json', 'r', encoding='utf-8') as current_letter:
+  with open('dicionario.json', 'r', encoding='utf-8') as current_letter:
     data = json.load(current_letter)
 
   for item in data:
-    if item['category'].lower() == categoria.lower():
-      if not answer.lower() in item['answer']:
-        item['answer'].append(answer.lower())
+    if item['categories'][categoria.lower()]:
+      if not answer.lower() in item['categories'][categoria.lower()]:
+        item['categories'][categoria.lower()].append(answer.lower())
         print("Adicionado a letra:", letter)
+        break
       else:
         print("Essa resposta já existe")
         return
-  for item in data:
-    item['answer'] = str(item['answer']) #lista para string
 
-  with open(folder + letter.lower() + '.json', 'w', encoding='utf-8') as j:
+  for item in data:
+    for cat in categorias:
+      item['categories'][cat.lower()] = str(item['categories'][cat.lower()]) #lista para string
+
+  with open('dicionario.json', 'w', encoding='utf-8') as j:
     json.dump(data, j, indent=2, separators=(',', ':'), ensure_ascii=False)
 
-  with open(folder + letter.lower() + '.json', 'r', encoding='utf-8') as x:
+  with open('dicionario.json', 'r', encoding='utf-8') as x:
     data = x.read()
 
   data = data.replace('"[', '[')
   data = data.replace(']"', ']')
   data = data.replace("'", '"')
 
-  with open(folder + letter.lower() + '.json', 'w', encoding='utf-8') as y:
+  with open('dicionario2.json', 'w', encoding='utf-8') as y:
     y.write(data)
 
 if __name__ == "__main__":
@@ -59,16 +61,23 @@ if __name__ == "__main__":
       categoria = input("Categoria:")
       if categoria.upper() in categorias:
         answer = input("Resposta:")
-        if answer == '0': break
+        if answer == '0':
+          break
         addtojson(answer, categoria)
-      elif categoria == '0': break
-      else: print("Essa categoria não existe")
+      elif categoria == '0':
+        break
+      else:
+        print("Essa categoria não existe")
 
   elif option == '2':
     letter = input("letra:")
     print("Letra:", letter)
-    with open('./dicionario/' + letter.lower() + '.json', 'r', encoding='utf-8') as current_letter:
+    with open('./dicionario.json', 'r', encoding='utf-8') as current_letter:
       data = json.load(current_letter)
     for item in data:
-      if len(item['answer']) == 0:
-        print("Faltando:", item['category'])
+      if item['letter'].lower() == letter.lower():
+        for cat in categorias:
+          if len(item['categories'][cat.lower()]) == 0:
+            print("Faltando:", cat)
+      else:
+        continue
