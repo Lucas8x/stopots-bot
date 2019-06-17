@@ -52,8 +52,13 @@ def config_json_settings():
       optionToConfig = str(input(">"))
       cls()
       if optionToConfig == '1':
-        username = str(input("Username:"))
-        data['username'] = username
+        print("0 - Voltar")
+        username = str(input("Username: "))
+        if username != '0':
+          if 2 <= len(username) <= 15:
+            data['username'] = username
+          else:
+            print("Seu nick deve possuir entre 2 e 15 caracteres")
       elif optionToConfig == '2':
         print("1 - Rápido (apenas aperta em avaliar)"
               "\n2 - Negar - (invalidará todas as respostas inclusive as suas)"
@@ -131,6 +136,7 @@ def join_game(username):
   #avatar
   avatar_id = json_variables()[3]
   if 1 <= avatar_id <= 36:
+    time.sleep(2)
     # botão edit
     wait.until(EC.element_to_be_clickable((By.XPATH, '//button[@class="edit"]')))
     driver.find_element_by_xpath('//button[@class="edit"]').click()
@@ -145,15 +151,17 @@ def join_game(username):
 
     # esperar a animação
     wait.until(EC.invisibility_of_element_located((By.XPATH, '//*[@class="popup-enter-done" or @class="popup-exit popup-exit-active"]')))
+  time.sleep(2)
 
   # jogar button
   wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]')))
+  time.sleep(2)
   driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]').click()
   print("Logado como:", username)
 
 def find_letter():
   try:
-    letter = driver.find_element_by_xpath('//*[@id="letter"]/span').text
+    letter = driver.find_element_by_xpath('//*[@id="letter"]/span').text.lower()
     print("Letra Atual:", letter)
     return letter
   except: pass
@@ -161,22 +169,28 @@ def find_letter():
 def auto_complete(letter):
   print("Auto Completando...")
   try:
-    for x in range(1, 13):
-      item_category = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/span').text #TTema do campo
-
-      if item_category.lower() == 'nome':
-        item_category = random.choice(["NOME FEMININO","NOME MASCULINO"])
-      if item_category.lower() == 'comida':
-        item_category = 'COMIDA SAUDÁVEL'
-
-      for item in dicionario:
-        if item['letter'].lower() == letter.lower():
-          if len(item['categories'][item_category.lower()]) > 0:
+    for item in dicionario:
+      if item['letter'] == letter:
+        for x in range(1, 13):
+          try:
             campo = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').get_attribute('value')
-            if len(campo) == 0: #campo == '':
-              resposta = random.choice(item['categories'][item_category.lower()])
-              driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').send_keys(resposta)
-            break
+            if len(campo) == 0:
+              item_category = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/span').text.lower()  # TTema do campo
+              if item_category == 'nome':
+                item_category = random.choice(["nome feminino", "nome masculino"])
+              if item_category == 'comida':
+                item_category = 'comida saudável'
+              if len(item['categories'][item_category]) > 0:
+                resposta = random.choice(item['categories'][item_category])
+                driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').send_keys(resposta)
+            else:
+              continue
+          except:
+            continue
+        break
+      else:
+        continue
+
   except:
     pass
 
@@ -250,27 +264,28 @@ def validate(validator_type, letter):
     # Modo Avaliador
     elif validator_type == 'check':
       print("Verificando Respostas...")
+      
+	  category = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]/div/h3').text
+      category = re.sub('TEMA: ', '', category).lower()
+      if category == 'comida':
+        category = 'comida saudável'
 
-      category = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]/div/h3').text
-      category = re.sub('TEMA: ', '', category)
-
-      if category.lower() == 'comida':
-        category = 'COMIDA SAUDÁVEL'
-
-      for x in range(1, 15):
-        try:
-          if driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/span').text == 'VALIDADO!':
-            category_answer = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').text
-
-            if category.lower() != 'nome':
-              if not any(item['categories'][category.lower()] and category_answer.lower() in item['categories'][category.lower()] for item in dicionario):
-                driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
-            else:
-              if not any(category_answer.lower() in item['categories'][category.lower()] for item in dicionario if item['categories'][category.lower()] in ['nome feminino', 'nome masculino']):
-                driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label[' + str(x) + ']/div').click()
-        except:
-          continue
-      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
+      for item in dicionario:
+        if item['letter'] == letter:
+          for x in range(1,15):
+            try:
+              if driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/span').text == 'VALIDADO!':
+                category_answer = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').text.lower()
+                if category != 'nome':
+                  if not category_answer in item['categories'][category]:
+                    driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
+                else:
+                  if not category_answer in item['categories']['nome feminino'] or category_answer in item['categories']['nome masculino']:
+                    driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
+            except:
+              continue
+          break
+      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click() # botão de confirmar avaliação
 
 def play_the_game():
   validator_type = json_variables()[1]
@@ -279,7 +294,9 @@ def play_the_game():
     while True:
       cls()
       try:
-        button = driver.find_element_by_xpath('//*[@class= "bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake" or @class="bt-yellow icon-exclamation disable"]/strong').text.upper()
+        button = driver.find_element_by_xpath('//*[@class= "bt-yellow icon-exclamation"'
+                                              ' or @class="bt-yellow icon-exclamation shake"'
+                                              ' or @class="bt-yellow icon-exclamation disable"]/strong').text.upper()
         # STOP !
         if button == 'STOP!':
           letter = find_letter()
@@ -302,17 +319,17 @@ def play_the_game():
       except:
         pass
 
-      # Rank Fim de Round
-      try:
-        if driver.find_element_by_xpath('//*[@class="active"]//*[@class="trophy"]'):
-          round_end_rank()
-      except:
-        pass
-
       # Estou pronto:
       try:
         if driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]/strong').text.upper() == 'ESTOU PRONTO':
           driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
+      except:
+        pass
+
+      # Rank Fim de Round
+      try:
+        if driver.find_element_by_xpath('//*[@class="active"]//*[@class="trophy"]'):
+          round_end_rank()
       except:
         pass
 
