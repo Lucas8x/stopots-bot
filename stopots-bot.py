@@ -142,6 +142,8 @@ def join_game(username):
     driver.find_element_by_xpath('//button[@class="edit"]').click()
 
     # icone do avatar
+    if avatar_id > 14:
+      driver.execute_script("arguments[0].scrollIntoView(true);", driver.find_element_by_xpath('//*[@class="avatar avt'+str(avatar_id)+'"]'))
     wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@class="avatar avt'+str(avatar_id)+'"]')))
     driver.find_element_by_xpath('//*[@class="avatar avt'+str(avatar_id)+'"]').click()
 
