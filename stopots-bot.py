@@ -44,10 +44,10 @@ def config_json_settings():
   with open('config.json', 'r+') as j:
     data = json.load(j)
     while True:
-      print("1 - Mudar username"
-            "\n2 - Alterar o validador"
-            "\n3 - Auto Stop [ Status:",data['autoStop'],"]"
-            "\n4 - Mudar avatar"
+      print(f"1 - Mudar username [Atual: {data['username']}]",
+            f"\n2 - Alterar o validador [Atual: {data['validator']}]",
+            f"\n3 - Auto Stop [Status: {data['autoStop']}]",
+            f"\n4 - Mudar avatar [Atual: {data['avatar']}]",
             "\n0 - Voltar")
       optionToConfig = str(input(">"))
       cls()
@@ -67,23 +67,28 @@ def config_json_settings():
         tipo = int(input("> "))
         if tipo == 1:
           data['validator'] = 'quick'
+          print("Validador alterado para modo rápido\n")
         elif tipo == 2:
           data['validator'] = 'deny'
+          print("Validador alterado para modo de negação\n")
         elif tipo == 3:
           data['validator'] = 'check'
+          print("Validador alterado para modo de avaliação\n")
         elif tipo == 4:
           data['validator'] = 'null'
-        else: pass
+          print("Validador alterado para não fazer nada\n")
+        else:
+          pass
       elif optionToConfig == '3':
         if data['autoStop']:
           data['autoStop'] = False
-          print("Auto Stop Desabilitado")
+          print("Auto Stop Desabilitado\n")
         elif not data['autoStop']:
           data['autoStop'] = True
-          print("Auto Stop Habilitado")
+          print("Auto Stop Habilitado\n")
       elif optionToConfig == '4':
         while True:
-          avatar_num = int(input("Número do Avatar:"))
+          avatar_num = int(input("Número do Avatar: "))
           if 0 <= avatar_num <= 36:
             data['avatar'] = avatar_num
             break
@@ -201,7 +206,7 @@ def match_info():
   try:
     rounds = driver.find_element_by_xpath('//*[@class="rounds"]/span').text
     total = driver.find_element_by_xpath('//*[@class="rounds"]/p[2]').text
-    print("- Rodadas:", rounds + total,"-")
+    print(f"- Rodadas: {rounds}{total}")
   except:
     pass
 
@@ -213,10 +218,10 @@ def match_info():
       pts = driver.find_element_by_xpath('//*[@id="users"]/li['+str(x)+']//*[@class="infos"]/span').text
       if nick:
         global username
-        if not nick == username:
-          print(nick,"-", pts)
+        if nick != username:
+          print(f"{nick} - {pts}")
         else:
-          print(">",nick,"-",pts)
+          print(f">{nick} - {pts}")
     except:
       break
 
@@ -230,10 +235,11 @@ def round_end_rank():
         nick = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li['+str(x)+']//*[@class="nick"]').text
         pts = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li['+str(x)+']//*[@class="points"]').text
         if nick:
-          if not nick == username:
-            print(position+"º -",nick,"-",pts)
+          if nick != username:
+            print(f"{position}º - {nick} - {pts}")
           else:
-            print(">",position+"º -",nick,"-",pts)
+            print(f">{position}º - {nick} - {pts}")
+
       except:
         break
 
@@ -244,7 +250,7 @@ def round_end_rank():
       try:
         nick = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//*[@class="positions"]/div['+str(x)+']/*[@class="nick"]/text()').text
         pts = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//*[@class="positions"]/div['+str(x)+']/*[@class="points"]/text()').text
-        print(str(x)+"º -", nick,"-",pts)
+        print(f"{x}º - {nick} - {pts}")
       except:
         break
   print("")
@@ -266,9 +272,10 @@ def validate(validator_type, letter):
     # Modo Avaliador
     elif validator_type == 'check':
       print("Verificando Respostas...")
-      
-	  category = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]/div/h3').text
+
+      category = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]/div/h3').text
       category = re.sub('TEMA: ', '', category).lower()
+
       if category == 'comida':
         category = 'comida saudável'
 
@@ -292,6 +299,7 @@ def validate(validator_type, letter):
 def play_the_game():
   validator_type = json_variables()[1]
   auto_stop = json_variables()[2]
+
   try:
     while True:
       cls()
@@ -398,7 +406,7 @@ if __name__ == "__main__":
           "\n1 - Entrada Rápida"
           "\n2 - Entrar no Jogo"
           "\n3 - Entrar com ID da Sala "
-          "\n4 - Configs"
+          "\n4 - Configurações"
           "\n5 - Sair")
     option = input("> ")
     cls()
@@ -435,7 +443,7 @@ if __name__ == "__main__":
       driver.quit()
       exit()
     else:
-      print("Opção invalida")
+      print("Opção invalida\n")
 
 
 '''
