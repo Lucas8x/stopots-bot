@@ -20,25 +20,25 @@ categorias = ["ADJETIVO","ANIMAL","APP OU SITE","ATOR","AVE","BANDA","BRINQUEDO"
 
 def addtojson(answer, categoria):
   letter = answer[0]
-  with open('dicionario.json', 'r', encoding='utf-8') as current_letter:
-    data = json.load(current_letter)
+  with open('dicionario.json', 'r', encoding='utf-8') as dicio:
+    dicionario = json.load(dicio)
 
-  for item in data:
-    if item['categories'][categoria.lower()]:
-      if not answer.lower() in item['categories'][categoria.lower()]:
-        item['categories'][categoria.lower()].append(answer.lower())
+  for item in dicionario:
+    if item['letter'] == letter:
+      if not answer in item['categories'][categoria]:
+        item['categories'][categoria].append(answer)
         print("Adicionado a letra:", letter)
         break
       else:
         print("Essa resposta já existe")
         return
 
-  for item in data:
+  for item in dicionario:
     for cat in categorias:
       item['categories'][cat.lower()] = str(item['categories'][cat.lower()]) #lista para string
 
   with open('dicionario.json', 'w', encoding='utf-8') as j:
-    json.dump(data, j, indent=2, separators=(',', ':'), ensure_ascii=False)
+    json.dump(dicionario, j, indent=2, separators=(',', ':'), ensure_ascii=False)
 
   with open('dicionario.json', 'r', encoding='utf-8') as x:
     data = x.read()
@@ -47,7 +47,7 @@ def addtojson(answer, categoria):
   data = data.replace(']"', ']')
   data = data.replace("'", '"')
 
-  with open('dicionario2.json', 'w', encoding='utf-8') as y:
+  with open('dicionario.json', 'w', encoding='utf-8') as y:
     y.write(data)
 
 if __name__ == "__main__":
@@ -58,26 +58,33 @@ if __name__ == "__main__":
   if option == '1':
     print("Digite: 0 para encerrar")
     while True:
-      categoria = input("Categoria:")
+      categoria = input("Categoria:").lower()
       if categoria.upper() in categorias:
-        answer = input("Resposta:")
+        answer = input("Resposta:").lower()
         if answer == '0':
           break
-        addtojson(answer, categoria)
+        elif answer[0] in letras:
+          if len(answer) <= 20:
+            addtojson(answer, categoria)
+          else:
+            print("Resposta muito grande max: 20")
+        else:
+          print("Resposta Invalida")
       elif categoria == '0':
         break
       else:
         print("Essa categoria não existe")
 
   elif option == '2':
-    letter = input("letra:")
+    letter = input("letra:").lower()
     print("Letra:", letter)
-    with open('./dicionario.json', 'r', encoding='utf-8') as current_letter:
-      data = json.load(current_letter)
-    for item in data:
-      if item['letter'].lower() == letter.lower():
+    with open('dicionario.json', 'r', encoding='utf-8') as dicio:
+      dicionario = json.load(dicio)
+    for item in dicionario:
+      if item['letter'] == letter:
         for cat in categorias:
           if len(item['categories'][cat.lower()]) == 0:
             print("Faltando:", cat)
+        break
       else:
         continue
