@@ -13,7 +13,7 @@
       "capital":["atenas"],
       "cep":["americana", "amazonas"],
       "cidade":["almere"],
-      "comida saudável":["alface", "abobora"],
+      "comida saudável":["alface", "abobora", "abacate", "abóbora", "açaí", "acerola", "ameixa", "agrião"],
       "cor":["ametista", "anil"],
       "desenho animado":["anabel"],
       "doce":["ambrosia"],
@@ -64,7 +64,8 @@
       "vestuário":["anel", "avental"],
       "vilão":["abutre"],
       "carro":["actyon sports", "argo"],
-      "celebridade":["alinne moraes"]
+      "celebridade":["alinne moraes"],
+      "comida":["arroz", "abacate", "ameixa", "atum", "alface"]
     }
   },
   {
@@ -81,7 +82,7 @@
       "capital":["bruxelas"],
       "cep":["bielorrussia"],
       "cidade":["breda"],
-      "comida saudável":["banana", "batata"],
+      "comida saudável":["banana", "batata", "banana figo", "banana maçã", "banana marmelo", "banana nanica", "banana prata", "batata binghi", "batata doce", "batata inglesa", "batata pirulito", "batata sem lavar", "batata yacon", "berinjela", "beterraba", "brocoli ninja", "brócolis"],
       "cor":["bege", "bordo"],
       "desenho animado":["beyblade"],
       "doce":["bombom"],
@@ -132,7 +133,8 @@
       "vestuário":["bota", "biquini", "boina", "bolsa", "broche", "brinco", "bermuda", "blazer", "body", "blusa", "blusao"],
       "vilão":["blob", "brutus"],
       "carro":["blazer"],
-      "celebridade":["beyonce"]
+      "celebridade":["beyonce"],
+      "comida":["baiao de dois", "beterraba", "batata", "bolo", "banana"]
     }
   },
   {
@@ -149,7 +151,7 @@
       "capital":["cairo"],
       "cep":["crimeia"],
       "cidade":["curitiba", "cuiaba", "camberra"],
-      "comida saudável":["cenoura"],
+      "comida saudável":["cenoura", "caju", "caqui chocolate", "caqui fuyu", "caqui taubaté", "cará", "carambola", "castanha macadâmia", "castanha portuguesa", "cebola argentina", "cebola nacional", "cebola", "cebola roxa", "cereja", "chuchu", "coco seco", "coco verde", "cogumelo", "couve flor"],
       "cor":["ciano", "castanho"],
       "desenho animado":["corrida maluca"],
       "doce":["caramelo", "chocolate"],
@@ -200,7 +202,8 @@
       "vestuário":["calca", "chinelo", "chuteira", "cueca", "camisa", "cartola", "calcinha", "camiseta", "colete", "casaco", "camisola"],
       "vilão":["ceifador"],
       "carro":["camaro", "corolla"],
-      "celebridade":["caio blat"]
+      "celebridade":["caio blat"],
+      "comida":["cuscuz", "camarao", "carne", "cordeiro", "cereja"]
     }
   },
   {
@@ -217,7 +220,7 @@
       "capital":["damasco"],
       "cep":["damasco"],
       "cidade":["damasco"],
-      "comida saudável":[],
+      "comida saudável":["damasco"],
       "cor":["dourado"],
       "desenho animado":["digimon"],
       "doce":["dadinho"],
@@ -268,7 +271,8 @@
       "vestuário":["dedal"],
       "vilão":["doutor destino"],
       "carro":["duster"],
-      "celebridade":["danielle winits"]
+      "celebridade":["danielle winits"],
+      "comida":["damasco", "dobradinha", "danone", "doce de leite"]
     }
   },
   {
@@ -285,7 +289,7 @@
       "capital":["estocolmo"],
       "cep":["espirito santo"],
       "cidade":["estocolmo"],
-      "comida saudável":["espinafre"],
+      "comida saudável":["espinafre", "ervilha", "ervilha pet poa"],
       "cor":["esmeralda"],
       "desenho animado":["evangelion"],
       "doce":[],
@@ -336,7 +340,8 @@
       "vestuário":["elmo", "espartilho", "echarpe"],
       "vilão":["electro", "eddie brock"],
       "carro":["elantra", "ecosport"],
-      "celebridade":["eduardo moscovis"]
+      "celebridade":["eduardo moscovis"],
+      "comida":["espaguete", "empada", "escondidinho"]
     }
   },
   {
@@ -353,7 +358,7 @@
       "capital":["fortaleza"],
       "cep":["florenca", "florianopolis"],
       "cidade":["fortaleza", "florianopolis"],
-      "comida saudável":["figo", "feijão"],
+      "comida saudável":["figo", "feijão", "figo da índia", "figo roxo", "figo verde", "framboesa", "fruta do conde"],
       "cor":["ferrugem"],
       "desenho animado":["futurama"],
       "doce":["fini"],
@@ -404,7 +409,8 @@
       "vestuário":["flanela", "fita", "farda", "fundoshi"],
       "vilão":["flash reverso"],
       "carro":["frontier", "fiesta", "fox"],
-      "celebridade":["fernanda lima"]
+      "celebridade":["fernanda lima"],
+      "comida":["feijao", "farofa", "feijoada", "framboesa", "figo"]
     }
   },
   {
@@ -421,7 +427,7 @@
       "capital":["gaborone"],
       "cep":["genova", "gramado"],
       "cidade":["genova"],
-      "comida saudável":["granola", "graviola"],
+      "comida saudável":["granola", "graviola", "gengibre", "goiaba branca", "goiaba vermelha"],
       "cor":["grena", "gelo"],
       "desenho animado":["gasparzinho"],
       "doce":["goiabada"],
@@ -472,7 +478,8 @@
       "vestuário":["gargantilha", "gravata", "gorro"],
       "vilão":["gozilla", "ganondorf"],
       "carro":["grand cherokee", "gallardo lp"],
-      "celebridade":["gisele bundchen"]
+      "celebridade":["gisele bundchen"],
+      "comida":["gengibre", "gorgonzola", "groselha", "goiaba", "goiabada"]
     }
   },
   {
@@ -540,7 +547,8 @@
       "vestuário":["homewear"],
       "vilão":["hela", "hidra"],
       "carro":["hilux", "hb20"],
-      "celebridade":["henri castelli"]
+      "celebridade":["henri castelli"],
+      "comida":[]
     }
   },
   {
@@ -557,7 +565,7 @@
       "capital":["islamabad"],
       "cep":["irlanda"],
       "cidade":["itapecerica da serra", "indianapolis"],
-      "comida saudável":[],
+      "comida saudável":["inhame"],
       "cor":["indigo"],
       "desenho animado":["invasor zim"],
       "doce":[],
@@ -608,7 +616,8 @@
       "vestuário":[],
       "vilão":["ima"],
       "carro":["idea"],
-      "celebridade":["ivete sangalo"]
+      "celebridade":["ivete sangalo"],
+      "comida":["iogurte", "inhame"]
     }
   },
   {
@@ -625,7 +634,7 @@
       "capital":["jacarta"],
       "cep":["jamaica", "jacarta"],
       "cidade":["jacarta"],
-      "comida saudável":[],
+      "comida saudável":["jabuticaba", "jaca", "jiló"],
       "cor":["jade", "jambo"],
       "desenho animado":["juanito jones"],
       "doce":["jujuba"],
@@ -676,7 +685,8 @@
       "vestuário":["jeans", "jaleco", "jaqueta"],
       "vilão":["joker"],
       "carro":["journey", "jeep renegade"],
-      "celebridade":["jennifer lopez"]
+      "celebridade":["jennifer lopez"],
+      "comida":["jabuticaba", "jaca"]
     }
   },
   {
@@ -693,7 +703,7 @@
       "capital":["kampala"],
       "cep":["kentucky"],
       "cidade":["kiev"],
-      "comida saudável":[],
+      "comida saudável":["kiwi"],
       "cor":[],
       "desenho animado":[],
       "doce":[],
@@ -744,7 +754,8 @@
       "vestuário":[],
       "vilão":["kang", "krang"],
       "carro":["ka"],
-      "celebridade":["kelly key"]
+      "celebridade":["kelly key"],
+      "comida":["kiwi"]
     }
   },
   {
@@ -761,7 +772,7 @@
       "capital":["la paz"],
       "cep":["limoeiro do norte"],
       "cidade":["limoeiro do norte"],
-      "comida saudável":["laranja"],
+      "comida saudável":["laranja", "laranja bahia", "laranja carioca", "laranja cravo", "laranja lima", "laranja murcote", "laranja pêra", "laranja poncã", "laranja selecta", "lichia", "lima da pérsia", "limão", "limão galego"],
       "cor":["lilas", "lavanda"],
       "desenho animado":["luluzinha"],
       "doce":["leite condensado"],
@@ -812,7 +823,8 @@
       "vestuário":["luva", "legging", "lenco"],
       "vilão":["loki", "loki"],
       "carro":["legacy", "lexus", "logan"],
-      "celebridade":["luciana gimenez"]
+      "celebridade":["luciana gimenez"],
+      "comida":["laranja", "lasanha", "limao"]
     }
   },
   {
@@ -829,7 +841,7 @@
       "capital":["manila"],
       "cep":["maranguape", "macau"],
       "cidade":["macau"],
-      "comida saudável":["macaxeira", "mandioca", "mamao"],
+      "comida saudável":["macaxeira", "mandioca", "mamao", "maçã argentina", "maçã fuji", "maçã gala", "maçã gala americana", "maçã gala francesa", "maçã golden", "maçã gransmith", "mamão formosa", "mamão havaí", "mandioquinha", "manga espada", "manga haden", "manga palmer", "manga tomy", "mangotin", "mangostin", "maracujá", "maracujá doce", "marmelo", "maxixe", "melancia", "melancia codama", "melão", "melão net", "melão orange", "milho verde", "moranga", "morango", "moyache"],
       "cor":["magenta", "marfim"],
       "desenho animado":["manda chuva"],
       "doce":[],
@@ -880,7 +892,8 @@
       "vestuário":["macacao", "meia", "maio", "meia calca"],
       "vilão":["mephisto"],
       "carro":["mustang", "meriva"],
-      "celebridade":["madonna"]
+      "celebridade":["madonna"],
+      "comida":["melao", "melado", "mel", "macarrao", "mostarda", "maionese", "manga", "maça"]
     }
   },
   {
@@ -897,7 +910,7 @@
       "capital":["nairobi"],
       "cep":["nigeria", "nepal"],
       "cidade":["nova orleans", "nova iorque"],
-      "comida saudável":[],
+      "comida saudável":["nabo", "nectarina chilena", "nectarina nacional", "nêspera"],
       "cor":["neve"],
       "desenho animado":["nick e neck"],
       "doce":[],
@@ -948,7 +961,8 @@
       "vestuário":["napolitano"],
       "vilão":["nevasca", "norman osborn"],
       "carro":["Nissan"],
-      "celebridade":["Nicolas Cage"]
+      "celebridade":["Nicolas Cage"],
+      "comida":["nozes", "nachos"]
     }
   },
   {
@@ -1016,7 +1030,8 @@
       "vestuário":["ombreira", "oculos"],
       "vilão":["octopus", "orochimaru"],
       "carro":["onix", "outlander"],
-      "celebridade":["oswaldo montenegro"]
+      "celebridade":["oswaldo montenegro"],
+      "comida":["ovos", "omelete"]
     }
   },
   {
@@ -1033,7 +1048,7 @@
       "capital":["pequim"],
       "cep":["paquistao", "panama"],
       "cidade":["pelotas"],
-      "comida saudável":["pao"],
+      "comida saudável":["pao", "palmito natural", "pepino caipira", "pepino conserva", "pepino preto", "pêra asiática", "pêra danju", "pêra intemelis", "pêra park", "pêra portuguesa", "pera vermelha", "pêra willians", "pera yari", "pêssego", "pimenta", "pimenta americana", "pimenta cambuci", "pimentão amarelo", "pimentão verde", "pimentão vermelho", "pinha", "pinhão", "pitanga"],
       "cor":["purpura"],
       "desenho animado":["projeto zeta"],
       "doce":["pirulito"],
@@ -1084,7 +1099,8 @@
       "vestuário":["pingente", "pijama", "pantufa", "paleto"],
       "vilão":["pinguim batman"],
       "carro":["prisma", "palio"],
-      "celebridade":["pietra principe"]
+      "celebridade":["pietra principe"],
+      "comida":["peixe", "pepino", "pimentao", "patê", "pimenta"]
     }
   },
   {
@@ -1101,7 +1117,7 @@
       "capital":["quito"],
       "cep":["quenia"],
       "cidade":["quixeramobim"],
-      "comida saudável":[],
+      "comida saudável":["quiabo"],
       "cor":["quartzo"],
       "desenho animado":["quarteto fantastico"],
       "doce":[],
@@ -1152,7 +1168,8 @@
       "vestuário":["quiton", "quepe", "quimono"],
       "vilão":["quimio"],
       "carro":["q7"],
-      "celebridade":["quentin tarantino"]
+      "celebridade":["quentin tarantino"],
+      "comida":["queijo"]
     }
   },
   {
@@ -1169,7 +1186,7 @@
       "capital":["rabat"],
       "cep":["romenia", "roraima"],
       "cidade":["recife"],
-      "comida saudável":[],
+      "comida saudável":["repolho", "repolho roxo", "romã"],
       "cor":["roxo", "roxo"],
       "desenho animado":["riquinho"],
       "doce":["rabanada"],
@@ -1220,7 +1237,8 @@
       "vestuário":["roupa de mergulho", "relogio", "regata"],
       "vilão":["rapina", "rino"],
       "carro":["ranger", "r8 gt"],
-      "celebridade":["rico mansur"]
+      "celebridade":["rico mansur"],
+      "comida":["rosbife", "rabada", "rabanada", "requeijao"]
     }
   },
   {
@@ -1237,7 +1255,7 @@
       "capital":["santiago"],
       "cep":["somalia", "suriname"],
       "cidade":["sacramento"],
-      "comida saudável":["salada"],
+      "comida saudável":["salada", "siriguela"],
       "cor":["sepia", "salmao"],
       "desenho animado":["super choque"],
       "doce":["sorvete"],
@@ -1288,7 +1306,8 @@
       "vestuário":["short", "sunga", "saruel", "saia"],
       "vilão":["savitar"],
       "carro":["sandero", "spacefox"],
-      "celebridade":["sabrina sato"]
+      "celebridade":["sabrina sato"],
+      "comida":["sopa", "soja"]
     }
   },
   {
@@ -1305,7 +1324,7 @@
       "capital":["tunis"],
       "cep":["tururu", "tunisia"],
       "cidade":["tunis"],
-      "comida saudável":["tomate", "trigo"],
+      "comida saudável":["tomate", "trigo", "tamarindo", "tangerina", "tomate caqui", "tomate cereja", "tomate longa vida"],
       "cor":["turquesa"],
       "desenho animado":["timao e pumba"],
       "doce":[],
@@ -1356,7 +1375,8 @@
       "vestuário":["terno", "tenis", "tanga", "tamanco"],
       "vilão":["thanos"],
       "carro":["tiida sedan", "trailblazer"],
-      "celebridade":["tais araujo"]
+      "celebridade":["tais araujo"],
+      "comida":["tofu", "tomate"]
     }
   },
   {
@@ -1373,7 +1393,7 @@
       "capital":["ulan bator"],
       "cep":["uberaba"],
       "cidade":["uberaba"],
-      "comida saudável":[],
+      "comida saudável":["uva benitaka", "uva itália", "uva moscatel", "uva negrita", "uva niágara", "uva red glob", "uva ribier", "uva rubi", "uva thompson"],
       "cor":["urucum"],
       "desenho animado":["universo blaster"],
       "doce":[],
@@ -1424,7 +1444,8 @@
       "vestuário":["unha postica", "underwear"],
       "vilão":["ultron"],
       "carro":["uno"],
-      "celebridade":["umberto magnani"]
+      "celebridade":["umberto magnani"],
+      "comida":["uvas"]
     }
   },
   {
@@ -1441,7 +1462,7 @@
       "capital":["viena"],
       "cep":["viena"],
       "cidade":["viena"],
-      "comida saudável":["verdura"],
+      "comida saudável":["verdura", "vagem metro"],
       "cor":["violeta"],
       "desenho animado":["vandread"],
       "doce":[],
@@ -1492,7 +1513,8 @@
       "vestuário":["veu", "vestido", "viseira"],
       "vilão":["venom"],
       "carro":["vectra", "voyage"],
-      "celebridade":["victoria beckham"]
+      "celebridade":["victoria beckham"],
+      "comida":["vagem"]
     }
   },
   {
@@ -1560,7 +1582,8 @@
       "vestuário":[],
       "vilão":["wrath"],
       "carro":[],
-      "celebridade":[]
+      "celebridade":[],
+      "comida":[]
     }
   },
   {
@@ -1628,7 +1651,8 @@
       "vestuário":[],
       "vilão":[],
       "carro":[],
-      "celebridade":[]
+      "celebridade":[],
+      "comida":[]
     }
   },
   {
@@ -1696,7 +1720,8 @@
       "vestuário":[],
       "vilão":["yon rogg"],
       "carro":[],
-      "celebridade":[]
+      "celebridade":[],
+      "comida":[]
     }
   },
   {
@@ -1764,7 +1789,8 @@
       "vestuário":["zuavo"],
       "vilão":["zzzax", "zoom"],
       "carro":["zafira"],
-      "celebridade":["zachary levi"]
+      "celebridade":["zachary levi"],
+      "comida":[]
     }
   }
 ]
