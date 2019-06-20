@@ -183,10 +183,13 @@ def auto_complete(letter):
             campo = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').get_attribute('value')
             if len(campo) == 0:
               item_category = driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/span').text.lower()  # TTema do campo
+
               if item_category == 'nome':
                 item_category = random.choice(["nome feminino", "nome masculino"])
-              if item_category == 'comida':
+
+              if item_category == 'comida' and len(item['categories']['comida']) == 0:
                 item_category = 'comida saudável'
+
               if len(item['categories'][item_category]) > 0:
                 resposta = random.choice(item['categories'][item_category])
                 driver.find_element_by_xpath('//*[@class="ct answers" or @class="ct answers up-enter-done"]//label['+str(x)+']/input').send_keys(resposta)
@@ -239,7 +242,6 @@ def round_end_rank():
             print(f"{position}º - {nick} - {pts}")
           else:
             print(f">{position}º - {nick} - {pts}")
-
       except:
         break
 
@@ -248,7 +250,7 @@ def round_end_rank():
     print("- Fim de Jogo -")
     for x in range(1, 4):
       try:
-        nick = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//*[@class="positions"]/div['+str(x)+']/*[@class="nick"]/text()').text
+        nick = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//*[@class="positions"]/div['+str(x)+']/*[@class="nick"]').text
         pts = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]//*[@class="positions"]/div['+str(x)+']/*[@class="points"]/text()').text
         print(f"{x}º - {nick} - {pts}")
       except:
@@ -259,7 +261,7 @@ def validate(validator_type, letter):
   if driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]'):
     # Modo Rápido
     if validator_type == 'quick':
-      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
+      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click() # botão de confirmar avaliação
 
     # Modo Negação
     elif validator_type == 'deny':
@@ -267,7 +269,7 @@ def validate(validator_type, letter):
       for x in range(1, 15):
         if driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/span').text == 'VALIDADO!':
           driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label['+str(x)+']/div').click()
-      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
+      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click() # botão de confirmar avaliação
 
     # Modo Avaliador
     elif validator_type == 'check':
@@ -275,9 +277,6 @@ def validate(validator_type, letter):
 
       category = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]/div/h3').text
       category = re.sub('TEMA: ', '', category).lower()
-
-      if category == 'comida':
-        category = 'comida saudável'
 
       for item in dicionario:
         if item['letter'] == letter:
@@ -321,9 +320,8 @@ def play_the_game():
             else:
               print("STOP! Pressionado")
               driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation" or @class="bt-yellow icon-exclamation shake"]').click()
-
         # Avaliador
-        if button == 'AVALIAR':
+        elif button == 'AVALIAR':
           if validator_type != 'null':
             validate(validator_type, letter)
       except:
