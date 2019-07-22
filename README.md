@@ -31,10 +31,10 @@ Auto Play StopotS Game
 * Avatar - Mínimo: 0 Máximo: 36.
 
 ## Menu
-1. Entrada Rápida - Ira entrar com o nome definido se não com um nome gerado pelo jgoo `Anonimo123`.
+1. Entrada Rápida - Ira entrar com o nome definido se não com um nome gerado pelo jogo `Anonimo123`.
 2. Entrar no Jogo - Sempre ira perguntar um nome.
 3. ~Entrar com ID da Sala - Entra em uma sala específica.~
-4. Configurações.
+4. [Configurações](#configurações).
 
 
 Foi utilizado [StopAnswersAPI](https://github.com/nosliper/StopAnswersAPI) por [nosliper](https://github.com/nosliper) para formar um dicionário inicial
