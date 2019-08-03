@@ -17,6 +17,12 @@ Auto Play StopotS Game
   * Atualizar o navegador instalado chrome/firefox.
   * Atualizar chromedriver/geckodriver.
 
+### Javascript
+1. Copiar o [script](https://raw.githubusercontent.com/Lucas8x/stopots-bot/master/stopots-bot.js).
+2. Entrar no site do jogo.
+3. Colar no console do navegaodr (F12).
+4. Pressionar Enter.
+
 ## Configurações
 1. Abrir `run.bat`
 2. Digite "4" para abrir o menu.
@@ -35,6 +41,5 @@ Auto Play StopotS Game
 2. Entrar no Jogo - Sempre ira perguntar um nome.
 3. ~Entrar com ID da Sala - Entra em uma sala específica.~
 4. [Configurações](#configurações).
-
 
 Foi utilizado [StopAnswersAPI](https://github.com/nosliper/StopAnswersAPI) por [nosliper](https://github.com/nosliper) para formar um dicionário inicial
