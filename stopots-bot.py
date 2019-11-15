@@ -115,7 +115,7 @@ def my_driver():
       options.add_argument("--silent")
       options.add_argument("--disable-extensions")
       options.add_argument('--disable-popup-blocking')
-      driver = webdriver.Chrome('./chromedriver.exe', options=options) #v74
+      driver = webdriver.Chrome('./chromedriver.exe', options=options) #v78
     except:
       print("Instale/Atualize o seu Firefox/Chrome ou Geckodriver/Chromedriver.")
       time.sleep(5)
