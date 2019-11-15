@@ -1,12 +1,11 @@
 # stopots-bot
-Auto Play StopotS Game
+Auto Play StopotS Browser Game
 
 ## Requerimentos
-* Python 3
-* selenium
-  * geckodriver
-  * chromedriver
-
+* Navegador
+  * [Chrome](https://www.google.com/chrome/)
+  * [Firefox](https://www.mozilla.org/firefox/new/)
+  
 ## Uso
 ### Windows
 1. [Download](https://github.com/Lucas8x/stopots-bot/archive/master.zip).
@@ -15,7 +14,7 @@ Auto Play StopotS Game
 
 * Caso o navegador não abra:
   * Atualizar o navegador instalado chrome/firefox.
-  * Atualizar chromedriver/geckodriver.
+  * Atualizar [chromedriver](https://chromedriver.chromium.org/downloads)/[geckodriver](https://github.com/mozilla/geckodriver/releases).
 
 ## Configurações
 1. Abrir `run.bat`
