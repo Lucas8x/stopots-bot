@@ -45,10 +45,7 @@ const autoComplete = letter => {
             }
             if(dicionario[i]['categories'][item_category].length > 0) {
               let resposta = randomArrayItem(dicionario[i]['categories'][item_category]);
-              xpath(`//*[@class="ct answers" or @class="ct answers up-enter-done"]//label[${j}]/input`).value = resposta;
-              xpath(`//*[@class="ct answers" or @class="ct answers up-enter-done"]//label[${j}]/input`).innerHTML = resposta;
-              xpath(`//*[@class="ct answers" or @class="ct answers up-enter-done"]//label[${j}]/input`).innerText = resposta;
-              xpath(`//*[@class="ct answers" or @class="ct answers up-enter-done"]//label[${j}]/input`).setAttribute('value', resposta);
+			  // a
             }
           }
         } catch (e) {
