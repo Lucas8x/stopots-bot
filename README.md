@@ -11,23 +11,11 @@ Auto Play StopotS Browser Game
 1. [Download](https://github.com/Lucas8x/stopots-bot/archive/master.zip).
 2. Extrair.
 3. Abrir `run.bat`.
+4. ["Jogar"](#menu)
 
-* Caso o navegador não abra:
-  * Atualizar o navegador instalado chrome/firefox.
+* Caso o navegador abra e feche :
+  * Atualizar o navegador instalado chrome/firefox e
   * Atualizar [chromedriver](https://chromedriver.chromium.org/downloads)/[geckodriver](https://github.com/mozilla/geckodriver/releases).
-
-## Configurações
-1. Abrir `run.bat`
-2. Digite "4" para abrir o menu.
-
-* Username/nick deve possuir entre 2 e 15 caracteres.
-* Avaliadores:
-  * Rápido - Apenas confirma.
-  * Negação - Invalidará todas as respostas inclusive as suas.
-  * Avaliar - Avaliará as respostas com base no dicionario e negará as outras.
-  * Nada - ...
-* STOP! Automático - Ira apertar STOP! caso todas as respostas estejam preenchidas.
-* Avatar - Mínimo: 0 Máximo: 36.
 
 ## Menu
 1. Entrada Rápida - Ira entrar com o nome definido se não com um nome gerado pelo jogo `Anonimo123`.
@@ -35,10 +23,26 @@ Auto Play StopotS Browser Game
 3. ~Entrar com ID da Sala - Entra em uma sala específica.~
 4. [Configurações](#configurações).
 
-Foi utilizado [StopAnswersAPI](https://github.com/nosliper/StopAnswersAPI) por [nosliper](https://github.com/nosliper) para formar um dicionário inicial
+## Configurações
+1. Abrir `run.bat`
+2. Digite "4" para abrir as opções.
 
-### Javascript
+* Username/nick deve possuir entre 2 e 15 caracteres.
+* Avaliadores:
+  * Rápido - Apenas confirma as respostas sem verificar.
+  * Negação - Invalidará todas as respostas inclusive as suas.
+  * Avaliar - Avaliará as respostas com base no dicionario e negará as outras.
+  * Nada - ...
+* (3) STOP! Automático - Ira apertar STOP! caso todas as respostas estejam preenchidas.
+* (4) Avatar - Mínimo: 0 Máximo: 36.
+ * <details><summary>Avatares</summary>
+   a
+  </details>
+
+### ~~Javascript~~
 1. ~Copiar o [script](https://raw.githubusercontent.com/Lucas8x/stopots-bot/master/stopots-bot.js).~
 2. ~Entrar no site do jogo.~
 3. ~Colar no console do navegaodr (F12).~
 4. ~Pressionar Enter.~
+
+Foi utilizado [StopAnswersAPI](https://github.com/nosliper/StopAnswersAPI) por [nosliper](https://github.com/nosliper) para formar um dicionário inicial
