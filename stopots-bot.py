@@ -14,11 +14,13 @@ from selenium.webdriver.support import expected_conditions as EC
 import locale
 locale.setlocale(locale.LC_ALL, '')
 
-with open('dicionario.json', 'r', encoding='utf-8') as dicio:
+with open('dicionario.json', encoding='utf-8') as dicio:
   dictionary = json.load(dicio)
+
 
 def cls():
   os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def default_files():
   if not (os.path.exists('./config.json')):
@@ -31,14 +33,12 @@ def default_files():
     with open('./config.json', 'a+') as x:
       json.dump(data, x, indent=2)
 
-def json_variables():
-  with open('config.json', 'r') as config:
+
+def get_json_setting(setting):
+  with open('config.json') as config:
     data = json.load(config)
-    username = data['username']
-    validator = data['validator']
-    auto_stop = data['autoStop']
-    avatar_id = data['avatar']
-  return username, validator, auto_stop, avatar_id
+  return data[setting]
+
 
 def config_json_settings():
   with open('config.json', 'r+') as j:
@@ -102,6 +102,7 @@ def config_json_settings():
       json.dump(data, j, indent=2)
       j.truncate()
 
+
 def my_driver():
   global driver
   try:
@@ -122,6 +123,7 @@ def my_driver():
       quit()
   return driver
 
+
 def join_game(username):
   print("Entrando...")
   wait = WebDriverWait(driver, 10)
@@ -139,7 +141,7 @@ def join_game(username):
   else: username = driver.find_element_by_xpath('//*[@class="perfil"]//input').get_attribute('value')
 
   # Avatar
-  avatar_id = json_variables()[3]
+  avatar_id = get_json_setting('avatar')
   if 1 <= avatar_id <= 36:
     time.sleep(2)
     # Botão edit => abre menu avatar
@@ -168,6 +170,7 @@ def join_game(username):
   driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]').click()
   print("Logado como:", username)
 
+
 def find_letter():
   try:
     letter = driver.find_element_by_xpath('//*[@id="letter"]/span').text.lower()
@@ -175,6 +178,7 @@ def find_letter():
     return letter
   except:
     pass
+
 
 def auto_complete(letter):
   print("Auto Completando...")
@@ -212,6 +216,7 @@ def auto_complete(letter):
   except:
     pass
 
+
 def match_info():
   # Rodadas
   try:
@@ -221,7 +226,6 @@ def match_info():
   except:
     pass
 
-  # Jogadores
   print("- Jogadores -")
   for x in range(1, 15):
     try:
@@ -235,6 +239,7 @@ def match_info():
           print(f">{nick} - {pts}")
     except:
       break
+
 
 def round_end_rank():
   # Ranking da Rodada
@@ -283,15 +288,14 @@ def round_end_rank():
   print("")
 #rank final não esta aparecendo
 
+
 def validate(validator_type, letter):
   if driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
                                   ' or @class="bt-yellow icon-exclamation shake"]'):
-    # Modo Rápido
     if validator_type == 'quick':
       driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
                                    ' or @class="bt-yellow icon-exclamation shake"]').click()
 
-    # Modo Negação
     elif validator_type == 'deny':
       print("Negando todas as respostas...")
       for x in range(1, 15):
@@ -305,7 +309,6 @@ def validate(validator_type, letter):
                                    ' or @class="bt-yellow icon-exclamation shake"]'
                                    ).click()
 
-    # Modo Avaliador
     elif validator_type == 'check':
       print("Verificando Respostas...")
 
@@ -345,9 +348,10 @@ def validate(validator_type, letter):
     elif validator_type == 'greedy':
       pass
 
+
 def play_the_game():
-  validator_type = json_variables()[1]
-  auto_stop = json_variables()[2]
+  validator_type = get_json_setting('validator')
+  auto_stop = get_json_setting('autoStop')
 
   try:
     while True:
@@ -456,6 +460,7 @@ def play_the_game():
     elif option == 2:
       quit()
 
+
 if __name__ == "__main__":
   default_files()
   driver = my_driver()
@@ -471,7 +476,7 @@ if __name__ == "__main__":
 
     if option == '1':
       driver.get("https://stopots.com.br/")
-      username = json_variables()[0]
+      username = get_json_setting('username')
       if not 2 <= len(username) <= 15:
         username = ' '
       join_game(username)
