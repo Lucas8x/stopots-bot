@@ -33,8 +33,8 @@ Auto Play StopotS Browser Game
   * Negação - Invalidará todas as respostas inclusive as suas.
   * Avaliar - Avaliará as respostas com base no dicionario e negará as outras.
   * Nada - ...
-* (3) STOP! Automático - Ira apertar STOP! caso todas as respostas estejam preenchidas.
-* (4) Avatar - Mínimo: 0 Máximo: 36.
+* STOP! Automático - Ira apertar STOP! caso todas as respostas estejam preenchidas.
+* Avatar - Mínimo: 0 Máximo: 36.
  * <details><summary>Avatares</summary>
    a
   </details>
