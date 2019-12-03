@@ -25,10 +25,10 @@ def cls():
 def default_files():
   if not (os.path.exists('./config.json')):
     data = {
-      'username': '',
-      'validator': 'check',
-      'autoStop': False,
-      'avatar': 0
+      "username": "",
+      "validator": "check",
+      "autoStop": False,
+      "avatar": 0
     }
     with open('./config.json', 'a+') as x:
       json.dump(data, x, indent=2)
