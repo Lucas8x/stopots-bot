@@ -26,9 +26,9 @@ def add_to_json(answer, category):
 
   if answer not in dictionary[letter][category]:
     dictionary[letter][category].append(answer)
-    print(f"Adicionado {answer} a {category} da letra: {letter}")
+    print(f"Adicionado '{answer}' a '{category}' da letra: '{letter}'")
   else:
-    print("Essa resposta já existe no dicionário")
+    print("Essa resposta já existe no dicionário.")
     return
 
   for item in dictionary:
@@ -41,9 +41,7 @@ def add_to_json(answer, category):
   with open('dicionario.json', 'r', encoding='utf-8') as x:
     data = x.read()
 
-  data = data.replace('"[', '[')
-  data = data.replace(']"', ']')
-  data = data.replace("'", '"')
+  data = data.replace('"[', '[').replace(']"', ']').replace("'", '"')
 
   with open('dicionario.json', 'w', encoding='utf-8') as y:
     y.write(data)
@@ -69,11 +67,11 @@ if __name__ == "__main__":
           else:
             print("Resposta muito grande max: 20")
         else:
-          print("Resposta Invalida")
+          print("Resposta Invalida.")
       elif category == '0':
         break
       else:
-        print("Essa categoria não existe")
+        print("Essa categoria não existe.")
 
   elif option == '2':
     letter = input("Letra: ").lower()
@@ -84,5 +82,6 @@ if __name__ == "__main__":
     for category in dictionary[letter]:
       if len(dictionary[letter][category]) == 0:
         print(f"Faltando: {category}")
+
   elif option == '3':
     quit()
