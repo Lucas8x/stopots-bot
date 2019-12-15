@@ -39,7 +39,7 @@ def create_default_files():
       json.dump(data, x, indent=2)
 
 
-def get_json_setting(setting):
+def get_config_setting(setting):
   try:
     with open('config.json') as config:
       data = json.load(config)
@@ -67,6 +67,7 @@ def open_config_menu():
             data['username'] = username_input
           else:
             print("Seu username/nick deve possuir entre 2 e 15 caracteres.")
+
       elif option_to_config == '2':
         print("1 - Rápido (Apenas confirma.)"
               "\n2 - Negar - (Invalidará todas as respostas inclusive as suas.)"
@@ -87,6 +88,7 @@ def open_config_menu():
           print("Validador alterado para não fazer nada.\n")
         else:
           pass
+
       elif option_to_config == '3':
         if data['autoStop']:
           data['autoStop'] = False
@@ -94,6 +96,7 @@ def open_config_menu():
         elif not data['autoStop']:
           data['autoStop'] = True
           print("Auto Stop Habilitado.\n")
+
       elif option_to_config == '4':
         while True:
           avatar_num = int(input("Número do Avatar: "))
@@ -102,11 +105,14 @@ def open_config_menu():
             break
           else:
             print("Min: 0 Max: 36")
+
       elif option_to_config == '0':
         cls()
         break
+
       else:
         print("Opção Invalida.\n")
+
       j.seek(0)
       json.dump(data, j, indent=2)
       j.truncate()
@@ -153,7 +159,7 @@ def join_game(username):
     username = driver.find_element_by_xpath('//*[@class="perfil"]//input').get_attribute('value')
 
   # Avatar
-  avatar_id = get_json_setting('avatar')
+  avatar_id = get_config_setting('avatar')
   if 1 <= avatar_id <= 36:
     time.sleep(2)
     # Botão edit => abre menu avatar
@@ -231,7 +237,7 @@ def auto_complete(letter):
       continue
 
 
-def match_info():
+def show_match_info():
   try:
     rounds = driver.find_element_by_xpath('//*[@class="rounds"]/span').text
     total = driver.find_element_by_xpath('//*[@class="rounds"]/p[2]').text
@@ -253,7 +259,7 @@ def match_info():
       break
 
 
-def round_end_rank():
+def show_round_end_rank():
   if driver.find_element_by_xpath('//*[@class="ct ranking"'
                                   ' or @class="ct ranking up-enter-done"]//h3'
                                   ).text.upper() == 'RANKING DA RODADA':
@@ -298,6 +304,12 @@ def round_end_rank():
   print("")
 
 
+def label_click(x):
+  driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]'
+                               f'//*[@class="scrollElements"]/label[{x}]/div'
+                               ).click()
+
+
 def validate(validator_type, letter):
   if driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
                                   ' or @class="bt-yellow icon-exclamation shake"]'):
@@ -311,9 +323,7 @@ def validate(validator_type, letter):
         if driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]'
                                         f'//*[@class="scrollElements"]/label[{x}]/span'
                                         ).text == 'VALIDADO!':
-          driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]'
-                                       f'//*[@class="scrollElements"]/label[{x}]/div'
-                                       ).click()
+          label_click(x)
       driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
                                    ' or @class="bt-yellow icon-exclamation shake"]'
                                    ).click()
@@ -332,17 +342,24 @@ def validate(validator_type, letter):
             category_answer = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]'
                                                            f'//*[@class="scrollElements"]/label[{x}]/div'
                                                            ).text.lower()
-            if category != 'nome':
+            if category not in ['nome', 'msé', 'comida']:
               if category_answer not in dictionary[letter][category]:
-                driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]'
-                                             f'//*[@class="scrollElements"]/label[{x}]/div'
-                                             ).click()
-            else:
-              if category_answer not in dictionary[letter]['nome feminino'] \
-                    or category_answer in dictionary[letter]['nome masculino']:
-                driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]'
-                                             f'//*[@class="scrollElements"]/label[{x}]/div'
-                                             ).click()
+                label_click(x)
+            elif category == 'msé':
+              if category_answer not in dictionary[letter]['msé'] and \
+                category_answer not in dictionary[letter]['adjetivo']:
+                label_click(x)
+            elif category == 'nome':
+              if category_answer not in dictionary[letter]['nome feminino'] and \
+                category_answer not in dictionary[letter]['nome masculino']:
+                label_click(x)
+              elif category == 'comida':
+                if category_answer not in dictionary[letter]['comida'] and \
+                  category_answer not in dictionary[letter]['comida saudável'] and \
+                  category_answer not in dictionary[letter]['sobremesa'] and \
+                  category_answer not in dictionary[letter]['flv'] and \
+                  category_answer not in dictionary[letter]['fruta']:
+                  label_click(x)
         except Exception:
           continue
       driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
@@ -353,9 +370,27 @@ def validate(validator_type, letter):
       pass
 
 
+def do_stop(letter):
+  if driver.find_element_by_xpath('//*[@class= "bt-yellow icon-exclamation"'
+                                  ' or @class="bt-yellow icon-exclamation shake"]'):
+    for x in range(1, 13):
+      input_field = driver.find_element_by_xpath('//*[@class="ct answers"'
+                                                 f' or @class="ct answers up-enter-done"]//label[{x}]/input'
+                                                 ).get_attribute('value')
+      if len(input_field) >= 2 and input_field[0] == letter:
+        continue
+      else:
+        break
+    else:
+      print("STOP! Pressionado")
+      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
+                                   ' or @class="bt-yellow icon-exclamation shake"]'
+                                   ).click()
+
+
 def play_the_game():
-  validator_type = get_json_setting('validator')
-  auto_stop = get_json_setting('autoStop')
+  validator_type = get_config_setting('validator')
+  auto_stop = get_config_setting('autoStop')
 
   try:
     while True:
@@ -366,25 +401,15 @@ def play_the_game():
                                               ' or @class="bt-yellow icon-exclamation disable"]/strong'
                                               ).text.upper()
         letter = find_letter()
+
         if button == 'STOP!':
           auto_complete(letter)
-          if auto_stop and driver.find_element_by_xpath('//*[@class= "bt-yellow icon-exclamation"'
-                                                        ' or @class="bt-yellow icon-exclamation shake"]'):
-            for x in range(1, 13):
-              input_field = driver.find_element_by_xpath('//*[@class="ct answers"'
-                                                         f' or @class="ct answers up-enter-done"]//label[{x}]/input'
-                                                         ).get_attribute('value')
-              if len(input_field) >= 2 and input_field[0] == letter:
-                continue
-              else:
-                break
-            else:
-              print("STOP! Pressionado")
-              driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
-                                           ' or @class="bt-yellow icon-exclamation shake"]'
-                                           ).click()
+          if auto_stop:
+            do_stop(letter)
+
         elif button == 'AVALIAR' and validator_type != 'null':
           validate(validator_type, letter)
+
       except Exception:
         pass
 
@@ -400,7 +425,7 @@ def play_the_game():
 
       try:
         if driver.find_element_by_xpath('//*[@class="active"]//*[@class="trophy"]'):
-          round_end_rank()
+          show_round_end_rank()
       except Exception:
         pass
 
@@ -414,7 +439,7 @@ def play_the_game():
       except Exception:
         pass
 
-      match_info()
+      show_match_info()
       time.sleep(3)
 
   except KeyboardInterrupt:
@@ -474,7 +499,7 @@ if __name__ == "__main__":
 
     if option == '1':
       driver.get('https://stopots.com.br/')
-      username = get_json_setting('username')
+      username = get_config_setting('username')
       if not 2 <= len(username) <= 15:
         username = ' '
       join_game(username)
@@ -494,7 +519,7 @@ if __name__ == "__main__":
     elif option == '3':
       room_id = input("ID:")
       driver.get(f'https://stopots.com.br/{room_id}')
-      username = get_json_setting('username')
+      username = get_config_setting('username')
       if not 2 <= len(username) <= 15:
         username = ' '
       join_game(username)
