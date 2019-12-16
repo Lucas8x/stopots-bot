@@ -7,6 +7,4 @@ if not exist python\python.exe (
 	PowerShell -ExecutionPolicy Unrestricted -File "downloadpython.ps1"
 )
 
-python\python.exe createdict.py
-
-pause
+python\python.exe updateDictionary.py
