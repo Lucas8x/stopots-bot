@@ -205,6 +205,7 @@ def get_answer(letter, category):
     return False
   except Exception as e:
     print(f"Get answer error: {e}")
+    return False
 
 
 def auto_complete(letter):
@@ -214,7 +215,7 @@ def auto_complete(letter):
       input_field = driver.find_element_by_xpath('//*[@class="ct answers"'
                                                  f' or @class="ct answers up-enter-done"]//label[{x}]/input'
                                                  ).get_attribute('value')
-      if len(input_field) == 0:
+      if not input_field:
         field_category = driver.find_element_by_xpath('//*[@class="ct answers"'
                                                       f' or @class="ct answers up-enter-done"]//label[{x}]/span'
                                                       ).text.lower()
@@ -222,8 +223,8 @@ def auto_complete(letter):
         if field_category == 'nome':
           field_category = random.choice(['nome feminino', 'nome masculino'])
 
-        elif field_category == 'comida' and len(dictionary[letter]['comida']) == 0:
-          field_category = 'comida saudável'
+        elif field_category == 'comida' and not dictionary[letter]['comida']:
+          field_category = random.choice(['comida saudável', 'sobremesa', 'flv', 'fruta'])
 
         answer = get_answer(letter, field_category)
         if answer:
