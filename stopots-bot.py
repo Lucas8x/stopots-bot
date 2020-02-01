@@ -15,10 +15,108 @@ import locale
 locale.setlocale(locale.LC_ALL, '')
 
 
+class Game:
+  enter_button = '//*[@class="login"]/button[@class="enter"]'
+  loading_animation = '//*[@class="load"]'
+  username_input = '//*[@class="perfil"]//input'
+  avatar_edit_button = '//button[@class="edit"]'
+  avatar_confirm_button = '//*[@class="buttons"]/button'
+  fade_animation = '//*[@class="popup-enter-done" or @class="popup-exit popup-exit-active"]'
+  play_button = '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]'
+  play_button_clickable = f'{play_button}/strong'
+  letter = '//*[@id="letter"]/span'
+  trophy = '//*[@class="active"]//*[@class="trophy"]'
+  exit = '//*[@class="exit"]'
+  rounds = '//*[@class="rounds"]/span'
+  rounds_total = '//*[@class="rounds"]/p[2]'
+  yellow_button = '//*[@class= "bt-yellow icon-exclamation"or @class="bt-yellow icon-exclamation shake"' \
+                  ' or @class="bt-yellow icon-exclamation disable"]/strong'
+  yellow_button_clickable = '//*[@class="bt-yellow icon-exclamation"' \
+                            ' or @class="bt-yellow icon-exclamation shake"]'
+  ready_button = f'{yellow_button_clickable}/strong'
+  afk_button_xpath = '//*[@class="alert"]//*[@class="buttons"]/button'
+  afk_box = '//*[@class="popup-exit popup-exit-active" or @class="class="popup-enter-done"]'
+
+  @staticmethod
+  def avatar(avatar_id):
+    return f'//*[@class="avatar avt{avatar_id}"]'
+
+  class FormPanel:
+    label = '//*[@class="ct answers" or @class="ct answers up-enter-done"]//label'
+
+    @staticmethod
+    def field_input(x):
+      return f'{Game.FormPanel.label}[{x}]/input'
+
+    @staticmethod
+    def field_category(x):
+      return f'{Game.FormPanel.label}[{x}]/span'
+
+  class AnswerPanel:
+    category = '//*[@class="ct validation up-enter-done"]/div/h3'
+    label = '//*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label'
+
+    @staticmethod
+    def label_status(x):
+      return f'{Game.AnswerPanel.label}[{x}]/span'
+
+    @staticmethod
+    def label_category(x):
+      return f'{Game.AnswerPanel.label}[{x}]/div'
+
+    @staticmethod
+    def label_report(x):
+      return f'{Game.AnswerPanel.label}[{x}]/a'
+
+    @staticmethod
+    def label_click(x):
+      driver.find_element_by_xpath(f'{Game.AnswerPanel.label}[{x}]/div').click()
+      '''return f'{Game.AnswerPanel.label}[{x}]/div'''
+
+  class PlayerList:
+    li = '//*[@id="users"]/li'
+
+    @staticmethod
+    def nick(x):
+      return f'{Game.PlayerList.li}[{x}]//*[@class="infos"]/*[@class="nick"]'
+
+    @staticmethod
+    def points(x):
+      return f'{Game.PlayerList.li}[{x}]//*[@class="infos"]/span'
+
+  class ScorePanel:
+    h3 = '//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//h3'
+    h4 = '//*[@class="ct end" or @class="ct end up-enter-done"]//h4'
+    player_div = '//*[@class="ct end" or @class="ct end up-enter-done"]//*[@class="positions"]/div'
+
+    @staticmethod
+    def nick(x):
+      return f'{Game.ScorePanel.player_div}[{x}]/*[@class="nick"]'
+
+    @staticmethod
+    def points(x):
+      return f'{Game.ScorePanel.player_div}[{x}]/*[@class="points"]/text()'
+
+  class RankPanel:
+    li = '//*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li'
+
+    @staticmethod
+    def position(x):
+      return f'{Game.RankPanel.li}[{x}]//*[@class="position"]/span'
+
+    @staticmethod
+    def nick(x):
+      return f'{Game.RankPanel.li}[{x}]//*[@class="nick"]'
+
+    @staticmethod
+    def points(x):
+      return f'{Game.RankPanel.li}[{x}]//*[@class="points"]'
+
+
 def init_dictionary():
   try:
-    with open('dicionario.json', encoding='utf-8') as dicionario:
-      return json.load(dicionario)
+    with open('dicionario.json', encoding='utf-8') as dictionary:
+      return json.load(dictionary)
   except Exception as e:
     print(f"Failed initialize dictionary, error: {e}")
 
@@ -33,29 +131,31 @@ def create_default_files():
       "username": "",
       "validator": "check",
       "autoStop": False,
+      "autoReady": True,
       "avatar": 0
     }
-    with open('./config.json', 'a+') as x:
-      json.dump(data, x, indent=2)
+    with open('./config.json', 'a+') as config_file:
+      json.dump(data, config_file, indent=2)
 
 
 def get_config_setting(setting):
   try:
-    with open('config.json') as config:
-      data = json.load(config)
+    with open('config.json') as config_file:
+      data = json.load(config_file)
     return data[setting]
   except Exception as e:
     print(f"Failed get json setting. Error: {e}")
 
 
 def open_config_menu():
-  with open('config.json', 'r+') as j:
-    data = json.load(j)
+  with open('config.json', 'r+') as config_file:
+    data = json.load(config_file)
     while True:
       print(f"1 - Mudar username [Atual: {data['username']}]",
             f"\n2 - Alterar o validador [Atual: {data['validator']}]",
             f"\n3 - Auto Stop [Status: {data['autoStop']}]",
-            f"\n4 - Mudar avatar [Atual: {data['avatar']}]",
+            f"\n4 - Auto Ready [Status: {data['autoReady']}]",
+            f"\n5 - Mudar avatar [Atual: {data['avatar']}]",
             "\n0 - Voltar.")
       option_to_config = input(">")
       cls()
@@ -71,8 +171,9 @@ def open_config_menu():
       elif option_to_config == '2':
         print("1 - Rápido (Apenas confirma.)"
               "\n2 - Negar - (Invalidará todas as respostas inclusive as suas.)"
-              "\n3 - Avaliar - (Avaliará as respostas com base no dicionario e negará as outras.)"
-              "\n4 - Não fazer nada.")
+              "\n3 - Aceitar - (Validará todas as respostas inclusive as erradas.)"
+              "\n4 - Avaliar - (Avaliará as respostas com base no dicionario e negará as outras.)"
+              "\n5 - Não fazer nada.")
         validator_change = int(input("> "))
         if validator_change == 1:
           data['validator'] = 'quick'
@@ -81,9 +182,12 @@ def open_config_menu():
           data['validator'] = 'deny'
           print("Validador alterado para modo de negação.\n")
         elif validator_change == 3:
+          data['validator'] = 'accept'
+          print("Validador alterado para modo de aceitação.\n")
+        elif validator_change == 4:
           data['validator'] = 'check'
           print("Validador alterado para modo de avaliação.\n")
-        elif validator_change == 4:
+        elif validator_change == 5:
           data['validator'] = 'null'
           print("Validador alterado para não fazer nada.\n")
         else:
@@ -93,11 +197,19 @@ def open_config_menu():
         if data['autoStop']:
           data['autoStop'] = False
           print("Auto Stop Desabilitado.\n")
-        elif not data['autoStop']:
+        else:
           data['autoStop'] = True
           print("Auto Stop Habilitado.\n")
 
       elif option_to_config == '4':
+        if data['autoReady']:
+          data['autoReady'] = False
+          print("Auto Ready Desabilitado.\n")
+        else:
+          data['autoReady'] = True
+          print("Auto Ready Habilitado.\n")
+
+      elif option_to_config == '5':
         while True:
           avatar_num = int(input("Número do Avatar: "))
           if 0 <= avatar_num <= 36:
@@ -113,9 +225,9 @@ def open_config_menu():
       else:
         print("Opção Invalida.\n")
 
-      j.seek(0)
-      json.dump(data, j, indent=2)
-      j.truncate()
+      config_file.seek(0)
+      json.dump(data, config_file, indent=2)
+      config_file.truncate()
 
 
 def init_web_driver():
@@ -125,7 +237,7 @@ def init_web_driver():
     web_driver = webdriver.Firefox(executable_path='./geckodriver.exe', capabilities=firefox_capabilities)  # v23
     return web_driver
   except Exception as e:
-    print(f"Failed to initialize geckodriver: {e}")
+    print(f"Failed to initialize Geckodriver: {e}")
     try:
       options = webdriver.ChromeOptions()
       options.add_argument('--log-level=3')
@@ -135,7 +247,7 @@ def init_web_driver():
       web_driver = webdriver.Chrome('./chromedriver.exe', options=options)  # v78
       return web_driver
     except Exception as e:
-      print(f"Failed to initialize chromedriver: {e}")
+      print(f"Failed to initialize Chromedriver: {e}")
       print("Instale/Atualize o seu Firefox/Chrome ou Geckodriver/Chromedriver.")
       time.sleep(5)
       quit()
@@ -146,53 +258,51 @@ def join_game(username):
   wait = WebDriverWait(driver, 10)
 
   # entrar button
-  wait.until(ec.presence_of_element_located((By.XPATH, '//*[@class="login"]/button[@class="enter"]')))
-  driver.find_element_by_xpath('//*[@class="login"]/button[@class="enter"]').click()
-  wait.until(ec.invisibility_of_element_located((By.XPATH, '//*[@class="load"]')))
+  wait.until(ec.presence_of_element_located((By.XPATH, Game.enter_button)))
+  driver.find_element_by_xpath(Game.enter_button).click()
+  wait.until(ec.invisibility_of_element_located((By.XPATH, Game.loading_animation)))
 
   # username field
-  if username != ' ':
-    wait.until(ec.presence_of_element_located((By.XPATH, '//*[@class="perfil"]//input')))
-    driver.find_element_by_xpath('//*[@class="perfil"]//input').clear()
-    driver.find_element_by_xpath('//*[@class="perfil"]//input').send_keys(username)
+  if username != ' ' and 2 <= len(username) <= 15:
+    wait.until(ec.presence_of_element_located((By.XPATH, Game.username_input)))
+    driver.find_element_by_xpath(Game.username_input).clear()
+    driver.find_element_by_xpath(Game.username_input).send_keys(username)
   else:
-    username = driver.find_element_by_xpath('//*[@class="perfil"]//input').get_attribute('value')
+    username = driver.find_element_by_xpath(Game.username_input).get_attribute('value')
 
   # Avatar
   avatar_id = get_config_setting('avatar')
   if 1 <= avatar_id <= 36:
     time.sleep(2)
     # Botão edit => abre menu avatar
-    wait.until(ec.element_to_be_clickable((By.XPATH, '//button[@class="edit"]')))
-    driver.find_element_by_xpath('//button[@class="edit"]').click()
+    wait.until(ec.element_to_be_clickable((By.XPATH, Game.avatar_edit_button)))
+    driver.find_element_by_xpath(Game.avatar_edit_button).click()
 
     # Icone do Avatar
     if avatar_id > 14:
-      driver.execute_script("arguments[0].scrollIntoView(true);",
-                            driver.find_element_by_xpath(f'//*[@class="avatar avt{avatar_id}"]'))
-    wait.until(ec.element_to_be_clickable((By.XPATH, f'//*[@class="avatar avt{avatar_id}"]')))
-    driver.find_element_by_xpath(f'//*[@class="avatar avt{avatar_id}"]').click()
+      driver.execute_script("arguments[0].scrollIntoView(true);", driver.find_element_by_xpath(Game.avatar(avatar_id)))
+    wait.until(ec.element_to_be_clickable((By.XPATH, Game.avatar(avatar_id))))
+    driver.find_element_by_xpath(Game.avatar(avatar_id)).click()
 
     # Botão confirmar escolha
-    wait.until(ec.element_to_be_clickable((By.XPATH, '//*[@class="buttons"]/button')))
-    driver.find_element_by_xpath('//*[@class="buttons"]/button').click()
+    wait.until(ec.element_to_be_clickable((By.XPATH, Game.avatar_confirm_button)))
+    driver.find_element_by_xpath(Game.avatar_confirm_button).click()
 
     # Esperar a animação
-    wait.until(ec.invisibility_of_element_located((By.XPATH, '//*[@class="popup-enter-done" '
-                                                             'or @class="popup-exit popup-exit-active"]')))
+    wait.until(ec.invisibility_of_element_located((By.XPATH, Game.fade_animation)))
   time.sleep(2)
 
   # Botão Jogar => entra no jogo
-  wait.until(ec.element_to_be_clickable((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]')))
+  wait.until(ec.element_to_be_clickable((By.XPATH, Game.play_button)))
   time.sleep(2)
-  driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]').click()
+  driver.find_element_by_xpath(Game.play_button).click()
   print(f"Logado como: {username}")
 
 
 def find_letter():
   try:
-    letter = driver.find_element_by_xpath('//*[@id="letter"]/span').text.lower()
-    print("Letra Atual:", letter)
+    letter = driver.find_element_by_xpath(Game.letter).text.lower()
+    print(f"Letra Atual: {letter}")
     return letter
   except Exception:
     pass
@@ -212,13 +322,9 @@ def auto_complete(letter):
   print("Auto Completando...")
   for x in range(1, 13):
     try:
-      input_field = driver.find_element_by_xpath('//*[@class="ct answers"'
-                                                 f' or @class="ct answers up-enter-done"]//label[{x}]/input'
-                                                 ).get_attribute('value')
-      if not input_field:
-        field_category = driver.find_element_by_xpath('//*[@class="ct answers"'
-                                                      f' or @class="ct answers up-enter-done"]//label[{x}]/span'
-                                                      ).text.lower()
+      field_input = driver.find_element_by_xpath(Game.FormPanel.field_input(x)).get_attribute('value')
+      if not field_input:
+        field_category = driver.find_element_by_xpath(Game.FormPanel.field_category(x)).text.lower()
 
         if field_category == 'nome':
           field_category = random.choice(['nome feminino', 'nome masculino'])
@@ -228,9 +334,7 @@ def auto_complete(letter):
 
         answer = get_answer(letter, field_category)
         if answer:
-          driver.find_element_by_xpath('//*[@class="ct answers"'
-                                       f' or @class="ct answers up-enter-done"]//label[{x}]/input'
-                                       ).send_keys(answer)
+          driver.find_element_by_xpath(Game.FormPanel.field_input(x)).send_keys(answer)
       else:
         continue
     except Exception:
@@ -238,10 +342,10 @@ def auto_complete(letter):
       continue
 
 
-def show_match_info():
+def show_game_info():
   try:
-    rounds = driver.find_element_by_xpath('//*[@class="rounds"]/span').text
-    total = driver.find_element_by_xpath('//*[@class="rounds"]/p[2]').text
+    rounds = driver.find_element_by_xpath(Game.rounds).text
+    total = driver.find_element_by_xpath(Game.rounds_total).text
     print(f"- Rodadas: {rounds}{total}")
   except Exception:
     pass
@@ -249,158 +353,124 @@ def show_match_info():
   print("- Jogadores -")
   for x in range(1, 15):
     try:
-      nick = driver.find_element_by_xpath(f'//*[@id="users"]/li[{x}]//*[@class="infos"]/*[@class="nick"]').text
-      pts = driver.find_element_by_xpath(f'//*[@id="users"]/li[{x}]//*[@class="infos"]/span').text
+      nick = driver.find_element_by_xpath(Game.PlayerList.nick(x)).text
+      points = driver.find_element_by_xpath(Game.PlayerList.points(x)).text
       if nick:
         if nick != username:
-          print(f"{nick} - {pts}")
+          print(f"{nick} - {points}")
         else:
-          print(f"{nick} - {pts} < você")
+          print(f"{nick} - {points} < você")
     except Exception:
       break
 
 
 def show_round_end_rank():
-  if driver.find_element_by_xpath('//*[@class="ct ranking"'
-                                  ' or @class="ct ranking up-enter-done"]//h3'
-                                  ).text.upper() == 'RANKING DA RODADA':
+  h3_status = driver.find_element_by_xpath(Game.ScorePanel.h3).text.upper()
+  if h3_status == 'RANKING DA RODADA':
     print("- Ranking da Rodada -")
     for x in range(1, 15):
       try:
-        position = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]'
-                                                f'//*[@class="scrollElements"]//li[{x}]//*[@class="position"]/span'
-                                                ).text
-        nick = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]'
-                                            f'//*[@class="scrollElements"]//li[{x}]//*[@class="nick"]'
-                                            ).text
-        pts = driver.find_element_by_xpath('//*[@class="ct ranking" or @class="ct ranking up-enter-done"]'
-                                           f'//*[@class="scrollElements"]//li[{x}]//*[@class="points"]'
-                                           ).text
+        position = driver.find_element_by_xpath(Game.RankPanel.position(x)).text
+        nick = driver.find_element_by_xpath(Game.RankPanel.nick(x)).text
+        points = driver.find_element_by_xpath(Game.RankPanel.points(x)).text
         if nick:
           if nick != username:
-            print(f"{position}º - {nick} - {pts}")
+            print(f"{position}º - {nick} - {points}")
           else:
-            print(f"{position}º - {nick} - {pts} < você")
+            print(f"{position}º - {nick} - {points} < você")
       except Exception:
         break
 
-  elif driver.find_element_by_xpath('//*[@class="ct end"'
-                                    ' or @class="ct end up-enter-done"]//h3'
-                                    ).text.upper() == 'FIM DE JOGO!' or \
-      driver.find_element_by_xpath('//*[@class="ct end"'
-                                   ' or @class="ct end up-enter-done"]//h4'
-                                   ).text.upper() == 'RANKING FINAL':
+  elif h3_status == 'FIM DE JOGO!' or driver.find_element_by_xpath(Game.ScorePanel.h4).text.upper() == 'RANKING FINAL':
     print("- Fim de Jogo -")
     for x in range(1, 4):
       try:
-        nick = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]'
-                                            f'//*[@class="positions"]/div[{x}]/*[@class="nick"]'
-                                            ).text
-        pts = driver.find_element_by_xpath('//*[@class="ct end" or @class="ct end up-enter-done"]'
-                                           f'//*[@class="positions"]/div[{x}]/*[@class="points"]/text()'
-                                           ).text
-        print(f"{x}º - {nick} - {pts}")
+        nick = driver.find_element_by_xpath(Game.ScorePanel.nick(x)).text
+        points = driver.find_element_by_xpath(Game.ScorePanel.points(x)).text
+        print(f"{x}º - {nick} - {points}")
       except Exception:
         break
   print("")
 
 
-def label_click(x):
-  driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]'
-                               f'//*[@class="scrollElements"]/label[{x}]/div'
-                               ).click()
-
-
 def validate(validator_type, letter):
-  if driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
-                                  ' or @class="bt-yellow icon-exclamation shake"]'):
+  if driver.find_element_by_xpath(Game.yellow_button_clickable):
     if validator_type == 'quick':
-      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
-                                   ' or @class="bt-yellow icon-exclamation shake"]').click()
+      driver.find_element_by_xpath(Game.yellow_button_clickable).click()
 
     elif validator_type == 'deny':
       print("Negando todas as respostas...")
       for x in range(1, 15):
-        if driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]'
-                                        f'//*[@class="scrollElements"]/label[{x}]/span'
-                                        ).text == 'VALIDADO!':
-          label_click(x)
-      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
-                                   ' or @class="bt-yellow icon-exclamation shake"]'
-                                   ).click()
+        if driver.find_element_by_xpath(Game.AnswerPanel.label_status(x)).text.upper() == 'VALIDADO!':
+          Game.AnswerPanel.label_click(x)
+      driver.find_element_by_xpath(Game.yellow_button_clickable).click()
+
+    elif validator_type == 'accept':
+      print("Confirmando todas as respostas...")
+      for x in range(1, 15):
+        if driver.find_element_by_xpath(Game.AnswerPanel.label_report(x)).text.upper() == 'DENUNCIAR':
+          Game.AnswerPanel.label_click(x)
+      driver.find_element_by_xpath(Game.yellow_button_clickable).click()
 
     elif validator_type == 'check':
       print("Verificando Respostas...")
 
-      category = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]/div/h3').text
+      category = driver.find_element_by_xpath(Game.AnswerPanel.category).text
       category = re.sub('TEMA: ', '', category).lower()
 
       for x in range(1, 15):
         try:
-          if driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]'
-                                          f'//*[@class="scrollElements"]/label[{x}]/span'
-                                          ).text == 'VALIDADO!':
-            category_answer = driver.find_element_by_xpath('//*[@class="ct validation up-enter-done"]'
-                                                           f'//*[@class="scrollElements"]/label[{x}]/div'
-                                                           ).text.lower()
+          if driver.find_element_by_xpath(Game.AnswerPanel.label_status(x)).text.upper() == 'VALIDADO!':
+            category_answer = driver.find_element_by_xpath(Game.AnswerPanel.label_category(x)).text.lower()
             if category not in ['nome', 'msé', 'comida']:
               if category_answer not in dictionary[letter][category]:
-                label_click(x)
+                Game.AnswerPanel.label_click(x)
             elif category == 'msé':
               if category_answer not in dictionary[letter]['msé'] and \
                 category_answer not in dictionary[letter]['adjetivo']:
-                label_click(x)
+                Game.AnswerPanel.label_click(x)
             elif category == 'nome':
               if category_answer not in dictionary[letter]['nome feminino'] and \
                 category_answer not in dictionary[letter]['nome masculino']:
-                label_click(x)
+                Game.AnswerPanel.label_click(x)
               elif category == 'comida':
                 if category_answer not in dictionary[letter]['comida'] and \
                   category_answer not in dictionary[letter]['comida saudável'] and \
                   category_answer not in dictionary[letter]['sobremesa'] and \
                   category_answer not in dictionary[letter]['flv'] and \
                   category_answer not in dictionary[letter]['fruta']:
-                  label_click(x)
+                  Game.AnswerPanel.label_click(x)
         except Exception:
           continue
-      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
-                                   ' or @class="bt-yellow icon-exclamation shake"]'
-                                   ).click()
+      driver.find_element_by_xpath(Game.yellow_button_clickable).click()
 
     elif validator_type == 'greedy':
       pass
 
 
 def do_stop(letter):
-  if driver.find_element_by_xpath('//*[@class= "bt-yellow icon-exclamation"'
-                                  ' or @class="bt-yellow icon-exclamation shake"]'):
+  if driver.find_element_by_xpath(Game.yellow_button_clickable):
     for x in range(1, 13):
-      input_field = driver.find_element_by_xpath('//*[@class="ct answers"'
-                                                 f' or @class="ct answers up-enter-done"]//label[{x}]/input'
-                                                 ).get_attribute('value')
-      if len(input_field) >= 2 and input_field[0] == letter:
+      input_field = driver.find_element_by_xpath(Game.FormPanel.field_input(x)).get_attribute('value')
+      if input_field[0] == letter and len(input_field) >= 2:
         continue
       else:
         break
     else:
       print("STOP! Pressionado")
-      driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
-                                   ' or @class="bt-yellow icon-exclamation shake"]'
-                                   ).click()
+      driver.find_element_by_xpath(Game.yellow_button_clickable).click()
 
 
 def play_the_game():
   validator_type = get_config_setting('validator')
   auto_stop = get_config_setting('autoStop')
+  auto_ready = get_config_setting('autoReady')
 
   try:
     while True:
       cls()
       try:
-        button = driver.find_element_by_xpath('//*[@class= "bt-yellow icon-exclamation"'
-                                              ' or @class="bt-yellow icon-exclamation shake"'
-                                              ' or @class="bt-yellow icon-exclamation disable"]/strong'
-                                              ).text.upper()
+        button = driver.find_element_by_xpath(Game.yellow_button).text.upper()
         letter = find_letter()
 
         if button == 'STOP!':
@@ -415,32 +485,27 @@ def play_the_game():
         pass
 
       try:
-        if driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
-                                        ' or @class="bt-yellow icon-exclamation shake"]/strong'
-                                        ).text.upper() == 'ESTOU PRONTO':
-          driver.find_element_by_xpath('//*[@class="bt-yellow icon-exclamation"'
-                                       ' or @class="bt-yellow icon-exclamation shake"]'
-                                       ).click()
+        if auto_ready and driver.find_element_by_xpath(Game.ready_button).text.upper() == 'ESTOU PRONTO':
+          driver.find_element_by_xpath(Game.yellow_button_clickable).click()
       except Exception:
         pass
 
       try:
-        if driver.find_element_by_xpath('//*[@class="active"]//*[@class="trophy"]'):
+        if driver.find_element_by_xpath(Game.trophy):
           show_round_end_rank()
       except Exception:
         pass
 
       try:
-        if driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button'):
+        if driver.find_element_by_xpath(Game.afk_button_xpath):
           time.sleep(2)
-          driver.find_element_by_xpath('//*[@class="alert"]//*[@class="buttons"]/button').click()
-        elif driver.find_elements_by_xpath('//*[@class="popup-exit popup-exit-active"'
-                                           ' or @class="class="popup-enter-done"]'):
+          driver.find_element_by_xpath(Game.afk_button_xpath).click()
+        elif driver.find_elements_by_xpath(Game.afk_box):
           pass
       except Exception:
         pass
 
-      show_match_info()
+      show_game_info()
       time.sleep(3)
 
   except KeyboardInterrupt:
@@ -459,8 +524,8 @@ def play_the_game():
         print("Digite um número.")
 
     if option1 == 1:
-      if driver.find_element_by_xpath('//*[@class="exit"]'):
-        driver.find_element_by_xpath('//*[@class="exit"]/.').click()
+      if driver.find_element_by_xpath(Game.exit):
+        driver.find_element_by_xpath(f'{Game.exit}/.').click()
       print("Deseja entrar em outra sala? (s/n)")
       while True:
         option2 = input("> ")
@@ -471,9 +536,9 @@ def play_the_game():
 
       if option2 == 's':
         wait = WebDriverWait(driver, 10)
-        wait.until(ec.presence_of_element_located((By.XPATH, '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]')))
+        wait.until(ec.presence_of_element_located((By.XPATH, Game.play_button)))
         time.sleep(1)
-        driver.find_element_by_xpath('//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]/strong').click()
+        driver.find_element_by_xpath(Game.play_button_clickable).click()
         play_the_game()
 
       elif option2 == 'n':
@@ -501,8 +566,6 @@ if __name__ == "__main__":
     if option == '1':
       driver.get('https://stopots.com.br/')
       username = get_config_setting('username')
-      if not 2 <= len(username) <= 15:
-        username = ' '
       join_game(username)
       play_the_game()
 
@@ -518,11 +581,9 @@ if __name__ == "__main__":
       play_the_game()
 
     elif option == '3':
-      room_id = input("ID:")
+      room_id = input("ID: ")
       driver.get(f'https://stopots.com.br/{room_id}')
       username = get_config_setting('username')
-      if not 2 <= len(username) <= 15:
-        username = ' '
       join_game(username)
       play_the_game()
 
@@ -534,7 +595,6 @@ if __name__ == "__main__":
       exit()
     else:
       print("Opção invalida\n")
-
 
 '''
 categorias = ["ADJETIVO","ANIMAL","APP OU SITE","ATOR","AVE","BANDA","BRINQUEDO",
