@@ -7,4 +7,4 @@ if not exist python\python.exe (
 	PowerShell -ExecutionPolicy Unrestricted -File "downloadpython.ps1"
 )
 
-python\python.exe updateDictionary.py
+python\python.exe dictionary-manager.py
