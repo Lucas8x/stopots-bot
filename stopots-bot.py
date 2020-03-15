@@ -115,10 +115,10 @@ class Game:
 
 def init_dictionary():
   try:
-    with open('dicionario.json', encoding='utf-8') as dictionary:
-      return json.load(dictionary)
+    with open('dicionario.json', encoding='utf-8') as dictionary_data:
+      return json.load(dictionary_data)
   except Exception as e:
-    print(f"Failed initialize dictionary, error: {e}")
+    print(f'Failed initialize dictionary, error: {e}')
 
 
 def cls():
@@ -144,86 +144,84 @@ def get_config_setting(setting):
       data = json.load(config_file)
     return data[setting]
   except Exception as e:
-    print(f"Failed get json setting. Error: {e}")
+    print(f'Failed get json setting. Error: {e}')
 
 
 def open_config_menu():
   with open('config.json', 'r+') as config_file:
     data = json.load(config_file)
     while True:
-      print(f"1 - Mudar username [Atual: {data['username']}]",
-            f"\n2 - Alterar o validador [Atual: {data['validator']}]",
-            f"\n3 - Auto Stop [Status: {data['autoStop']}]",
-            f"\n4 - Auto Ready [Status: {data['autoReady']}]",
-            f"\n5 - Mudar avatar [Atual: {data['avatar']}]",
-            "\n0 - Voltar.")
-      option_to_config = input(">")
+      print(f'1 - Mudar username [Atual: {data["username"]}]\n',
+            f'2 - Alterar o validador [Atual: {data["validator"]}]\n',
+            f'3 - Auto Stop [Status: {data["autoStop"]}]\n',
+            f'4 - Auto Ready [Status: {data["autoReady"]}]\n',
+            f'5 - Mudar avatar [Atual: {data["avatar"]}]\n',
+            '0 - Voltar.')
+      option_to_config = input('> ')
       cls()
       if option_to_config == '1':
-        print("0 - Voltar.")
-        username_input = input("Username: ")
+        print('0 - Voltar.')
+        username_input = input('Username: ')
         if username_input != '0':
           if 2 <= len(username_input) <= 15:
             data['username'] = username_input
           else:
-            print("Seu username/nick deve possuir entre 2 e 15 caracteres.")
+            print('Seu username/nick deve possuir entre 2 e 15 caracteres.')
 
       elif option_to_config == '2':
-        print("1 - Rápido (Apenas confirma.)"
-              "\n2 - Negar - (Invalidará todas as respostas inclusive as suas.)"
-              "\n3 - Aceitar - (Validará todas as respostas inclusive as erradas.)"
-              "\n4 - Avaliar - (Avaliará as respostas com base no dicionario e negará as outras.)"
-              "\n5 - Não fazer nada.")
-        validator_change = int(input("> "))
+        validator_change = int(input('1 - Rápido (Apenas confirma.)\n'
+                                     '2 - Negar - (Invalidará todas as respostas inclusive as suas.)\n'
+                                     '3 - Aceitar - (Validará todas as respostas inclusive as erradas.)\n'
+                                     '4 - Avaliar - (Avaliará as respostas com base no dicionario e negará as outras.)\n'
+                                     '5 - Não fazer nada.\n'
+                                     '> '))
         if validator_change == 1:
           data['validator'] = 'quick'
-          print("Validador alterado para modo rápido.\n")
+          print('Validador alterado para modo rápido.\n')
         elif validator_change == 2:
           data['validator'] = 'deny'
-          print("Validador alterado para modo de negação.\n")
+          print('Validador alterado para modo de negação.\n')
         elif validator_change == 3:
           data['validator'] = 'accept'
-          print("Validador alterado para modo de aceitação.\n")
+          print('Validador alterado para modo de aceitação.\n')
         elif validator_change == 4:
           data['validator'] = 'check'
-          print("Validador alterado para modo de avaliação.\n")
+          print('Validador alterado para modo de avaliação.\n')
         elif validator_change == 5:
           data['validator'] = 'null'
-          print("Validador alterado para não fazer nada.\n")
-        else:
-          pass
+          print('Validador alterado para não fazer nada.\n')
 
       elif option_to_config == '3':
         if data['autoStop']:
           data['autoStop'] = False
-          print("Auto Stop Desabilitado.\n")
+          print('Auto Stop Desabilitado.\n')
         else:
           data['autoStop'] = True
-          print("Auto Stop Habilitado.\n")
+          print('Auto Stop Habilitado.\n')
 
       elif option_to_config == '4':
         if data['autoReady']:
           data['autoReady'] = False
-          print("Auto Ready Desabilitado.\n")
+          print('Auto Ready Desabilitado.\n')
         else:
           data['autoReady'] = True
-          print("Auto Ready Habilitado.\n")
+          print('Auto Ready Habilitado.\n')
 
       elif option_to_config == '5':
         while True:
-          avatar_num = int(input("Número do Avatar: "))
+          avatar_num = int(input('Número do Avatar: '))
           if 0 <= avatar_num <= 36:
             data['avatar'] = avatar_num
             break
           else:
-            print("Min: 0 Max: 36")
+            print('Min: 0 Max: 36')
 
       elif option_to_config == '0':
         cls()
         break
 
       else:
-        print("Opção Invalida.\n")
+        print('Opção Invalida.\n')
 
       config_file.seek(0)
       json.dump(data, config_file, indent=2)
@@ -237,7 +235,7 @@ def init_web_driver():
     web_driver = webdriver.Firefox(executable_path='./geckodriver.exe', capabilities=firefox_capabilities)  # v23
     return web_driver
   except Exception as e:
-    print(f"Failed to initialize Geckodriver: {e}")
+    print(f'Failed to initialize Geckodriver: {e}')
     try:
       options = webdriver.ChromeOptions()
       options.add_argument('--log-level=3')
@@ -247,14 +245,14 @@ def init_web_driver():
       web_driver = webdriver.Chrome('./chromedriver.exe', options=options)  # v78
       return web_driver
     except Exception as e:
-      print(f"Failed to initialize Chromedriver: {e}")
-      print("Instale/Atualize o seu Firefox/Chrome ou Geckodriver/Chromedriver.")
+      print(f'Failed to initialize Chromedriver: {e}')
+      print('Instale/Atualize o seu Firefox/Chrome ou Geckodriver/Chromedriver.')
       time.sleep(5)
       quit()
 
 
 def join_game(username):
-  print("Entrando...")
+  print('Entrando...')
   wait = WebDriverWait(driver, 10)
 
   # entrar button
@@ -280,7 +278,7 @@ def join_game(username):
 
     # Icone do Avatar
     if avatar_id > 14:
-      driver.execute_script("arguments[0].scrollIntoView(true);", driver.find_element_by_xpath(Game.avatar(avatar_id)))
+      driver.execute_script('arguments[0].scrollIntoView(true);', driver.find_element_by_xpath(Game.avatar(avatar_id)))
     wait.until(ec.element_to_be_clickable((By.XPATH, Game.avatar(avatar_id))))
     driver.find_element_by_xpath(Game.avatar(avatar_id)).click()
 
@@ -296,15 +294,15 @@ def join_game(username):
   wait.until(ec.element_to_be_clickable((By.XPATH, Game.play_button)))
   time.sleep(2)
   driver.find_element_by_xpath(Game.play_button).click()
-  print(f"Logado como: {username}")
+  print(f'Logado como: {username}')
 
 
 def find_letter():
   try:
     letter = driver.find_element_by_xpath(Game.letter).text.lower()
-    print(f"Letra Atual: {letter}")
+    print(f'Letra Atual: {letter}')
     return letter
-  except Exception:
+  except Exception as e:
     pass
 
 
@@ -314,12 +312,12 @@ def get_answer(letter, category):
   except IndexError:
     return False
   except Exception as e:
-    print(f"Get answer error: {e}")
+    print(f'Get answer error: {e}')
     return False
 
 
 def auto_complete(letter):
-  print("Auto Completando...")
+  print('Auto Completando...')
   for x in range(1, 13):
     try:
       field_input = driver.find_element_by_xpath(Game.FormPanel.field_input(x)).get_attribute('value')
@@ -338,7 +336,7 @@ def auto_complete(letter):
       else:
         continue
     except Exception:
-      print(f"")
+      print('')
       continue
 
 
@@ -346,28 +344,28 @@ def show_game_info():
   try:
     rounds = driver.find_element_by_xpath(Game.rounds).text
     total = driver.find_element_by_xpath(Game.rounds_total).text
-    print(f"- Rodadas: {rounds}{total}")
-  except Exception:
+    print(f'- Rodadas: {rounds}{total}')
+  except Exception as e:
     pass
 
-  print("- Jogadores -")
+  print('- Jogadores -')
   for x in range(1, 15):
     try:
       nick = driver.find_element_by_xpath(Game.PlayerList.nick(x)).text
       points = driver.find_element_by_xpath(Game.PlayerList.points(x)).text
       if nick:
         if nick != username:
-          print(f"{nick} - {points}")
+          print(f'{nick} - {points}')
         else:
-          print(f"{nick} - {points} < você")
-    except Exception:
+          print(f'{nick} - {points} < você')
+    except Exception as e:
       break
 
 
 def show_round_end_rank():
   h3_status = driver.find_element_by_xpath(Game.ScorePanel.h3).text.upper()
   if h3_status == 'RANKING DA RODADA':
-    print("- Ranking da Rodada -")
+    print('- Ranking da Rodada -')
     for x in range(1, 15):
       try:
         position = driver.find_element_by_xpath(Game.RankPanel.position(x)).text
@@ -375,22 +373,22 @@ def show_round_end_rank():
         points = driver.find_element_by_xpath(Game.RankPanel.points(x)).text
         if nick:
           if nick != username:
-            print(f"{position}º - {nick} - {points}")
+            print(f'{position}º - {nick} - {points}')
           else:
-            print(f"{position}º - {nick} - {points} < você")
-      except Exception:
+            print(f'{position}º - {nick} - {points} < você')
+      except Exception as e:
         break
 
   elif h3_status == 'FIM DE JOGO!' or driver.find_element_by_xpath(Game.ScorePanel.h4).text.upper() == 'RANKING FINAL':
-    print("- Fim de Jogo -")
+    print('- Fim de Jogo -')
     for x in range(1, 4):
       try:
         nick = driver.find_element_by_xpath(Game.ScorePanel.nick(x)).text
         points = driver.find_element_by_xpath(Game.ScorePanel.points(x)).text
-        print(f"{x}º - {nick} - {points}")
-      except Exception:
+        print(f'{x}º - {nick} - {points}')
+      except Exception as e:
         break
-  print("")
+  print('')
 
 
 def validate(validator_type, letter):
@@ -399,21 +397,21 @@ def validate(validator_type, letter):
       driver.find_element_by_xpath(Game.yellow_button_clickable).click()
 
     elif validator_type == 'deny':
-      print("Negando todas as respostas...")
+      print('Negando todas as respostas...')
       for x in range(1, 15):
         if driver.find_element_by_xpath(Game.AnswerPanel.label_status(x)).text.upper() == 'VALIDADO!':
           Game.AnswerPanel.label_click(x)
       driver.find_element_by_xpath(Game.yellow_button_clickable).click()
 
     elif validator_type == 'accept':
-      print("Confirmando todas as respostas...")
+      print('Confirmando todas as respostas...')
       for x in range(1, 15):
         if driver.find_element_by_xpath(Game.AnswerPanel.label_report(x)).text.upper() == 'DENUNCIAR':
           Game.AnswerPanel.label_click(x)
       driver.find_element_by_xpath(Game.yellow_button_clickable).click()
 
     elif validator_type == 'check':
-      print("Verificando Respostas...")
+      print('Verificando Respostas...')
 
       category = driver.find_element_by_xpath(Game.AnswerPanel.category).text
       category = re.sub('TEMA: ', '', category).lower()
@@ -426,21 +424,21 @@ def validate(validator_type, letter):
               if category_answer not in dictionary[letter][category]:
                 Game.AnswerPanel.label_click(x)
             elif category == 'msé':
-              if category_answer not in dictionary[letter]['msé'] and \
-                category_answer not in dictionary[letter]['adjetivo']:
+              if category_answer not in zip(dictionary[letter]['msé'],
+                                            dictionary[letter]['adjetivo']):
                 Game.AnswerPanel.label_click(x)
             elif category == 'nome':
-              if category_answer not in dictionary[letter]['nome feminino'] and \
-                category_answer not in dictionary[letter]['nome masculino']:
+              if category_answer not in zip(dictionary[letter]['nome feminino'],
+                                            dictionary[letter]['nome masculino']):
                 Game.AnswerPanel.label_click(x)
               elif category == 'comida':
-                if category_answer not in dictionary[letter]['comida'] and \
-                  category_answer not in dictionary[letter]['comida saudável'] and \
-                  category_answer not in dictionary[letter]['sobremesa'] and \
-                  category_answer not in dictionary[letter]['flv'] and \
-                  category_answer not in dictionary[letter]['fruta']:
+                if category_answer not in zip(dictionary[letter]['comida'],
+                                              dictionary[letter]['comida saudável'],
+                                              dictionary[letter]['sobremesa'],
+                                              dictionary[letter]['flv'],
+                                              dictionary[letter]['fruta']):
                   Game.AnswerPanel.label_click(x)
-        except Exception:
+        except Exception as e:
           continue
       driver.find_element_by_xpath(Game.yellow_button_clickable).click()
 
@@ -457,7 +455,7 @@ def do_stop(letter):
       else:
         break
     else:
-      print("STOP! Pressionado")
+      print('STOP! Pressionado')
       driver.find_element_by_xpath(Game.yellow_button_clickable).click()
 
 
@@ -472,28 +470,25 @@ def play_the_game():
       try:
         button = driver.find_element_by_xpath(Game.yellow_button).text.upper()
         letter = find_letter()
-
         if button == 'STOP!':
           auto_complete(letter)
           if auto_stop:
             do_stop(letter)
-
         elif button == 'AVALIAR' and validator_type != 'null':
           validate(validator_type, letter)
-
-      except Exception:
+      except Exception as e:
         pass
 
       try:
         if auto_ready and driver.find_element_by_xpath(Game.ready_button).text.upper() == 'ESTOU PRONTO':
           driver.find_element_by_xpath(Game.yellow_button_clickable).click()
-      except Exception:
+      except Exception as e:
         pass
 
       try:
         if driver.find_element_by_xpath(Game.trophy):
           show_round_end_rank()
-      except Exception:
+      except Exception as e:
         pass
 
       try:
@@ -502,7 +497,7 @@ def play_the_game():
           driver.find_element_by_xpath(Game.afk_button_xpath).click()
         elif driver.find_elements_by_xpath(Game.afk_box):
           pass
-      except Exception:
+      except Exception as e:
         pass
 
       show_game_info()
@@ -510,29 +505,29 @@ def play_the_game():
 
   except KeyboardInterrupt:
     cls()
-    print("Options:"
-          "\n1 - Sair da Sala."
-          "\n2 - Fechar o bot.")
+    print('Options:\n'
+          '1 - Sair da Sala.\n'
+          '2 - Fechar o bot.')
     while True:
       try:
-        option1 = int(input("> "))
+        option1 = int(input('> '))
         if 1 <= option1 <= 2:
           break
         else:
-          print("Opção invalida.")
-      except Exception:
-        print("Digite um número.")
+          print('Opção invalida.')
+      except Exception as e:
+        print('Digite um número.')
 
     if option1 == 1:
       if driver.find_element_by_xpath(Game.exit):
         driver.find_element_by_xpath(f'{Game.exit}/.').click()
-      print("Deseja entrar em outra sala? (s/n)")
+      print('Deseja entrar em outra sala? (s/n)')
       while True:
-        option2 = input("> ")
+        option2 = input('> ')
         if option2.lower() in 'sn':
           break
         else:
-          print("Opção invalida.")
+          print('Opção invalida.')
 
       if option2 == 's':
         wait = WebDriverWait(driver, 10)
@@ -554,13 +549,13 @@ if __name__ == "__main__":
   driver = init_web_driver()
   dictionary = init_dictionary()
   while True:
-    print("Opções:"
-          "\n1 - Entrada Rápida."
-          "\n2 - Entrar no Jogo."
-          "\n3 - Entrar com ID da Sala."
-          "\n4 - Configurações."
-          "\n5 - Sair.")
-    option = input("> ")
+    option = input('Opções:\n'
+                   '1 - Entrada Rápida.\n'
+                   '2 - Entrar no Jogo.\n'
+                   '3 - Entrar com ID da Sala.\n'
+                   '4 - Configurações.\n'
+                   '5 - Sair.\n'
+                   '> ')
     cls()
 
     if option == '1':
@@ -571,17 +566,17 @@ if __name__ == "__main__":
 
     elif option == '2':
       while True:
-        username = input("Digite um nome: ")
+        username = input('Digite um nome: ')
         if 2 <= len(username) <= 15:
           break
         else:
-          print("Seu username/nick deve possuir entre 2 e 15 caracteres.")
+          print('Seu username/nick deve possuir entre 2 e 15 caracteres.')
       driver.get('https://stopots.com.br/')
       join_game(username)
       play_the_game()
 
     elif option == '3':
-      room_id = input("ID: ")
+      room_id = input('ID: ')
       driver.get(f'https://stopots.com.br/{room_id}')
       username = get_config_setting('username')
       join_game(username)
@@ -594,7 +589,7 @@ if __name__ == "__main__":
       driver.quit()
       exit()
     else:
-      print("Opção invalida\n")
+      print('Opção invalida\n')
 
 '''
 categorias = ["ADJETIVO","ANIMAL","APP OU SITE","ATOR","AVE","BANDA","BRINQUEDO",
