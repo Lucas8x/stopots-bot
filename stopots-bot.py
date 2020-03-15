@@ -115,7 +115,7 @@ class Game:
 
 def init_dictionary():
   try:
-    with open('dicionario.json', encoding='utf-8') as dictionary_data:
+    with open('dictionary.json', encoding='utf-8') as dictionary_data:
       return json.load(dictionary_data)
   except Exception as e:
     print(f'Failed initialize dictionary, error: {e}')
