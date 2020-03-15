@@ -242,7 +242,7 @@ def init_web_driver():
       options.add_argument('--silent')
       options.add_argument('--disable-extensions')
       options.add_argument('--disable-popup-blocking')
-      web_driver = webdriver.Chrome('./chromedriver.exe', options=options)  # v78
+      web_driver = webdriver.Chrome('./chromedriver.exe', options=options)  # v80
       return web_driver
     except Exception as e:
       print(f'Failed to initialize Chromedriver: {e}')
