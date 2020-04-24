@@ -1,6 +1,4 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 import os
 import time
 import random
@@ -113,14 +111,6 @@ class Game:
       return f'{Game.RankPanel.li}[{x}]//*[@class="points"]'
 
 
-def init_dictionary():
-  try:
-    with open('dictionary.json', encoding='utf-8') as dictionary_data:
-      return json.load(dictionary_data)
-  except Exception as e:
-    print(f'Failed initialize dictionary, error: {e}')
-
-
 def cls():
   os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -159,6 +149,7 @@ def open_config_menu():
             '0 - Voltar.')
       option_to_config = input('> ')
       cls()
+
       if option_to_config == '1':
         print('0 - Voltar.')
         username_input = input('Username: ')
@@ -228,6 +219,14 @@ def open_config_menu():
       config_file.truncate()
 
 
+def init_dictionary():
+  try:
+    with open('dictionary.json', encoding='utf-8') as dictionary_data:
+      return json.load(dictionary_data)
+  except Exception as e:
+    print(f'Failed initialize dictionary, error: {e}')
+
+
 def init_web_driver():
   try:
     firefox_capabilities = DesiredCapabilities.FIREFOX
@@ -238,11 +237,11 @@ def init_web_driver():
     print(f'Failed to initialize Geckodriver: {e}')
     try:
       options = webdriver.ChromeOptions()
-      options.add_argument('--log-level=3')
-      options.add_argument('--silent')
-      options.add_argument('--disable-extensions')
-      options.add_argument('--disable-popup-blocking')
-      web_driver = webdriver.Chrome('./chromedriver.exe', options=options)  # v80
+      chrome_args = ['--log-level=3', '--silent', '--disable-extensions', '--disable-popup-blocking',
+                     '--disable-blink-features', '--disable-blink-features=AutomationControlled']
+      for arg in chrome_args:
+        options.add_argument(arg)
+      web_driver = webdriver.Chrome('./chromedriver.exe', options=options)  # v81.0.4044.69
       return web_driver
     except Exception as e:
       print(f'Failed to initialize Chromedriver: {e}')
@@ -278,7 +277,8 @@ def join_game(username):
 
     # Icone do Avatar
     if avatar_id > 14:
-      driver.execute_script('arguments[0].scrollIntoView(true);', driver.find_element_by_xpath(Game.avatar(avatar_id)))
+      driver.execute_script('arguments[0].scrollIntoView(true);',
+                            driver.find_element_by_xpath(Game.avatar(avatar_id)))
     wait.until(ec.element_to_be_clickable((By.XPATH, Game.avatar(avatar_id))))
     driver.find_element_by_xpath(Game.avatar(avatar_id)).click()
 
@@ -455,7 +455,7 @@ def do_stop(letter):
       else:
         break
     else:
-      print('STOP! Pressionado')
+      print('STOP! Pressionado.')
       driver.find_element_by_xpath(Game.yellow_button_clickable).click()
 
 
