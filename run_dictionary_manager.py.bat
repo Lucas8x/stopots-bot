@@ -1,4 +1,3 @@
-mode con:cols=80 lines=15
 @echo off
 setlocal enabledelayedexpansion
 
@@ -7,4 +6,6 @@ if not exist python\python.exe (
 	PowerShell -ExecutionPolicy Unrestricted -File "downloadpython.ps1"
 )
 
-python\python.exe dictionary-manager.py
+title Dictionary Manager
+mode con:cols=50 lines=30
+python\python.exe dictionary_manager.py
