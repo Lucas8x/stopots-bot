@@ -1,7 +1,9 @@
+<p align="center">
+ <img width="500" height="388" src="https://raw.githubusercontent.com/Lucas8x/stopots-bot/gh-pages/assets/answer.gif">
+</p>
+
 # stopots-bot
 Auto Play StopotS Browser Game
-
-<img width="500" height="388" src="https://raw.githubusercontent.com/Lucas8x/stopots-bot/gh-pages/assets/answer.gif">
 
 ## Requerimentos
 * Navegador
