@@ -14,6 +14,7 @@ locale.setlocale(locale.LC_ALL, '')
 
 
 class Game:
+  url = 'https://stopots.com.br/'
   enter_button = '//*[@class="login"]/button[@class="enter"]'
   loading_animation = '//*[@class="load"]'
   username_input = '//*[@class="perfil"]//input'
@@ -116,7 +117,7 @@ def cls():
 
 
 def create_default_files():
-  if not (os.path.exists('./config.json')):
+  if not (os.path.exists('config.json')):
     data = {
       "username": "",
       "validator": "check",
@@ -124,7 +125,7 @@ def create_default_files():
       "autoReady": True,
       "avatar": 0
     }
-    with open('./config.json', 'a+') as config_file:
+    with open('config.json', 'w') as config_file:
       json.dump(data, config_file, indent=2)
 
 
@@ -231,7 +232,7 @@ def init_web_driver():
   try:
     firefox_capabilities = DesiredCapabilities.FIREFOX
     firefox_capabilities['marionette'] = True
-    web_driver = webdriver.Firefox(executable_path='./geckodriver.exe', capabilities=firefox_capabilities)  # v23
+    web_driver = webdriver.Firefox(executable_path='geckodriver.exe', capabilities=firefox_capabilities)  # v23
     return web_driver
   except Exception as e:
     print(f'Failed to initialize Geckodriver: {e}')
@@ -241,7 +242,7 @@ def init_web_driver():
                      '--disable-blink-features', '--disable-blink-features=AutomationControlled']
       for arg in chrome_args:
         options.add_argument(arg)
-      web_driver = webdriver.Chrome('./chromedriver.exe', options=options)  # v81.0.4044.69
+      web_driver = webdriver.Chrome('chromedriver.exe', options=options)  # v81.0.4044.69
       return web_driver
     except Exception as e:
       print(f'Failed to initialize Chromedriver: {e}')
@@ -308,7 +309,7 @@ def find_letter():
 
 def get_answer(letter, category):
   try:
-    return random.choice(dictionary[letter][category])
+    return random.choice(dictionary[letter][category]).lower()
   except IndexError:
     return False
   except Exception as e:
@@ -411,7 +412,7 @@ def validate(validator_type, letter):
       driver.find_element_by_xpath(Game.yellow_button_clickable).click()
 
     elif validator_type == 'check':
-      print('Verificando Respostas...')
+      print('Avaliando Respostas...')
 
       category = driver.find_element_by_xpath(Game.AnswerPanel.category).text
       category = re.sub('TEMA: ', '', category).lower()
@@ -424,19 +425,19 @@ def validate(validator_type, letter):
               if category_answer not in dictionary[letter][category]:
                 Game.AnswerPanel.label_click(x)
             elif category == 'msé':
-              if category_answer not in zip(dictionary[letter]['msé'],
-                                            dictionary[letter]['adjetivo']):
+              if category_answer not in [*dictionary[letter]['msé'],
+                                         *dictionary[letter]['adjetivo']]:
                 Game.AnswerPanel.label_click(x)
             elif category == 'nome':
-              if category_answer not in zip(dictionary[letter]['nome feminino'],
-                                            dictionary[letter]['nome masculino']):
+              if category_answer not in [*dictionary[letter]['nome feminino'],
+                                         *dictionary[letter]['nome masculino']]:
                 Game.AnswerPanel.label_click(x)
               elif category == 'comida':
-                if category_answer not in zip(dictionary[letter]['comida'],
-                                              dictionary[letter]['comida saudável'],
-                                              dictionary[letter]['sobremesa'],
-                                              dictionary[letter]['flv'],
-                                              dictionary[letter]['fruta']):
+                if category_answer not in [*dictionary[letter]['comida'],
+                                           *dictionary[letter]['comida saudável'],
+                                           *dictionary[letter]['sobremesa'],
+                                           *dictionary[letter]['flv'],
+                                           *dictionary[letter]['fruta']]:
                   Game.AnswerPanel.label_click(x)
         except Exception as e:
           continue
@@ -559,7 +560,7 @@ if __name__ == "__main__":
     cls()
 
     if option == '1':
-      driver.get('https://stopots.com.br/')
+      driver.get(Game.url)
       username = get_config_setting('username')
       join_game(username)
       play_the_game()
@@ -571,13 +572,13 @@ if __name__ == "__main__":
           break
         else:
           print('Seu username/nick deve possuir entre 2 e 15 caracteres.')
-      driver.get('https://stopots.com.br/')
+      driver.get(Game.url)
       join_game(username)
       play_the_game()
 
     elif option == '3':
       room_id = input('ID: ')
-      driver.get(f'https://stopots.com.br/{room_id}')
+      driver.get(f'{Game.url}{room_id}')
       username = get_config_setting('username')
       join_game(username)
       play_the_game()
