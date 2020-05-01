@@ -4,6 +4,7 @@ import time
 import random
 import re
 import json
+import itertools
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.by import By
@@ -13,16 +14,34 @@ import locale
 locale.setlocale(locale.LC_ALL, '')
 
 
+equivalents = {
+  'msé': ['adjetivo'],
+  'animal': ['ave', 'inseto', 'mamífero'],
+  'presente': ['objeto', 'instrumento musical', 'vestuário', 'brinquedo'],
+  'objeto': ['presente', 'instrumento musical', 'vestuário', 'brinquedo'],
+  'flv': ['fruta'],
+  'cep': ['capital', 'cidade', 'país'],
+  'fantasia': ['animal', 'ave', 'inseto', 'mamífero'],
+  'nome': ['nome feminino', 'nome masculino', 'ator', 'celebridade', 'vilão', 'sobrenome'],
+  'comida': ['comida saudável', 'sobremesa', 'flv', 'fruta', 'doce'],
+}
+
+
 class Game:
   url = 'https://stopots.com.br/'
   enter_button = '//*[@class="login"]/button[@class="enter"]'
   loading_animation = '//*[@class="load"]'
+
   username_input = '//*[@class="perfil"]//input'
   avatar_edit_button = '//button[@class="edit"]'
   avatar_confirm_button = '//*[@class="buttons"]/button'
   fade_animation = '//*[@class="popup-enter-done" or @class="popup-exit popup-exit-active"]'
   play_button = '//*[@class="actions"]/button[@class="bt-yellow icon-exclamation"]'
   play_button_clickable = f'{play_button}/strong'
+
+  play_button2 = '//*[@class="bt-yellow icon-exclamation"]'
+  username_input2 = '//*[@class="infosUser"]//input'
+
   letter = '//*[@id="letter"]/span'
   trophy = '//*[@class="active"]//*[@class="trophy"]'
   exit = '//*[@class="exit"]'
@@ -251,22 +270,24 @@ def init_web_driver():
       quit()
 
 
-def join_game(username):
+def join_game(username, room_id=''):
   print('Entrando...')
+  driver.get(f'{Game.url}{room_id if room_id else ""}')
   wait = WebDriverWait(driver, 10)
 
-  # entrar button
+  # entre anônimo
   wait.until(ec.presence_of_element_located((By.XPATH, Game.enter_button)))
   driver.find_element_by_xpath(Game.enter_button).click()
   wait.until(ec.invisibility_of_element_located((By.XPATH, Game.loading_animation)))
 
-  # username field
+  # username
+  user_input = Game.username_input if not room_id else Game.username_input2
   if username != ' ' and 2 <= len(username) <= 15:
-    wait.until(ec.presence_of_element_located((By.XPATH, Game.username_input)))
-    driver.find_element_by_xpath(Game.username_input).clear()
-    driver.find_element_by_xpath(Game.username_input).send_keys(username)
+    wait.until(ec.presence_of_element_located((By.XPATH, user_input)))
+    driver.find_element_by_xpath(user_input).clear()
+    driver.find_element_by_xpath(user_input).send_keys(username)
   else:
-    username = driver.find_element_by_xpath(Game.username_input).get_attribute('value')
+    username = driver.find_element_by_xpath(user_input).get_attribute('value')
 
   # Avatar
   avatar_id = get_config_setting('avatar')
@@ -292,53 +313,12 @@ def join_game(username):
   time.sleep(2)
 
   # Botão Jogar => entra no jogo
-  wait.until(ec.element_to_be_clickable((By.XPATH, Game.play_button)))
+  play_button = Game.play_button if not room_id else Game.play_button2
+  wait.until(ec.element_to_be_clickable((By.XPATH, play_button)))
   time.sleep(2)
-  driver.find_element_by_xpath(Game.play_button).click()
+  driver.find_element_by_xpath(play_button).click()
+
   print(f'Logado como: {username}')
-
-
-def find_letter():
-  try:
-    letter = driver.find_element_by_xpath(Game.letter).text.lower()
-    print(f'Letra Atual: {letter}')
-    return letter
-  except Exception as e:
-    pass
-
-
-def get_answer(letter, category):
-  try:
-    return random.choice(dictionary[letter][category]).lower()
-  except IndexError:
-    return False
-  except Exception as e:
-    print(f'Get answer error: {e}')
-    return False
-
-
-def auto_complete(letter):
-  print('Auto Completando...')
-  for x in range(1, 13):
-    try:
-      field_input = driver.find_element_by_xpath(Game.FormPanel.field_input(x)).get_attribute('value')
-      if not field_input:
-        field_category = driver.find_element_by_xpath(Game.FormPanel.field_category(x)).text.lower()
-
-        if field_category == 'nome':
-          field_category = random.choice(['nome feminino', 'nome masculino'])
-
-        elif field_category == 'comida' and not dictionary[letter]['comida']:
-          field_category = random.choice(['comida saudável', 'sobremesa', 'flv', 'fruta'])
-
-        answer = get_answer(letter, field_category)
-        if answer:
-          driver.find_element_by_xpath(Game.FormPanel.field_input(x)).send_keys(answer)
-      else:
-        continue
-    except Exception:
-      print('')
-      continue
 
 
 def show_game_info():
@@ -392,6 +372,48 @@ def show_round_end_rank():
   print('')
 
 
+def find_letter():
+  try:
+    letter = driver.find_element_by_xpath(Game.letter).text.lower()
+    print(f'Letra Atual: {letter if letter else "?"}')
+    return letter
+  except Exception as e:
+    pass
+
+
+def get_answer(letter, category):
+  try:
+    return random.choice(dictionary[letter][category]).lower()
+  except IndexError:
+    return False
+  except Exception as e:
+    print(f'Get answer error: {e}')
+    return False
+
+
+def auto_complete(letter):
+  print('Auto Completando...')
+  for x in range(1, 13):
+    try:
+      field_input = driver.find_element_by_xpath(Game.FormPanel.field_input(x)).get_attribute('value')
+      if not field_input:
+        field_category = driver.find_element_by_xpath(Game.FormPanel.field_category(x)).text.lower()
+
+        if field_category in equivalents:
+          field_category = random.choice([field_category, *equivalents[field_category]] if field_category != 'nome'
+                                         else [*equivalents[field_category]])
+
+        answer = get_answer(letter, field_category)
+        if answer:
+          driver.find_element_by_xpath(Game.FormPanel.field_input(x)).send_keys(answer)
+
+      else:
+        continue
+    except Exception:
+      print('')
+      continue
+
+
 def validate(validator_type, letter):
   if driver.find_element_by_xpath(Game.yellow_button_clickable):
     if validator_type == 'quick':
@@ -413,32 +435,21 @@ def validate(validator_type, letter):
 
     elif validator_type == 'check':
       print('Avaliando Respostas...')
-
       category = driver.find_element_by_xpath(Game.AnswerPanel.category).text
       category = re.sub('TEMA: ', '', category).lower()
-
       for x in range(1, 15):
         try:
           if driver.find_element_by_xpath(Game.AnswerPanel.label_status(x)).text.upper() == 'VALIDADO!':
             category_answer = driver.find_element_by_xpath(Game.AnswerPanel.label_category(x)).text.lower()
-            if category not in ['nome', 'msé', 'comida']:
-              if category_answer not in dictionary[letter][category]:
+
+            if category in equivalents:
+              equivalent_answers = [dictionary[letter][category] if category != 'nome' else []] + \
+                                   [dictionary[letter][cat] for cat in equivalents[category]]
+              if category_answer not in list(itertools.chain(*equivalent_answers)):
                 Game.AnswerPanel.label_click(x)
-            elif category == 'msé':
-              if category_answer not in [*dictionary[letter]['msé'],
-                                         *dictionary[letter]['adjetivo']]:
-                Game.AnswerPanel.label_click(x)
-            elif category == 'nome':
-              if category_answer not in [*dictionary[letter]['nome feminino'],
-                                         *dictionary[letter]['nome masculino']]:
-                Game.AnswerPanel.label_click(x)
-              elif category == 'comida':
-                if category_answer not in [*dictionary[letter]['comida'],
-                                           *dictionary[letter]['comida saudável'],
-                                           *dictionary[letter]['sobremesa'],
-                                           *dictionary[letter]['flv'],
-                                           *dictionary[letter]['fruta']]:
-                  Game.AnswerPanel.label_click(x)
+            elif category_answer not in dictionary[letter][category]:
+              Game.AnswerPanel.label_click(x)
+
         except Exception as e:
           continue
       driver.find_element_by_xpath(Game.yellow_button_clickable).click()
@@ -450,10 +461,8 @@ def validate(validator_type, letter):
 def do_stop(letter):
   if driver.find_element_by_xpath(Game.yellow_button_clickable):
     for x in range(1, 13):
-      input_field = driver.find_element_by_xpath(Game.FormPanel.field_input(x)).get_attribute('value')
-      if input_field[0] == letter and len(input_field) >= 2:
-        continue
-      else:
+      input_field = driver.find_element_by_xpath(Game.FormPanel.field_input(x)).get_attribute('value').lower()
+      if not input_field[0] == letter and len(input_field) >= 2:
         break
     else:
       print('STOP! Pressionado.')
@@ -560,7 +569,6 @@ if __name__ == "__main__":
     cls()
 
     if option == '1':
-      driver.get(Game.url)
       username = get_config_setting('username')
       join_game(username)
       play_the_game()
@@ -572,15 +580,13 @@ if __name__ == "__main__":
           break
         else:
           print('Seu username/nick deve possuir entre 2 e 15 caracteres.')
-      driver.get(Game.url)
       join_game(username)
       play_the_game()
 
     elif option == '3':
       room_id = input('ID: ')
-      driver.get(f'{Game.url}{room_id}')
       username = get_config_setting('username')
-      join_game(username)
+      join_game(username, room_id)
       play_the_game()
 
     elif option == '4':
