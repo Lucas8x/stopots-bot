@@ -24,7 +24,7 @@ Auto Play StopotS Browser Game
 ## Menu
 1. Entrada Rápida - Ira entrar com o nome definido se não com um nome gerado pelo jogo ex:`Anonimo123`.
 2. Entrar no Jogo - Sempre ira perguntar um nome.
-3. ~Entrar com ID da Sala - Entra em uma sala específica.~
+3. Entrar com ID da Sala - Entra em uma sala específica.
 4. [Configurações](#configurações).
 
 ## Configurações
