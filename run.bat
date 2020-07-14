@@ -8,4 +8,4 @@ if not exist python\python.exe (
 
 title Stopots BOT
 mode con:cols=50 lines=30
-python\python.exe stopots_bot.py
+python\python.exe stopots_bot\menu.py

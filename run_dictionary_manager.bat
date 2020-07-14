@@ -8,4 +8,4 @@ if not exist python\python.exe (
 
 title Dictionary Manager
 mode con:cols=50 lines=30
-python\python.exe dictionary_manager.py
+python\python.exe stopots_bot\dictionary.py
