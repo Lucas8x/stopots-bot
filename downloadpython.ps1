@@ -32,6 +32,7 @@ else
 }
 
 ((Get-Content python\python38._pth)) -Replace "#import", "import" | Set-Content python\python38._pth
+Set-Content python\python38._pth -value "../", (Get-Content python\python38._pth)
 
 python\python.exe get-pip.py
 python\python.exe -m pip install -r requirements.txt
