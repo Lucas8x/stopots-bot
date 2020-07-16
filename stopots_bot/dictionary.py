@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
 import json
-import os
 import string
 from typing import Dict
 
-letters = string.ascii_lowercase
+from stopots_bot.utils import cls
 
-
-def cls() -> None:
-  os.system('cls' if os.name == 'nt' else 'clear')
+alphabet = string.ascii_lowercase
 
 
 def get_dictionary() -> Dict:
@@ -24,11 +21,7 @@ class Dictionary:
     self.data = data
 
   def load(self) -> None:
-    try:
-      with open('dictionary.json', encoding='utf-8') as dictionary_data:
-        self.data = json.load(dictionary_data)
-    except Exception as e:
-      print(f'Failed initialize dictionary, error: {e}')
+    self.data = get_dictionary()
 
   def save(self):
     with open('dictionary.json', 'w', encoding='utf-8') as dictionary_file:
@@ -79,7 +72,7 @@ class Dictionary:
     for letter in self.data:
       if not self.data[letter][category]:
         self.data[letter][category] = []
-      print(f'Categoria; {category} adicionada ao dicionário.')
+      print(f'Categoria: {category} adicionada ao dicionário.')
       self.save()
       self.beautify_json()
 
@@ -117,7 +110,7 @@ def main() -> None:
   dictionary = Dictionary()
   dictionary.load()
   while True:
-    option = input('1 - Adicionar Respostas.\n'
+    option = input('1 - Adicionar Resposta.\n'
                    '2 - Remover Resposta.\n'
                    '3 - Adicionar Categoria.\n'
                    '4 - Remover Categoria.\n'
@@ -125,55 +118,56 @@ def main() -> None:
                    '6 - Sair.\n'
                    '> ')
     cls()
-    print('Digite: 0 para voltar.')
+    print('Digite: 0 para voltar.\n')
 
-    if option not in ['5', '6']:
-      print(f'- {"Adicionando" if option in ["1", "3"] else "Removendo"} '
-            f'{"Respostas" if option in ["1", "2"] else "Categoria"} -')
-      while True:
-        category = input('Categoria: ').strip().lower()
-        if category != '0':
-          if category == 'nome' and option == '1':
-            category = name_answer_genre()
-          if dictionary.category_exists(category):
-            if option in ['1', '2']:
-              while True:
-                answer = input('Resposta: ').strip().lower()
-                if answer != '0':
-                  if option == '1':
-                    if len(answer) <= 20:
-                      dictionary.add_answer(answer, category)
-                    else:
-                      print('Resposta muito grande max: 20 caracteres.')
-                  elif option == '2':
-                    dictionary.delete_answer(answer, category)
-                else:
-                  break
-
-            elif option == '4':
-              dictionary.delete_category(category)
-
-          elif option == '3':
-            dictionary.add_category(category)
-
+    if option.isdigit():
+      option = int(option)
+      if option in range(1, 5):
+        print(f'- {"Adicionando" if option in [1, 3] else "Removendo"} '
+              f'{"Respostas" if option in [1, 2] else "Categoria"} -')
+        while True:
+          category = input('Categoria: ').strip().lower()
+          if category != '0':
+            if category == 'nome' and option == 1:
+              category = name_answer_genre()
+            if dictionary.category_exists(category):
+              if option in [1, 2]:
+                while True:
+                  answer = input('Resposta: ').strip().lower()
+                  if answer != '0':
+                    if option == 1:
+                      if len(answer) <= 20:
+                        dictionary.add_answer(answer, category)
+                      else:
+                        print('\033[31mResposta muito grande max: 20 caracteres.\033[m')
+                    elif option == 2:
+                      dictionary.delete_answer(answer, category)
+                  else:
+                    cls()
+                    break
+              elif option == 4:
+                dictionary.delete_category(category)
+            elif option == 3:
+              dictionary.add_category(category)
+            else:
+              print('\033[31mEssa categoria não existe.\033[m')
           else:
-            print('Essa categoria não existe.')
-
-        else:
+            cls()
+            break
+      elif option == 5:
+        while True:
+          letter = input('Letra: ').strip().lower()
+          if letter in alphabet:
+            dictionary.missing_answers(letter)
           break
-
-    elif option == '5':
-      while True:
-        letter = input('Letra: ').strip().lower()
-        if letter != '0':
-          dictionary.missing_answers(letter)
-        break
-
-    elif option == '6':
-      exit()
+      elif option == 6:
+        exit()
+      else:
+        cls()
+        print('\033[31mOpção inválida.\n\033[m')
     else:
-      print('Opção invalida.\n')
-    cls()
+      cls()
+      print('\033[31mDigite um número.\n\033[m')
 
 
 if __name__ == "__main__":
