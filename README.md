@@ -3,7 +3,7 @@
 </p>
 
 # stopots-bot
-Auto Play StopotS Browser Game
+Automatizando sua jogabilidade de StopotS
 
 ## Requerimentos
 * Navegador
@@ -44,11 +44,5 @@ Auto Play StopotS Browser Game
  * <details><summary>Avatares</summary>
    a
   </details>
-
-### ~~Javascript~~
-1. ~Copiar o [script](https://raw.githubusercontent.com/Lucas8x/stopots-bot/master/stopots-bot.js).~
-2. ~Entrar no site do jogo.~
-3. ~Colar no console do navegaodr (F12).~
-4. ~Pressionar Enter.~
 
 Foi utilizado [StopAnswersAPI](https://github.com/nosliper/StopAnswersAPI) por [nosliper](https://github.com/nosliper) para formar um dicionário inicial
