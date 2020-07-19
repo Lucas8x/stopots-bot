@@ -2,7 +2,7 @@ import itertools
 import random
 import re
 import time
-from typing import Union, Dict, Optional
+from typing import Dict, Optional
 
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
@@ -53,8 +53,10 @@ class BOT:
       rounds = self.driver.find_element_by_xpath(Constants.rounds).text
       total = self.driver.find_element_by_xpath(Constants.rounds_total).text
       print(f'- Rodadas: {rounds}{total}')
-    except Exception as e:
+    except NoSuchElementException:
       pass
+    except Exception as e:
+      print(f'[ERROR]Game Info: {e}')
 
     print('- Jogadores -')
     for x in range(1, 15):
@@ -66,7 +68,10 @@ class BOT:
             print(f'{nick} - {points}')
           else:
             print(f'{nick} - {points} < você')
+      except NoSuchElementException:
+        break
       except Exception as e:
+        print(f'[ERROR]Player List: {e}')
         break
 
   def show_round_end_rank(self) -> None:
@@ -83,8 +88,10 @@ class BOT:
               print(f'{position}º - {nick} - {points}')
             else:
               print(f'{position}º - {nick} - {points} < você')
-        except Exception as e:
+        except NoSuchElementException:
           break
+        except Exception as e:
+          print(f'[ERROR]Round End: {e}')
 
     elif h3_status == 'FIM DE JOGO!' or self.driver.find_element_by_xpath(
             Constants.ScorePanel.h4).text.upper() == 'RANKING FINAL':
@@ -94,7 +101,10 @@ class BOT:
           nick = self.driver.find_element_by_xpath(Constants.ScorePanel.nick(x)).text
           points = self.driver.find_element_by_xpath(Constants.ScorePanel.points(x)).text
           print(f'{x}º - {nick} - {points}')
+        except NoSuchElementException:
+          break
         except Exception as e:
+          print(f'[ERROR]Game End: {e}')
           break
     print('')
 
@@ -158,14 +168,14 @@ class BOT:
       print(f'[ERROR]Find letter: {e}', e.__class__.__name__)
       return None
 
-  def get_answer(self, letter: str, category: str) -> Union[str, bool]:
+  def get_answer(self, letter: str, category: str) -> Optional[str]:
     try:
       return random.choice(self.dictionary[letter][category]).lower()
     except IndexError:
-      return False
+      return None
     except Exception as e:
       print(f'[ERROR]Get answer: {e}')
-      return False
+      return None
 
   def auto_complete(self, letter: str) -> None:
     print('Auto Completando...')
@@ -297,35 +307,35 @@ class BOT:
             '2 - Fechar o bot.')
       while True:
         try:
-          option1 = int(input('> '))
-          if 1 <= option1 <= 2:
+          end_option = int(input('> '))
+          if 1 <= end_option <= 2:
             break
           else:
             print('Opção invalida.')
         except Exception as e:
           print('Digite um número.')
 
-      if option1 == 1:
+      if end_option == 1:
         if self.driver.find_element_by_xpath(Constants.exit):
           self.driver.find_element_by_xpath(f'{Constants.exit}/.').click()
         print('Deseja entrar em outra sala? (s/n)')
         while True:
-          option2 = input('> ')
-          if option2.lower() in 'sn':
+          rejoin_input = input('> ')
+          if rejoin_input.lower() in 'sn':
             break
           else:
             print('Opção invalida.')
 
-        if option2 == 's':
+        if rejoin_input == 's':
           wait = WebDriverWait(self.driver, 10)
           wait.until(ec.presence_of_element_located((By.XPATH, Constants.play_button)))
           time.sleep(1)
           self.driver.find_element_by_xpath(Constants.play_button_clickable).click()
           self.loop()
 
-        elif option2 == 'n':
+        elif rejoin_input == 'n':
           self.driver.quit()
           exit()
 
-      elif option1 == 2:
+      elif end_option == 2:
         quit()
