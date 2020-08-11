@@ -7,35 +7,12 @@ from typing import Dict, Optional
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
 
 from stopots_bot.constants import Constants, equivalents
-from stopots_bot.utils import cls
-
-
-def init_web_driver() -> webdriver:
-  try:
-    firefox_capabilities = DesiredCapabilities.FIREFOX
-    firefox_capabilities['marionette'] = True
-    web_driver = webdriver.Firefox(executable_path='geckodriver.exe', capabilities=firefox_capabilities)  # v23
-    return web_driver
-  except Exception as e:
-    print(f'Failed to initialize Geckodriver: {e}')
-    try:
-      options = webdriver.ChromeOptions()
-      chrome_args = ['--log-level=3', '--silent', '--disable-extensions', '--disable-popup-blocking',
-                     '--disable-blink-features', '--disable-blink-features=AutomationControlled']
-      for arg in chrome_args:
-        options.add_argument(arg)
-      web_driver = webdriver.Chrome('chromedriver.exe', options=options)  # v83.0.4103.39
-      return web_driver
-    except Exception as e:
-      print(f'Failed to initialize Chromedriver: {e}')
-      print('Instale/Atualize o seu Firefox/Chrome ou Geckodriver/Chromedriver.')
-      time.sleep(5)
-      quit()
+from stopots_bot.utils import cls, is_a_valid_id
 
 
 class BOT:
@@ -108,9 +85,9 @@ class BOT:
           break
     print('')
 
-  def join_game(self, room_id: Optional[int], avatar_id: Optional[int] = 0) -> None:
-    print(f'Entrando {"na sala" if room_id is not None else ""}...')
-    self.driver.get(f'{Constants.url}{room_id if room_id is not None else ""}')
+  def join_game(self, room_id: Optional[int] = None, avatar_id: Optional[int] = 0) -> None:
+    print('Entrando no jogo...')
+    self.driver.get(f'{Constants.url}{room_id if room_id else ""}')
     wait = WebDriverWait(self.driver, 10)
 
     # entre anônimo
@@ -118,6 +95,7 @@ class BOT:
     self.driver.find_element_by_xpath(Constants.enter_button).click()
     wait.until(ec.invisibility_of_element_located((By.XPATH, Constants.loading_animation)))
 
+    print(f'Entrando na sala {room_id if room_id else ""}...')
     # username
     user_input = Constants.username_input if room_id is None else Constants.username_input2
     if self.username is not None and 2 <= len(self.username) <= 15:
@@ -257,7 +235,7 @@ class BOT:
         cls()
         try:
           letter = self.find_letter()
-          if letter is not None:
+          if letter:
             button = self.driver.find_element_by_xpath(Constants.yellow_button).text.upper()
             if button == 'STOP!':
               self.auto_complete(letter)
@@ -306,14 +284,12 @@ class BOT:
             '1 - Sair da Sala.\n'
             '2 - Fechar o bot.')
       while True:
-        try:
-          end_option = int(input('> '))
-          if 1 <= end_option <= 2:
-            break
-          else:
-            print('Opção invalida.')
-        except Exception as e:
-          print('Digite um número.')
+        end_option = input('> ').strip()
+        if is_a_valid_id(end_option):
+          end_option = int(end_option)
+        else:
+          print('Opção invalida.')
+        break
 
       if end_option == 1:
         if self.driver.find_element_by_xpath(Constants.exit):
@@ -321,7 +297,7 @@ class BOT:
         print('Deseja entrar em outra sala? (s/n)')
         while True:
           rejoin_input = input('> ')
-          if rejoin_input.lower() in 'sn':
+          if rejoin_input.strip().lower() in 'sn':
             break
           else:
             print('Opção invalida.')

@@ -1,10 +1,18 @@
 import json
 import os
-from typing import Any
+from typing import Any, Union
 
 
 def cls() -> None:
   os.system('cls' if os.name == 'nt' else 'clear')
+
+
+def is_a_valid_id(id_: Union[str, int]) -> bool:
+  try:
+    if isinstance(int(id_), int):
+      return True
+  except (ValueError, TypeError):
+    return False
 
 
 def create_default_files() -> None:
