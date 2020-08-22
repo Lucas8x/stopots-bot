@@ -1,0 +1,8 @@
+title: StopotS Bot
+description: Automatizando sua jogabilidade de StopotS
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
