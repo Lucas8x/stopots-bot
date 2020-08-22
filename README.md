@@ -6,6 +6,9 @@
 Automatizando sua jogabilidade de StopotS
 
 ## Requerimentos
+* Python 3
+* selenium
+* webdriver-manager
 * Navegador
   * [Chrome](https://www.google.com/chrome/)
   * [Firefox](https://www.mozilla.org/firefox/new/)
@@ -18,6 +21,7 @@ python setup.py install
 </code></pre>
 
 ### Manual
+*Se você não tiver o python nem o git instalado.*
 1. [Download](https://github.com/Lucas8x/stopots-bot/archive/master.zip).
 2. Extrair.
 3. Abrir `run.bat`.
