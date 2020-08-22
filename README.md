@@ -19,6 +19,9 @@ Automatizando sua jogabilidade de StopotS
 cd stopots-bot
 python setup.py install
 </code></pre>
+*Através do PIP.*
+<pre><code>pip install stopots-bot
+</code></pre>
 
 ### Manual
 *Se você não tiver o python nem o git instalado.*
