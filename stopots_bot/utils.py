@@ -15,8 +15,12 @@ def is_a_valid_id(id_: Union[str, int]) -> bool:
     return False
 
 
+def is_a_valid_username(string: str) -> bool:
+  return True if 2 <= len(string) <= 15 else False
+
+
 def create_default_files() -> None:
-  if not (os.path.exists('config.json')):
+  if not os.path.exists('config.json'):
     data = {
       "username": "",
       "validator": "check",

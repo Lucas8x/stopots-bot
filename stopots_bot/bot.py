@@ -7,17 +7,16 @@ from typing import Dict, Optional
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
-
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
 
 from stopots_bot.constants import Constants, equivalents
-from stopots_bot.utils import cls, is_a_valid_id
+from stopots_bot.utils import cls, is_a_valid_id, is_a_valid_username
 
 
 class BOT:
-  def __init__(self, username: str = None, validator_type='check', auto_stop=False, auto_ready=True,
-               dictionary: Dict = None, driver: webdriver = None):
+  def __init__(self, username: str = None, validator_type: str = 'check', auto_stop: bool = False,
+               auto_ready: bool = True, dictionary: Dict = None, driver: webdriver = None):
     self.username = username
     self.validator_type = validator_type
     self.auto_stop = auto_stop
@@ -92,14 +91,16 @@ class BOT:
 
     # entre anônimo
     wait.until(ec.presence_of_element_located((By.XPATH, Constants.enter_button)))
+    # wait.until(ec.element_to_be_clickable((By.XPATH, Constants.enter_button)))
     self.driver.find_element_by_xpath(Constants.enter_button).click()
     wait.until(ec.invisibility_of_element_located((By.XPATH, Constants.loading_animation)))
+    # wait.until(ec.NoSuchElementException((By.XPATH, Constants.loading_animation)))
 
     print(f'Entrando na sala {room_id if room_id else ""}...')
     # username
-    user_input = Constants.username_input if room_id is None else Constants.username_input2
-    if self.username is not None and 2 <= len(self.username) <= 15:
-      wait.until(ec.presence_of_element_located((By.XPATH, user_input)))
+    user_input = Constants.username_input if not room_id else Constants.username_input2
+    wait.until(ec.presence_of_element_located((By.XPATH, user_input)))
+    if self.username is not None and is_a_valid_username(self.username):
       self.driver.find_element_by_xpath(user_input).clear()
       self.driver.find_element_by_xpath(user_input).send_keys(self.username)
     else:
@@ -128,7 +129,7 @@ class BOT:
     time.sleep(2)
 
     # Botão Jogar => entra no jogo
-    play_button = Constants.play_button if room_id is None else Constants.play_button2
+    play_button = Constants.play_button if not room_id else Constants.play_button2
     wait.until(ec.element_to_be_clickable((By.XPATH, play_button)))
     time.sleep(2)
     self.driver.find_element_by_xpath(play_button).click()

@@ -2,6 +2,8 @@
 python/
 .idea/
 config.json
+.wdm/
+reinstall.bat
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

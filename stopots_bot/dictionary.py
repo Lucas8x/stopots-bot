@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 import json
 import string
 from typing import Dict
@@ -10,10 +11,12 @@ alphabet = string.ascii_lowercase
 
 def get_dictionary() -> Dict:
   try:
-    with open('dictionary.json', encoding='utf-8') as dictionary_data:
+    dict_path = os.path.join(os.path.dirname(__file__), 'dictionary.json')
+    with open(dict_path, encoding='utf-8') as dictionary_data:
       return json.load(dictionary_data)
   except Exception as e:
-    print(f'Failed initialize dictionary, error: {e}')
+    print(f'Failed to initialize the dictionary, error: {e}')
+    return {"error": f"failed to initialize the dictionary, error: {e}"}
 
 
 class Dictionary:
@@ -21,16 +24,19 @@ class Dictionary:
     self.data = data
 
   def load(self) -> None:
-    self.data = get_dictionary()
+    data = get_dictionary()
+    if 'error' in data:
+      quit()
+    self.data = data
 
-  def save(self):
+  def save(self) -> None:
     with open('dictionary.json', 'w', encoding='utf-8') as dictionary_file:
       json.dump(self.data, dictionary_file, indent=2, separators=(',', ':'), ensure_ascii=False)
 
   def beautify_json(self) -> None:
-    for item in self.data:
-      for cat in self.data[item]:
-        self.data[item][cat] = str(self.data[item][cat.lower()])
+    for letter in self.data:
+      for category in self.data[letter]:
+        self.data[letter][category] = str(self.data[letter][category.lower()])
     self.save()
     with open('dictionary.json', encoding='utf-8') as x:
       data = x.read()
@@ -106,7 +112,7 @@ def name_answer_genre() -> str:
       return 'nome'
 
 
-def main() -> None:
+def dictionary_menu() -> None:
   dictionary = Dictionary()
   dictionary.load()
   while True:
@@ -171,4 +177,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-  main()
+  dictionary_menu()

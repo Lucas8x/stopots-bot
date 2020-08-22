@@ -1,0 +1,34 @@
+from setuptools import setup, find_packages
+from stopots_bot import __author__, __version__, __email__
+
+with open('requirements.txt') as r:
+  requirements = r.readlines()
+
+with open('README.md') as ld:
+  long_description = ld.read()
+
+setup(
+  name='stopots-bot',
+  version=__version__,
+  packages=find_packages(),
+  url='https://github.com/Lucas8x/stopots-bot',
+  license='MIT',
+  author=__author__,
+  author_email=__email__,
+  description='auto play stopots',
+  long_description=long_description,
+  long_description_content_type="text/markdown",
+  install_requires=requirements,
+  include_package_data=True,
+  package_data={'': ['dictionary.json']},
+  zip_safe=False,
+  entry_points={
+    'console_scripts': [
+      'stopots = stopots_bot.start:start'
+    ]
+  },
+  classifiers=[
+    'Programming Language :: Python :: 3',
+    'Environment :: Console'
+  ],
+)

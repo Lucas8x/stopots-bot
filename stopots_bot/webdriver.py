@@ -1,28 +1,40 @@
-import time
+import os
 
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
+
+from stopots_bot.utils import cls
+
+os.environ['WDM_LOCAL'] = '1'
+# os.environ['WDM_LOG_LEVEL'] = '0'
 
 
-def init_webdriver():
+def init_chromedriver() -> webdriver:
+  options = webdriver.ChromeOptions()
+  options.add_experimental_option('excludeSwitches', ['enable-logging'])
+  chrome_args = ['--log-level=3', '--silent', '--disable-extensions', '--disable-popup-blocking',
+                 '--disable-blink-features', '--disable-blink-features=AutomationControlled']
+  for arg in chrome_args:
+    options.add_argument(arg)
+  chromedriver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+  cls()
+  return chromedriver
+
+
+def init_geckodriver() -> webdriver:
+  firefox_capabilities = DesiredCapabilities.FIREFOX
+  firefox_capabilities['marionette'] = True
+  geckodriver = webdriver.Firefox(executable_path=GeckoDriverManager().install(),
+                                  capabilities=firefox_capabilities)
+  cls()
+  return geckodriver
+
+
+def init_webdriver(name: str = 'chrome') -> webdriver:
   try:
-    firefox_capabilities = DesiredCapabilities.FIREFOX
-    firefox_capabilities['marionette'] = True
-    geckodriver = webdriver.Firefox(executable_path='geckodriver.exe', capabilities=firefox_capabilities)  # v23
-    return geckodriver
+    return init_chromedriver() if name == 'chrome' else init_geckodriver()
   except Exception as e:
-    print(f'Falha ao iniciliazar o geckodriver: {e}Tentando com o chromedriver...')
-    try:
-      options = webdriver.ChromeOptions()
-      options.add_experimental_option('excludeSwitches', ['enable-logging'])
-      chrome_args = ['--log-level=3', '--silent', '--disable-extensions', '--disable-popup-blocking',
-                     '--disable-blink-features', '--disable-blink-features=AutomationControlled']
-      for arg in chrome_args:
-        options.add_argument(arg)
-      chromedriver = webdriver.Chrome('chromedriver.exe', options=options)  # v83.0.4103.39
-      return chromedriver
-    except Exception as e:
-      print(f'Falha ao inicializar o chromedriver: {e}')
-      print('Instale/Atualize o seu Firefox/Chrome e/ou Geckodriver/Chromedriver na pasta.')
-      time.sleep(5)
-      quit()
+    print(f'Failed to initialize the webdriver\nError: {e}')
+    quit()
