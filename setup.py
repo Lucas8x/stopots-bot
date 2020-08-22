@@ -4,7 +4,7 @@ from stopots_bot import __author__, __version__, __email__
 with open('requirements.txt') as r:
   requirements = r.readlines()
 
-with open('README.md') as ld:
+with open('README.md', encoding='utf-8') as ld:
   long_description = ld.read()
 
 setup(
