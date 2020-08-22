@@ -10,16 +10,37 @@ Automatizando sua jogabilidade de StopotS
   * [Chrome](https://www.google.com/chrome/)
   * [Firefox](https://www.mozilla.org/firefox/new/)
   
-## Uso
-### Windows
+## Instalação
+*Se você tiver o python e o git instalado.*
+<pre><code>git clone https://github.com/Lucas8x/stopots-bot.git
+cd stopots-bot
+python setup.py install
+</code></pre>
+
+### Manual
 1. [Download](https://github.com/Lucas8x/stopots-bot/archive/master.zip).
 2. Extrair.
 3. Abrir `run.bat`.
-4. ["Jogar"](#menu)
+4. ["Jogar"](#menu).
 
-* Caso o navegador abra e feche :
-  * Atualizar o navegador instalado chrome/firefox e
-  * Atualizar [chromedriver](https://chromedriver.chromium.org/downloads)/[geckodriver](https://github.com/mozilla/geckodriver/releases).
+## Uso
+**Todas as opções são opcionais.**
+<pre><code>Opções:
+  -h, --help            mostra esta mensagem de ajuda
+  --user USERNAME, -u USERNAME
+                        seu username
+  --avatar AVATAR, -a AVATAR
+                        número do avatar
+  --room ROOM_ID, -r ROOM_ID
+                        número da sala
+  --auto-stop           habilita stop automático
+  --auto-ready          habilita ready automático
+  --validator {quick,deny,accept,check,null}
+                        tipo do avaliador
+  --driver {chrome,firefox}
+                        seu navegador
+  --dict                abre o menu do dicionário
+</code></pre>
 
 ## Menu
 1. Entrada Rápida - Ira entrar com o nome definido se não com um nome gerado pelo jogo ex:`Anonimo123`.
@@ -28,7 +49,7 @@ Automatizando sua jogabilidade de StopotS
 4. [Configurações](#configurações).
 
 ## Configurações
-1. Abrir `run.bat`
+1. Abrir `run.bat`.
 2. Digite "4" para abrir as opções.
 
 * Username/nick deve possuir entre 2 e 15 caracteres.
@@ -45,4 +66,8 @@ Automatizando sua jogabilidade de StopotS
    a
   </details>
 
-Foi utilizado [StopAnswersAPI](https://github.com/nosliper/StopAnswersAPI) por [nosliper](https://github.com/nosliper) para formar um dicionário inicial
+## Problemas
+* Caso o navegador abra e feche :
+  * Atualizar o navegador instalado chrome/firefox
+
+Foi utilizado [StopAnswersAPI](https://github.com/nosliper/StopAnswersAPI) por [nosliper](https://github.com/nosliper) para formar um dicionário inicial.
