@@ -31,7 +31,10 @@ python setup.py install
 4. ["Jogar"](#menu).
 
 ## Uso
-**Todas as opções são opcionais.**
+Entrando com um nome:
+<pre><code>stopots -u lucas</code></pre>
+
+**NOTA:** Todas as opções são opcionais.
 <pre><code>Opções:
   -h, --help            mostra esta mensagem de ajuda
   --user USERNAME, -u USERNAME
