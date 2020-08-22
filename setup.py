@@ -22,6 +22,7 @@ setup(
   include_package_data=True,
   package_data={'': ['dictionary.json']},
   zip_safe=False,
+  python_requires='>=3',
   entry_points={
     'console_scripts': [
       'stopots = stopots_bot.start:start'

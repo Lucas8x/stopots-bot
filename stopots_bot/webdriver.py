@@ -7,9 +7,6 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 from stopots_bot.utils import cls
 
-os.environ['WDM_LOCAL'] = '1'
-# os.environ['WDM_LOG_LEVEL'] = '0'
-
 
 def init_chromedriver() -> webdriver:
   options = webdriver.ChromeOptions()
