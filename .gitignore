@@ -4,6 +4,7 @@ python/
 config.json
 .wdm/
 reinstall.bat
+reupload.bat
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
