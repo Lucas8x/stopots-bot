@@ -30,6 +30,9 @@ setup(
   },
   classifiers=[
     'Programming Language :: Python :: 3',
-    'Environment :: Console'
+    'Environment :: Console',
+    'Intended Audience :: End Users/Desktop',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: Portuguese (Brazilian)'
   ],
 )
