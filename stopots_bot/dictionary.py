@@ -10,6 +10,10 @@ alphabet = string.ascii_lowercase
 
 
 def get_dictionary() -> Dict:
+  """
+  Carrega o json do dicionário.
+  :return: dicionário
+  """
   try:
     dict_path = os.path.join(os.path.dirname(__file__), 'dictionary.json')
     with open(dict_path, encoding='utf-8') as dictionary_data:
@@ -20,20 +24,24 @@ def get_dictionary() -> Dict:
 
 
 class Dictionary:
+  """Classe do dicionário."""
   def __init__(self, data: Dict = None):
     self.data = data
 
   def load(self) -> None:
+    """Carrega o dicionario no atributo data da classe."""
     data = get_dictionary()
     if 'error' in data:
       quit()
     self.data = data
 
   def save(self) -> None:
+    """Salva o atributo data para o arqivo json."""
     with open('dictionary.json', 'w', encoding='utf-8') as dictionary_file:
       json.dump(self.data, dictionary_file, indent=2, separators=(',', ':'), ensure_ascii=False)
 
   def beautify_json(self) -> None:
+    """Transforma os array em linhas."""
     for letter in self.data:
       for category in self.data[letter]:
         self.data[letter][category] = str(self.data[letter][category.lower()])
@@ -45,9 +53,19 @@ class Dictionary:
       y.write(data2)
 
   def category_exists(self, category: str) -> bool:
+    """
+    Verifica se a categoria existe em todas as letras.
+    :param category: categoria
+    :return: True/False
+    """
     return True if all(category in self.data[letter] for letter in self.data) else False
 
   def add_answer(self, answer: str, category: str) -> None:
+    """
+    Adiciona uma resposta a uma categoria
+    :param answer: resposta
+    :param category: categoria
+    """
     letter = answer[0]
     if answer not in self.data[letter][category]:
       self.data[letter][category].append(answer)
@@ -59,6 +77,11 @@ class Dictionary:
     self.beautify_json()
 
   def delete_answer(self, answer: str, category: str = None) -> None:
+    """
+    Deleta uma resposta de uma categoria.
+    :param answer: resposta
+    :param category: categoria
+    """
     letter = answer[0]
     if category:
       if answer in self.data[letter][category]:
@@ -75,6 +98,10 @@ class Dictionary:
     self.beautify_json()
 
   def add_category(self, category: str) -> None:
+    """
+    Adiciona uma categoria em todas as letras.
+    :param category: categoria
+    """
     for letter in self.data:
       if not self.data[letter][category]:
         self.data[letter][category] = []
@@ -83,6 +110,10 @@ class Dictionary:
       self.beautify_json()
 
   def delete_category(self, category: str) -> None:
+    """
+    Deleta uma categoria e suas respostas.
+    :param category: categoria
+    """
     for letter in self.data:
       if category in self.data[letter]:
         self.data[letter].pop(category)
@@ -91,6 +122,10 @@ class Dictionary:
     self.beautify_json()
 
   def missing_answers(self, letter: str) -> None:
+    """
+    Mostra as categorias que estão sem respostas.
+    :param letter: letra
+    """
     for category in self.data[letter]:
       if len(self.data[letter][category]) == 0:
         print(f'Faltando: {category}')
@@ -98,6 +133,10 @@ class Dictionary:
 
 
 def name_answer_genre() -> str:
+  """
+  Menu para definir a categoria de um nome, adicionando mais possibilidades ao bot.
+  :return: categoria
+  """
   while True:
     answer_genre = int(input('Esse nome é feminino ou masculino?\n'
                              '1 - Feminino\n'
@@ -113,6 +152,7 @@ def name_answer_genre() -> str:
 
 
 def dictionary_menu() -> None:
+  """Abre o menu do dicionário"""
   dictionary = Dictionary()
   dictionary.load()
   while True:

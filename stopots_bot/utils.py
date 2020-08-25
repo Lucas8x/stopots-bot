@@ -4,10 +4,16 @@ from typing import Any, Union
 
 
 def cls() -> None:
+  """limpa a tela."""
   os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def is_a_valid_id(id_: Union[str, int]) -> bool:
+  """
+  Verifica se o número ou a string recebida é um número válido.
+  :param id_: número inteiro ou string
+  :return: bool
+  """
   try:
     if isinstance(int(id_), int):
       return True
@@ -16,10 +22,16 @@ def is_a_valid_id(id_: Union[str, int]) -> bool:
 
 
 def is_a_valid_username(string: str) -> bool:
+  """
+  Verifica se a string recebida está na margem válida para um nome.
+  :param string: nome
+  :return: bool
+  """
   return True if 2 <= len(string) <= 15 else False
 
 
 def create_default_files() -> None:
+  """Criar o config.json padrão"""
   if not os.path.exists('config.json'):
     data = {
       "username": "",
@@ -33,6 +45,11 @@ def create_default_files() -> None:
 
 
 def get_config_setting(setting: str) -> Any:
+  """
+  Retorna o valor da chave recebida.
+  :param setting: chave/nome
+  :return: Any
+  """
   try:
     with open('config.json') as config_file:
       data = json.load(config_file)
@@ -42,6 +59,7 @@ def get_config_setting(setting: str) -> Any:
 
 
 def open_config_menu() -> None:
+  """Abre um menu de configurações para o config.json"""
   with open('config.json', 'r+') as config_file:
     data = json.load(config_file)
     while True:

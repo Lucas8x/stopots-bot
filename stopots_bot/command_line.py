@@ -1,11 +1,15 @@
 import argparse
-from typing import Any
+from typing import Optional
 
 from stopots_bot.dictionary import dictionary_menu
 from stopots_bot.utils import is_a_valid_username, is_a_valid_id
 
 
-def command_line() -> Any:
+def command_line() -> Optional[argparse.Namespace]:
+  """
+  Define a interface da linha de comando.
+  :return: argumentos enviados
+  """
   parser = argparse.ArgumentParser(prog='Stopots Bot', description='auto play stopots')
 
   # user args

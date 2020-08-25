@@ -15,6 +15,7 @@ from stopots_bot.utils import cls, is_a_valid_id, is_a_valid_username
 
 
 class BOT:
+  """Classe do BOT"""
   def __init__(self, username: str = None, validator_type: str = 'check', auto_stop: bool = False,
                auto_ready: bool = True, dictionary: Dict = None, driver: webdriver = None):
     self.username = username
@@ -24,7 +25,66 @@ class BOT:
     self.dictionary = dictionary
     self.driver = driver
 
+  def join_game(self, room_id: Optional[int] = None, avatar_id: Optional[int] = 0) -> None:
+    """
+    Executa os passos para entrar no jogo.
+    :param room_id: número da sala.
+    :param avatar_id: número do avatar.
+    """
+    print('Entrando no jogo...')
+    self.driver.get(f'{Constants.url}{room_id if room_id else ""}')
+    wait = WebDriverWait(self.driver, 10)
+
+    # botão entre anônimo
+    wait.until(ec.presence_of_element_located((By.XPATH, Constants.enter_button)))
+    # wait.until(ec.element_to_be_clickable((By.XPATH, Constants.enter_button)))
+    self.driver.find_element_by_xpath(Constants.enter_button).click()
+    # tela de carregamento
+    wait.until(ec.invisibility_of_element_located((By.XPATH, Constants.loading_animation)))
+    # wait.until(ec.NoSuchElementException((By.XPATH, Constants.loading_animation)))
+
+    print(f'Entrando na sala {room_id if room_id else ""}...')
+    # input do username
+    user_input = Constants.username_input if not room_id else Constants.username_input2
+    wait.until(ec.presence_of_element_located((By.XPATH, user_input)))
+    if self.username is not None and is_a_valid_username(self.username):
+      self.driver.find_element_by_xpath(user_input).clear()
+      self.driver.find_element_by_xpath(user_input).send_keys(self.username)
+    else:
+      self.username = self.driver.find_element_by_xpath(user_input).get_attribute('value')
+
+    # Avatar
+    if 1 <= avatar_id <= 36:
+      time.sleep(2)
+      # Botão edit => abre menu avatar
+      wait.until(ec.element_to_be_clickable((By.XPATH, Constants.avatar_edit_button)))
+      self.driver.find_element_by_xpath(Constants.avatar_edit_button).click()
+
+      # Icone do Avatar
+      if avatar_id > 14:
+        self.driver.execute_script('arguments[0].scrollIntoView(true);',
+                                   self.driver.find_element_by_xpath(Constants.avatar(avatar_id)))
+      wait.until(ec.element_to_be_clickable((By.XPATH, Constants.avatar(avatar_id))))
+      self.driver.find_element_by_xpath(Constants.avatar(avatar_id)).click()
+
+      # Botão de confirmar escolha
+      wait.until(ec.element_to_be_clickable((By.XPATH, Constants.avatar_confirm_button)))
+      self.driver.find_element_by_xpath(Constants.avatar_confirm_button).click()
+
+      # Esperar a animação de carregamento
+      wait.until(ec.invisibility_of_element_located((By.XPATH, Constants.fade_animation)))
+    time.sleep(2)
+
+    # Botão de jogar
+    play_button = Constants.play_button if not room_id else Constants.play_button2
+    wait.until(ec.element_to_be_clickable((By.XPATH, play_button)))
+    time.sleep(2)
+    self.driver.find_element_by_xpath(play_button).click()
+
+    print(f'Logado como: {self.username}')
+
   def show_game_info(self) -> None:
+    """Mostrar o round atual e o total"""
     try:
       rounds = self.driver.find_element_by_xpath(Constants.rounds).text
       total = self.driver.find_element_by_xpath(Constants.rounds_total).text
@@ -51,6 +111,7 @@ class BOT:
         break
 
   def show_round_end_rank(self) -> None:
+    """Mostra a colocação dos jogadores no final da partida."""
     h3_status = self.driver.find_element_by_xpath(Constants.ScorePanel.h3).text.upper()
     if h3_status == 'RANKING DA RODADA':
       print('- Ranking da Rodada -')
@@ -84,59 +145,11 @@ class BOT:
           break
     print('')
 
-  def join_game(self, room_id: Optional[int] = None, avatar_id: Optional[int] = 0) -> None:
-    print('Entrando no jogo...')
-    self.driver.get(f'{Constants.url}{room_id if room_id else ""}')
-    wait = WebDriverWait(self.driver, 10)
-
-    # entre anônimo
-    wait.until(ec.presence_of_element_located((By.XPATH, Constants.enter_button)))
-    # wait.until(ec.element_to_be_clickable((By.XPATH, Constants.enter_button)))
-    self.driver.find_element_by_xpath(Constants.enter_button).click()
-    wait.until(ec.invisibility_of_element_located((By.XPATH, Constants.loading_animation)))
-    # wait.until(ec.NoSuchElementException((By.XPATH, Constants.loading_animation)))
-
-    print(f'Entrando na sala {room_id if room_id else ""}...')
-    # username
-    user_input = Constants.username_input if not room_id else Constants.username_input2
-    wait.until(ec.presence_of_element_located((By.XPATH, user_input)))
-    if self.username is not None and is_a_valid_username(self.username):
-      self.driver.find_element_by_xpath(user_input).clear()
-      self.driver.find_element_by_xpath(user_input).send_keys(self.username)
-    else:
-      self.username = self.driver.find_element_by_xpath(user_input).get_attribute('value')
-
-    # Avatar
-    if 1 <= avatar_id <= 36:
-      time.sleep(2)
-      # Botão edit => abre menu avatar
-      wait.until(ec.element_to_be_clickable((By.XPATH, Constants.avatar_edit_button)))
-      self.driver.find_element_by_xpath(Constants.avatar_edit_button).click()
-
-      # Icone do Avatar
-      if avatar_id > 14:
-        self.driver.execute_script('arguments[0].scrollIntoView(true);',
-                                   self.driver.find_element_by_xpath(Constants.avatar(avatar_id)))
-      wait.until(ec.element_to_be_clickable((By.XPATH, Constants.avatar(avatar_id))))
-      self.driver.find_element_by_xpath(Constants.avatar(avatar_id)).click()
-
-      # Botão confirmar escolha
-      wait.until(ec.element_to_be_clickable((By.XPATH, Constants.avatar_confirm_button)))
-      self.driver.find_element_by_xpath(Constants.avatar_confirm_button).click()
-
-      # Esperar a animação
-      wait.until(ec.invisibility_of_element_located((By.XPATH, Constants.fade_animation)))
-    time.sleep(2)
-
-    # Botão Jogar => entra no jogo
-    play_button = Constants.play_button if not room_id else Constants.play_button2
-    wait.until(ec.element_to_be_clickable((By.XPATH, play_button)))
-    time.sleep(2)
-    self.driver.find_element_by_xpath(play_button).click()
-
-    print(f'Logado como: {self.username}')
-
   def find_letter(self) -> Optional[str]:
+    """
+    Procura a letra atual da partida.
+    :return: letra se encontrada se não None
+    """
     try:
       letter = self.driver.find_element_by_xpath(Constants.letter).text.lower()
       print(f'Letra Atual: {letter if letter else "?"}')
@@ -148,6 +161,12 @@ class BOT:
       return None
 
   def get_answer(self, letter: str, category: str) -> Optional[str]:
+    """
+    Seleciona uma resposta aleatorio do dicionário.
+    :param letter: letra inicial.
+    :param category: categoria.
+    :return: resposta se exister no dicionário se não None
+    """
     try:
       return random.choice(self.dictionary[letter][category]).lower()
     except IndexError:
@@ -157,6 +176,10 @@ class BOT:
       return None
 
   def auto_complete(self, letter: str) -> None:
+    """
+    Completa os campos com suas respectivas categorias.
+    :param letter: letra inicial.
+    """
     print('Auto Completando...')
     for x in range(1, 13):
       try:
@@ -177,6 +200,10 @@ class BOT:
         print(f'[ERROR]Auto Complete: {e}', e.__class__.__name__)
 
   def validate(self, letter: str) -> None:
+    """
+    Avalia as respostas conforme o tipo do avaliador.
+    :param letter: letra inicial.
+    """
     if self.driver.find_element_by_xpath(Constants.yellow_button_clickable):
       if self.validator_type == 'quick':
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
@@ -202,7 +229,7 @@ class BOT:
         for x in range(1, 15):
           try:
             if self.driver.find_element_by_xpath(Constants.AnswerPanel.label_status(x)).text.upper() == 'VALIDADO!':
-              category_answer = self.driver.find_element_by_xpath(Constants.AnswerPanel.label_category(x)).text.lower()
+              category_answer = self.driver.find_element_by_xpath(Constants.AnswerPanel.label_answer(x)).text.lower()
 
               if category in equivalents:
                 equivalent_answers = [self.dictionary[letter][category] if category != 'nome' else []] + \
@@ -211,7 +238,8 @@ class BOT:
                   self.driver.find_element_by_xpath(Constants.AnswerPanel.label_clickable(x)).click()
               elif category_answer not in self.dictionary[letter][category]:
                 self.driver.find_element_by_xpath(Constants.AnswerPanel.label_clickable(x)).click()
-
+          except NoSuchElementException:
+            continue
           except Exception as e:
             continue
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
@@ -220,6 +248,10 @@ class BOT:
         pass
 
   def do_stop(self, letter: str) -> None:
+    """
+    Verifica se respostas começam com a letra certa e para então pressionar o botao de STOP!
+    :param letter: letra inicial.
+    """
     if self.driver.find_element_by_xpath(Constants.yellow_button_clickable):
       for x in range(1, 13):
         input_field = self.driver.find_element_by_xpath(Constants.FormPanel.field_input(x))\
@@ -231,6 +263,7 @@ class BOT:
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
 
   def loop(self) -> None:
+    """LOOP do BOT"""
     try:
       while True:
         cls()
@@ -250,9 +283,10 @@ class BOT:
           print(f'[ERROR]BLOCK1: {e}', e.__class__.__name__)
 
         try:
-          if self.auto_ready and self.driver.find_element_by_xpath(Constants.ready_button).text.upper() == 'ESTOU PRONTO':
+          if self.auto_ready and self.driver.find_element_by_xpath(
+                  Constants.ready_button).text.upper() == 'ESTOU PRONTO':
             self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
-        except NoSuchElementException as e:
+        except NoSuchElementException:
           pass
         except Exception as e:
           print(f'[ERROR]BLOCK2: {e}', e.__class__.__name__)
