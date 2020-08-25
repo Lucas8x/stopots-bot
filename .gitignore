@@ -1,8 +1,9 @@
 # Project
 python/
 .idea/
-config.json
 .wdm/
+.vscode/
+config.json
 reinstall.bat
 reupload.bat
 
