@@ -9,6 +9,7 @@ Automatizando sua jogabilidade de StopotS
 * Python 3
 * selenium
 * webdriver-manager
+* tabulate
 * Navegador
   * [Chrome](https://www.google.com/chrome/)
   * [Firefox](https://www.mozilla.org/firefox/new/)
