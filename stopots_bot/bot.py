@@ -2,6 +2,7 @@ import itertools
 import random
 import re
 import time
+from tabulate import tabulate
 from typing import Dict, Optional
 
 from selenium import webdriver
@@ -88,61 +89,59 @@ class BOT:
     try:
       rounds = self.driver.find_element_by_xpath(Constants.rounds).text
       total = self.driver.find_element_by_xpath(Constants.rounds_total).text
-      print(f'- Rodadas: {rounds}{total}')
+      print(f'Rodadas: {rounds}{total}')
     except NoSuchElementException:
       pass
     except Exception as e:
       print(f'[ERROR]Game Info: {e}')
 
-    print('- Jogadores -')
+    players = []
     for x in range(1, 15):
       try:
         nick = self.driver.find_element_by_xpath(Constants.PlayerList.nick(x)).text
         points = self.driver.find_element_by_xpath(Constants.PlayerList.points(x)).text
         if nick:
-          if nick != self.username:
-            print(f'{nick} - {points}')
-          else:
-            print(f'{nick} - {points} < você')
+          players.append([nick, points])
       except NoSuchElementException:
         break
       except Exception as e:
         print(f'[ERROR]Player List: {e}')
         break
+    print('- Jogadores -\n', tabulate(players, ('Nome', 'Pontos')))
 
   def show_round_end_rank(self) -> None:
     """Mostra a colocação dos jogadores no final da partida."""
     h3_status = self.driver.find_element_by_xpath(Constants.ScorePanel.h3).text.upper()
     if h3_status == 'RANKING DA RODADA':
-      print('- Ranking da Rodada -')
+      ranks = []
       for x in range(1, 15):
         try:
           position = self.driver.find_element_by_xpath(Constants.RankPanel.position(x)).text
           nick = self.driver.find_element_by_xpath(Constants.RankPanel.nick(x)).text
           points = self.driver.find_element_by_xpath(Constants.RankPanel.points(x)).text
           if nick:
-            if nick != self.username:
-              print(f'{position}º - {nick} - {points}')
-            else:
-              print(f'{position}º - {nick} - {points} < você')
+            ranks.append([position, nick, points])
         except NoSuchElementException:
           break
         except Exception as e:
           print(f'[ERROR]Round End: {e}')
+      print('- Ranking da Rodada -\n', tabulate(ranks, ('Pos', 'Jogador', 'Pontos')))
 
-    elif h3_status == 'FIM DE JOGO!' or self.driver.find_element_by_xpath(
-            Constants.ScorePanel.h4).text.upper() == 'RANKING FINAL':
-      print('- Fim de Jogo -')
+    elif h3_status == 'FIM DE JOGO!' or \
+            self.driver.find_element_by_xpath(Constants.ScorePanel.h4).text.upper() == 'RANKING FINAL':
+      ranks = []
       for x in range(1, 4):
         try:
-          nick = self.driver.find_element_by_xpath(Constants.ScorePanel.nick(x)).text
-          points = self.driver.find_element_by_xpath(Constants.ScorePanel.points(x)).text
-          print(f'{x}º - {nick} - {points}')
+          ranks.append([
+            self.driver.find_element_by_xpath(Constants.ScorePanel.nick(x)).text,
+            self.driver.find_element_by_xpath(Constants.ScorePanel.points(x)).text
+          ])
         except NoSuchElementException:
           break
         except Exception as e:
           print(f'[ERROR]Game End: {e}')
           break
+      print('- Fim de Jogo -\n', tabulate(ranks, ('Nome', 'Pontos')))
     print('')
 
   def find_letter(self) -> Optional[str]:
@@ -241,7 +240,7 @@ class BOT:
           except NoSuchElementException:
             continue
           except Exception as e:
-            continue
+            print(f'[ERROR]Validate: {e}', e.__class__.__name__)
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
 
       elif self.validator_type == 'greedy':
