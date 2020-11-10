@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
 
-from stopots_bot.constants import Constants, equivalents
+from stopots_bot.constants import Constants, EQUIVALENTS
 from stopots_bot.utils import cls, is_a_valid_id, is_a_valid_username
 
 
@@ -34,17 +34,19 @@ class BOT:
     """
     print('Entrando no jogo...')
     self.driver.get(f'{Constants.url}{room_id if room_id else ""}')
-    wait = WebDriverWait(self.driver, 10)
+    wait = WebDriverWait(self.driver, 30)
 
     # botão entre anônimo
     wait.until(ec.presence_of_element_located((By.XPATH, Constants.enter_button)))
-    # wait.until(ec.element_to_be_clickable((By.XPATH, Constants.enter_button)))
+    wait.until(ec.element_to_be_clickable((By.XPATH, Constants.enter_button)))
     self.driver.find_element_by_xpath(Constants.enter_button).click()
+
     # tela de carregamento
     wait.until(ec.invisibility_of_element_located((By.XPATH, Constants.loading_animation)))
     # wait.until(ec.NoSuchElementException((By.XPATH, Constants.loading_animation)))
 
     print(f'Entrando na sala {room_id if room_id else ""}...')
+
     # input do username
     user_input = Constants.username_input if not room_id else Constants.username_input2
     wait.until(ec.presence_of_element_located((By.XPATH, user_input)))
@@ -72,14 +74,13 @@ class BOT:
       wait.until(ec.element_to_be_clickable((By.XPATH, Constants.avatar_confirm_button)))
       self.driver.find_element_by_xpath(Constants.avatar_confirm_button).click()
 
-      # Esperar a animação de carregamento
+      # Esperar a animação de fade
       wait.until(ec.invisibility_of_element_located((By.XPATH, Constants.fade_animation)))
     time.sleep(2)
 
     # Botão de jogar
     play_button = Constants.play_button if not room_id else Constants.play_button2
     wait.until(ec.element_to_be_clickable((By.XPATH, play_button)))
-    time.sleep(2)
     self.driver.find_element_by_xpath(play_button).click()
 
     print(f'Logado como: {self.username}')
@@ -112,8 +113,8 @@ class BOT:
   def show_round_end_rank(self) -> None:
     """Mostra a colocação dos jogadores no final da partida."""
     h3_status = self.driver.find_element_by_xpath(Constants.ScorePanel.h3).text.upper()
+    ranks = []
     if h3_status == 'RANKING DA RODADA':
-      ranks = []
       for x in range(1, 15):
         try:
           position = self.driver.find_element_by_xpath(Constants.RankPanel.position(x)).text
@@ -129,7 +130,6 @@ class BOT:
 
     elif h3_status == 'FIM DE JOGO!' or \
             self.driver.find_element_by_xpath(Constants.ScorePanel.h4).text.upper() == 'RANKING FINAL':
-      ranks = []
       for x in range(1, 4):
         try:
           ranks.append([
@@ -186,9 +186,9 @@ class BOT:
         if not field_input:
           field_category = self.driver.find_element_by_xpath(Constants.FormPanel.field_category(x)).text.lower()
 
-          if field_category in equivalents:
-            field_category = random.choice([field_category, *equivalents[field_category]] if field_category != 'nome'
-                                           else [*equivalents[field_category]])
+          if field_category in EQUIVALENTS:
+            field_category = random.choice([field_category, *EQUIVALENTS[field_category]] if field_category != 'nome'
+                                           else [*EQUIVALENTS[field_category]])
 
           answer = self.get_answer(letter, field_category)
           if answer:
@@ -229,10 +229,9 @@ class BOT:
           try:
             if self.driver.find_element_by_xpath(Constants.AnswerPanel.label_status(x)).text.upper() == 'VALIDADO!':
               category_answer = self.driver.find_element_by_xpath(Constants.AnswerPanel.label_answer(x)).text.lower()
-
-              if category in equivalents:
+              if category in EQUIVALENTS:
                 equivalent_answers = [self.dictionary[letter][category] if category != 'nome' else []] + \
-                                     [self.dictionary[letter][cat] for cat in equivalents[category]]
+                                     [self.dictionary[letter][cat] for cat in EQUIVALENTS[category]]
                 if category_answer not in list(itertools.chain(*equivalent_answers)):
                   self.driver.find_element_by_xpath(Constants.AnswerPanel.label_clickable(x)).click()
               elif category_answer not in self.dictionary[letter][category]:

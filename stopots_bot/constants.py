@@ -1,5 +1,29 @@
 from typing import Union
 
+EQUIVALENTS = {
+  'msé': ['adjetivo'],
+  'animal': ['ave', 'inseto', 'mamífero'],
+  'presente': ['objeto', 'instrumento musical', 'vestuário', 'brinquedo'],
+  'objeto': ['presente', 'instrumento musical', 'vestuário', 'brinquedo'],
+  'flv': ['fruta'],
+  'cep': ['capital', 'cidade', 'país'],
+  'fantasia': ['animal', 'ave', 'inseto', 'mamífero'],
+  'nome': ['nome feminino', 'nome masculino', 'ator', 'celebridade', 'vilão', 'sobrenome'],
+  'comida': ['comida saudável', 'sobremesa', 'flv', 'fruta', 'doce'],
+}
+
+CATEGORIES = ['ADJETIVO', 'ANIMAL', 'APP OU SITE', 'ATOR', 'AVE', 'BANDA', 'BRINQUEDO',
+              'CANTOR', 'CAPITAL', 'CARRO', 'CELEBRIDADE', 'CEP', 'CIDADE', 'COMIDA SAUDÁVEL',
+              'COR', 'DESENHO ANIMADO', 'DOCE', 'DOENÇA', 'ELETRO ELETRÔNICO', 'ESPORTE',
+              'ESPORTISTA', 'FANTASIA', 'FILME', 'FLOR', 'FLV', 'FRUTA', 'GAME', 'GENTÍLICO',
+              'IDIOMA', 'INGREDIENTE', 'INSETO', 'INSTRUMENTO MUSICAL', 'JLR', 'LÍQUIDO',
+              'MAMÍFERO', 'MARCA', 'MEIO DE TRANSPORTE', 'MSÉ', 'MÚSICA', 'NOME FEMININO',
+              'NOME MASCULINO', 'OBJETO', 'PALAVRA EM ESPANHOL', 'PALAVRA EM INGLÊS', 'PAÍS',
+              'PCH', 'PDA', 'PERSONAGEM FICTÍCIO', 'PRESENTE', 'PROFISSÃO', 'PROGRAMA DE TV',
+              'RAÇA DE CACHORRO', 'REMÉDIO', 'SABOR DE PIZZA', 'SABOR DE SORVETE', 'SOBREMESA',
+              'SOBRENOME', 'SUPER-HERÓI', 'SÉRIE', 'TIME ESPORTIVO', 'VERBO', 'VESTUÁRIO', 'VILÃO',
+              'FLV']
+
 
 class Constants:
   """Classe das constantes do jogo."""
@@ -35,7 +59,7 @@ class Constants:
     """
     Retorna o xpath do icone de avatar.
     :param avatar_id: número inteiro ou string de um número inteiro.
-    :return: string - exemplo: //*[@class="avatar avt1]'
+    :return: xpath - exemplo: //*[@class="avatar avt1]'
     """
     return f'//*[@class="avatar avt{avatar_id}"]'
 
@@ -98,7 +122,7 @@ class Constants:
       """
       Retorna o xpath do item clicável.
       :param x: número inteiro ou string de um número inteiro.
-      :return: xpath - exemplo: {cls.label}[{x}]/div
+      :return: xpath - exemplo: //*[@class="ct validation up-enter-done"]//*[@class="scrollElements"]/label[1]/div
       """
       return f'{cls.label}[{x}]/div'
 
@@ -178,28 +202,3 @@ class Constants:
       :return: xpath - exemplo: //*[@class="ct ranking" or @class="ct ranking up-enter-done"]//*[@class="scrollElements"]//li[1]//*[@class="points"]
       """
       return f'{cls.li}[{x}]//*[@class="points"]'
-
-
-equivalents = {
-  'msé': ['adjetivo'],
-  'animal': ['ave', 'inseto', 'mamífero'],
-  'presente': ['objeto', 'instrumento musical', 'vestuário', 'brinquedo'],
-  'objeto': ['presente', 'instrumento musical', 'vestuário', 'brinquedo'],
-  'flv': ['fruta'],
-  'cep': ['capital', 'cidade', 'país'],
-  'fantasia': ['animal', 'ave', 'inseto', 'mamífero'],
-  'nome': ['nome feminino', 'nome masculino', 'ator', 'celebridade', 'vilão', 'sobrenome'],
-  'comida': ['comida saudável', 'sobremesa', 'flv', 'fruta', 'doce'],
-}
-
-categories = ['ADJETIVO', 'ANIMAL', 'APP OU SITE', 'ATOR', 'AVE', 'BANDA', 'BRINQUEDO',
-              'CANTOR', 'CAPITAL', 'CARRO', 'CELEBRIDADE', 'CEP', 'CIDADE', 'COMIDA SAUDÁVEL',
-              'COR', 'DESENHO ANIMADO', 'DOCE', 'DOENÇA', 'ELETRO ELETRÔNICO', 'ESPORTE',
-              'ESPORTISTA', 'FANTASIA', 'FILME', 'FLOR', 'FLV', 'FRUTA', 'GAME', 'GENTÍLICO',
-              'IDIOMA', 'INGREDIENTE', 'INSETO', 'INSTRUMENTO MUSICAL', 'JLR', 'LÍQUIDO',
-              'MAMÍFERO', 'MARCA', 'MEIO DE TRANSPORTE', 'MSÉ', 'MÚSICA', 'NOME FEMININO',
-              'NOME MASCULINO', 'OBJETO', 'PALAVRA EM ESPANHOL', 'PALAVRA EM INGLÊS', 'PAÍS',
-              'PCH', 'PDA', 'PERSONAGEM FICTÍCIO', 'PRESENTE', 'PROFISSÃO', 'PROGRAMA DE TV',
-              'RAÇA DE CACHORRO', 'REMÉDIO', 'SABOR DE PIZZA', 'SABOR DE SORVETE', 'SOBREMESA',
-              'SOBRENOME', 'SUPER-HERÓI', 'SÉRIE', 'TIME ESPORTIVO', 'VERBO', 'VESTUÁRIO', 'VILÃO',
-              'FLV']
