@@ -1,12 +1,25 @@
 <p align="center">
- <img width="500" height="388" src="https://raw.githubusercontent.com/Lucas8x/stopots-bot/gh-pages/assets/answer.gif">
+ <img width="500" height="388" src="https://raw.githubusercontent.com/Lucas8x/stopots-bot/gh-pages/assets/answer.gif" alt="">
+</p>
+
+<p align="center">
+ <img alt="GitHub" src="https://img.shields.io/github/license/lucas8x/stopots-bot?style=flat-square">
+ <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucas8x/stopots-bot?style=flat-square">
+</p>
+
+<p align="center">
+ <a href="#-requerimentos">Requerimentos</a> •
+ <a href="#-instalação">Instalação</a> • 
+ <a href="#-uso">Como usar</a> • 
+ <a href="#menu">Menu</a> • 
+ <a href="#-licença">Licença</a>
 </p>
 
 # stopots-bot
 Automatizando sua jogabilidade de StopotS
 
-## Requerimentos
-* Python 3
+## 💻 Requerimentos
+* [Python 3](https://www.python.org/)
 * selenium
 * webdriver-manager
 * tabulate
@@ -14,26 +27,32 @@ Automatizando sua jogabilidade de StopotS
   * [Chrome](https://www.google.com/chrome/)
   * [Firefox](https://www.mozilla.org/firefox/new/)
   
-## Instalação
-*Se você tiver o python e o git instalado.*
-<pre><code>git clone https://github.com/Lucas8x/stopots-bot.git
+## 🚀 Instalação
+
+```Shell
+# Se você já possui o python e o git instalado
+git clone https://github.com/Lucas8x/stopots-bot.git
 cd stopots-bot
 python setup.py install
-</code></pre>
-*Através do PIP.*
-<pre><code>pip install stopots-bot
-</code></pre>
+```
+
+```Shell
+# Se você possui apenas o python
+pip install stopots-bot
+```
 
 ### Manual
-*Se você não tiver o python nem o git instalado.*
+*Se você não possuir o python nem o git instalado.*
 1. [Download](https://github.com/Lucas8x/stopots-bot/archive/master.zip).
 2. Extrair.
 3. Abrir `run.bat`.
 4. ["Jogar"](#menu).
 
-## Uso
-Entrando com um nome:
-<pre><code>stopots -u lucas</code></pre>
+## 🔨 Uso
+```Shell
+# Entrando com um nome
+stopots -u lucas
+```
 
 **NOTA:** Todas as opções são opcionais.
 <pre><code>Opções:
@@ -53,13 +72,13 @@ Entrando com um nome:
   --dict                abre o menu do dicionário
 </code></pre>
 
-## Menu
+### Menu
 1. Entrada Rápida - Ira entrar com o nome definido se não com um nome gerado pelo jogo ex:`Anonimo123`.
 2. Entrar no Jogo - Sempre ira perguntar um nome.
 3. Entrar com ID da Sala - Entra em uma sala específica.
 4. [Configurações](#configurações).
 
-## Configurações
+## ⚙️ Configurações
 1. Abrir `run.bat`.
 2. Digite "4" para abrir as opções.
 
@@ -77,8 +96,13 @@ Entrando com um nome:
    a
   </details>
 
-## Problemas
+## ⚠️ Problemas
 * Caso o navegador abra e feche :
   * Atualizar o navegador instalado chrome/firefox
 
+## 📝 Licença
+Este projeto esta sob a licença [MIT](./LICENSE).
+
+
+## 💜 Menção Honrosa
 Foi utilizado [StopAnswersAPI](https://github.com/nosliper/StopAnswersAPI) por [nosliper](https://github.com/nosliper) para formar um dicionário inicial.
