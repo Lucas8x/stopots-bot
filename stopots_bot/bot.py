@@ -2,27 +2,44 @@ import itertools
 import random
 import re
 import time
-from tabulate import tabulate
-from typing import Dict, Optional
+from typing import Optional
 
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
+from tabulate import tabulate
 
 from stopots_bot.constants import Constants, EQUIVALENTS
 from stopots_bot.utils import cls, is_a_valid_id, is_a_valid_username
 
 
+def random_from_list(arr: list[str]) -> Optional[str]:
+  """
+  Seleciona um item aleatório da lista.
+  :param arr: lista de itens.
+  :return: um item aleatório da lista | None
+  """
+  try:
+    return random.choice(arr)
+  except IndexError:
+    return None
+  except Exception as e:
+    print(f'[ERROR]Random from blist: {e}')
+    return None
+
+
 class BOT:
   """Classe do BOT"""
   def __init__(self, username: str = None, validator_type: str = 'check', auto_stop: bool = False,
-               auto_ready: bool = True, dictionary: Dict = None, driver: webdriver = None):
+               auto_ready: bool = True, use_equivalence: bool = True,
+               dictionary: dict = None, driver: webdriver = None):
     self.username = username
     self.validator_type = validator_type
     self.auto_stop = auto_stop
     self.auto_ready = auto_ready
+    self.use_equivalence = use_equivalence
     self.dictionary = dictionary
     self.driver = driver
 
@@ -32,6 +49,9 @@ class BOT:
     :param room_id: número da sala.
     :param avatar_id: número do avatar.
     """
+    if not self.driver:
+      print('Webdriver not defined ')
+      quit()
     print('Entrando no jogo...')
     self.driver.get(f'{Constants.url}{room_id if room_id else ""}')
     wait = WebDriverWait(self.driver, 30)
@@ -147,7 +167,7 @@ class BOT:
   def find_letter(self) -> Optional[str]:
     """
     Procura a letra atual da partida.
-    :return: letra se encontrada se não None
+    :return: letra se encontrada | None
     """
     try:
       letter = self.driver.find_element_by_xpath(Constants.letter).text.lower()
@@ -161,17 +181,26 @@ class BOT:
 
   def get_answer(self, letter: str, category: str) -> Optional[str]:
     """
-    Seleciona uma resposta aleatorio do dicionário.
+    Seleciona uma resposta aleatoria do dicionário.
     :param letter: letra inicial.
     :param category: categoria.
-    :return: resposta se exister no dicionário se não None
+    :return: resposta aleatoria | None
+    """
+    return random_from_list(self.dictionary[letter][category]).lower()
+
+  def get_equivalent_answers(self, letter: str, category: str) -> Optional[list[str]]:
+    """
+    Retorna todas as respostas possiveis com as categorias equivalentes.
+    :param letter: letra inicial.
+    :param category: categoria.
+    :return: lista com as respostas | None
     """
     try:
-      return random.choice(self.dictionary[letter][category]).lower()
-    except IndexError:
-      return None
+      return [*self.dictionary[letter][category],
+              *list(itertools.chain(*[self.dictionary[letter][equiva] for equiva in EQUIVALENTS[category]]))
+              ]
     except Exception as e:
-      print(f'[ERROR]Get answer: {e}')
+      print(f'[ERROR]Get equivalent answers: {e}')
       return None
 
   def auto_complete(self, letter: str) -> None:
@@ -185,15 +214,16 @@ class BOT:
         field_input = self.driver.find_element_by_xpath(Constants.FormPanel.field_input(x)).get_attribute('value')
         if not field_input:
           field_category = self.driver.find_element_by_xpath(Constants.FormPanel.field_category(x)).text.lower()
-
-          if field_category in EQUIVALENTS:
-            field_category = random.choice([field_category, *EQUIVALENTS[field_category]] if field_category != 'nome'
-                                           else [*EQUIVALENTS[field_category]])
-
-          answer = self.get_answer(letter, field_category)
-          if answer:
-            self.driver.find_element_by_xpath(Constants.FormPanel.field_input(x)).send_keys(answer)
+          if field_category:
+            if field_category in EQUIVALENTS and self.use_equivalence:
+              answer = random_from_list(self.get_equivalent_answers(letter, field_category))
+            else:
+              answer = self.get_answer(letter, field_category)
+            if answer:
+              self.driver.find_element_by_xpath(Constants.FormPanel.field_input(x)).send_keys(answer)
       except NoSuchElementException:
+        continue
+      except AttributeError:
         continue
       except Exception as e:
         print(f'[ERROR]Auto Complete: {e}', e.__class__.__name__)
@@ -204,7 +234,27 @@ class BOT:
     :param letter: letra inicial.
     """
     if self.driver.find_element_by_xpath(Constants.yellow_button_clickable):
-      if self.validator_type == 'quick':
+      if self.validator_type == 'check':
+        print('Avaliando Respostas...')
+        category = self.driver.find_element_by_xpath(Constants.AnswerPanel.category).text
+        category = re.sub('TEMA: ', '', category).lower()
+        for x in range(1, 15):
+          try:
+            if self.driver.find_element_by_xpath(Constants.AnswerPanel.label_status(x)).text.upper() == 'VALIDADO!':
+              category_answer = self.driver.find_element_by_xpath(Constants.AnswerPanel.label_answer(x)).text.lower()
+              if category in EQUIVALENTS and self.use_equivalence:
+                answers = self.get_equivalent_answers(letter, category)
+              else:
+                answers = self.dictionary[letter][category]
+              if category_answer not in answers:
+                self.driver.find_element_by_xpath(Constants.AnswerPanel.label_clickable(x)).click()
+          except NoSuchElementException:
+            continue
+          except Exception as e:
+            print(f'[ERROR]Validate: {e}', e.__class__.__name__)
+        self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
+
+      elif self.validator_type == 'quick':
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
 
       elif self.validator_type == 'deny':
@@ -219,27 +269,6 @@ class BOT:
         for x in range(1, 15):
           if self.driver.find_element_by_xpath(Constants.AnswerPanel.label_report(x)).text.upper() == 'DENUNCIAR':
             Constants.AnswerPanel.label_clickable(x)
-        self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
-
-      elif self.validator_type == 'check':
-        print('Avaliando Respostas...')
-        category = self.driver.find_element_by_xpath(Constants.AnswerPanel.category).text
-        category = re.sub('TEMA: ', '', category).lower()
-        for x in range(1, 15):
-          try:
-            if self.driver.find_element_by_xpath(Constants.AnswerPanel.label_status(x)).text.upper() == 'VALIDADO!':
-              category_answer = self.driver.find_element_by_xpath(Constants.AnswerPanel.label_answer(x)).text.lower()
-              if category in EQUIVALENTS:
-                equivalent_answers = [self.dictionary[letter][category] if category != 'nome' else []] + \
-                                     [self.dictionary[letter][cat] for cat in EQUIVALENTS[category]]
-                if category_answer not in list(itertools.chain(*equivalent_answers)):
-                  self.driver.find_element_by_xpath(Constants.AnswerPanel.label_clickable(x)).click()
-              elif category_answer not in self.dictionary[letter][category]:
-                self.driver.find_element_by_xpath(Constants.AnswerPanel.label_clickable(x)).click()
-          except NoSuchElementException:
-            continue
-          except Exception as e:
-            print(f'[ERROR]Validate: {e}', e.__class__.__name__)
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
 
       elif self.validator_type == 'greedy':

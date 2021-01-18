@@ -24,6 +24,8 @@ def command_line() -> Optional[argparse.Namespace]:
                       help='habilita ready automático')
   parser.add_argument('--validator', dest='validator', action='store', default='check',
                       choices=['quick', 'deny', 'accept', 'check', 'null'], help='tipo do avaliador')
+  parser.add_argument('--use-equiv', dest='use_equivalence', action='store_true', default=True,
+                      help='habilita respostas equivalentes')
 
   # driver
   parser.add_argument('--driver', dest='webdriver', action='store', default='chrome',

@@ -10,6 +10,7 @@ if __name__ == '__main__':
   validator_type = get_config_setting('validator')
   auto_stop = get_config_setting('autoStop')
   auto_ready = get_config_setting('autoReady')
+  use_equivalence = get_config_setting('useEquivalence')
   dictionary = get_dictionary()
   driver = init_webdriver()
   room_id = None
@@ -57,6 +58,6 @@ if __name__ == '__main__':
     else:
       print('Opção invalida.\n')
 
-  bot = BOT(username, validator_type, auto_stop, auto_ready, dictionary, driver)
+  bot = BOT(username, validator_type, auto_stop, auto_ready, use_equivalence, dictionary, driver)
   bot.join_game(room_id, avatar)
   bot.loop()

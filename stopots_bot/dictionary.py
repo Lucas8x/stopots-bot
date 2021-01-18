@@ -2,14 +2,13 @@
 import os
 import json
 import string
-from typing import Dict
 
 from stopots_bot.utils import cls
 
 alphabet = string.ascii_lowercase
 
 
-def get_dictionary() -> Dict:
+def get_dictionary() -> dict:
   """
   Carrega o json do dicionário.
   :return: dicionário
@@ -25,7 +24,7 @@ def get_dictionary() -> Dict:
 
 class Dictionary:
   """Classe do dicionário."""
-  def __init__(self, data: Dict = None):
+  def __init__(self, data: dict = None):
     self.data = data
 
   def load(self) -> None:
@@ -103,11 +102,11 @@ class Dictionary:
     :param category: categoria
     """
     for letter in self.data:
-      if not self.data[letter][category]:
+      if not self.data[letter].get(category):
         self.data[letter][category] = []
-      print(f'Categoria: {category} adicionada ao dicionário.')
-      self.save()
-      self.beautify_json()
+    print(f'Categoria: {category} adicionada ao dicionário.')
+    self.save()
+    self.beautify_json()
 
   def delete_category(self, category: str) -> None:
     """
@@ -216,5 +215,5 @@ def dictionary_menu() -> None:
       print('\033[31mDigite um número.\n\033[m')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
   dictionary_menu()

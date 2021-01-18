@@ -8,7 +8,7 @@ EQUIVALENTS = {
   'flv': ['fruta'],
   'cep': ['capital', 'cidade', 'país'],
   'fantasia': ['animal', 'ave', 'inseto', 'mamífero'],
-  'nome': ['nome feminino', 'nome masculino', 'ator', 'celebridade', 'vilão', 'sobrenome'],
+  'nome': ['nome feminino', 'nome masculino', 'ator', 'celebridade', 'vilão', 'sobrenome', 'cantor'],
   'comida': ['comida saudável', 'sobremesa', 'flv', 'fruta', 'doce'],
 }
 

@@ -10,6 +10,6 @@ def start() -> None:
   dictionary = get_dictionary()
   driver = init_webdriver(args.webdriver)
 
-  bot = BOT(args.username, args.validator, args.auto_stop, args.auto_ready, dictionary, driver)
+  bot = BOT(args.username, args.validator, args.auto_stop, args.auto_ready, args.use_equivalence, dictionary, driver)
   bot.join_game(args.room_id, args.avatar)
   bot.loop()

@@ -38,7 +38,8 @@ def create_default_files() -> None:
       "validator": "check",
       "autoStop": False,
       "autoReady": True,
-      "avatar": 0
+      "avatar": 0,
+      "useEquivalence": True
     }
     with open('config.json', 'w') as config_file:
       json.dump(data, config_file, indent=2)
@@ -63,12 +64,13 @@ def open_config_menu() -> None:
   with open('config.json', 'r+') as config_file:
     data = json.load(config_file)
     while True:
-      print(f'1 - Mudar username [Atual: {data["username"]}]\n',
-            f'2 - Alterar o validador [Atual: {data["validator"]}]\n',
-            f'3 - Auto Stop [Status: {data["autoStop"]}]\n',
-            f'4 - Auto Ready [Status: {data["autoReady"]}]\n',
-            f'5 - Mudar avatar [Atual: {data["avatar"]}]\n',
-            '0 - Voltar.')
+      print(f'1 - Mudar username [Atual: {data["username"]}]\n'
+            f'2 - Alterar o validador [Atual: {data["validator"]}]\n'
+            f'3 - Auto Stop [Status: {data["autoStop"]}]\n'
+            f'4 - Auto Ready [Status: {data["autoReady"]}]\n'
+            f'5 - Mudar avatar [Atual: {data["avatar"]}]\n'
+            f'6 - Equivalência de categorias [Atual: {data["useEquivalence"]}]\n'
+            '0 - Voltar')
       option_to_config = input('> ')
       cls()
 
@@ -82,10 +84,10 @@ def open_config_menu() -> None:
             print('Seu username/nick deve possuir entre 2 e 15 caracteres.')
 
       elif option_to_config == '2':
-        validator_change = int(input('1 - Rápido (Apenas confirma.)\n'
-                                     '2 - Negar - (Invalidará todas as respostas inclusive as suas.)\n'
-                                     '3 - Aceitar - (Validará todas as respostas inclusive as erradas.)\n'
-                                     '4 - Avaliar - (Avaliará as respostas com base no dicionario e negará as outras.)\n'
+        validator_change = int(input('1 - Rápido - Apenas confirma.\n'
+                                     '2 - Negar - Invalidará todas as respostas inclusive as suas.\n'
+                                     '3 - Aceitar - Validará todas as respostas inclusive as erradas.\n'
+                                     '4 - Avaliar - Avaliará as respostas com base no dicionario e negará as outras.\n'
                                      '5 - Não fazer nada.\n'
                                      '> '))
 
@@ -129,6 +131,14 @@ def open_config_menu() -> None:
             break
           else:
             print('Min: 0 Max: 36')
+
+      elif option_to_config == '6':
+        if data['useEquivalence']:
+          data['useEquivalence'] = False
+          print('Equivalência Desabilitada.\n')
+        else:
+          data['useEquivalence'] = True
+          print('Equivalência Habilitada.\n')
 
       elif option_to_config == '0':
         cls()
