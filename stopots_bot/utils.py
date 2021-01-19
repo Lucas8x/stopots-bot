@@ -68,7 +68,13 @@ def get_config_setting(setting: str) -> Any:
     print(f'Failed get json setting. Error: {e}')
 
 
-def invert_setting(data, setting: str, msg: str) -> None:
+def invert_setting(data: dict, setting: str, msg: str) -> None:
+  """
+  Inverte uma configuração booleana
+  :param data: python dictionary
+  :param setting: chave/nome
+  :param msg: mensagem/prefixo
+  """
   data[setting] = False if data[setting] else True
   print(msg, "Habilitado" if data[setting] else "Desabilitado")
 
