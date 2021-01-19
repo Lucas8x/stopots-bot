@@ -12,7 +12,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from tabulate import tabulate
 
 from stopots_bot.constants import Constants, EQUIVALENTS
-from stopots_bot.utils import cls, is_a_valid_id, is_a_valid_username
+from stopots_bot.utils import cls, is_a_valid_id, is_a_valid_username, log_error
 
 
 def random_from_list(arr: list[str]) -> Optional[str]:
@@ -26,7 +26,7 @@ def random_from_list(arr: list[str]) -> Optional[str]:
   except IndexError:
     return None
   except Exception as e:
-    print(f'[ERROR]Random from blist: {e}')
+    log_error('Random from list', e)
     return None
 
 
@@ -114,7 +114,7 @@ class BOT:
     except NoSuchElementException:
       pass
     except Exception as e:
-      print(f'[ERROR]Game Info: {e}')
+      log_error('Game Info', e)
 
     players = []
     for x in range(1, 15):
@@ -126,7 +126,7 @@ class BOT:
       except NoSuchElementException:
         break
       except Exception as e:
-        print(f'[ERROR]Player List: {e}')
+        log_error('Player List', e)
         break
     print('- Jogadores -\n', tabulate(players, ('Nome', 'Pontos')))
 
@@ -145,8 +145,8 @@ class BOT:
         except NoSuchElementException:
           break
         except Exception as e:
-          print(f'[ERROR]Round End: {e}')
-      print('- Ranking da Rodada -\n', tabulate(ranks, ('Pos', 'Jogador', 'Pontos')))
+          log_error('Round End', e)
+      print('\n- Ranking da Rodada -\n', tabulate(ranks, ('Pos', 'Jogador', 'Pontos')))
 
     elif h3_status == 'FIM DE JOGO!' or \
             self.driver.find_element_by_xpath(Constants.ScorePanel.h4).text.upper() == 'RANKING FINAL':
@@ -159,7 +159,7 @@ class BOT:
         except NoSuchElementException:
           break
         except Exception as e:
-          print(f'[ERROR]Game End: {e}')
+          log_error('Game End', e)
           break
       print('- Fim de Jogo -\n', tabulate(ranks, ('Nome', 'Pontos')))
     print('')
@@ -176,7 +176,7 @@ class BOT:
     except NoSuchElementException:
       return None
     except Exception as e:
-      print(f'[ERROR]Find letter: {e}', e.__class__.__name__)
+      log_error('Find letter', e)
       return None
 
   def get_answer(self, letter: str, category: str) -> Optional[str]:
@@ -191,22 +191,23 @@ class BOT:
   def get_equivalent_answers(self, letter: str, category: str) -> Optional[list[str]]:
     """
     Retorna todas as respostas possiveis com as categorias equivalentes.
-    :param letter: letra inicial.
+    :param letter: letra incial.
     :param category: categoria.
     :return: lista com as respostas | None
     """
     try:
-      return [*self.dictionary[letter][category],
+      normal_answers = self.dictionary[letter][category] if category != 'nome' else []
+      return [*normal_answers,
               *list(itertools.chain(*[self.dictionary[letter][equiva] for equiva in EQUIVALENTS[category]]))
               ]
     except Exception as e:
-      print(f'[ERROR]Get equivalent answers: {e}')
+      log_error('Get equivalent answers', e)
       return None
 
   def auto_complete(self, letter: str) -> None:
     """
     Completa os campos com suas respectivas categorias.
-    :param letter: letra inicial.
+    :param letter: letra atual.
     """
     print('Auto Completando...')
     for x in range(1, 13):
@@ -221,17 +222,15 @@ class BOT:
               answer = self.get_answer(letter, field_category)
             if answer:
               self.driver.find_element_by_xpath(Constants.FormPanel.field_input(x)).send_keys(answer)
-      except NoSuchElementException:
-        continue
-      except AttributeError:
+      except (NoSuchElementException, AttributeError):
         continue
       except Exception as e:
-        print(f'[ERROR]Auto Complete: {e}', e.__class__.__name__)
+        log_error('Auto Complete', e)
 
   def validate(self, letter: str) -> None:
     """
     Avalia as respostas conforme o tipo do avaliador.
-    :param letter: letra inicial.
+    :param letter: letra atual.
     """
     if self.driver.find_element_by_xpath(Constants.yellow_button_clickable):
       if self.validator_type == 'check':
@@ -251,7 +250,7 @@ class BOT:
           except NoSuchElementException:
             continue
           except Exception as e:
-            print(f'[ERROR]Validate: {e}', e.__class__.__name__)
+            log_error('Validate', e)
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
 
       elif self.validator_type == 'quick':
@@ -276,7 +275,7 @@ class BOT:
 
   def do_stop(self, letter: str) -> None:
     """
-    Verifica se respostas começam com a letra certa e para então pressionar o botao de STOP!
+    Verifica se respostas começam com a letra certa e tem o tamanho mínimo para então pressionar o botão de STOP!
     :param letter: letra inicial.
     """
     if self.driver.find_element_by_xpath(Constants.yellow_button_clickable):
@@ -289,55 +288,67 @@ class BOT:
         print('STOP! Pressionado.')
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
 
+  def try_auto_ready(self) -> None:
+    """Pressiona o botão de pronto automaticamente"""
+    try:
+      if self.auto_ready and self.driver.find_element_by_xpath(
+              Constants.ready_button).text.upper() == 'ESTOU PRONTO':
+        self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
+    except NoSuchElementException:
+      pass
+    except Exception as e:
+      log_error('Auto Ready', e)
+
+  def afk_detector(self) -> None:
+    """Detecta o balão de inatividade para confirmar a presença"""
+    try:
+      if self.driver.find_element_by_xpath(Constants.afk_button_xpath):
+        WebDriverWait(self.driver, 2).until(ec.element_to_be_clickable((By.XPATH, Constants.afk_button_xpath)))
+        self.driver.find_element_by_xpath(Constants.afk_button_xpath).click()
+      elif self.driver.find_elements_by_xpath(Constants.afk_box):
+        pass
+    except NoSuchElementException:
+      pass
+    except Exception as e:
+      log_error('AFK Detector', e)
+
+  def detect_round_end(self) -> None:
+    """Detecta se é o final da rodada/partida para mostrar a colocação dos jogadores"""
+    try:
+      if self.driver.find_element_by_xpath(Constants.trophy):
+        self.show_round_end_rank()
+    except NoSuchElementException:
+      pass
+    except Exception as e:
+      log_error('Round End Rank', e)
+
+  def detect_button_state(self) -> None:
+    """Detecta o estado do botão para executar as ações de acordo"""
+    try:
+      letter = self.find_letter()
+      if letter:
+        button = self.driver.find_element_by_xpath(Constants.yellow_button).text.upper()
+        if button == 'STOP!':
+          self.auto_complete(letter)
+          if self.auto_stop:
+            self.do_stop(letter)
+        elif button == 'AVALIAR' and self.validator_type != 'null':
+          self.validate(letter)
+    except NoSuchElementException:
+      pass
+    except Exception as e:
+      log_error('Main', e)
+
   def loop(self) -> None:
     """LOOP do BOT"""
     try:
       while True:
         cls()
-        try:
-          letter = self.find_letter()
-          if letter:
-            button = self.driver.find_element_by_xpath(Constants.yellow_button).text.upper()
-            if button == 'STOP!':
-              self.auto_complete(letter)
-              if self.auto_stop:
-                self.do_stop(letter)
-            elif button == 'AVALIAR' and self.validator_type != 'null':
-              self.validate(letter)
-        except NoSuchElementException:
-          pass
-        except Exception as e:
-          print(f'[ERROR]BLOCK1: {e}', e.__class__.__name__)
-
-        try:
-          if self.auto_ready and self.driver.find_element_by_xpath(
-                  Constants.ready_button).text.upper() == 'ESTOU PRONTO':
-            self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
-        except NoSuchElementException:
-          pass
-        except Exception as e:
-          print(f'[ERROR]BLOCK2: {e}', e.__class__.__name__)
-
-        try:
-          if self.driver.find_element_by_xpath(Constants.trophy):
-            self.show_round_end_rank()
-        except NoSuchElementException:
-          pass
-        except Exception as e:
-          print(f'[ERROR]BLOCK3: {e}', e.__class__.__name__)
-
-        try:
-          if self.driver.find_element_by_xpath(Constants.afk_button_xpath):
-            time.sleep(2)
-            self.driver.find_element_by_xpath(Constants.afk_button_xpath).click()
-          elif self.driver.find_elements_by_xpath(Constants.afk_box):
-            pass
-        except NoSuchElementException:
-          pass
-        except Exception as e:
-          print(f'[ERROR]BLOCK4: {e}', e.__class__.__name__)
-
+        self.detect_button_state()
+        self.try_auto_ready()
         self.show_game_info()
+        self.detect_round_end()
+        self.afk_detector()
         time.sleep(3)
 
     except KeyboardInterrupt:

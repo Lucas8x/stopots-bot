@@ -8,6 +8,15 @@ def cls() -> None:
   os.system('cls' if os.name == 'nt' else 'clear')
 
 
+def log_error(msg: str, exception: Exception):
+  """
+  Mostra mensagem de error com a exception
+  :param msg: mensagem
+  :param exception: Exception
+  """
+  print(f'\033[31m[ERROR]\033[m{msg} | {exception} | {exception.__class__.__name__}')
+
+
 def is_a_valid_id(id_: Union[str, int]) -> bool:
   """
   Verifica se o número ou a string recebida é um número válido.
@@ -59,6 +68,11 @@ def get_config_setting(setting: str) -> Any:
     print(f'Failed get json setting. Error: {e}')
 
 
+def invert_setting(data, setting: str, msg: str) -> None:
+  data[setting] = False if data[setting] else True
+  print(msg, "Habilitado" if data[setting] else "Desabilitado")
+
+
 def open_config_menu() -> None:
   """Abre um menu de configurações para o config.json"""
   with open('config.json', 'r+') as config_file:
@@ -107,21 +121,14 @@ def open_config_menu() -> None:
           data['validator'] = 'null'
           print('Validador alterado para não fazer nada.\n')
 
-      elif option_to_config == '3':
-        if data['autoStop']:
-          data['autoStop'] = False
-          print('Auto Stop Desabilitado.\n')
-        else:
-          data['autoStop'] = True
-          print('Auto Stop Habilitado.\n')
-
-      elif option_to_config == '4':
-        if data['autoReady']:
-          data['autoReady'] = False
-          print('Auto Ready Desabilitado.\n')
-        else:
-          data['autoReady'] = True
-          print('Auto Ready Habilitado.\n')
+      elif option_to_config in ['3', '4', '6']:
+        settings = {
+          3: {'setting': 'autoStop', 'msg': 'Auto Stop'},
+          4: {'setting': 'autoReady', 'msg': 'Auto Ready'},
+          6: {'setting': 'useEquivalence', 'msg': 'Equivalência'}
+        }
+        option_to_config = int(option_to_config)
+        invert_setting(data, settings[option_to_config]['setting'], settings[option_to_config]['msg'])
 
       elif option_to_config == '5':
         while True:
@@ -131,14 +138,6 @@ def open_config_menu() -> None:
             break
           else:
             print('Min: 0 Max: 36')
-
-      elif option_to_config == '6':
-        if data['useEquivalence']:
-          data['useEquivalence'] = False
-          print('Equivalência Desabilitada.\n')
-        else:
-          data['useEquivalence'] = True
-          print('Equivalência Habilitada.\n')
 
       elif option_to_config == '0':
         cls()
