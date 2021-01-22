@@ -7,7 +7,6 @@ EQUIVALENTS = {
   'objeto': ['presente', 'instrumento musical', 'vestuário', 'brinquedo'],
   'flv': ['fruta'],
   'cep': ['capital', 'cidade', 'país'],
-  'fantasia': ['animal', 'ave', 'inseto', 'mamífero'],
   'nome': ['nome feminino', 'nome masculino', 'ator', 'celebridade', 'vilão', 'sobrenome', 'cantor', 'esportista'],
   'comida': ['comida saudável', 'sobremesa', 'flv', 'fruta', 'doce'],
 }
