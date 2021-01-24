@@ -1,6 +1,7 @@
 import json
 import os
-from typing import Any, Union
+import random
+from typing import Any, Union, Optional
 
 
 def cls() -> None:
@@ -37,6 +38,21 @@ def is_a_valid_username(string: str) -> bool:
   :return: bool
   """
   return True if 2 <= len(string) <= 15 else False
+
+
+def random_from_list(arr: list[str]) -> Optional[str]:
+  """
+  Seleciona um item aleatório da lista.
+  :param arr: lista de itens.
+  :return: um item aleatório da lista | None
+  """
+  try:
+    return random.choice(arr)
+  except IndexError:
+    return None
+  except Exception as e:
+    log_error('Random from list', e)
+    return None
 
 
 def create_default_files() -> None:

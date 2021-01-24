@@ -1,5 +1,4 @@
 import itertools
-import random
 import re
 import time
 from typing import Optional
@@ -12,22 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from tabulate import tabulate
 
 from stopots_bot.constants import Constants, EQUIVALENTS
-from stopots_bot.utils import cls, is_a_valid_id, is_a_valid_username, log_error
-
-
-def random_from_list(arr: list[str]) -> Optional[str]:
-  """
-  Seleciona um item aleatório da lista.
-  :param arr: lista de itens.
-  :return: um item aleatório da lista | None
-  """
-  try:
-    return random.choice(arr)
-  except IndexError:
-    return None
-  except Exception as e:
-    log_error('Random from list', e)
-    return None
+from stopots_bot.utils import cls, is_a_valid_id, is_a_valid_username, log_error, random_from_list
 
 
 class BOT:
