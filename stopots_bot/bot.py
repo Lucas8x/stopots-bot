@@ -125,7 +125,7 @@ class BOT:
           nick = self.driver.find_element_by_xpath(Constants.RankPanel.nick(x)).text
           points = self.driver.find_element_by_xpath(Constants.RankPanel.points(x)).text
           if nick:
-            ranks.append([position, nick, points])
+            ranks.append([f'{position}º', nick, points])
         except NoSuchElementException:
           break
         except Exception as e:
@@ -323,6 +323,12 @@ class BOT:
     except Exception as e:
       log_error('Main', e)
 
+  def close(self) -> None:
+    """Fecha o navegador e o bot"""
+    if self.driver:
+      self.driver.quit()
+    exit()
+
   def loop(self) -> None:
     """LOOP do BOT"""
     try:
@@ -367,8 +373,7 @@ class BOT:
           self.loop()
 
         elif rejoin_input == 'n':
-          self.driver.quit()
-          exit()
+          self.close()
 
       elif end_option == 2:
-        quit()
+        self.close()
