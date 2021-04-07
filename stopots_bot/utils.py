@@ -91,7 +91,7 @@ def invert_setting(data: dict, setting: str, msg: str) -> None:
   :param setting: chave/nome
   :param msg: mensagem/prefixo
   """
-  data[setting] = False if data[setting] else True
+  data[setting] = not data[setting]
   print(msg, "Habilitado" if data[setting] else "Desabilitado")
 
 
@@ -126,22 +126,16 @@ def open_config_menu() -> None:
                                      '4 - Avaliar - Avaliará as respostas com base no dicionario e negará as outras.\n'
                                      '5 - Não fazer nada.\n'
                                      '> '))
+        validators = {
+          1: {'name': 'quick', 'desc': 'modo rápido'},
+          2: {'name': 'deny', 'desc': 'modo de negação'},
+          3: {'name': 'accept', 'desc': 'modo aceitação'},
+          4: {'name': 'check', 'desc': 'modo avaliação'},
+          5: {'name': 'null', 'desc': 'não fazer nada'},
+        }
 
-        if validator_change == 1:
-          data['validator'] = 'quick'
-          print('Validador alterado para modo rápido.\n')
-        elif validator_change == 2:
-          data['validator'] = 'deny'
-          print('Validador alterado para modo de negação.\n')
-        elif validator_change == 3:
-          data['validator'] = 'accept'
-          print('Validador alterado para modo de aceitação.\n')
-        elif validator_change == 4:
-          data['validator'] = 'check'
-          print('Validador alterado para modo de avaliação.\n')
-        elif validator_change == 5:
-          data['validator'] = 'null'
-          print('Validador alterado para não fazer nada.\n')
+        data['validator'] = validators[validator_change]['name']
+        print(f'Validador alterado para {validators[validator_change]["desc"]}\n')
 
       elif option_to_config in ['3', '4', '6']:
         settings = {

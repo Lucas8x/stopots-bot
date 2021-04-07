@@ -181,9 +181,8 @@ class BOT:
     """
     try:
       normal_answers = self.dictionary[letter][category] if category != 'nome' else []
-      return [*normal_answers,
-              *list(itertools.chain(*[self.dictionary[letter][equiva] for equiva in EQUIVALENTS[category]]))
-              ]
+      return list({*normal_answers,
+                   *list(itertools.chain(*[self.dictionary[letter][equiva] for equiva in EQUIVALENTS[category]]))})
     except Exception as e:
       log_error('Get equivalent answers', e)
       return None
@@ -217,7 +216,8 @@ class BOT:
     :param letter: letra atual.
     """
     if self.driver.find_element_by_xpath(Constants.yellow_button_clickable):
-      if self.validator_type == 'check':
+      def check():
+        """Avaliará as respostas com base no dicionario e negará as outras."""
         print('Avaliando Respostas...')
         category = self.driver.find_element_by_xpath(Constants.AnswerPanel.category).text
         category = re.sub('TEMA: ', '', category).lower()
@@ -237,25 +237,30 @@ class BOT:
             log_error('Validate', e)
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
 
-      elif self.validator_type == 'quick':
+      def quick():
+        """Apenas confirma as respostas sem verificar."""
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
 
-      elif self.validator_type == 'deny':
+      def deny():
+        """Invalidará todas as respostas inclusive as suas. """
         print('Negando todas as respostas...')
         for x in range(1, 15):
           if self.driver.find_element_by_xpath(Constants.AnswerPanel.label_status(x)).text.upper() == 'VALIDADO!':
             self.driver.find_element_by_xpath(Constants.AnswerPanel.label_clickable(x)).click()
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
 
-      elif self.validator_type == 'accept':
+      def accept():
+        """Confirma todas as respostas inclusive as erradas"""
         print('Confirmando todas as respostas...')
         for x in range(1, 15):
           if self.driver.find_element_by_xpath(Constants.AnswerPanel.label_report(x)).text.upper() == 'DENUNCIAR':
             Constants.AnswerPanel.label_clickable(x)
         self.driver.find_element_by_xpath(Constants.yellow_button_clickable).click()
 
-      elif self.validator_type == 'greedy':
-        pass
+      {'check': check, 'quick': quick, 'deny': deny, 'accept': accept}[self.validator_type]()
+
+      '''def greedy():
+        pass'''
 
   def do_stop(self, letter: str) -> None:
     """
