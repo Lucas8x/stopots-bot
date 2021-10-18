@@ -30,16 +30,19 @@ Automatizando sua jogabilidade de StopotS
   - [Firefox](https://www.mozilla.org/firefox/new/)
 
 ## 🚀 Instalação
-
+Se você já possui o python e o git instalado:
 ```Shell
-# Se você já possui o python e o git instalado
+# Clone o repositório
 git clone https://github.com/Lucas8x/stopots-bot.git
+
+# Entre na pasta
 cd stopots-bot
+
+# Instale as dependências
 python setup.py install
 ```
-
+Se você possui apenas o python:
 ```Shell
-# Se você possui apenas o python
 pip install stopots-bot
 ```
 
