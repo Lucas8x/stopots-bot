@@ -353,10 +353,10 @@ class BOT:
             '2 - Fechar o bot.')
       while True:
         end_option = input('> ').strip()
-        if is_a_valid_id(end_option):
-          end_option = int(end_option)
-        else:
+        if not is_a_valid_id(end_option) or not end_option in ('1', '2'):
           print('Opção invalida.')
+          continue
+        end_option = int(end_option)
         break
 
       if end_option == 1:
@@ -365,10 +365,10 @@ class BOT:
         print('Deseja entrar em outra sala? (s/n)')
         while True:
           rejoin_input = input('> ')
-          if rejoin_input.strip().lower() in 'sn':
-            break
-          else:
+          if not rejoin_input.strip().lower() in 'sn':
             print('Opção invalida.')
+            continue
+          break
 
         if rejoin_input == 's':
           wait = WebDriverWait(self.driver, 10)

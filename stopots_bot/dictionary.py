@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-import os
 import json
 import string
+from pathlib import Path
 
 from stopots_bot.utils import cls
 
@@ -14,7 +14,7 @@ def get_dictionary() -> dict:
   :return: dicionário
   """
   try:
-    dict_path = os.path.join(os.path.dirname(__file__), 'dictionary.json')
+    dict_path = Path.joinpath(Path(__file__).parent, 'dictionary.json')
     with open(dict_path, encoding='utf-8') as dictionary_data:
       return json.load(dictionary_data)
   except Exception as e:
@@ -57,7 +57,7 @@ class Dictionary:
     :param category: categoria
     :return: True/False
     """
-    return True if all(category in self.data[letter] for letter in self.data) else False
+    return all(category in self.data[letter] for letter in self.data)
 
   def add_answer(self, answer: str, category: str) -> None:
     """
@@ -66,12 +66,11 @@ class Dictionary:
     :param category: categoria
     """
     letter = answer[0]
-    if answer not in self.data[letter][category]:
-      self.data[letter][category].append(answer)
-      print(f'{answer} foi adicionado a {category} da letra: {letter}.')
-    else:
+    if answer in self.data[letter][category]:
       print('Essa resposta já existe.')
       return
+    self.data[letter][category].append(answer)
+    print(f'{answer} foi adicionado a {category} da letra: {letter}.')
     self.save()
     self.beautify_json()
 
@@ -126,7 +125,7 @@ class Dictionary:
     :param letter: letra
     """
     for category in self.data[letter]:
-      if len(self.data[letter][category]) == 0:
+      if not len(self.data[letter][category]):
         print(f'Faltando: {category}')
     print('')
 
@@ -142,12 +141,14 @@ def name_answer_genre() -> str:
                              '2 - Masculino\n'
                              '3 - Neutro (caso tenha adicionado categoria nome)\n'
                              '> '))
-    if answer_genre == 1:
-      return 'nome feminino'
-    elif answer_genre == 2:
-      return 'nome masculino'
-    elif answer_genre == 3:
-      return 'nome'
+    if answer_genre not in range(1, 4):
+      print('\033[31mDigite um número válido.\n\033[m')
+      continue
+    return {
+      1: 'nome feminino',
+      2: 'nome masculino',
+      3: 'nome'
+    }[answer_genre]
 
 
 def dictionary_menu() -> None:

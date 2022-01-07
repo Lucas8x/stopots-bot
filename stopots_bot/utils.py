@@ -1,6 +1,7 @@
 import json
 import os
 import random
+from pathlib import Path
 from typing import Any, Union, Optional
 
 
@@ -25,8 +26,7 @@ def is_a_valid_id(id_: Union[str, int]) -> bool:
   :return: bool
   """
   try:
-    if isinstance(int(id_), int):
-      return True
+    return isinstance(int(id_), int)
   except (ValueError, TypeError):
     return False
 
@@ -37,7 +37,7 @@ def is_a_valid_username(string: str) -> bool:
   :param string: nome
   :return: bool
   """
-  return True if 2 <= len(string) <= 15 else False
+  return 2 <= len(string) <= 15
 
 
 def random_from_list(arr: list[str]) -> Optional[str]:
@@ -57,7 +57,7 @@ def random_from_list(arr: list[str]) -> Optional[str]:
 
 def create_default_files() -> None:
   """Criar o config.json padrão"""
-  if not os.path.exists('config.json'):
+  if not Path('config.json').exists():
     data = {
       "username": "",
       "validator": "check",
