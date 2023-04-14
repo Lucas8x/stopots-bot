@@ -6,7 +6,7 @@ from pathlib import Path
 from stopots_bot.utils import cls
 
 alphabet = string.ascii_lowercase
-
+dict_path = Path.joinpath(Path(__file__).parent, 'dictionary.json')
 
 def get_dictionary() -> dict:
   """
@@ -14,7 +14,6 @@ def get_dictionary() -> dict:
   :return: dicionário
   """
   try:
-    dict_path = Path.joinpath(Path(__file__).parent, 'dictionary.json')
     with open(dict_path, encoding='utf-8') as dictionary_data:
       return json.load(dictionary_data)
   except Exception as e:
@@ -36,7 +35,7 @@ class Dictionary:
 
   def save(self) -> None:
     """Salva o atributo data para o arqivo json."""
-    with open('dictionary.json', 'w', encoding='utf-8') as dictionary_file:
+    with open(dict_path, 'w', encoding='utf-8') as dictionary_file:
       json.dump(self.data, dictionary_file, indent=2, separators=(',', ':'), ensure_ascii=False)
 
   def beautify_json(self) -> None:
@@ -45,9 +44,9 @@ class Dictionary:
       for category in self.data[letter]:
         self.data[letter][category] = str(self.data[letter][category.lower()])
     self.save()
-    with open('dictionary.json', encoding='utf-8') as x:
+    with open(dict_path, encoding='utf-8') as x:
       data = x.read()
-    with open('dictionary.json', 'w', encoding='utf-8') as y:
+    with open(dict_path, 'w', encoding='utf-8') as y:
       data2 = data.replace('"[', '[').replace(']"', ']').replace("'", '"')
       y.write(data2)
 
